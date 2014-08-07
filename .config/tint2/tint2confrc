@@ -1,0 +1,7 @@
+#---------------------------------------------
+# TINT2CONF CONFIG FILE
+default_theme = /home/lietk12/.config/tint2/default.tint2rc
+cmd_property = python2 /usr/bin/tintwizard.py
+width = 1346
+height = 728
+

@@ -1,0 +1,220 @@
+#########################
+# Acer c720 Function Keys
+#########################
+# Make up for missing keys #
+super + Left
+	xdotool key --clearmodifiers Home
+
+#  Desktop/window cycling #
+# Cycle desktops
+F1
+	bspc desktop --focus prev
+# Cycle windows
+super + F1
+	bspc window --focus prev
+# Move the window to the desktop to the left and also remove the current desktop if it's empty after moving.
+alt + F1
+	bspc window --to-desktop prev;\
+	~/.config/bspwm/scripts/remove_desktop.sh
+# Cycle desktops in reverse
+F2
+	bspc desktop --focus next
+# Cycle windows in reverse
+super + F2
+	bspc window --focus next
+# Move the window to the desktop to the right and also remove the current desktop if it's empty after moving.
+alt + F2
+	bspc window --to-desktop next;\
+	~/.config/bspwm/scripts/remove_desktop.sh
+
+# Desktop splitting #
+# Flip the desktop window tree
+{_,super + } + F3
+	bspc desktop --flip {vertical,horizontal}
+
+# Maximization #
+# Toggle monocle/tiled
+F4
+	bspc desktop --layout next
+# Toggle fullscreen
+super + F4
+	bspc window --toggle fullscreen
+
+# Desktop management #
+# Move the current window onto a new desktop and switch to it
+F5
+	~/.config/bspwm/scripts/add_desktop.sh;\
+	bspc window --to-desktop next.free;\
+	bspc window --focus last
+# Move the current window onto a new desktop in the background
+super + F5
+	~/.config/bspwm/scripts/add_desktop.sh;\
+	bspc window --to-desktop next.free
+# Make a new desktop and switch to it
+shift + F5
+	~/.config/bspwm/scripts/add_desktop.sh;\
+	bspc desktop --focus next.free
+
+# Backlight#
+# Adjust backlight
+{F6,F7}
+	xbacklight -{dec,inc} 10
+# Fine adjust backlight
+ctrl + {F6,F7}
+	xbacklight -{dec,inc} 1
+
+# Volume #
+# Toggle mute/unmute volume
+F8
+	amixer set Master toggle
+# Adjust volume
+{F9,F10}
+	amixer set Master 10{-,+} unmute
+# Fine adjust volume
+ctrl + {F9,F10}
+	amixer set Master 1{-,+} unmute
+
+# Power
+# Show logout menu
+{XF86PowerOff}
+	pkill -x oblogout; oblogout
+
+###############
+# bspwm hotkeys
+###############
+# Window & Desktop management #
+# Close the current window, and also remove the current desktop after closing (if possible).
+super + w
+	bspc window --close;\
+	sleep 0.1;\
+	~/.config/bspwm/scripts/remove_desktop.sh
+# Close the current window without removing the current desktop
+super + alt + w
+	bspc window --close
+# Move a window to a desktop, and remove the current desktop after closing (if possible).
+super + shift + {1-9,0}
+	bspc window --to-desktop ^{1-9,10};\
+	~/.config/bspwm/scripts/remove_desktop.sh
+
+# Window & Desktop switching #
+# Jump to a desktop
+super + {1-9,0}
+	bspc desktop --focus ^{1-9,10}
+# Focus windows through the focusing history
+super + {q,e}
+	bspc control --record-history off;\
+	bspc window --focus {older,newer};\
+	bspc control --record-history on
+# Focus the last desktop/window
+alt + {Tab,grave}
+	bspc {window,desktop} --focus last
+# Swap with the last desktop
+super + grave
+	bspc desktop --swap last;\
+	~/.config/bspwm/scripts/renumber_desktops.sh
+# Swap with the last window
+super + Tab
+	bspc window --swap last
+# Swap with the biggest window on the current desktop
+super + r
+	bspc window --swap biggest
+# Focus windows by direction
+super + {h,j,k,l}
+	bspc window --focus {left,down,up,right}
+# Swap windows by direction
+super + alt + {h,j,k,l}
+	bspc window --swap {left,down,up,right}
+
+# Special windows #
+# Toggle sticky
+#super + a
+#	bspc window --toggle sticky
+# Toggle private
+super + s
+	bspc window --toggle private
+# Toggle pseudotiling
+super + d
+	bspc window --toggle pseudo_tiled
+# Toggle floating
+super + f
+	bspc window --toggle floating
+
+# Desktop splitting #
+# Set splitting ratio to 30-70
+super + z
+	bspc config -d focused split_ratio 0.30;\
+	bspc desktop --equalize
+# Set splitting ratio to 40-60
+super + x
+	bspc config -d focused split_ratio 0.40;\
+	bspc desktop --equalize
+# Set splitting ratio to 50-50
+super + c
+	bspc config -d focused split_ratio 0.50;\
+	bspc desktop --equalize
+# Set splitting ratio to 60-40
+super + v
+	bspc config -d focused split_ratio 0.60;\
+	bspc desktop --equalize
+# Set splitting ratio to 70-30
+super + b
+	bspc config -d focused split_ratio 0.70;\
+	bspc desktop --equalize
+# Move the specified edge outwards
+super + {u,i,o,p}
+	bspc window --edge {left -10,down +10,up -10,right +10}
+# Move the specified edge inwards
+super + alt + {u,i,o,p}
+	bspc window --edge {left +10,down -10,up +10,right -10}
+# Circulate windows
+super + {comma,period}
+	bspc desktop --circulate {backward,forward}
+
+# Manual splitting mode...I can't find much utility for this right now #
+# Preselect a region for the next window
+#super + ctrl + {h,j,k,l}
+#	bspc window -p {left,down,up,right}
+# Adjust region size for the next window
+#super + ctrl + {1-9}
+#	bspc window -r 0.{1-9}
+# No idea what this is useful for
+#super + y
+#	bspc window -w last.manual
+
+# Mouse #
+# Focus the window that was just clicked, and send the click to that window too
+~button1
+	bspc pointer --grab focus
+# Window/edge dragging
+super + button{1,3}
+	bspc pointer --grab {move,resize_side}
+super + !button{1-3}
+	bspc pointer -t %i %i
+super + @button{1-3}
+	bspc pointer -u
+
+# Eye candy #
+# Window gap
+super + {minus,equal}
+	bspc config -d focused window_gap $((`bspc config -d focused window_gap` {+,-} 5 ))
+
+#################
+# Launch programs
+#################
+# Launch terminator
+super + Return
+	terminator
+# Launch thunar
+alt + Return
+	thunar
+# Launch dmenu
+alt + space
+	dmenu-launch
+# Launch uzbl
+super + space
+	uzbl-tabbed
+Print
+	scrot ~/pictures/screenshots/$(date +%F-%S).png
+# Restart sxhkd
+super + Escape
+	pkill -USR1 -x sxhkd
