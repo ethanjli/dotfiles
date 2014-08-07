@@ -1,10 +1,6 @@
 #########################
 # Acer c720 Function Keys
 #########################
-# Make up for missing keys #
-super + Left
-	xdotool key --clearmodifiers Home
-
 #  Desktop/window cycling #
 # Cycle desktops
 F1
