@@ -1,9 +1,9 @@
 # Theming
-export GTK2_RC_FILES="/home/lietk12/.gtkrc-2.0"
+export GTK2_RC_FILES="~/.gtkrc-2.0"
 export QT_STYLE_OVERRIDE="gtk"
 export XDG_CURRENT_DESKTOP="gnome"
 export BACKGROUND_IMAGE="~/pictures/DREAMS/SWEET.jpg"
-# Panel
+# dmenu
 export PANEL_HEIGHT=20
 export PANEL_FOREGROUND="#000000"
 export PANEL_BACKGROUND="#ffffff"
