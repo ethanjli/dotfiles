@@ -1,32 +1,66 @@
+############################
+# Acer C720 Convenience Keys
+############################
+# Make up for useful keys that aren't on this small keyboard
+super + BackSpace
+  xvkbd -xsendevent -text '\[Delete]'
+super + Up
+  xvkbd -xsendevent -text '\[Page_Up]'
+super + Down
+  xvkbd -xsendevent -text '\[Page_Down]'
+super + Left
+  xvkbd -xsendevent -text '\[Home]'
+super + Right
+  xvkbd -xsendevent -text '\[End]'
+
 #########################
-# Acer c720 Function Keys
+# Acer C720 Function Keys
 #########################
 #  Desktop/window cycling #
 # Cycle desktops
 F1
 	bspc desktop --focus prev
-# Cycle windows
+# Cycle monitors
 super + F1
-	bspc window --focus prev
+	bspc monitor --focus prev
+# Move the desktop to the previous monitor
+shift + super + F1
+  bspc desktop --to-monitor prev;\
+  ~/.config/bspwm/scripts/renumber_desktops.sh
 # Move the window to the desktop to the left and also remove the current desktop if it's empty after moving.
 alt + F1
 	bspc window --to-desktop prev;\
 	~/.config/bspwm/scripts/remove_desktop.sh
+# Move the window to the previous monitor and also remove the current desktop if it's empty after moving.
+alt + super + F1
+  bspc window --to-monitor prev;\
+  ~/.config/bspwm/scripts/remove_desktop.sh
 # Cycle desktops in reverse
 F2
 	bspc desktop --focus next
-# Cycle windows in reverse
+# Cycle monitors in reverse
 super + F2
-	bspc window --focus next
+	bspc monitor --focus next
+# Move the desktop to the next monitor
+shift + super + F2
+  bspc desktop --to-monitor next;\
+  ~/.config/bspwm/scripts/renumber_desktops.sh
 # Move the window to the desktop to the right and also remove the current desktop if it's empty after moving.
 alt + F2
 	bspc window --to-desktop next;\
 	~/.config/bspwm/scripts/remove_desktop.sh
+# Move the window to the next monitor and also remove the current desktop if it's empty after moving.
+alt + super + F2
+  bspc window --to-monitor next;\
+  ~/.config/bspwm/scripts/remove_desktop.sh
 
 # Desktop splitting #
 # Flip the desktop window tree
 {_,super + } + F3
 	bspc desktop --flip {vertical,horizontal}
+# Rotate the desktop window tree
+{ctrl,alt} + F3
+  bspc desktop --rotate {270,90}
 
 # Maximization #
 # Toggle monocle/tiled
@@ -35,21 +69,24 @@ F4
 # Toggle fullscreen
 super + F4
 	bspc window --toggle fullscreen
+# Toggle display of windows
+alt + F4
+  bspc control --toggle-visibility
 
 # Desktop management #
-# Move the current window onto a new desktop and switch to it
+# Make a new desktop and switch to it
 F5
 	~/.config/bspwm/scripts/add_desktop.sh;\
-	bspc window --to-desktop next.free;\
-	bspc window --focus last
+	bspc desktop --focus next.free
 # Move the current window onto a new desktop in the background
 super + F5
 	~/.config/bspwm/scripts/add_desktop.sh;\
 	bspc window --to-desktop next.free
-# Make a new desktop and switch to it
-shift + F5
+# Move the current window onto a new desktop and switch to it
+alt + F5
 	~/.config/bspwm/scripts/add_desktop.sh;\
-	bspc desktop --focus next.free
+	bspc window --to-desktop next.free;\
+	bspc window --focus last
 
 # Backlight#
 # Adjust backlight
@@ -63,12 +100,14 @@ ctrl + {F6,F7}
 # Toggle mute/unmute volume
 F8
 	amixer set Master toggle
+alt + F8
+	banshee --toggle-playing
 # Adjust volume
 {F9,F10}
-	amixer set Master 10{-,+} unmute
+	amixer set Master 1000{-,+} unmute
 # Fine adjust volume
 ctrl + {F9,F10}
-	amixer set Master 1{-,+} unmute
+	amixer set Master 100{-,+} unmute
 
 # Power
 # Show logout menu
@@ -88,7 +127,7 @@ super + w
 super + alt + w
 	bspc window --close
 # Move a window to a desktop, and remove the current desktop after closing (if possible).
-super + shift + {1-9,0}
+super + alt + {1-9,0}
 	bspc window --to-desktop ^{1-9,10};\
 	~/.config/bspwm/scripts/remove_desktop.sh
 
@@ -102,18 +141,18 @@ super + {q,e}
 	bspc window --focus {older,newer};\
 	bspc control --record-history on
 # Focus the last desktop/window
-alt + {Tab,grave}
+super + {Tab,grave}
 	bspc {window,desktop} --focus last
 # Swap with the last desktop
-super + grave
+alt + grave
 	bspc desktop --swap last;\
 	~/.config/bspwm/scripts/renumber_desktops.sh
 # Swap with the last window
-super + Tab
+alt + Tab
 	bspc window --swap last
 # Swap with the biggest window on the current desktop
-super + r
-	bspc window --swap biggest
+#super + r
+#	bspc window --swap biggest
 # Focus windows by direction
 super + {h,j,k,l}
 	bspc window --focus {left,down,up,right}
@@ -136,25 +175,9 @@ super + f
 	bspc window --toggle floating
 
 # Desktop splitting #
-# Set splitting ratio to 30-70
-super + z
-	bspc config -d focused split_ratio 0.30;\
-	bspc desktop --equalize
-# Set splitting ratio to 40-60
-super + x
-	bspc config -d focused split_ratio 0.40;\
-	bspc desktop --equalize
-# Set splitting ratio to 50-50
-super + c
-	bspc config -d focused split_ratio 0.50;\
-	bspc desktop --equalize
-# Set splitting ratio to 60-40
-super + v
-	bspc config -d focused split_ratio 0.60;\
-	bspc desktop --equalize
-# Set splitting ratio to 70-30
-super + b
-	bspc config -d focused split_ratio 0.70;\
+# Adjust splitting ratio
+super + {z,x,c,v,b}
+	bspc config -d focused split_ratio {0.30,0.40,0.50,0.60,0.70};\
 	bspc desktop --equalize
 # Move the specified edge outwards
 super + {u,i,o,p}
@@ -206,11 +229,11 @@ alt + Return
 # Launch dmenu
 alt + space
 	dmenu-launch
-# Launch uzbl
+# Launch dwb
 super + space
-	uzbl-tabbed
+	galculator
 Print
 	scrot ~/pictures/screenshots/$(date +%F-%S).png
-# Restart sxhkd
+# Reload the autorandr profile and restart sxhkd
 super + Escape
-	pkill -USR1 -x sxhkd
+	autorandr --change; pkill -USR1 -x sxhkd

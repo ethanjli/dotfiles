@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/sh
 
 # Padding
 bspc config top_padding $PANEL_HEIGHT
@@ -18,6 +18,10 @@ bspc config urgent_border_color "#b58900"
 bspc config normal_frame_opacity 0.5
 bspc config focused_frame_opacity 0.5
 
+# Multihead behavior
+bspc config remove_disabled_monitors true
+bspc config remove_unplugged_monitors true
+
 # Focusing behavior
 bspc config focus_follows_pointer false
 bspc config history_aware_focus true
@@ -29,13 +33,17 @@ bspc config auto_cancel true
 
 # Set up displays
 bspc monitor --reset-desktops 1
+bspc monitor --add-desktops 2
+bspc monitor --remove-desktops 2
 
 bspc rule -a Screenkey manage=off
 bspc rule -a Conky sticky=on manage=off lower=on
 bspc rule -a feh floating=on manage=off lower=on
-bspc rule -a oblogout floating=on
+bspc rule -a oblogout floating=on fullscreen=on
 bspc rule -a tint2 floating=on manage=off
 bspc rule -a Wicd-client.py floating=on
 bspc rule -a gbacklight floating=on
 bspc rule -a Redshiftgui.elf floating=on
 bspc rule -a lxappearance floating=on
+bspc rule -a chrome_app_list floating=on
+bspc rule -a Galculator floating=on
