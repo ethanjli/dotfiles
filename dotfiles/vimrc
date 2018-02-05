@@ -1,0 +1,212 @@
+"lietk12's .vimrc
+
+" Setup
+" ===========
+set nocompatible " Use vim rather than vi settings
+" Ensure runtimepath has system-wide directories
+
+
+" Plugins Setup
+" =============
+" Bootstrap vim-plug installation
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+call plug#begin('~/.vim/plugged')
+" Basics
+Plug 'tpope/vim-sensible'
+Plug 'xolox/vim-misc'
+" Motion
+Plug 'terryma/vim-multiple-cursors'
+if has('gui_running') " Only show indentation guides on gui due to color issues
+  Plug 'unblevable/quick-scope'
+endif
+Plug 'kshenoy/vim-signature'
+Plug 'bkad/CamelCaseMotion'
+" Indentation
+Plug 'tpope/vim-sleuth'
+if has('gui_running') " Only show indentation guides on gui due to color issues
+  Plug 'nathanaelkane/vim-indent-guides'
+endif
+" Theming
+Plug 'vim-airline/vim-airline'
+Plug 'fneu/breezy'
+" Search
+Plug 'henrik/vim-indexed-search'
+" Undo
+Plug 'mbbill/undotree'
+" Registers
+Plug 'junegunn/vim-peekaboo'
+" Syntax
+Plug 'raimondi/delimitmate'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+Plug 'junegunn/rainbow_parentheses.vim'
+Plug 'tmhedberg/SimpylFold'
+Plug 'vim-scripts/argtextobj.vim'
+Plug 'vim-scripts/csv.vim'
+Plug 'sheerun/vim-polyglot'
+Plug 'Valloric/YouCompleteMe'
+Plug 'w0rp/ale'
+Plug 'mitsuhiko/vim-jinja'
+Plug 'vim-scripts/jQuery'
+Plug 'ludovicchabant/vim-gutentags'
+" Files
+Plug 'gioele/vim-autoswap'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
+Plug 'tpope/vim-eunuch'
+Plug 'mhinz/vim-startify'
+Plug 'EinfachToll/DidYouMean'
+Plug 'qpkorr/vim-bufkill'
+Plug 'tpope/vim-vinegar'
+Plug 'xolox/vim-session'
+call plug#end()
+
+
+" General Config
+" ==============
+set encoding=utf-8
+set hidden " Buffers can exist in the background
+set visualbell " Indicate errors visually, not with audio
+set ttyfast " Improve redrawing smoothness
+set showmatch " Show matching braces
+set timeoutlen=500 " Timeout for key codes and sequences to complete
+set mouse=a " Mouse behavior should be as in GVim
+
+" Motion
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+
+" Command line
+set showcmd " Show incomplete cmds down the bottom
+set wildmode=longest:full,full " Tab-completion in the command line
+let g:bufferline_echo = 0
+let g:airline#extensions#bufferline#enabled = 0
+
+" Search
+set ignorecase " Case-insensitive search
+set smartcase " Case-sensitive search when uppercase chars are in query
+set hlsearch " Highlight search matches
+
+" Indentation
+set shiftwidth=2 " Indentations should be 2 spaces wide with smart tabs
+set softtabstop=2 " Tabs should be 2 spaces wide without smart tabs
+set tabstop=2 " Tabs should be 2 spaces wide without smart tabs
+set expandtab " Indent with spaces, not tabs
+set list listchars=tab:▸\ ,trail:· " Display tabs and trailing spaces visually
+set background=dark " Dark theme for indent guides
+let g:indent_guides_enable_on_vim_startup = 1 " Show indentation guides
+let g:indent_guides_start_level = 2 " Keep indentation guides thin
+let g:indent_guides_guide_size = 1 " Keep indentation guides thin
+
+" Theming
+set background=light " Use native backgroudn color for breezy theme
+colorscheme breezy
+let g:airline_theme = 'breezy'
+let g:airline_powerline_fonts = 1
+set termguicolors " Requires vim 8
+
+" Syntax
+execute "set colorcolumn=" . join(range(81, 100), ',')
+let python_highlight_all = 1 " Add additional highlights for Python
+let g:csv_highlight_column = 1 " Highlight columns
+syntax enable
+autocmd VimEnter * RainbowParentheses " Always show rainbow parentheses
+let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
+set foldlevelstart=20 " Keep folds unfolded by default
+let g:SimpylFold_docstring_preview = 1
+
+" Line display
+set cursorline " Highlight current line
+highlight CursorLine term=none cterm=none
+set number " Show line numbers
+set relativenumber " Show relative line number offsets
+set scrolloff=5 " Show lines above and below current line at screen edges
+
+" Files
+set title " Set the window title for vim-autoswap
+let g:autoswap_detect_tmux = 1
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard']
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
+let g:netrw_liststyle = 3
+let g:session_autosave = 'yes' " Automatically save sessions upon close
+let g:session_autosave_periodic = 1 " Automatically save sessions every minute
+
+" Undo
+if has("persistent_undo")
+  set undodir=~/.vim/undotree/
+  set undofile
+endif
+let g:undotree_WindowLayout = 3 " Put undotree panel on right
+let g:undotree_ShortIndicators = 1 " Save space
+let g:undotree_DiffAutoOpen = 0 " Hide diff panel by default
+let g:undotree_SetFocusWhenToggle = 1 " Focus on undotree panel by default
+
+" Custom keymappings
+" ===============
+
+" General
+let mapleader = " "
+nnoremap <CR> :
+inoremap jj <ESC>
+
+" Search
+nnoremap <leader><space> :noh<cr>
+
+" Motion
+nnoremap <Down> :m+<CR>==
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '>-2<CR>gv=gv
+nnoremap <Up> :m-2<CR>==
+nnoremap H ^
+nnoremap L $
+vnoremap H ^
+vnoremap L $
+nnoremap K i<CR><Esc>
+call camelcasemotion#CreateMotionMappings(',')
+
+" Splits
+nnoremap <leader>w <C-w>v<C-w>l
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" Plugins
+let g:ctrlp_map = '<Leader>o'
+nnoremap <leader>p :SyntasticCheck<cr>
+"nnoremap <leader>b :CtrlPBuffer<cr>
+nnoremap <leader>t :TagbarToggle<cr>
+nnoremap <leader>l :TlistToggle<cr>
+nnoremap <leader>u :UndotreeToggle<cr>
+
+" Registers
+nnoremap "<space> "+
+
+" Buffers
+nnoremap <Left> :bp<CR>
+nnoremap <Right> :bn<CR>
+nnoremap <BS> <C-^>
+
+" Syntax
+filetype plugin on
+filetype plugin indent on
+autocmd! BufNewFile,BufRead *.pde setlocal ft=arduino
+autocmd! BufNewFile,BufRead *.tpp setlocal ft=cpp
+autocmd FileType python let b:delimitMate_nesting_quotes = ['"']
+
+
+" GUI Options
+" ===========
+
+if has('gui_running')
+  set guioptions-=r
+  set guioptions-=L
+  set guioptions-=T
+  set guifont=Hack\ 11
+endif
+

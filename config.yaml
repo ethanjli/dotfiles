@@ -1,0 +1,18 @@
+actions:
+  plugin: vim +PlugClean! +PlugInstall +PlugInstall!
+config:
+  backup: true
+  create: true
+  dotpath: dotfiles
+dotfiles:
+  f_flake8:
+    dst: ~/.config/flake8
+    src: config/flake8
+  f_vimrc:
+    dst: ~/.vimrc
+    src: vimrc
+profiles:
+  vulcan:
+    dotfiles:
+    - f_vimrc
+    - f_flake8
