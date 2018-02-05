@@ -8,6 +8,9 @@ dotfiles:
   f_flake8:
     dst: ~/.config/flake8
     src: config/flake8
+  f_tmux.conf:
+    dst: ~/.byobu/.tmux.conf
+    src: byobu/.tmux.conf
   f_vimrc:
     dst: ~/.vimrc
     src: vimrc
@@ -16,3 +19,4 @@ profiles:
     dotfiles:
     - f_vimrc
     - f_flake8
+    - f_tmux.conf

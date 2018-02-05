@@ -25,6 +25,7 @@ if has('gui_running') " Only show indentation guides on gui due to color issues
 endif
 Plug 'kshenoy/vim-signature'
 Plug 'bkad/CamelCaseMotion'
+Plug 'christoomey/vim-tmux-navigator'
 " Indentation
 Plug 'tpope/vim-sleuth'
 if has('gui_running') " Only show indentation guides on gui due to color issues
@@ -64,6 +65,7 @@ Plug 'EinfachToll/DidYouMean'
 Plug 'qpkorr/vim-bufkill'
 Plug 'tpope/vim-vinegar'
 Plug 'xolox/vim-session'
+Plug 'tmux-plugins/vim-tmux-focus-events'
 call plug#end()
 
 
@@ -72,7 +74,12 @@ call plug#end()
 set encoding=utf-8
 set hidden " Buffers can exist in the background
 set visualbell " Indicate errors visually, not with audio
-set ttyfast " Improve redrawing smoothness
+if &term =~# '^xterm'
+  set ttyfast " Improve redrawing smoothness
+endif
+if has('gui_running')
+  set ttyfast " Improve redrawing smoothness
+endif
 set showmatch " Show matching braces
 set timeoutlen=500 " Timeout for key codes and sequences to complete
 set mouse=a " Mouse behavior should be as in GVim
@@ -107,7 +114,11 @@ set background=light " Use native backgroudn color for breezy theme
 colorscheme breezy
 let g:airline_theme = 'breezy'
 let g:airline_powerline_fonts = 1
-set termguicolors " Requires vim 8
+set termguicolors " 24-bit colors, requires vim 8
+if &term =~# '^screen' " 24-bit colors for screen/tmux sessions
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+endif
 
 " Syntax
 execute "set colorcolumn=" . join(range(81, 100), ',')
@@ -118,13 +129,7 @@ autocmd VimEnter * RainbowParentheses " Always show rainbow parentheses
 let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
 set foldlevelstart=20 " Keep folds unfolded by default
 let g:SimpylFold_docstring_preview = 1
-
-" Line display
-set cursorline " Highlight current line
-highlight CursorLine term=none cterm=none
-set number " Show line numbers
-set relativenumber " Show relative line number offsets
-set scrolloff=5 " Show lines above and below current line at screen edges
+let g:gutentags_cache_dir = '~/.vim/tags'
 
 " Files
 set title " Set the window title for vim-autoswap
@@ -145,6 +150,14 @@ let g:undotree_WindowLayout = 3 " Put undotree panel on right
 let g:undotree_ShortIndicators = 1 " Save space
 let g:undotree_DiffAutoOpen = 0 " Hide diff panel by default
 let g:undotree_SetFocusWhenToggle = 1 " Focus on undotree panel by default
+
+" Line display
+" set cursorline " Highlight current line
+" highlight CursorLine term=none cterm=none " Hide cursor line highlight underline
+set number " Show line numbers
+set relativenumber " Show relative line number offsets
+set scrolloff=5 " Show lines above and below current line at screen edges
+
 
 " Custom keymappings
 " ===============
@@ -168,20 +181,22 @@ vnoremap H ^
 vnoremap L $
 nnoremap K i<CR><Esc>
 call camelcasemotion#CreateMotionMappings(',')
+let g:tmux_navigator_no_mappings = 1
 
 " Splits
 nnoremap <leader>w <C-w>v<C-w>l
-nnoremap <C-h> <C-w>h
+nnoremap <C-i> <C-w>i
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+nnoremap <silent> <C-Up> :TmuxNavigateUp<cr>
+nnoremap <silent> <C-Left> :TmuxNavigateLeft<cr>
+nnoremap <silent> <C-Down> :TmuxNavigateDown<cr>
+nnoremap <silent> <C-Right> :TmuxNavigateRight<cr>
 
 " Plugins
 let g:ctrlp_map = '<Leader>o'
-nnoremap <leader>p :SyntasticCheck<cr>
-"nnoremap <leader>b :CtrlPBuffer<cr>
-nnoremap <leader>t :TagbarToggle<cr>
-nnoremap <leader>l :TlistToggle<cr>
+nnoremap <leader>b :CtrlPBuffer<cr>
 nnoremap <leader>u :UndotreeToggle<cr>
 
 " Registers
@@ -198,6 +213,7 @@ filetype plugin indent on
 autocmd! BufNewFile,BufRead *.pde setlocal ft=arduino
 autocmd! BufNewFile,BufRead *.tpp setlocal ft=cpp
 autocmd FileType python let b:delimitMate_nesting_quotes = ['"']
+
 
 
 " GUI Options
