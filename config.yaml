@@ -8,6 +8,12 @@ dotfiles:
   f_flake8:
     dst: ~/.config/flake8
     src: config/flake8
+  f_keyboard_mappings.sh:
+    dst: ~/.config/autostart-scripts/keyboard_mappings.sh
+    src: config/autostart-scripts/keyboard_mappings.sh
+  f_nvidia_prime.sh:
+    dst: ~/.config/autostart-scripts/nvidia_prime.sh
+    src: config/autostart-scripts/nvidia_prime.sh
   f_tmux.conf:
     dst: ~/.byobu/.tmux.conf
     src: byobu/.tmux.conf
@@ -20,3 +26,5 @@ profiles:
     - f_vimrc
     - f_flake8
     - f_tmux.conf
+    - f_keyboard_mappings.sh
+    - f_nvidia_prime.sh

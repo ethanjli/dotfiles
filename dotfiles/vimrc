@@ -171,10 +171,8 @@ inoremap jj <ESC>
 nnoremap <leader><space> :noh<cr>
 
 " Motion
-nnoremap <Down> :m+<CR>==
-vnoremap J :m '>+1<CR>gv=gv
-vnoremap K :m '>-2<CR>gv=gv
 nnoremap <Up> :m-2<CR>==
+nnoremap <Down> :m+<CR>==
 nnoremap H ^
 nnoremap L $
 vnoremap H ^
@@ -185,7 +183,7 @@ let g:tmux_navigator_no_mappings = 1
 
 " Splits
 nnoremap <leader>w <C-w>v<C-w>l
-nnoremap <C-i> <C-w>i
+nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
