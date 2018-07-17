@@ -66,6 +66,7 @@ Plug 'qpkorr/vim-bufkill'
 Plug 'tpope/vim-vinegar'
 Plug 'xolox/vim-session'
 Plug 'tmux-plugins/vim-tmux-focus-events'
+Plug 'editorconfig/editorconfig-vim'
 call plug#end()
 
 
@@ -173,6 +174,8 @@ nnoremap <leader><space> :noh<cr>
 " Motion
 nnoremap <Up> :m-2<CR>==
 nnoremap <Down> :m+<CR>==
+nnoremap <Left> <<
+nnoremap <Right> >>
 nnoremap H ^
 nnoremap L $
 vnoremap H ^
@@ -201,8 +204,8 @@ nnoremap <leader>u :UndotreeToggle<cr>
 nnoremap "<space> "+
 
 " Buffers
-nnoremap <Left> :bp<CR>
-nnoremap <Right> :bn<CR>
+nnoremap <S-Left> :bp<CR>
+nnoremap <S-Right> :bn<CR>
 nnoremap <BS> <C-^>
 
 " Syntax
