@@ -1,0 +1,59 @@
+# Set up completions
+fpath=(~/.config/zsh/completion $fpath)
+autoload compinit
+compinit
+
+# Use bash completions
+autoload bashcompinit
+bashcompinit
+
+# Fix keys and shortcuts
+bindkey "^[[3~" delete-char
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+
+# Set up distrobox completions
+source /usr/share/bash-completion/completions/distrobox
+source /usr/share/bash-completion/completions/distrobox-assemble
+source /usr/share/bash-completion/completions/distrobox-create
+source /usr/share/bash-completion/completions/distrobox-enter
+source /usr/share/bash-completion/completions/distrobox-ephemeral
+source /usr/share/bash-completion/completions/distrobox-generate-entry
+source /usr/share/bash-completion/completions/distrobox-list
+source /usr/share/bash-completion/completions/distrobox-rm
+source /usr/share/bash-completion/completions/distrobox-stop
+source /usr/share/bash-completion/completions/distrobox-upgrade
+
+# Enable aqua
+export PATH="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin:$PATH"
+export AQUA_GLOBAL_CONFIG=${AQUA_GLOBAL_CONFIG:-}:${XDG_CONFIG_HOME:-$HOME/.config}/aquaproj-aqua/aqua.yaml
+
+# Enable starship
+eval "$(starship init zsh)"
+
+# Enable direnv
+eval "$(direnv hook zsh)"
+
+# Enable atuin
+eval "$(atuin init zsh)"
+
+# Make an alias for neovim
+alias vim=nvim
+
+# Autostart zellij (note that this hands over execution to zellij, so nothing else should be added
+# after this section)
+if [ -z "${ZELLIJ}" ]; then
+  zellij_sessions=$(zellij list-sessions)
+  num_sessions=$(echo "${zellij_sessions}" | wc -l)
+  if [ "${num_sessions}" -ge 1 ]; then
+    echo "Attach to a Zellij session?"
+    chosen_session=$(echo "\n(new-session)\n${zellij_sessions}" | gum choose | sed 's~ .*$~~')
+    if [[ "${chosen_session}" == "(new-session)" ]]; then
+      zellij attach -c "$(gum input --placeholder "Name of new session")"
+    elif [ ! -z "${chosen_session}" ]; then
+      zellij attach "${chosen_session}"
+    fi
+  elif gum confirm "Start a new Zellij session?"; then
+    zellij attach -c
+  fi
+fi

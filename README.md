@@ -3,6 +3,14 @@ dotfiles
 
 These are my personal dotfiles, managed with [chezmoi](https://chezmoi.io).
 
+## Usage
+
+To install the dotfiles on a new machine, run:
+
+```
+chezmoi init --apply ethanjli
+```
+
 ## Licensing
 
 Except where otherwise indicated, source code provided here is covered by the following information:
