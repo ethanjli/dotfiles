@@ -5,11 +5,35 @@ These are my personal dotfiles, managed with [chezmoi](https://chezmoi.io).
 
 ## Usage
 
-To install the dotfiles on a new machine, run:
+### Set up dotfiles
+
+To install the dotfiles on a new machine with chezmoi available, run:
 
 ```
 chezmoi init --apply ethanjli
 ```
+
+Or on a machine without chezmoi, you can bootstrap the global [aqua](https://aquaproj.github.io) configuration (which in turn will install chezmoi) without having to first install chezmoi:
+
+```
+sh -c "$(curl -fsLS get.chezmoi.io)" -- -b "$(mktemp -d)" init --apply ethanjli
+```
+
+## Set up global tools
+
+On a machine without aqua, you can install aqua as follows:
+
+```
+curl -sSfL https://raw.githubusercontent.com/aquaproj/aqua-installer/v2.2.0/aqua-installer | bash
+```
+
+Then you can install the aqua tools by restarting your shell or by running:
+
+```
+aqua i -a
+```
+
+
 
 ## Licensing
 
