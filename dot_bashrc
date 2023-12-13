@@ -24,21 +24,25 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
-# Set default text editor
+# Integrate neovim
 export EDITOR="~/.local/share/aquaproj-aqua/bin/nvim"
 export VISUAL="~/.local/share/aquaproj-aqua/bin/nvim"
+if command -v nvim &> /dev/null; then
+  alias vim=nvim
+fi
+
+# Integrate marktext
+alias marktext="flatpak run com.github.marktext.marktext"
 
 # Enable aqua
 export PATH="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin:$PATH"
 export AQUA_GLOBAL_CONFIG=${AQUA_GLOBAL_CONFIG:-}:${XDG_CONFIG_HOME:-$HOME/.config}/aquaproj-aqua/aqua.yaml
+if command -v aqua &> /dev/null; then
+  aqua i -a
+  source <(aqua completion bash)
+fi
 
-# Enable starship
-eval "$(starship init bash)"
-
-# Enable direnv
-eval "$(direnv hook bash)"
-
-# Enable tere
+# Integrate tere
 if command -v tere &> /dev/null; then
   tere() {
     local result=$($HOME/.local/share/aquaproj-aqua/bin/tere --mouse=on "$@")
@@ -46,9 +50,20 @@ if command -v tere &> /dev/null; then
   }
 fi
 
-# Enable lf
+# Integrate lf
 if command -v lf &> /dev/null; then
   function lf {
     cd "$($HOME/.local/share/aquaproj-aqua/bin/lf -print-last-dir "$@")"
   }
+fi
+
+# Enable starship
+eval "$(starship init bash)"
+
+# Enable direnv
+eval "$(direnv hook bash)"
+
+# Enable atuin
+if command -v atuin &> /dev/null; then
+  eval "$(atuin init bash)"
 fi

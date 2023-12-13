@@ -26,9 +26,15 @@ source /usr/share/bash-completion/completions/distrobox-rm
 source /usr/share/bash-completion/completions/distrobox-stop
 source /usr/share/bash-completion/completions/distrobox-upgrade
 
-# Set default text editor
+# Integrate neovim
 export EDITOR="$HOME/.local/share/aquaproj-aqua/bin/nvim"
 export VISUAL="$HOME/.local/share/aquaproj-aqua/bin/nvim"
+if command -v nvim &> /dev/null; then
+  alias vim=nvim
+fi
+
+# Integrate marktext
+alias marktext="flatpak run com.github.marktext.marktext"
 
 # Enable aqua
 export PATH="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin:$PATH"
@@ -36,6 +42,21 @@ export AQUA_GLOBAL_CONFIG=${AQUA_GLOBAL_CONFIG:-}:${XDG_CONFIG_HOME:-$HOME/.conf
 if command -v aqua &> /dev/null; then
   aqua i -a
   source <(aqua completion zsh)
+fi
+
+# Integrate tere
+if command -v tere &> /dev/null; then
+  tere() {
+    local result=$($HOME/.local/share/aquaproj-aqua/bin/tere --mouse=on "$@")
+    [ -n "$result" ] && cd -- "$result"
+  }
+fi
+
+# Integrate lf
+if command -v lf &> /dev/null; then
+  function lf {
+    cd "$($HOME/.local/share/aquaproj-aqua/bin/lf -print-last-dir "$@")"
+  }
 fi
 
 # Enable starship
@@ -51,26 +72,6 @@ fi
 # Enable atuin
 if command -v atuin &> /dev/null; then
   eval "$(atuin init zsh)"
-fi
-
-# Enable tere
-if command -v tere &> /dev/null; then
-  tere() {
-    local result=$($HOME/.local/share/aquaproj-aqua/bin/tere --mouse=on "$@")
-    [ -n "$result" ] && cd -- "$result"
-  }
-fi
-
-# Enable walk
-if command -v lf &> /dev/null; then
-  function lf {
-    cd "$($HOME/.local/share/aquaproj-aqua/bin/lf -print-last-dir "$@")"
-  }
-fi
-
-# Make an alias for neovim
-if command -v nvim &> /dev/null; then
-  alias vim=nvim
 fi
 
 # Autostart zellij (note that this hands over execution to zellij, so nothing else should be added
