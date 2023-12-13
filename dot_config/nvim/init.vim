@@ -29,6 +29,9 @@ set encoding=utf-8
 " Filetypes
 filetype plugin on
 
+" Chezmoi integration
+autocmd BufWritePost ~/.local/share/chezmoi/* ! chezmoi apply --source-path "%"
+
 " Syntax
 syntax enable               " syntax highlighting
 set showmatch               " show matching braces

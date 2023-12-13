@@ -24,6 +24,10 @@ source /usr/share/bash-completion/completions/distrobox-rm
 source /usr/share/bash-completion/completions/distrobox-stop
 source /usr/share/bash-completion/completions/distrobox-upgrade
 
+# Set default text editor
+export EDITOR="$HOME/.local/share/aquaproj-aqua/bin/nvim"
+export VISUAL="$HOME/.local/share/aquaproj-aqua/bin/nvim"
+
 # Enable aqua
 export PATH="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin:$PATH"
 export AQUA_GLOBAL_CONFIG=${AQUA_GLOBAL_CONFIG:-}:${XDG_CONFIG_HOME:-$HOME/.config}/aquaproj-aqua/aqua.yaml

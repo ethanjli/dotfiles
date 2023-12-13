@@ -24,6 +24,10 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
+# Set default text editor
+export EDITOR="~/.local/share/aquaproj-aqua/bin/nvim"
+export VISUAL="~/.local/share/aquaproj-aqua/bin/nvim"
+
 # Enable aqua
 export PATH="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin:$PATH"
 export AQUA_GLOBAL_CONFIG=${AQUA_GLOBAL_CONFIG:-}:${XDG_CONFIG_HOME:-$HOME/.config}/aquaproj-aqua/aqua.yaml
