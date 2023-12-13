@@ -37,3 +37,18 @@ eval "$(starship init bash)"
 
 # Enable direnv
 eval "$(direnv hook bash)"
+
+# Enable tere
+if command -v tere &> /dev/null; then
+  tere() {
+    local result=$($HOME/.local/share/aquaproj-aqua/bin/tere --mouse=on "$@")
+    [ -n "$result" ] && cd -- "$result"
+  }
+fi
+
+# Enable lf
+if command -v lf &> /dev/null; then
+  function lf {
+    cd "$($HOME/.local/share/aquaproj-aqua/bin/lf -print-last-dir "$@")"
+  }
+fi

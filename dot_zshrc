@@ -1,3 +1,5 @@
+# .zshrc
+
 # Set up completions
 fpath=(~/.config/zsh/completion $fpath)
 autoload compinit
@@ -51,9 +53,19 @@ if command -v atuin &> /dev/null; then
   eval "$(atuin init zsh)"
 fi
 
-# Enable just
-if command -v nvim &> /dev/null; then
-  alias vim=nvim
+# Enable tere
+if command -v tere &> /dev/null; then
+  tere() {
+    local result=$($HOME/.local/share/aquaproj-aqua/bin/tere --mouse=on "$@")
+    [ -n "$result" ] && cd -- "$result"
+  }
+fi
+
+# Enable walk
+if command -v lf &> /dev/null; then
+  function lf {
+    cd "$($HOME/.local/share/aquaproj-aqua/bin/lf -print-last-dir "$@")"
+  }
 fi
 
 # Make an alias for neovim

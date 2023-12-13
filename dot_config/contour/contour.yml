@@ -456,7 +456,7 @@ color_schemes:
             # and keep the focus on the actual terminal contents.
             #
             # Default: false
-            blur: false
+            blur: true
 
         # Mandates the color of the cursor and potentially overridden text.
         #

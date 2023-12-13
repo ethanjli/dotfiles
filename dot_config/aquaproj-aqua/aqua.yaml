@@ -14,3 +14,6 @@ packages:
   - name: junegunn/fzf@0.44.1
   - name: extrawurst/gitui@v0.24.3
   - name: FiloSottile/age@v1.1.1
+  - name: rclone/rclone@v1.65.0
+  - name: gokcehan/lf@r31
+  - name: mgunyho/tere@v1.5.1
