@@ -26,3 +26,5 @@ packages:
   - name: aquaproj/registry-tool@v0.2.3
   - name: hpjansson/chafa@v1.12.5
     registry: ethanjli/dotfiles
+  - name: jesseduffield/lazygit@v0.40.2
+  - name: cheat/cheat@4.4.1

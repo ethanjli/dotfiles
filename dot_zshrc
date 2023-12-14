@@ -69,6 +69,11 @@ if command -v lf &> /dev/null; then
   }
 fi
 
+# Integrate cheat
+if command -v fzf &> /dev/null; then
+  export CHEAT_USE_FZF=true
+fi
+
 # Enable starship
 if command -v starship &> /dev/null; then
   eval "$(starship init zsh)"
@@ -83,6 +88,10 @@ fi
 if command -v atuin &> /dev/null; then
   eval "$(atuin init zsh)"
 fi
+
+# Integrate zoxide
+eval "$(zoxide init zsh)"
+# TODO: include https://github.com/marlonrichert/zsh-autocomplete
 
 # Autostart zellij (note that this hands over execution to zellij, so nothing else should be added
 # after this section)

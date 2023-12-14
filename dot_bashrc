@@ -68,3 +68,6 @@ eval "$(direnv hook bash)"
 if command -v atuin &> /dev/null; then
   eval "$(atuin init bash)"
 fi
+
+# Integrate zoxide
+eval "$(zoxide init bash)"
