@@ -1,6 +1,12 @@
 registries:
   - type: standard
     ref: v4.102.0 # renovate: depName=aquaproj/aqua-registry
+  - name: ethanjli/dotfiles
+    type: github_content
+    repo_owner: ethanjli
+    repo_name: dotfiles
+    ref: master
+    path: aqua-registry.yaml
 packages:
   - name: atuinsh/atuin@v17.1.0
   - name: direnv/direnv@v2.33.0
@@ -17,3 +23,6 @@ packages:
   - name: rclone/rclone@v1.65.0
   - name: gokcehan/lf@r31
   - name: mgunyho/tere@v1.5.1
+  - name: aquaproj/registry-tool@v0.2.3
+  - name: hpjansson/chafa@v1.12.5
+    registry: ethanjli/dotfiles

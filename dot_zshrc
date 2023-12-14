@@ -48,6 +48,7 @@ function wezterm {
 # FIXME: put env vars in .zshenv
 export PATH="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin:$PATH"
 export AQUA_GLOBAL_CONFIG=${AQUA_GLOBAL_CONFIG:-}:${XDG_CONFIG_HOME:-$HOME/.config}/aquaproj-aqua/aqua.yaml
+export AQUA_POLICY_CONFIG=${AQUA_POLICY_CONFIG:-}:${XDG_CONFIG_HOME:-$HOME/.config}/aquaproj-aqua/aqua-policy.yaml
 if command -v aqua &> /dev/null; then
   aqua i -a
   source <(aqua completion zsh)

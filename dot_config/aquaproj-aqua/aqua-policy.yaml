@@ -1,0 +1,14 @@
+---
+# aqua Policy
+# https://aquaproj.github.io/
+registries:
+  - type: standard
+    ref: semver(">= 3.0.0")
+  - name: ethanjli/dotfiles
+    type: github_content
+    repo_owner: ethanjli
+    repo_name: dotfiles
+    path: aqua-registry.yaml
+packages:
+  - registry: standard
+  - registry: ethanjli/dotfiles

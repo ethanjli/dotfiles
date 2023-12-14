@@ -27,13 +27,21 @@ On a machine without aqua, you can install aqua as follows:
 curl -sSfL https://raw.githubusercontent.com/aquaproj/aqua-installer/v2.2.0/aqua-installer | bash
 ```
 
+Then you will need to allow use of non-standard aqua packages provided by this repository:
+
+```
+cd ${XDG_CONFIG_HOME}/aquaproj-aqua
+git init
+aqua policy allow "${XDG_CONFIG_HOME}/aquaproj-aqua/aqua-policy.yaml"
+```
+
+
+
 Then you can install the aqua tools by restarting your shell or by running:
 
 ```
 aqua i -a
 ```
-
-
 
 ## Licensing
 
