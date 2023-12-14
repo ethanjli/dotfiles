@@ -34,20 +34,20 @@ config.colors = {
     inactive_tab = {
       bg_color = '#1E2227',
       fg_color = '#ABB2BF',
-      italic = true,
     },
     inactive_tab_hover = {
       bg_color = '#1E2227',
       fg_color = '#ABB2BF',
+      intensity = 'Bold',
     },
     new_tab = {
       bg_color = '#1E2227',
       fg_color = '#ABB2BF',
-      italic = true,
     },
     new_tab_hover = {
       bg_color = '#1E2227',
       fg_color = '#ABB2BF',
+      intensity = 'Bold',
     },
   }
 }
@@ -60,7 +60,7 @@ config.window_padding = {
 }
 
 config.font = wezterm.font {
-  family = 'Intel One Mono',
+  family = 'IntoneMono Nerd Font',
 }
 config.freetype_load_target = "Normal"
 
