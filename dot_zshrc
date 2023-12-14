@@ -34,9 +34,18 @@ if command -v nvim &> /dev/null; then
 fi
 
 # Integrate marktext
-alias marktext="flatpak run com.github.marktext.marktext"
+function marktext {
+  flatpak run com.github.marktext.marktext "$@"
+}
+compdef _files marktext
 
-# Enable aqua
+# Integrate wezterm
+function wezterm {
+  flatpak run org.wezfurlong.wezterm "$@"
+}
+
+# Integrate aqua
+# FIXME: put env vars in .zshenv
 export PATH="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin:$PATH"
 export AQUA_GLOBAL_CONFIG=${AQUA_GLOBAL_CONFIG:-}:${XDG_CONFIG_HOME:-$HOME/.config}/aquaproj-aqua/aqua.yaml
 if command -v aqua &> /dev/null; then
@@ -54,7 +63,7 @@ fi
 
 # Integrate lf
 if command -v lf &> /dev/null; then
-  function lf {
+  function lfcd {
     cd "$($HOME/.local/share/aquaproj-aqua/bin/lf -print-last-dir "$@")"
   }
 fi
@@ -81,11 +90,12 @@ if command -v zellij &> /dev/null; then
     zellij_sessions=$(zellij list-sessions)
     num_sessions=$(echo "${zellij_sessions}" | wc -l)
     if [ "${num_sessions}" -ge 1 ]; then
-      echo "Attach to a Zellij session?"
-      chosen_session=$(echo "\n(new-session)\n${zellij_sessions}" | gum choose | sed 's~ .*$~~')
+      echo
+      echo "  Attach to a Zellij session?"
+      chosen_session=$(echo "(don't-attach)\n(new-session)\n${zellij_sessions}" | gum choose | sed 's~ .*$~~')
       if [[ "${chosen_session}" == "(new-session)" ]]; then
         zellij attach -c "$(gum input --placeholder "Name of new session")"
-      elif [ ! -z "${chosen_session}" ]; then
+      elif [ "${chosen_session}" != "(don't-attach)" ]; then
         zellij attach "${chosen_session}"
       fi
     elif gum confirm "Start a new Zellij session?"; then

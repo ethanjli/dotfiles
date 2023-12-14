@@ -34,7 +34,8 @@ fi
 # Integrate marktext
 alias marktext="flatpak run com.github.marktext.marktext"
 
-# Enable aqua
+# Integrate aqua
+# FIXME: put env vars in .bash_profile
 export PATH="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin:$PATH"
 export AQUA_GLOBAL_CONFIG=${AQUA_GLOBAL_CONFIG:-}:${XDG_CONFIG_HOME:-$HOME/.config}/aquaproj-aqua/aqua.yaml
 if command -v aqua &> /dev/null; then
@@ -52,7 +53,7 @@ fi
 
 # Integrate lf
 if command -v lf &> /dev/null; then
-  function lf {
+  function lfcd {
     cd "$($HOME/.local/share/aquaproj-aqua/bin/lf -print-last-dir "$@")"
   }
 fi
