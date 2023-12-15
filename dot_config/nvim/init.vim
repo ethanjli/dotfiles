@@ -21,7 +21,8 @@ set scrolloff=5             " show lines above and below current line at screen 
 " Line display
 set number                  " show line numbers
 set relativenumber          " show relative line number offsets
-set colorcolumn=80,100      " show common column width limits
+"set colorcolumn=80,100      " show common column width limits
+set colorcolumn=100      " show common column width limits
 
 " Files
 set encoding=utf-8

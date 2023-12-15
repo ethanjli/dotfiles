@@ -1,0 +1,22 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Ethan Li
+	email = lietk12@gmail.com
+	signingkey = /home/lietk12/.ssh/id_ed25519.pub
+[global]
+[credential]
+	helper = cache
+[diff]
+	context = 5
+[commit]
+	gpgSign = true
+[tag]
+	forceSignAnnotated = true
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	allowedSignersFile = /var/home/lietk12/.ssh/allowed_signers
