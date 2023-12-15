@@ -25,12 +25,11 @@ keybinds clear-defaults=true {
     bind "Enter" { SwitchToMode "locked"; }
 
     bind "O" {
-      SwitchToMode "session";
+      SwitchToMode "locked";
       LaunchOrFocusPlugin "zellij:session-manager" {
         floating true
           move_to_focused_tab true
       };
-      SwitchToMode "session";
     }
     bind "e" { SwitchToMode "locked"; EditScrollback;  }
     bind "?" { SwitchToMode "Scroll"; }

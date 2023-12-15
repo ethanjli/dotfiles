@@ -108,3 +108,7 @@ fi
 # Integrate zoxide
 eval "$(zoxide init zsh)"
 # TODO: include https://github.com/marlonrichert/zsh-autocomplete
+
+if command -v zellij &> /dev/null && [ ! -z "${ZELLIJ}" ]; then
+  zellij action rename-tab ''
+fi
