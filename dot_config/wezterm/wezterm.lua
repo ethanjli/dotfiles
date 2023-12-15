@@ -68,8 +68,9 @@ config.window_close_confirmation = 'NeverPrompt'
 
 config.disable_default_key_bindings = true
 config.keys = {
-  { key = ':', mods = 'SHIFT|CTRL', action = act.ShowLauncher },
   { key = ';', mods = 'CTRL', action = act.ActivateCommandPalette },
+  { key = ':', mods = 'SHIFT|CTRL', action = act.ShowLauncher },
+  { key = ':', mods = 'ALT|SHIFT|CTRL', action = act.ShowDebugOverlay },
   { key = 'T', mods = 'SHIFT|CTRL', action = act.SpawnTab 'CurrentPaneDomain' },
   { key = 'W', mods = 'SHIFT|CTRL', action = act.CloseCurrentTab{confirm = false} },
   { key = 'PageDown', mods = 'CTRL', action = act.ActivateTabRelative(1) },
@@ -99,11 +100,7 @@ config.keys = {
   { key = '0', mods = 'CTRL', action = act.ResetFontSize },
   { key = '=', mods = 'CTRL', action = act.IncreaseFontSize },
   { key = '-', mods = 'CTRL', action = act.DecreaseFontSize },
-  { key = 'L', mods = 'CTRL', action = act.Multiple {
-    act.ClearScrollback 'ScrollbackAndViewport',
-    act.SendKey { key = 'L', mods = 'CTRL' },
-  } },
-  { key = 'L', mods = 'SHIFT|CTRL', action = act.ShowDebugOverlay },
+  { key = 'L', mods = 'SHIFT|CTRL', action = act.ClearScrollback 'ScrollbackAndViewport' },
   { key = 'PageUp', mods = 'SHIFT', action = act.ScrollByPage(-1) },
   { key = 'PageDown', mods = 'SHIFT', action = act.ScrollByPage(1) },
   { key = 'UpArrow', mods = 'SHIFT', action = act.ScrollByLine(-1) },
