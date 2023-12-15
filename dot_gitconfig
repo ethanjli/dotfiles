@@ -13,7 +13,7 @@
 [diff]
 	context = 5
 [commit]
-	gpgSign = true
+	gpgsign = true
 [tag]
 	forceSignAnnotated = true
 [gpg]

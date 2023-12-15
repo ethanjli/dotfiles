@@ -37,3 +37,4 @@ packages:
   - name: phiresky/ripgrep-all@v1.0.0-alpha.5
   - name: BurntSushi/ripgrep@14.0.3
   - name: dandavison/delta@0.16.5
+  - name: charmbracelet/glow@v1.5.1
