@@ -166,7 +166,7 @@ map gs :fzf_search
 
 # Integrate eza
 cmd on-select &{{
-    lf -remote "send $id set statfmt \"$(eza -ld --color=always "$f")\""
+    lf -remote "send $id set statfmt \"$(lsd -l --color always --icon always --classify --git "$f")\""
 }}
 
 # Integrate starship
