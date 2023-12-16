@@ -22,7 +22,7 @@ keybinds clear-defaults=true {
     bind "Alt P" { TogglePaneFrames; }
   }
   shared_except "locked" "renamepane" "renametab" "entersearch" {
-    bind "Enter" { SwitchToMode "locked"; }
+    bind "Enter" "Esc" { SwitchToMode "locked"; }
 
     bind "O" {
       SwitchToMode "locked";
@@ -35,9 +35,6 @@ keybinds clear-defaults=true {
     bind "?" { SwitchToMode "Scroll"; }
     bind "/" { SwitchToMode "EnterSearch"; SearchInput 0; }
   }
-  shared_except "normal" "locked" "renamepane" "renametab" "entersearch" {
-    bind "Esc" { SwitchToMode "Normal"; }
-  }
   shared_except "pane" "locked" "renamepane" "renametab" "entersearch" {
     bind "u" { SwitchToMode "Pane"; }
   }
@@ -45,8 +42,6 @@ keybinds clear-defaults=true {
     bind "o" { SwitchToMode "Tab"; }
   }
   normal {
-    bind "Esc" { SwitchToMode "locked"; }
-
     bind "j" { MoveFocus "Down"; SwitchToMode "locked"; }
     bind "k" { MoveFocus "Up"; SwitchToMode "locked"; }
     bind "h" { MoveFocusOrTab "Left"; SwitchToMode "locked"; }
