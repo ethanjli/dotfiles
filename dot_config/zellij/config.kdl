@@ -16,10 +16,14 @@ keybinds clear-defaults=true {
     bind "Alt =" { Resize "Increase"; }
     bind "Alt -" { Resize "Decrease"; }
 
+    bind "Alt o" { NewTab; }
+    bind "Alt u" { NewPane; }
     bind "Alt y" { ToggleFloatingPanes; }
     bind "Alt Y" { TogglePaneEmbedOrFloating; }
     bind "Alt p" { ToggleFocusFullscreen; }
     bind "Alt P" { TogglePaneFrames; }
+    bind "Alt [" { PreviousSwapLayout; }
+    bind "Alt ]" { NextSwapLayout; }
   }
   shared_except "locked" "renamepane" "renametab" "entersearch" {
     bind "Enter" "Esc" { SwitchToMode "locked"; }
@@ -257,7 +261,7 @@ theme "one-dark-nuanced"
 // The name of the default layout to load on startup
 // Default: "default"
 //
-default_layout "compact-top"
+default_layout "basic"
 
 // Choose the mode that zellij uses when starting up.
 // Default: normal
