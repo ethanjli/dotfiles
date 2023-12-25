@@ -1,5 +1,19 @@
 # .zshrc
 
+# Define utilities
+
+is_valid() {
+  command="$1"
+  command -v "$command" &> /dev/null && "$command" --version &> /dev/null
+}
+among_paths() {
+  directory="$1"
+  paths="$2"
+  [[ ":${paths}:" == *":${directory}:"* ]]
+}
+xdg_config="${XDG_CONFIG_HOME:-$HOME/.config}"
+xdg_data_home="${XDG_DATA_HOME:-$HOME/.local/share}"
+
 # Set up completions
 fpath=(~/.config/zsh/completion $fpath)
 autoload compinit
@@ -20,42 +34,25 @@ bindkey "^H" backward-kill-word
 bindkey "^[[3;5~" kill-word
 
 # Set up distrobox completions
-if [ -f /usr/share/bash-completion/completions/distrobox ]; then
-  source /usr/share/bash-completion/completions/distrobox
-fi
-if [ -f /usr/share/bash-completion/completions/distrobox-assemble ]; then
-  source /usr/share/bash-completion/completions/distrobox-assemble
-fi
-if [ -f /usr/share/bash-completion/completions/distrobox-create ]; then
-  source /usr/share/bash-completion/completions/distrobox-create
-fi
-if [ -f /usr/share/bash-completion/completions/distrobox-enter ]; then
-  source /usr/share/bash-completion/completions/distrobox-enter
-fi
-if [ -f /usr/share/bash-completion/completions/distrobox-ephemeral ]; then
-  source /usr/share/bash-completion/completions/distrobox-ephemeral
-fi
-if [ -f /usr/share/bash-completion/completions/distrobox-generate-entry ]; then
-  source /usr/share/bash-completion/completions/distrobox-generate-entry
-fi
-if [ -f /usr/share/bash-completion/completions/distrobox-list ]; then
-  source /usr/share/bash-completion/completions/distrobox-list
-fi
-if [ -f /usr/share/bash-completion/completions/distrobox-rm ]; then
-  source /usr/share/bash-completion/completions/distrobox-rm
-fi
-if [ -f /usr/share/bash-completion/completions/distrobox-stop ]; then
-  source /usr/share/bash-completion/completions/distrobox-stop
-fi
-if [ -f /usr/share/bash-completion/completions/distrobox-upgrade ]; then
-  source /usr/share/bash-completion/completions/distrobox-upgrade
-fi
+for file in /usr/share/bash-completion/completions/distrobox*; do
+  source "$file"
+done
 
 # Integrate aqua
-export PATH="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin:$PATH"
-export AQUA_GLOBAL_CONFIG="${XDG_CONFIG_HOME:-$HOME/.config}/aquaproj-aqua/aqua.yaml:${AQUA_GLOBAL_CONFIG:-}"
-export AQUA_POLICY_CONFIG="${XDG_CONFIG_HOME:-$HOME/.config}/aquaproj-aqua/aqua-policy.yaml:${AQUA_POLICY_CONFIG:-}"
+aqua_path="${AQUA_ROOT_DIR:-${xdg_data_home}/aquaproj-aqua}/bin"
+if [ -d "$aqua_path" ] && ! among_paths "$aqua_path" "$PATH"; then
+  export PATH="${aqua_path}:$PATH"
+fi
 if command -v aqua &> /dev/null && aqua --version &> /dev/null; then
+  aqua_configs="${xdg_config_home}/aquaproj-aqua"
+  aqua_global_config="${aqua_configs}/aqua.yaml"
+  if [ -f "$aqua_global_config" ] && ! among_paths "$aqua_global_config" "$AQUA_GLOBAL_CONFIG"; then
+    export AQUA_GLOBAL_CONFIG="${aqua_global_config}:${AQUA_GLOBAL_CONFIG:-}"
+  fi
+  aqua_policy_config="${aqua_configs}/aqua-policy.yaml"
+  if [ -f "$aqua_policy_config" ] && ! among_paths "$aqua_policy_config" "$AQUA_POLICY_CONFIG"; then
+    export AQUA_POLICY_CONFIG="${aqua_policy_config}:${AQUA_POLICY_CONFIG:-}"
+  fi
   aqua i -a
   source <(aqua completion zsh)
 fi
