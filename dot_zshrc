@@ -7,8 +7,8 @@ flatpak_installed() {
   flatpak list --columns=application | grep "$application" &> /dev/null
 }
 valid_command() {
-  command="$1"
-  command -v "$command" &> /dev/null && "$command" --version &> /dev/null
+  cmd="$1"
+  command -v "$cmd" &> /dev/null && "$cmd" --version &> /dev/null
 }
 among_paths() {
   directory="$1"
@@ -70,7 +70,9 @@ fi
 if valid_command nvim; then # nvim is provided by aqua
   nvim_path="$(which nvim)"
 elif valid_command "$nvim_path"; then # nvim is provided by the host
-  alias nvim "$nvim_path"
+  nvim() {
+    "$nvim_path" "$@"
+  }
 fi
 if valid_command "$nvim_path"; then # nvim is provided by any source
   export EDITOR="$nvim_path"
@@ -84,7 +86,7 @@ fi
 
 # Integrate flatpak-provided marktext
 if flatpak_installed marktext; then
-  function marktext {
+  marktext() {
     flatpak run com.github.marktext.marktext "$@"
   }
   compdef _files marktext
@@ -92,7 +94,7 @@ fi
 
 # Integrate flatpak-provided wezterm
 if flatpak_installed wezterm; then
-  function wezterm {
+  wezterm() {
     flatpak run org.wezfurlong.wezterm "$@"
   }
 fi
@@ -107,7 +109,7 @@ fi
 
 # Integrate lf
 if valid_command lf; then
-  function lfcd {
+  lfcd() {
     cd "$("${aqua_path}/lf" -print-last-dir "$@")"
   }
 fi
