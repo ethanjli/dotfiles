@@ -20,16 +20,36 @@ bindkey "^H" backward-kill-word
 bindkey "^[[3;5~" kill-word
 
 # Set up distrobox completions
-source /usr/share/bash-completion/completions/distrobox
-source /usr/share/bash-completion/completions/distrobox-assemble
-source /usr/share/bash-completion/completions/distrobox-create
-source /usr/share/bash-completion/completions/distrobox-enter
-source /usr/share/bash-completion/completions/distrobox-ephemeral
-source /usr/share/bash-completion/completions/distrobox-generate-entry
-source /usr/share/bash-completion/completions/distrobox-list
-source /usr/share/bash-completion/completions/distrobox-rm
-source /usr/share/bash-completion/completions/distrobox-stop
-source /usr/share/bash-completion/completions/distrobox-upgrade
+if [ -f /usr/share/bash-completion/completions/distrobox ]; then
+  source /usr/share/bash-completion/completions/distrobox
+fi
+if [ -f /usr/share/bash-completion/completions/distrobox-assemble ]; then
+  source /usr/share/bash-completion/completions/distrobox-assemble
+fi
+if [ -f /usr/share/bash-completion/completions/distrobox-create ]; then
+  source /usr/share/bash-completion/completions/distrobox-create
+fi
+if [ -f /usr/share/bash-completion/completions/distrobox-enter ]; then
+  source /usr/share/bash-completion/completions/distrobox-enter
+fi
+if [ -f /usr/share/bash-completion/completions/distrobox-ephemeral ]; then
+  source /usr/share/bash-completion/completions/distrobox-ephemeral
+fi
+if [ -f /usr/share/bash-completion/completions/distrobox-generate-entry ]; then
+  source /usr/share/bash-completion/completions/distrobox-generate-entry
+fi
+if [ -f /usr/share/bash-completion/completions/distrobox-list ]; then
+  source /usr/share/bash-completion/completions/distrobox-list
+fi
+if [ -f /usr/share/bash-completion/completions/distrobox-rm ]; then
+  source /usr/share/bash-completion/completions/distrobox-rm
+fi
+if [ -f /usr/share/bash-completion/completions/distrobox-stop ]; then
+  source /usr/share/bash-completion/completions/distrobox-stop
+fi
+if [ -f /usr/share/bash-completion/completions/distrobox-upgrade ]; then
+  source /usr/share/bash-completion/completions/distrobox-upgrade
+fi
 
 # Integrate neovim
 if command -v nvim &> /dev/null; then
@@ -106,5 +126,7 @@ if command -v atuin &> /dev/null; then
 fi
 
 # Integrate zoxide
-eval "$(zoxide init zsh)"
+if command -v zoxide &> /dev/null; then
+  eval "$(zoxide init zsh)"
+fi
 # TODO: include https://github.com/marlonrichert/zsh-autocomplete
