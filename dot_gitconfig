@@ -10,6 +10,9 @@
 [global]
 [credential]
 	helper = cache
+	helper = 
+	helper = /home/lietk12/.local/share/aquaproj-aqua/bin/git-credential-manager
+	credentialStore = secretservice
 [diff]
 	context = 5
 [commit]
@@ -20,3 +23,5 @@
 	format = ssh
 [gpg "ssh"]
 	allowedSignersFile = /var/home/lietk12/.ssh/allowed_signers
+[credential "https://dev.azure.com"]
+	useHttpPath = true
