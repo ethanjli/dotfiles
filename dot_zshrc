@@ -51,7 +51,18 @@ if [ -f /usr/share/bash-completion/completions/distrobox-upgrade ]; then
   source /usr/share/bash-completion/completions/distrobox-upgrade
 fi
 
+# Integrate aqua
+export PATH="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin:$PATH"
+export AQUA_GLOBAL_CONFIG="${XDG_CONFIG_HOME:-$HOME/.config}/aquaproj-aqua/aqua.yaml:${AQUA_GLOBAL_CONFIG:-}"
+export AQUA_POLICY_CONFIG="${XDG_CONFIG_HOME:-$HOME/.config}/aquaproj-aqua/aqua-policy.yaml:${AQUA_POLICY_CONFIG:-}"
+if command -v aqua &> /dev/null; then
+  aqua i -a
+  source <(aqua completion zsh)
+fi
+
 # Integrate neovim
+export EDITOR="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin/nvim"
+export VISUAL="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin/nvim"
 if command -v nvim &> /dev/null; then
   alias vim=nvim
 fi
@@ -66,12 +77,6 @@ compdef _files marktext
 function wezterm {
   flatpak run org.wezfurlong.wezterm "$@"
 }
-
-# Integrate aqua
-if command -v aqua &> /dev/null; then
-  aqua i -a
-  source <(aqua completion zsh)
-fi
 
 # Integrate tere
 if command -v tere &> /dev/null; then
