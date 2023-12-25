@@ -2,6 +2,10 @@
 
 # Define utilities
 
+flatpak_installed() {
+  application="$1"
+  flatpak list --columns=application | grep "$application" &> /dev/null
+}
 valid_command() {
   command="$1"
   command -v "$command" &> /dev/null && "$command" --version &> /dev/null
@@ -38,6 +42,11 @@ for file in /usr/share/bash-completion/completions/distrobox*(.N); do
   source "$file"
 done
 
+# Look for host-provided neovim (needed when the host uses musl instead of glibc, e.g. in Alpine Linux)
+if valid_command nvim; then
+  nvim_path="$(which nvim)"
+fi
+
 # Integrate aqua
 aqua_path="${AQUA_ROOT_DIR:-${xdg_data_home}/aquaproj-aqua}/bin"
 if [ -d "$aqua_path" ] && ! among_paths "$aqua_path" "$PATH"; then
@@ -58,30 +67,40 @@ if valid_command aqua; then
 fi
 
 # Integrate neovim
-if valid_command nvim; then
-  export EDITOR="$(which nvim)"
-  export VISUAL="$(which nvim)"
+if valid_command nvim; then # nvim is provided by aqua
+  nvim_path="$(which nvim)"
+elif valid_command "$nvim_path"; then # nvim is provided by the host
+  alias nvim "$nvim_path"
+fi
+if valid_command "$nvim_path"; then # nvim is provided by any source
+  export EDITOR="$nvim_path"
+  export VISUAL="$nvim_path"
   alias vim=nvim
-else
-  export EDITOR="$(which vim)"
-  export VISUAL="$(which vim)"
+elif valid_command vim; then # try to fall back to vim
+  vim_path="$(which vim)"
+  export EDITOR="$vim_path"
+  export VISUAL="$vim_path"
 fi
 
-# Integrate marktext
-function marktext {
-  flatpak run com.github.marktext.marktext "$@"
-}
-compdef _files marktext
+# Integrate flatpak-provided marktext
+if flatpak_installed marktext; then
+  function marktext {
+    flatpak run com.github.marktext.marktext "$@"
+  }
+  compdef _files marktext
+fi
 
-# Integrate wezterm
-function wezterm {
-  flatpak run org.wezfurlong.wezterm "$@"
-}
+# Integrate flatpak-provided wezterm
+if flatpak_installed wezterm; then
+  function wezterm {
+    flatpak run org.wezfurlong.wezterm "$@"
+  }
+fi
 
 # Integrate tere
 if valid_command tere; then
   tere() {
-    local result=$($HOME/.local/share/aquaproj-aqua/bin/tere --mouse=on "$@")
+    local result=$("${aqua_path}/tere" --mouse=on "$@")
     [ -n "$result" ] && cd -- "$result"
   }
 fi
@@ -89,7 +108,7 @@ fi
 # Integrate lf
 if valid_command lf; then
   function lfcd {
-    cd "$($HOME/.local/share/aquaproj-aqua/bin/lf -print-last-dir "$@")"
+    cd "$("${aqua_path}/lf" -print-last-dir "$@")"
   }
 fi
 
