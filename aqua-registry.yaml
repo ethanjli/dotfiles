@@ -3,6 +3,7 @@ packages:
   - type: http
     repo_owner: hpjansson
     repo_name: chafa
+    description: Terminal graphics for the 21st century
     url: 'https://hpjansson.org/chafa/releases/static/chafa-{{trimV .Version}}-1-{{.Arch}}-{{.OS}}'
     format: tar.gz
     format_overrides:
@@ -22,7 +23,7 @@ packages:
     repo_name: atuin
     aliases:
       - name: ellie/atuin
-    description: Magical shell history
+    description: Magical shell history (musl build for Alpine Linux compatibility)
     asset: atuin-{{.Version}}-{{.Arch}}-{{.OS}}.{{.Format}}
     format: tar.gz
     replacements:
