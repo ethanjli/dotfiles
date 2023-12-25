@@ -34,7 +34,7 @@ bindkey "^H" backward-kill-word
 bindkey "^[[3;5~" kill-word
 
 # Set up distrobox completions
-for file in /usr/share/bash-completion/completions/distrobox*; do
+for file in /usr/share/bash-completion/completions/distrobox*(.N); do
   source "$file"
 done
 
