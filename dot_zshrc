@@ -55,16 +55,19 @@ fi
 export PATH="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin:$PATH"
 export AQUA_GLOBAL_CONFIG="${XDG_CONFIG_HOME:-$HOME/.config}/aquaproj-aqua/aqua.yaml:${AQUA_GLOBAL_CONFIG:-}"
 export AQUA_POLICY_CONFIG="${XDG_CONFIG_HOME:-$HOME/.config}/aquaproj-aqua/aqua-policy.yaml:${AQUA_POLICY_CONFIG:-}"
-if command -v aqua &> /dev/null; then
+if command -v aqua &> /dev/null && aqua --version &> /dev/null; then
   aqua i -a
   source <(aqua completion zsh)
 fi
 
 # Integrate neovim
-export EDITOR="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin/nvim"
-export VISUAL="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin/nvim"
-if command -v nvim &> /dev/null; then
+if command -v nvim &> /dev/null && nvim --version &> /dev/null; then
+  export EDITOR="$(which nvim)"
+  export VISUAL="$(which nvim)"
   alias vim=nvim
+else
+  export EDITOR="$(which vim)"
+  export VISUAL="$(which vim)"
 fi
 
 # Integrate marktext
@@ -79,7 +82,7 @@ function wezterm {
 }
 
 # Integrate tere
-if command -v tere &> /dev/null; then
+if command -v tere &> /dev/null && tere --version &> /dev/null; then
   tere() {
     local result=$($HOME/.local/share/aquaproj-aqua/bin/tere --mouse=on "$@")
     [ -n "$result" ] && cd -- "$result"
@@ -87,19 +90,19 @@ if command -v tere &> /dev/null; then
 fi
 
 # Integrate lf
-if command -v lf &> /dev/null; then
+if command -v lf &> /dev/null && lf --version &> /dev/null; then
   function lfcd {
     cd "$($HOME/.local/share/aquaproj-aqua/bin/lf -print-last-dir "$@")"
   }
 fi
 
 # Integrate cheat
-if command -v fzf &> /dev/null; then
+if command -v fzf &> /dev/null && fzf --version &> /dev/null; then
   export CHEAT_USE_FZF=true
 fi
 
 # Integrate ripgrep-all
-if command -v rga &> /dev/null && command -v fzf &> /dev/null; then
+if command -v rga &> /dev/null && rga --version &> /dev/null; then
   rga-fzf() {
     RG_PREFIX="rga --files-with-matches"
     local file
@@ -116,22 +119,22 @@ if command -v rga &> /dev/null && command -v fzf &> /dev/null; then
 fi
 
 # Enable starship
-if command -v starship &> /dev/null; then
+if command -v starship &> /dev/null && starship --version &> /dev/null; then
   eval "$(starship init zsh)"
 fi
 
 # Enable direnv
-if command -v direnv &> /dev/null; then
+if command -v direnv &> /dev/null && direnv --version &> /dev/null; then
   eval "$(direnv hook zsh)"
 fi
 
 # Enable atuin
-if command -v atuin &> /dev/null; then
+if command -v atuin &> /dev/null && atuin --version &> /dev/null; then
   eval "$(atuin init zsh)"
 fi
 
 # Integrate zoxide
-if command -v zoxide &> /dev/null; then
+if command -v zoxide &> /dev/null && zoxide --version &> /dev/null; then
   eval "$(zoxide init zsh)"
 fi
 # TODO: include https://github.com/marlonrichert/zsh-autocomplete
