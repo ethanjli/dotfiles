@@ -4,20 +4,25 @@ packages:
     repo_owner: hpjansson
     repo_name: chafa
     description: Terminal graphics for the 21st century
-    url: 'https://hpjansson.org/chafa/releases/static/chafa-{{trimV .Version}}-1-{{.Arch}}-{{.OS}}'
+    url: https://hpjansson.org/chafa/releases/static/chafa-{{trimV .Version}}-1-{{.Arch}}-{{.OS}}
     format: tar.gz
-    format_overrides:
-      - goos: windows
-        format: zip
     replacements:
       amd64: x86_64
       linux: linux-gnu
+    format_overrides:
+      - goos: windows
+        format: zip
+    files:
+      - name: chafa
+        src: chafa-{{trimV .Version}}-1-{{.Arch}}-{{.OS}}/chafa
     supported_envs:
       - windows/amd64
       - linux/amd64
-    files:
-      - name: chafa
-        src: 'chafa-{{trimV .Version}}-1-{{.Arch}}-{{.OS}}/chafa'
+    version_constraint: semver(">= 1.12.2")
+    version_overrides:
+    - version_constraint: semver("< 1.12.2")
+      supported_envs:
+        - linux/amd64
   - type: github_release
     repo_owner: atuinsh
     repo_name: atuin
