@@ -18,3 +18,5 @@ packages:
     registry: local
   - name: atuinsh/atuin@v17.1.0
     registry: local
+  - name: git-ecosystem/git-credential-manager@v2.4.1
+    registry: local
