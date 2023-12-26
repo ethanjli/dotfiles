@@ -97,7 +97,7 @@ _zsh_completions() {
 }
 _zsh_completions
 
-unset _zsh_compile
+unset -f _zsh_compile
 
 # Use bash completions
 autoload -Uz bashcompinit

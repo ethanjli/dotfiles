@@ -6,6 +6,6 @@ if command -v aqua &> /dev/null; then
     source <(aqua completion zsh)
     $0 "$@"
   }
-  # This may be slow, but we can afford to wait because we're using powerlevel10k
+  # This may be slow, but we can afford to wait because we're using powerlevel10k:
   aqua i -a
 fi
