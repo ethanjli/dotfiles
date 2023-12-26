@@ -11,47 +11,46 @@ _zsh_compile() {
 _zsh_plugins_installation() {
   unset -f "$0"
 
+  local xdg_config_home="${XDG_CONFIG_HOME:-$HOME/.config}"
+  local zsh_configs="${xdg_config_home}/zsh"
+  local zsh_plugins="${zsh_configs}/plugins"
+  local file
+  for file in ${zsh_plugins}/*.install.zsh(.N); do
+    source "$file"
+  done
+
   local xdg_cache_home="${XDG_CACHE_HOME:-$HOME/.cache}"
   local zsh_cache="${xdg_cache_home}/zsh"
   local zsh_cached_plugins="${zsh_cache}/plugins"
   mkdir -p "${zsh_cached_plugins}"
-  local file
-  for file in ${zsh_cached_plugins}/*-install.zsh(.N); do
-    source "$file"
-  done
-  if [[ ! -e "${zsh_cached_plugins}/zsh-completions" ]]; then
-    echo "Installing zsh-completions..."
-    git clone --depth=1 https://github.com/zsh-users/zsh-completions.git \
-      "${zsh_cached_plugins}/zsh-completions"
-    echo
+
+  # TODO: move these into plugin.install.zsh files, and figure out how to determine which plugins
+  # need to be rebuilt
+  if [[ -d "${zsh_plugins}/zsh-completions" ]] && \
+    [[ ! -d "${zsh_cached_plugins}/zsh-completions" ]]; then
+      cp -r "${zsh_plugins}/zsh-completions" "${zsh_cached_plugins}/zsh-completions"
   fi
-  if [[ ! -e "${zsh_cached_plugins}/zsh-syntax-highlighting" ]]; then
-    echo "Installing zsh-syntax-highlighting..."
-    git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git \
-      "${zsh_cached_plugins}/zsh-syntax-highlighting"
-    _zsh_compile ${zsh_cached_plugins}/zsh-syntax-highlighting/{zsh-syntax-highlighting.zsh,highlighters/*/*.zsh}
-    echo
+  if [[ -d "${zsh_plugins}/zsh-syntax-highlighting" ]] && \
+    [[ ! -d "${zsh_cached_plugins}/zsh-syntax-highlighting" ]]; then
+      cp -r "${zsh_plugins}/zsh-syntax-highlighting" "${zsh_cached_plugins}/zsh-syntax-highlighting"
+      _zsh_compile ${zsh_cached_plugins}/zsh-syntax-highlighting/{zsh-syntax-highlighting.zsh,highlighters/*/*.zsh}
   fi
-  if [[ ! -e "${zsh_cached_plugins}/zsh-autosuggestions" ]]; then
-    echo "Installing zsh-autosuggestions..."
-    git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions.git \
-      "${zsh_cached_plugins}/zsh-autosuggestions"
-    _zsh_compile ${zsh_cached_plugins}/zsh-autosuggestions/{zsh-autosuggestions.zsh,src/**/*.zsh}
-    echo
+  if [[ -d "${zsh_plugins}/zsh-autosuggestions" ]] && \
+    [[ ! -d "${zsh_cached_plugins}/zsh-autosuggestions" ]]; then
+      cp -r "${zsh_plugins}/zsh-autosuggestions" "${zsh_cached_plugins}/zsh-autosuggestions"
+      _zsh_compile ${zsh_cached_plugins}/zsh-autosuggestions/{zsh-autosuggestions.zsh,src/**/*.zsh}
   fi
-  if [[ ! -e "${zsh_cached_plugins}/powerlevel10k" ]]; then
-    echo "Installing powerlevel10k..."
-    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git \
-      "${zsh_cached_plugins}/powerlevel10k"
-    make -C "${zsh_cached_plugins}/powerlevel10k" pkg
-    echo
+  if [[ -d "${zsh_plugins}/powerlevel10k" ]] && \
+    [[ ! -d "${zsh_cached_plugins}/powerlevel10k" ]]; then
+      echo "Rebuilding cached plugin powerlevel10k..."
+      cp -r "${zsh_plugins}/powerlevel10k" "${zsh_cached_plugins}/powerlevel10k"
+      make -C "${zsh_cached_plugins}/powerlevel10k" pkg
+      echo
   fi
-  if [[ ! -e "${zsh_cached_plugins}/zsh-vim-mode" ]]; then
-    echo "Installing zsh-vim-mode..."
-    git clone --depth=1 https://github.com/softmoth/zsh-vim-mode.git \
-      "${zsh_cached_plugins}/zsh-vim-mode"
-    _zsh_compile "${zsh_cached_plugins}/zsh-vim-mode/zsh-vim-mode.plugin.zsh"
-    echo
+  if [[ -d "${zsh_plugins}/zsh-vim-mode" ]] && \
+    [[ ! -d "${zsh_cached_plugins}/zsh-vim-mode" ]]; then
+      cp -r "${zsh_plugins}/zsh-vim-mode" "${zsh_cached_plugins}/zsh-vim-mode"
+      _zsh_compile "${zsh_cached_plugins}/zsh-vim-mode/zsh-vim-mode.plugin.zsh"
   fi
 }
 _zsh_plugins_installation
@@ -136,15 +135,14 @@ _zsh_plugins_loading() {
   local xdg_config_home="${XDG_CONFIG_HOME:-$HOME/.config}"
   local zsh_configs="${xdg_config_home}/zsh"
   local zsh_plugins="${zsh_configs}/plugins"
-  local xdg_cache_home="${XDG_CACHE_HOME:-$HOME/.cache}"
-  local zsh_cache="${xdg_cache_home}/zsh"
-  local zsh_cached_plugins="${zsh_cache}/plugins"
   local file
-
-  for file in ${zsh_plugins}/*-load.zsh(.N); do
+  for file in ${zsh_plugins}/*.load.zsh(.N); do
     source "$file"
   done
 
+  local xdg_cache_home="${XDG_CACHE_HOME:-$HOME/.cache}"
+  local zsh_cache="${xdg_cache_home}/zsh"
+  local zsh_cached_plugins="${zsh_cache}/plugins"
   if [ -f "${zsh_cached_plugins}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]; then
     source "${zsh_cached_plugins}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
   fi
