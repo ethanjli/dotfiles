@@ -2,11 +2,6 @@
 # This script allows the user to attach to an existing or new Zellij session; if the user chooses
 # not to attach any Zellij session, it will instead start a login shell (chosen using $SHELL).
 
-if [ -f "${ZDOTDIR}/integrations/aqua.sh" ]; then
-  # This is needed when the script is invoked from outside an interactive zsh session:
-  source "${ZDOTDIR}/integrations/aqua.sh"
-fi
-
 if command -v zellij &> /dev/null && [ -z "${ZELLIJ}" ]; then
   zellij_sessions=$(zellij list-sessions --short | sort)
   num_sessions=$(echo "${zellij_sessions}" | wc -l)
