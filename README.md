@@ -35,9 +35,7 @@ git init
 aqua policy allow "${XDG_CONFIG_HOME:-$HOME/.config}/aquaproj-aqua/aqua-policy.yaml"
 ```
 
-
-
-Then you can install the aqua tools by restarting your shell or by running:
+Then you can install the aqua tools by running:
 
 ```
 aqua i -a

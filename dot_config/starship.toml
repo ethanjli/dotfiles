@@ -1,3 +1,41 @@
+format = """
+$username\
+$hostname\
+$localip\
+$shlvl\
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$docker_context\
+$package\
+$golang\
+$nodejs\
+$opa\
+$python\
+$rust\
+$terraform\
+$buf\
+$memory_usage\
+$aws\
+$gcloud\
+$azure\
+$env_var\
+$custom\
+$sudo\
+$cmd_duration\
+$line_break\
+$jobs\
+$battery\
+$time\
+$status\
+$os\
+$container\
+$shell\
+$character"""
+
 [aws]
 symbol = "  "
 

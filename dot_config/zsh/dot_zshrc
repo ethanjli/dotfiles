@@ -1,0 +1,67 @@
+# .zshrc
+
+# Set up completions
+_zsh_completions() {
+  local xdg_config_home="${XDG_CONFIG_HOME:-$HOME/.config}"
+  local zsh_configs="${xdg_config_home}/zsh"
+  fpath=("${zsh_configs}/completion" $fpath)
+
+  local xdg_cache_home="${XDG_CACHE_HOME:-$HOME/.cache}"
+  local zsh_cache="${xdg_cache_home}/zsh"
+  mkdir -p "${zsh_cache}"
+  zstyle ':completion:*' cache-path "${zsh_cache}/zcompcache"
+
+  local zsh_compdump="${zsh_cache}/zcompdump"
+  autoload -Uz compinit
+  for dump in ${zsh_compdump}(N.mh+24); do # only regenerate zcompdump once per day
+    echo "Regenerating zcompdump..."
+    compinit -d "$zsh_compdump"
+  done
+  compinit -C -d "$zsh_compdump" # don't check for new functions
+}
+_zsh_completions
+unset -f _zsh_completions
+
+# Use bash completions
+autoload -Uz bashcompinit
+bashcompinit
+
+# Fix keys and shortcuts
+WORDCHARS='_'
+bindkey "^[[3~" delete-char
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+bindkey "^A" vi-beginning-of-line
+bindkey "^E" vi-end-of-line
+bindkey "^H" backward-kill-word
+bindkey "^[[3;5~" kill-word
+
+_zsh_integrations() {
+  # Look for host-provided neovim (needed when the host uses musl instead of glibc, e.g. in Alpine Linux)
+  if [ $commands[nvim] ]; then
+    local nvim_host_path="$(which nvim)"
+  fi
+
+  # Set up integrations
+  local xdg_config_home="${XDG_CONFIG_HOME:-$HOME/.config}"
+  local zsh_configs="${xdg_config_home}/zsh"
+  local zsh_integrations="${zsh_configs}/integrations"
+  source "${zsh_integrations}/aqua.sh"
+  source "${zsh_integrations}/aqua.zsh"
+  for file in ${zsh_integrations}/flatpak/*.sh(.N); do
+    source "$file"
+  done
+  for file in ${zsh_integrations}/flatpak/*.zsh(.N); do
+    source "$file"
+  done
+  for file in ${zsh_integrations}/cli/*.sh(.N); do
+    source "$file"
+  done
+  for file in ${zsh_integrations}/cli/*.zsh(.N); do
+    source "$file"
+  done
+}
+_zsh_integrations
+unset -f _zsh_integrations
+
+# TODO: include https://github.com/marlonrichert/zsh-autocomplete
