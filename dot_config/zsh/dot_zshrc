@@ -8,7 +8,6 @@ _zsh_compile() {
 }
 
 # Install plugins
-
 _zsh_plugins_installation() {
   unset -f "$0"
 

@@ -41,6 +41,11 @@ Then you can install the aqua tools by running:
 aqua i -a
 ```
 
+### Upgrade zsh & bash plugins
+
+To bump the version of a zsh or bash plugin, update the URL in `.chezmoiexternal.toml`, delete the cached
+plugin directory in `~/.cache/zsh/plugins` or `~/.cache/bash/plugins`, and run `chezmoi apply`.
+
 ## Licensing
 
 Except where otherwise indicated, source code provided here is covered by the following information:
