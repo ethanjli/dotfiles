@@ -11,6 +11,8 @@ I use them:
 
 ## Features
 
+### Theme
+
 - A visual theme emphasizing visual comfort, notably:
   - Use of the [One Dark](https://onedarktheme.com/) color scheme wherever possible
   - Use of [Atkinson Hyperlegible](https://brailleinstitute.org/freefont) as the sans serif font
@@ -18,6 +20,11 @@ I use them:
   - Use of the [Intel One Mono](https://www.intel.com/content/www/us/en/company-overview/one-monospace-font.html)'s
     [patched Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/IntelOneMono)
     as the monospace font wherever possible
+
+TODO: add screenshots
+
+### Shell
+
 - A self-contained configuration for [zsh](https://www.zsh.org/), notably:
   - Fast startup times (~0.2 s on my laptop)
   - A clean prompt line, using [powerlevel10k](https://github.com/romkatv/powerlevel10k) with a
@@ -65,16 +72,9 @@ I use them:
   to do with git within a Zellij pane and/or from within lf, notably:
   - A cleaner (and denser) view of the Git log
   - (WIP) Custom keybindings
-- All general-purpose CLI tools installed and version-managed with [aqua](https://aquaproj.github.io/);
-  with the following caveats:
-  - The Neovim build downloaded by aqua doesn't run on musl hosts such as Alpine Linux - in such
-    environments, Neovim needs to be provided as a host package
-  - ImageMagick is not provided; it is only used for preview of SVG images in LF. I will eventually
-    look for an alternative which could be provided via aqua.
-  - FFMPEG is not provided; it is only used for preview of videos in LF. I will eventually look for
-    an alternative which could be provided via aqua.
-  - Zsh is not provided, though it [could be provided](https://github.com/romkatv/zsh-bin)
-  - Bash is not provided, obviously
+
+### Desktop
+
 - A simple [wezterm](https://wezfurlong.org/wezterm/) configuration (because wezterm is fast and
   efficient, it's on Flathub, and I found that wezterm starts up much faster than Contour), notably:
   - Very minimal keybindings, mostly attached to the `Ctrl+Shift` modifier, to avoid disrupting
@@ -84,22 +84,54 @@ I use them:
 - (WIP) KDE Plasma configurations & theming, notably:
   - Custom keybindings, mostly attached to the `Meta` modifier, for manual window tiling
 
-## Usage
+### Infrastructure
+
+All general-purpose CLI tools are installed and version-managed with
+[aqua](https://aquaproj.github.io/), except for packages listed in the
+[prerequisites](#prerequisites) section.
+
+
+## Setup
+
+To use this repository, you will first need to set up the dotfiles using chezmoi. Then you will need
+to set up global tools using aqua.
+
+### Prerequisites
+
+The following requirements must be met:
+
+- You will need to have either bash or zsh (or both) installed. You probably already have bash
+  installed.
+
+If you want to take advantage of certain features, you will need to have some packages installed on
+your host environment:
+
+- If you want to use Neovim: the Neovim build downloaded by aqua doesn't run on musl hosts such as
+  Alpine Linux - in such environments, Neovim needs to be provided by the host.
+- If you want to preview SVG images in LF, you will need ImageMagick, which is not provided by aqua.
+  I will eventually look for an alternative which could be provided via aqua.
+- If you want to preview videos in LF, you will need FFMPEG, which is not provided by aqua.
+  I will eventually look for an alternative which could be provided via aqua.
+- If you want to use zsh, you will need to have it already installed
+  I will eventually investigate the [statically-linked zsh build](https://github.com/romkatv/zsh-bin)
+  to determine whether it might make sense to provide zsh via aqua or chezmoi.
 
 ### Set up dotfiles
 
-To install the dotfiles on a new machine with chezmoi available, run:
+To install the dotfiles on a new machine which already has chezmoi, run:
 
 ```
 chezmoi init --apply ethanjli
 ```
 
-Or on a machine without chezmoi, you can bootstrap the global [aqua](https://aquaproj.github.io)
-configuration (which in turn will install chezmoi) without having to first install chezmoi:
+Otherwise, you should run:
 
 ```
 sh -c "$(curl -fsLS get.chezmoi.io)" -- -b "$(mktemp -d)" init --apply ethanjli
 ```
+
+This will set up the global [aqua](https://aquaproj.github.io) configuration without you having to
+install chezmoi first. Then the next step will install chezmoi for you.
 
 ### Set up global tools
 
@@ -117,7 +149,10 @@ git init
 aqua policy allow "${XDG_CONFIG_HOME:-$HOME/.config}/aquaproj-aqua/aqua-policy.yaml"
 ```
 
-Then you can install the aqua tools by running:
+(this is only needed when this repository has packages which I have not yet contributed upstream
+to the standard aqua repository)
+
+Then you should install the aqua tools by running:
 
 ```
 aqua i -a
@@ -126,6 +161,15 @@ aqua i -a
 ### Set up atuin sync
 
 Run `atuin login`.
+
+## Operations
+
+TODO: add a keybindings cheatsheet
+
+### Upgrade aqua tools
+
+To bump the installed version of an aqua-provided tool after this repo bumps the configured version
+to install, just run `aqua i -a`.
 
 ### Upgrade zsh & bash plugins
 
