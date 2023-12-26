@@ -1,5 +1,4 @@
-#!/usr/bin/env sh
-# This depends on an nvim_host_path env var to be set
+# Note: this depends on an nvim_host_path env var to be set
 
 _zsh_integrations_nvim() {
   unset -f "$0"

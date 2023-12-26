@@ -1,5 +1,3 @@
-#!/usr/bin/env sh
-
 _zsh_integrations_util_among_paths() {
   local directory="$1"
   local paths="$2"

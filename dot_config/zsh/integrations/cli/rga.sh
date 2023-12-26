@@ -1,5 +1,3 @@
-#!/usr/bin/env sh
-
 if command -v rga &> /dev/null && command -v fzf &> /dev/null; then
   rga-fzf() {
     RG_PREFIX="rga --files-with-matches"

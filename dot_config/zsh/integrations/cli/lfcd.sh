@@ -1,5 +1,3 @@
-#!/usr/bin/env sh
-
 if command -v lf &> /dev/null; then
   lfcd() {
     local result=$(command lf -print-last-dir "$@")
