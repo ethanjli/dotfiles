@@ -75,10 +75,23 @@ keybinds clear-defaults=true {
     bind "Z" { Detach; }
   }
 
-  pane {
-    bind "r" { TogglePaneFrames; SwitchToMode "RenamePane"; PaneNameInput 0; }
+  shared_among "pane" "resize" {
     bind "u" { NewPane; }
     bind "d" { CloseFocus; }
+
+    bind "=" { Resize "Increase"; }
+    bind "-" { Resize "Decrease"; }
+
+    bind "y" { ToggleFloatingPanes; }
+    bind "Y" { TogglePaneEmbedOrFloating; }
+    bind "p" { ToggleFocusFullscreen; }
+    bind "P" { TogglePaneFrames; }
+    bind "[" { PreviousSwapLayout; }
+    bind "]" { NextSwapLayout; }
+  }
+  pane {
+    bind "r" { TogglePaneFrames; SwitchToMode "RenamePane"; PaneNameInput 0; }
+    bind "R" { SwitchToMode "Resize"; }
 
     bind "j" { MoveFocus "Down"; }
     bind "J" { MovePane "Down"; }
@@ -90,16 +103,6 @@ keybinds clear-defaults=true {
     bind "l" { MoveFocus "Right"; }
     bind "L" { MovePane "Right"; }
     bind "Alt L" { BreakPaneRight; }
-
-    bind "=" { Resize "Increase"; }
-    bind "-" { Resize "Decrease"; }
-
-    bind "y" { ToggleFloatingPanes; }
-    bind "Y" { TogglePaneEmbedOrFloating; }
-    bind "p" { ToggleFocusFullscreen; }
-    bind "P" { TogglePaneFrames; }
-    bind "[" { PreviousSwapLayout; }
-    bind "]" { NextSwapLayout; }
   }
   renamepane {
     bind "Enter" "Ctrl d" { SwitchToMode "Pane"; TogglePaneFrames; }
@@ -115,8 +118,6 @@ keybinds clear-defaults=true {
     bind "H" { Resize "Decrease Left"; }
     bind "l" { Resize "Increase Right"; }
     bind "L" { Resize "Decrease Right"; }
-    bind "=" { Resize "Increase"; }
-    bind "-" { Resize "Decrease"; }
   }
 
   tab {
