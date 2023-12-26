@@ -45,6 +45,7 @@ _bash_integrations() {
   if [ -f "${zsh_integrations}/aqua.bash" ]; then
     source "${zsh_integrations}/aqua.bash"
   fi
+  local file
   for file in ${zsh_integrations}/flatpak/*.sh; do
     source "$file"
   done

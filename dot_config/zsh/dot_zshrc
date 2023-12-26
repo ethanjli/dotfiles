@@ -15,15 +15,19 @@ _zsh_plugins_installation() {
   local zsh_cache="${xdg_cache_home}/zsh"
   local zsh_plugins="${zsh_cache}/plugins"
   mkdir -p "${zsh_plugins}"
+  local file
+  for file in ${zsh_plugins}/*-install.zsh(.N); do
+    source "$file"
+  done
   if [[ ! -e "${zsh_plugins}/zsh-syntax-highlighting" ]]; then
-    echo "Installing zsh syntax highlighting..."
+    echo "Installing zsh-syntax-highlighting..."
     git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git \
       "${zsh_plugins}/zsh-syntax-highlighting"
     _zsh_compile ${zsh_plugins}/zsh-syntax-highlighting/{zsh-syntax-highlighting.zsh,highlighters/*/*.zsh}
     echo
   fi
   if [[ ! -e "${zsh_plugins}/zsh-autosuggestions" ]]; then
-    echo "Installing zsh autosuggestions..."
+    echo "Installing zsh-autosuggestions..."
     git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions.git \
       "${zsh_plugins}/zsh-autosuggestions"
     _zsh_compile ${zsh_plugins}/zsh-autosuggestions/{zsh-autosuggestions.zsh,src/**/*.zsh}
@@ -34,6 +38,13 @@ _zsh_plugins_installation() {
     git clone --depth=1 https://github.com/romkatv/powerlevel10k.git \
       "${zsh_plugins}/powerlevel10k"
     make -C "${zsh_plugins}/powerlevel10k" pkg
+    echo
+  fi
+  if [[ ! -e "${zsh_plugins}/zsh-vim-mode" ]]; then
+    echo "Installing zsh-vim-mode..."
+    git clone --depth=1 https://github.com/softmoth/zsh-vim-mode.git \
+      "${zsh_plugins}/zsh-vim-mode"
+    _zsh_compile "${zsh_plugins}/zsh-vim-mode/zsh-vim-mode.plugin.zsh"
     echo
   fi
 }
@@ -89,6 +100,12 @@ _zsh_completions() {
   mkdir -p "${zsh_cache}"
   zstyle ':completion:*' cache-path "${zsh_cache}/zcompcache"
 
+  zmodload zsh/complist # must be loaded before compinit
+  bindkey -M menuselect 'h' vi-backward-char
+  bindkey -M menuselect 'k' vi-up-line-or-history
+  bindkey -M menuselect 'l' vi-forward-char
+  bindkey -M menuselect 'j' vi-down-line-or-history
+
   local zsh_compdump="${zsh_cache}/zcompdump"
   autoload -Uz compinit && compinit -d "$zsh_compdump"
   if ! [[ "${zsh_compdump}.zwc" -nt "$zsh_compdump" ]]; then
@@ -110,29 +127,33 @@ _zsh_plugins_loading() {
 
   local xdg_config_home="${XDG_CONFIG_HOME:-$HOME/.config}"
   local zsh_configs="${xdg_config_home}/zsh"
+  local zsh_plugins="${zsh_configs}/plugins"
   local xdg_cache_home="${XDG_CACHE_HOME:-$HOME/.cache}"
   local zsh_cache="${xdg_cache_home}/zsh"
-  local zsh_plugins="${zsh_cache}/plugins"
-  source "${zsh_plugins}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
-  source "${zsh_plugins}/zsh-autosuggestions/zsh-autosuggestions.zsh"
-  source "${zsh_plugins}/powerlevel10k/powerlevel10k.zsh-theme"
+  local zsh_cached_plugins="${zsh_cache}/plugins"
+  local file
+
+  for file in ${zsh_plugins}/*-load.zsh(.N); do
+    source "$file"
+  done
+
+  source "${zsh_cached_plugins}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+
+  source "${zsh_cached_plugins}/zsh-autosuggestions/zsh-autosuggestions.zsh"
+
+  source "${zsh_cached_plugins}/powerlevel10k/powerlevel10k.zsh-theme"
+
+  source "${zsh_cached_plugins}/zsh-vim-mode/zsh-vim-mode.plugin.zsh"
+  bindkey -rpM viins '^[^[' # make <Esc><Esc> go to normal mode immediately
+  bindkey -M viins "^[[3;5~" kill-word # make Ctrl+Delete work
+  bindkey -M vicmd "^[[3;5~" kill-word # make Ctrl+Delete work
+  MODE_CURSOR_VIINS='fg steady bar'
+
   if [[ -f "${zsh_configs}/.p10k.zsh" ]]; then
     source "${zsh_configs}/.p10k.zsh"
   fi
 }
 _zsh_plugins_loading
-
-# Fix keys and shortcuts
-WORDCHARS='_'
-bindkey -v
-export KEYTIMEOUT=1
-bindkey "^[[3~" delete-char
-bindkey "^[[1;5C" forward-word
-bindkey "^[[1;5D" backward-word
-bindkey "^A" vi-beginning-of-line
-bindkey "^E" vi-end-of-line
-bindkey "^H" backward-kill-word
-bindkey "^[[3;5~" kill-word
 
 # Set up integrations after instant prompt
 _zsh_integrations_post() {
@@ -147,6 +168,7 @@ _zsh_integrations_post() {
   if [ -f "${zsh_integrations}/aqua.zsh" ]; then
     source "${zsh_integrations}/aqua.zsh"
   fi
+  local file
   for file in ${zsh_integrations}/flatpak/*.sh(.N); do
     source "$file"
   done
