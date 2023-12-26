@@ -16,42 +16,8 @@ _zsh_plugins_installation() {
   local zsh_plugins="${zsh_configs}/plugins"
   local file
   for file in ${zsh_plugins}/*.install.zsh(.N); do
-    source "$file"
+    "$file"
   done
-
-  local xdg_cache_home="${XDG_CACHE_HOME:-$HOME/.cache}"
-  local zsh_cache="${xdg_cache_home}/zsh"
-  local zsh_cached_plugins="${zsh_cache}/plugins"
-  mkdir -p "${zsh_cached_plugins}"
-
-  # TODO: move these into plugin.install.zsh files, and figure out how to determine which plugins
-  # need to be rebuilt
-  if [[ -d "${zsh_plugins}/zsh-completions" ]] && \
-    [[ ! -d "${zsh_cached_plugins}/zsh-completions" ]]; then
-      cp -r "${zsh_plugins}/zsh-completions" "${zsh_cached_plugins}/zsh-completions"
-  fi
-  if [[ -d "${zsh_plugins}/zsh-syntax-highlighting" ]] && \
-    [[ ! -d "${zsh_cached_plugins}/zsh-syntax-highlighting" ]]; then
-      cp -r "${zsh_plugins}/zsh-syntax-highlighting" "${zsh_cached_plugins}/zsh-syntax-highlighting"
-      _zsh_compile ${zsh_cached_plugins}/zsh-syntax-highlighting/{zsh-syntax-highlighting.zsh,highlighters/*/*.zsh}
-  fi
-  if [[ -d "${zsh_plugins}/zsh-autosuggestions" ]] && \
-    [[ ! -d "${zsh_cached_plugins}/zsh-autosuggestions" ]]; then
-      cp -r "${zsh_plugins}/zsh-autosuggestions" "${zsh_cached_plugins}/zsh-autosuggestions"
-      _zsh_compile ${zsh_cached_plugins}/zsh-autosuggestions/{zsh-autosuggestions.zsh,src/**/*.zsh}
-  fi
-  if [[ -d "${zsh_plugins}/powerlevel10k" ]] && \
-    [[ ! -d "${zsh_cached_plugins}/powerlevel10k" ]]; then
-      echo "Rebuilding cached plugin powerlevel10k..."
-      cp -r "${zsh_plugins}/powerlevel10k" "${zsh_cached_plugins}/powerlevel10k"
-      make -C "${zsh_cached_plugins}/powerlevel10k" pkg
-      echo
-  fi
-  if [[ -d "${zsh_plugins}/zsh-vim-mode" ]] && \
-    [[ ! -d "${zsh_cached_plugins}/zsh-vim-mode" ]]; then
-      cp -r "${zsh_plugins}/zsh-vim-mode" "${zsh_cached_plugins}/zsh-vim-mode"
-      _zsh_compile "${zsh_cached_plugins}/zsh-vim-mode/zsh-vim-mode.plugin.zsh"
-  fi
 }
 _zsh_plugins_installation
 

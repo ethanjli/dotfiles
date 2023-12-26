@@ -35,20 +35,8 @@ _bash_plugins_installation() {
   local bash_plugins="${bash_configs}/plugins"
   local file
   for file in ${bash_plugins}/*.install.bash; do
-    source "$file"
+    "$file"
   done
-
-  local xdg_cache_home="${XDG_CACHE_HOME:-$HOME/.cache}"
-  local bash_cache="${xdg_cache_home}/bash"
-  local bash_cached_plugins="${bash_cache}/plugins"
-  mkdir -p "${bash_cached_plugins}"
-
-  # TODO: move these into plugin.install.bash files, and figure out how to determine which plugins
-  # need to be rebuilt
-  if [[ -d "${bash_plugins}/bash-preexec" ]] && \
-    [[ ! -d "${bash_cached_plugins}/bash-preexec" ]]; then
-      cp -r "${bash_plugins}/bash-preexec" "${bash_cached_plugins}/bash-preexec"
-  fi
 
   $reset_nullglob
 }
