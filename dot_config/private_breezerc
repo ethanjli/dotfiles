@@ -1,0 +1,18 @@
+[Common]
+ShadowSize=ShadowVeryLarge
+ShadowStrength=128
+
+[Style]
+MenuOpacity=60
+
+[Windeco]
+ButtonSize=ButtonSmall
+DrawBorderOnMaximizedWindows=true
+
+[Windeco Exception 0]
+BorderSize=0
+Enabled=false
+ExceptionPattern=.
+ExceptionType=0
+HideTitleBar=true
+Mask=0

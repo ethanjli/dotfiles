@@ -1,0 +1,9 @@
+[$Version]
+update_info=kscreenlocker.upd:0.1-autolock
+
+[Daemon]
+Timeout=15
+
+[Greeter][Wallpaper][org.kde.image][General]
+Image=/home/lietk12/Projects/Lutho/wallpapers/Black Mountain Dusk Color Graded.jpeg
+PreviewImage=/home/lietk12/Projects/Lutho/wallpapers/Black Mountain Dusk Color Graded.jpeg
