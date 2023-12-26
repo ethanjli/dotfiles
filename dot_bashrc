@@ -31,7 +31,7 @@ _bash_integrations() {
   shopt -s nullglob # suppress errors when for loops have no matching files
 
   # Look for host-provided neovim (needed when the host uses musl instead of glibc, e.g. in Alpine Linux)
-  if [ $commands[nvim] ]; then
+  if command -v nvim &> /dev/null; then
     local nvim_host_path="$(which nvim)"
   fi
 
