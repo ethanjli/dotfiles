@@ -24,78 +24,31 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
-# Integrate neovim
-export EDITOR="~/.local/share/aquaproj-aqua/bin/nvim"
-export VISUAL="~/.local/share/aquaproj-aqua/bin/nvim"
-if command -v nvim &> /dev/null; then
-  alias vim=nvim
-fi
-
-# Integrate marktext
-alias marktext="flatpak run com.github.marktext.marktext"
-
-# Integrate wezterm
-alias wezterm="flatpak run org.wezfurlong.wezterm"
-
-# Integrate aqua
-# FIXME: put env vars in .bash_profile
-export PATH="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin:$PATH"
-export AQUA_GLOBAL_CONFIG=${AQUA_GLOBAL_CONFIG:-}:${XDG_CONFIG_HOME:-$HOME/.config}/aquaproj-aqua/aqua.yaml
-export AQUA_POLICY_CONFIG=${AQUA_POLICY_CONFIG:-}:${XDG_CONFIG_HOME:-$HOME/.config}/aquaproj-aqua/aqua-policy.yaml
-if command -v aqua &> /dev/null; then
-  aqua i -a
-  source <(aqua completion bash)
-fi
-
-# Integrate tere
-if command -v tere &> /dev/null; then
-  tere() {
-    local result=$($HOME/.local/share/aquaproj-aqua/bin/tere --mouse=on "$@")
-    [ -n "$result" ] && cd -- "$result"
-  }
-fi
-
-# Integrate lf
-if command -v lf &> /dev/null; then
-  function lfcd {
-    cd "$($HOME/.local/share/aquaproj-aqua/bin/lf -print-last-dir "$@")"
-  }
-fi
-
-# Integrate cheat
-if command -v fzf &> /dev/null; then
-  export CHEAT_USE_FZF=true
-fi
-
-# Integrate ripgrep-all
-if command -v rga &> /dev/null; then
-  if command -v fzf &> /dev/null; then
-    rga-fzf() {
-      RG_PREFIX="rga --files-with-matches"
-      local file
-      file="$(
-        FZF_DEFAULT_COMMAND="$RG_PREFIX '$1'" \
-          fzf --sort --preview="[[ ! -z {} ]] && rga --pretty --context 5 {q} {}" \
-            --phony -q "$1" \
-            --bind "change:reload:$RG_PREFIX {q}" \
-            --preview-window="70%:wrap"
-      )" &&
-      echo "opening $file" &&
-      xdg-open "$file"
-    }
+# Set up integrations
+_bash_integrations() {
+  unset -f "$0"
+  # Look for host-provided neovim (needed when the host uses musl instead of glibc, e.g. in Alpine Linux)
+  if [ $commands[nvim] ]; then
+    local nvim_host_path="$(which nvim)"
   fi
-fi
 
-# Enable starship
-eval "$(starship init bash)"
-
-# Enable direnv
-eval "$(direnv hook bash)"
-
-# Enable atuin
-if command -v atuin &> /dev/null; then
-  eval "$(atuin init bash)"
-fi
-
-# Integrate zoxide
-eval "$(zoxide init bash)"
+  # Set up integrations
+  local xdg_config_home="${XDG_CONFIG_HOME:-$HOME/.config}"
+  local zsh_configs="${xdg_config_home}/zsh"
+  local zsh_integrations="${zsh_configs}/integrations"
+  source "${zsh_integrations}/aqua.sh"
+  source "${zsh_integrations}/aqua.bash"
+  for file in ${zsh_integrations}/flatpak/*.sh(.N); do
+    source "$file"
+  done
+  for file in ${zsh_integrations}/flatpak/*.bash(.N); do
+    source "$file"
+  done
+  for file in ${zsh_integrations}/cli/*.sh(.N); do
+    source "$file"
+  done
+  for file in ${zsh_integrations}/cli/*.bash(.N); do
+    source "$file"
+  done
+}
+_bash_integrations
