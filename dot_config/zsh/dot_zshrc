@@ -28,6 +28,8 @@ bashcompinit
 
 # Fix keys and shortcuts
 WORDCHARS='_'
+bindkey -v
+export KEYTIMEOUT=1
 bindkey "^[[3~" delete-char
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
@@ -59,9 +61,11 @@ _zsh_integrations() {
     source "$file"
   done
   for file in ${zsh_integrations}/cli/*.sh(.N); do
+    echo "$file"
     source "$file"
   done
   for file in ${zsh_integrations}/cli/*.zsh(.N); do
+    echo "$file"
     source "$file"
   done
 }
