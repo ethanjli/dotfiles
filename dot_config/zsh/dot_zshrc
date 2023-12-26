@@ -145,18 +145,22 @@ _zsh_plugins_loading() {
     source "$file"
   done
 
-  source "${zsh_cached_plugins}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
-
-  source "${zsh_cached_plugins}/zsh-autosuggestions/zsh-autosuggestions.zsh"
-
-  source "${zsh_cached_plugins}/powerlevel10k/powerlevel10k.zsh-theme"
-
-  source "${zsh_cached_plugins}/zsh-vim-mode/zsh-vim-mode.plugin.zsh"
-  bindkey -rpM viins '^[^[' # make <Esc><Esc> go to normal mode immediately
-  bindkey -M viins "^[[3;5~" kill-word # make Ctrl+Delete work
-  bindkey -M vicmd "^[[3;5~" kill-word # make Ctrl+Delete work
-  MODE_CURSOR_VIINS='fg steady bar'
-
+  if [ -f "${zsh_cached_plugins}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]; then
+    source "${zsh_cached_plugins}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+  fi
+  if [ -f "${zsh_cached_plugins}/zsh-autosuggestions/zsh-autosuggestions.zsh" ]; then
+    source "${zsh_cached_plugins}/zsh-autosuggestions/zsh-autosuggestions.zsh"
+  fi
+  if [ -f "${zsh_cached_plugins}/zsh-vim-mode/zsh-vim-mode.plugin.zsh" ]; then
+    source "${zsh_cached_plugins}/zsh-vim-mode/zsh-vim-mode.plugin.zsh"
+    bindkey -rpM viins '^[^[' # make <Esc><Esc> go to normal mode immediately
+    bindkey -M viins "^[[3;5~" kill-word # make Ctrl+Delete work
+    bindkey -M vicmd "^[[3;5~" kill-word # make Ctrl+Delete work
+    MODE_CURSOR_VIINS='fg steady bar'
+  fi
+  if [ -f "${zsh_cached_plugins}/powerlevel10k/powerlevel10k.zsh-theme" ]; then
+    source "${zsh_cached_plugins}/powerlevel10k/powerlevel10k.zsh-theme"
+  fi
   if [[ -f "${zsh_configs}/.p10k.zsh" ]]; then
     source "${zsh_configs}/.p10k.zsh"
   fi

@@ -24,6 +24,57 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
+# Install plugins
+_bash_plugins_installation() {
+  unset -f "$0"
+  local reset_nullglob="$(shopt -p nullglob)"
+  shopt -s nullglob # suppress errors when for loops have no matching files
+
+  local xdg_cache_home="${XDG_CACHE_HOME:-$HOME/.cache}"
+  local bash_cache="${xdg_cache_home}/bash"
+  local bash_cached_plugins="${bash_cache}/plugins"
+  mkdir -p "${bash_cached_plugins}"
+  local file
+  for file in ${bash_cached_plugins}/*-install.bash; do
+    source "$file"
+  done
+  if [[ ! -e "${bash_cached_plugins}/bash-preexec" ]]; then
+    echo "Installing bash-preexec..."
+    git clone --depth=1 https://github.com/rcaloras/bash-preexec.git \
+      "${bash_cached_plugins}/bash-preexec"
+    echo
+  fi
+
+  $reset_nullglob
+}
+_bash_plugins_installation
+
+# Load plugins
+_bash_plugins_loading() {
+  unset -f "$0"
+  local reset_nullglob="$(shopt -p nullglob)"
+  shopt -s nullglob # suppress errors when for loops have no matching files
+
+  local xdg_config_home="${XDG_CONFIG_HOME:-$HOME/.config}"
+  local bash_configs="${xdg_config_home}/bash"
+  local bash_plugins="${bash_configs}/plugins"
+  local xdg_cache_home="${XDG_CACHE_HOME:-$HOME/.cache}"
+  local bash_cache="${xdg_cache_home}/bash"
+  local bash_cached_plugins="${bash_cache}/plugins"
+  local file
+
+  for file in ${bash_plugins}/*-load.bash; do
+    source "$file"
+  done
+
+  if [ -f "${bash_cached_plugins}/bash-preexec/bash-preexec.sh" ]; then
+    source "${bash_cached_plugins}/bash-preexec/bash-preexec.sh"
+  fi
+
+  $reset_nullglob
+}
+_bash_plugins_loading
+
 # Set up integrations
 _bash_integrations() {
   unset -f "$0"
