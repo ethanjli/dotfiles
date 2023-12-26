@@ -94,12 +94,12 @@ mic_mute=Microphone Mute\tMeta+Volume Mute,Microphone Mute\tMeta+Volume Mute,Mut
 mute=Volume Mute,Volume Mute,Mute
 
 [ksmserver]
-Halt Without Confirmation=none,none,Halt Without Confirmation
+Halt Without Confirmation=none,,Halt Without Confirmation
 Lock Session=Screensaver,Meta+L\tScreensaver,Lock Session
 Log Out=Ctrl+Alt+Del,Ctrl+Alt+Del,Log Out
-Log Out Without Confirmation=none,none,Log Out Without Confirmation
-Reboot Without Confirmation=none,none,Reboot Without Confirmation
-_k_friendly_name=KWin
+Log Out Without Confirmation=none,,Log Out Without Confirmation
+Reboot Without Confirmation=none,,Reboot Without Confirmation
+_k_friendly_name=Session Management
 
 [kwin]
 Activate Window Demanding Attention=none,Meta+Ctrl+A,Activate Window Demanding Attention
