@@ -13,38 +13,44 @@ _zsh_plugins_installation() {
 
   local xdg_cache_home="${XDG_CACHE_HOME:-$HOME/.cache}"
   local zsh_cache="${xdg_cache_home}/zsh"
-  local zsh_plugins="${zsh_cache}/plugins"
-  mkdir -p "${zsh_plugins}"
+  local zsh_cached_plugins="${zsh_cache}/plugins"
+  mkdir -p "${zsh_cached_plugins}"
   local file
-  for file in ${zsh_plugins}/*-install.zsh(.N); do
+  for file in ${zsh_cached_plugins}/*-install.zsh(.N); do
     source "$file"
   done
-  if [[ ! -e "${zsh_plugins}/zsh-syntax-highlighting" ]]; then
+  if [[ ! -e "${zsh_cached_plugins}/zsh-completions" ]]; then
+    echo "Installing zsh-completions..."
+    git clone --depth=1 https://github.com/zsh-users/zsh-completions.git \
+      "${zsh_cached_plugins}/zsh-completions"
+    echo
+  fi
+  if [[ ! -e "${zsh_cached_plugins}/zsh-syntax-highlighting" ]]; then
     echo "Installing zsh-syntax-highlighting..."
     git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git \
-      "${zsh_plugins}/zsh-syntax-highlighting"
-    _zsh_compile ${zsh_plugins}/zsh-syntax-highlighting/{zsh-syntax-highlighting.zsh,highlighters/*/*.zsh}
+      "${zsh_cached_plugins}/zsh-syntax-highlighting"
+    _zsh_compile ${zsh_cached_plugins}/zsh-syntax-highlighting/{zsh-syntax-highlighting.zsh,highlighters/*/*.zsh}
     echo
   fi
-  if [[ ! -e "${zsh_plugins}/zsh-autosuggestions" ]]; then
+  if [[ ! -e "${zsh_cached_plugins}/zsh-autosuggestions" ]]; then
     echo "Installing zsh-autosuggestions..."
     git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions.git \
-      "${zsh_plugins}/zsh-autosuggestions"
-    _zsh_compile ${zsh_plugins}/zsh-autosuggestions/{zsh-autosuggestions.zsh,src/**/*.zsh}
+      "${zsh_cached_plugins}/zsh-autosuggestions"
+    _zsh_compile ${zsh_cached_plugins}/zsh-autosuggestions/{zsh-autosuggestions.zsh,src/**/*.zsh}
     echo
   fi
-  if [[ ! -e "${zsh_plugins}/powerlevel10k" ]]; then
+  if [[ ! -e "${zsh_cached_plugins}/powerlevel10k" ]]; then
     echo "Installing powerlevel10k..."
     git clone --depth=1 https://github.com/romkatv/powerlevel10k.git \
-      "${zsh_plugins}/powerlevel10k"
-    make -C "${zsh_plugins}/powerlevel10k" pkg
+      "${zsh_cached_plugins}/powerlevel10k"
+    make -C "${zsh_cached_plugins}/powerlevel10k" pkg
     echo
   fi
-  if [[ ! -e "${zsh_plugins}/zsh-vim-mode" ]]; then
+  if [[ ! -e "${zsh_cached_plugins}/zsh-vim-mode" ]]; then
     echo "Installing zsh-vim-mode..."
     git clone --depth=1 https://github.com/softmoth/zsh-vim-mode.git \
-      "${zsh_plugins}/zsh-vim-mode"
-    _zsh_compile "${zsh_plugins}/zsh-vim-mode/zsh-vim-mode.plugin.zsh"
+      "${zsh_cached_plugins}/zsh-vim-mode"
+    _zsh_compile "${zsh_cached_plugins}/zsh-vim-mode/zsh-vim-mode.plugin.zsh"
     echo
   fi
 }
@@ -97,7 +103,9 @@ _zsh_completions() {
 
   local xdg_cache_home="${XDG_CACHE_HOME:-$HOME/.cache}"
   local zsh_cache="${xdg_cache_home}/zsh"
-  mkdir -p "${zsh_cache}"
+  local zsh_cached_plugins="${zsh_cache}/plugins"
+  fpath=("${zsh_cached_plugins}/zsh-completions/src" $fpath)
+
   zstyle ':completion:*' cache-path "${zsh_cache}/zcompcache"
 
   zmodload zsh/complist # must be loaded before compinit
