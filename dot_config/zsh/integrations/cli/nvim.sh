@@ -4,9 +4,7 @@
 _zsh_integrations_nvim() {
   if command -v "$nvim_host_path" &> /dev/null; then # nvim is provided by the host, so just use that
     local nvim_path="$nvim_host_path"
-    nvim() {
-      "$nvim_host_path" "$@"
-    }
+    alias nvim="$nvim_path" # we must use an alias, not a function, to properly capture the path everywhere
   elif command -v nvim &> /dev/null; then # fall back to nvim provided by aqua, which is broken on musl hosts
     local nvim_path="$(which nvim)"
   fi
