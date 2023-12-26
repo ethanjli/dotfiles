@@ -19,7 +19,7 @@ Or on a machine without chezmoi, you can bootstrap the global [aqua](https://aqu
 sh -c "$(curl -fsLS get.chezmoi.io)" -- -b "$(mktemp -d)" init --apply ethanjli
 ```
 
-## Set up global tools
+### Set up global tools
 
 On a machine without aqua, you can install aqua as follows:
 

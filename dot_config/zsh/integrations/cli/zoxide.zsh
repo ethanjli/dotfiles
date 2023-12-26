@@ -1,5 +1,5 @@
 #!/usr/bin/env zsh
 
-if [ $commands[zoxide] ]; then
+if command -v zoxide &> /dev/null; then
   eval "$(zoxide init zsh)"
 fi

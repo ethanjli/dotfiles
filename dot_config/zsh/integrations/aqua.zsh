@@ -1,8 +1,8 @@
 #!/usr/bin/env zsh
 
-if [ $commands[aqua] ]; then
+if command -v aqua &> /dev/null; then
   aqua() { # lazy-load completions
-    unfunction "$0"
+    unset -f "$0"
     source <(aqua completion zsh)
     $0 "$@"
   }

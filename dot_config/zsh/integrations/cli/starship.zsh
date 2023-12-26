@@ -1,5 +1,5 @@
 #!/usr/bin/env zsh
 
-if [ $commands[starship] ]; then
+if command -v starship &> /dev/null; then
   eval "$(starship init zsh)"
 fi
