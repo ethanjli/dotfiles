@@ -1,6 +1,6 @@
 registries:
   - type: standard
-    ref: v4.102.0 # renovate: depName=aquaproj/aqua-registry
+    ref: v4.111.0 # renovate: depName=aquaproj/aqua-registry
   - name: ethanjli/dotfiles
     type: github_content
     repo_owner: ethanjli
@@ -14,7 +14,6 @@ packages: # comments are added for the first package in each section
   - name: zellij-org/zellij@v0.39.2 # Shell
   - name: starship/starship@v1.16.0
   - name: atuinsh/atuin@v17.1.0
-    registry: ethanjli/dotfiles
   - name: direnv/direnv@v2.33.0
   - name: charmbracelet/gum@v0.13.0
   - name: gokcehan/lf@r31 # Navigation
