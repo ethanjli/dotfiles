@@ -8,16 +8,23 @@ _zsh_compile() {
 }
 
 # Install plugins
+
 _zsh_plugins_installation() {
   unset -f "$0"
+
+  # Suppress printing when launching background jobs:
+  setopt no_notify local_options
+  setopt no_monitor local_options
 
   local xdg_config_home="${XDG_CONFIG_HOME:-$HOME/.config}"
   local zsh_configs="${xdg_config_home}/zsh"
   local zsh_plugins="${zsh_configs}/plugins"
   local file
   for file in ${zsh_plugins}/*.install.zsh(.N); do
-    "$file"
+    "$file" &
   done
+  wait
+  jobs > /dev/null
 }
 _zsh_plugins_installation
 

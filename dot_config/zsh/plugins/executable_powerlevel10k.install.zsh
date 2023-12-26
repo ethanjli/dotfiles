@@ -4,7 +4,7 @@ plugin_name="powerlevel10k"
 build() {
   local cached_plugin="$1"
 
-  make -C "$cached_plugin" pkg
+  make -C "$cached_plugin" pkg &> /dev/null
 }
 
 # Boilerplate:
