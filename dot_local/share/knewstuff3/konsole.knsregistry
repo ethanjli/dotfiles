@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE khotnewstuff3>
+<hotnewstuffregistry>
+ <stuff category="462">
+  <name>Dark One Nuanced</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>ariasuni</author>
+  <homepage>https://store.kde.org/p/1225908</homepage>
+  <licence></licence>
+  <version>1.1.0</version>
+  <rating>69</rating>
+  <downloads>20715</downloads>
+  <installedfile>/home/lietk12/.local/share/konsole/DarkOneNuanced.colorscheme</installedfile>
+  <id>1225908</id>
+  <releasedate>2018-03-30</releasedate>
+  <summary>A port of Atom’s Dark One syntax theme for Konsole .&lt;br />
+&lt;br />
+Unlike many other port of Dark One:&lt;br />
+&lt;br />
+– Dark and white colors are adapted for terminal use&lt;br />
+– Other base color are exactly the same&lt;br />
+– Every color has a bright and a dim variant&lt;br />
+&lt;br />
+Programs...</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/49/05/85/1225908/bbeb51e7676a67843b9b3c608190a8631b4a.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/49/05/85/1225908/bbeb51e7676a67843b9b3c608190a8631b4a.png</previewBig>
+  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE1MjI0MjQzNDciLCJvIjoiMSIsInMiOiIxYmIwNWVlNjA4YmNmYzE0NzNmNDNlMTA3ZTAzMzkwYWM4NWZkMjE3NmFlYTQwYTZlNzQ1YTc2NjU1ZGU4MjQ2NmFhN2ZiZTk5M2Q5MDFlNWI0ZmZlNjY4MzA0OGU1OWQ1ZjI2MDBlOTFiOTgxODBlMWM2ZDY3MjMzNDgzYmVkZiIsInQiOjE2OTkzNDA2MjYsInN0ZnAiOm51bGwsInN0aXAiOiIxMjguMTIuMTIyLjg4In0.Z6QTYnZOqP199nYazvaMvpuag0SgohtvMq30Qk4cUNo/DarkOneNuanced-1.1.0.tar.gz</payload>
+  <tags>gplv3,addon</tags>
+  <status>installed</status>
+ </stuff>
+</hotnewstuffregistry>
