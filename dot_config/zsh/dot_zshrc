@@ -68,36 +68,44 @@ _zsh_instant_prompt
 _zsh_completions() {
   unset -f "$0"
 
+  # Add local completions
   local xdg_config_home="${XDG_CONFIG_HOME:-$HOME/.config}"
   local zsh_configs="${xdg_config_home}/zsh"
   fpath=("${zsh_configs}/completions" $fpath)
 
+  # Add third-party completions
+  local zsh_plugins="${zsh_configs}/plugins"
+  local file
+  for file in ${zsh_plugins}/*.completions.zsh(.N); do
+    source "$file"
+  done
+
+  # Configure completion caching
   local xdg_cache_home="${XDG_CACHE_HOME:-$HOME/.cache}"
   local zsh_cache="${xdg_cache_home}/zsh"
-  local zsh_cached_plugins="${zsh_cache}/plugins"
-  fpath=("${zsh_cached_plugins}/zsh-completions/src" $fpath)
-
   zstyle ':completion:*' cache-path "${zsh_cache}/zcompcache"
 
+  # Add more completion configuration
   zmodload zsh/complist # must be loaded before compinit
   bindkey -M menuselect 'h' vi-backward-char
   bindkey -M menuselect 'k' vi-up-line-or-history
   bindkey -M menuselect 'l' vi-forward-char
   bindkey -M menuselect 'j' vi-down-line-or-history
 
+  # Compile completions
   local zsh_compdump="${zsh_cache}/zcompdump"
   autoload -Uz compinit && compinit -d "$zsh_compdump"
   if ! [[ "${zsh_compdump}.zwc" -nt "$zsh_compdump" ]]; then
     _zsh_compile "$zsh_compdump"
   fi
+
+  # Add bash completions
+  autoload -Uz bashcompinit
+  bashcompinit
 }
 _zsh_completions
 
 unset -f _zsh_compile
-
-# Use bash completions
-autoload -Uz bashcompinit
-bashcompinit
 
 # Load plugins
 ZSH_AUTOSUGGEST_MANUAL_REBIND=1
@@ -111,29 +119,6 @@ _zsh_plugins_loading() {
   for file in ${zsh_plugins}/*.load.zsh(.N); do
     source "$file"
   done
-
-  local xdg_cache_home="${XDG_CACHE_HOME:-$HOME/.cache}"
-  local zsh_cache="${xdg_cache_home}/zsh"
-  local zsh_cached_plugins="${zsh_cache}/plugins"
-  if [ -f "${zsh_cached_plugins}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]; then
-    source "${zsh_cached_plugins}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
-  fi
-  if [ -f "${zsh_cached_plugins}/zsh-autosuggestions/zsh-autosuggestions.zsh" ]; then
-    source "${zsh_cached_plugins}/zsh-autosuggestions/zsh-autosuggestions.zsh"
-  fi
-  if [ -f "${zsh_cached_plugins}/zsh-vim-mode/zsh-vim-mode.plugin.zsh" ]; then
-    source "${zsh_cached_plugins}/zsh-vim-mode/zsh-vim-mode.plugin.zsh"
-    bindkey -rpM viins '^[^[' # make <Esc><Esc> go to normal mode immediately
-    bindkey -M viins "^[[3;5~" kill-word # make Ctrl+Delete work
-    bindkey -M vicmd "^[[3;5~" kill-word # make Ctrl+Delete work
-    MODE_CURSOR_VIINS='fg steady bar'
-  fi
-  if [ -f "${zsh_cached_plugins}/powerlevel10k/powerlevel10k.zsh-theme" ]; then
-    source "${zsh_cached_plugins}/powerlevel10k/powerlevel10k.zsh-theme"
-  fi
-  if [[ -f "${zsh_configs}/.p10k.zsh" ]]; then
-    source "${zsh_configs}/.p10k.zsh"
-  fi
 }
 _zsh_plugins_loading
 
