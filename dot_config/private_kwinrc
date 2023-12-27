@@ -142,5 +142,5 @@ BorderSize=Tiny
 BorderSizeAuto=false
 ButtonsOnLeft=MN
 ButtonsOnRight=
-library=org.kde.kwin.aurorae
-theme=__aurorae__svg__ActiveAccentFrame
+library=org.kde.breeze
+theme=Breeze

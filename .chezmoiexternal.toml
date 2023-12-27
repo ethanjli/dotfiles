@@ -36,8 +36,17 @@ url = "https://github.com/rcaloras/bash-preexec/archive/refs/tags/0.5.0.tar.gz"
 exact = true
 stripcomponents = 1
 
-# Theming
+# CLI Theming
 
 [".config/btop/themes/onedark.theme"]
 type = "file"
 url = "https://raw.githubusercontent.com/aristocratos/btop/v1.2.13/themes/onedark.theme"
+
+# KDE Plasma Theming
+
+[".local/share/aurorae/themes/ActiveAccentFrame/"]
+type = "archive"
+url = "https://github.com/nclarius/Plasma-window-decorations/archive/refs/tags/v9.2.tar.gz"
+exact = true
+stripcomponents = 2
+include = ["*/ActiveAccentFrame/*"]

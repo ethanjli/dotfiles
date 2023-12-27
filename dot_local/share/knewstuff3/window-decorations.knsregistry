@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE khotnewstuff3>
+<hotnewstuffregistry>
+ <stuff category="114">
+  <name>Active Accent Frame</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>nclarius</author>
+  <homepage>https://store.kde.org/p/1678088</homepage>
+  <licence></licence>
+  <version>v9.2</version>
+  <rating>57</rating>
+  <downloads>5435</downloads>
+  <installedfile>/home/lietk12/.local/share/aurorae/themes/ActiveAccentFrame/*</installedfile>
+  <id>1678088</id>
+  <releasedate>2022-03-26</releasedate>
+  <summary>Window theme without titlebar highlighting the active window in accent color and inactive windows in background color, for any color scheme.&lt;br />
+&lt;br />
+Alternatives:&lt;ul>&lt;li> &lt;a href="https://store.kde.org/p/1709568" target="_blank" rel="nofollow">Active Accent Dawn&lt;/a>: With titlebar, for schemes with light background and dark accent&lt;/li>&lt;li> &lt;a href="https://store.kde.org/p/1709554" target="_blank" rel="nofollow">Active Accent Light&lt;/a>: With titlebar, for schemes with light background and light accent&lt;/li>&lt;li> &lt;a href="https://store.kde.org/p/1709569" target="_blank" rel="nofollow">Active Accent Dusk&lt;/a>: With titlebar, for schemes with dark background and light accent&lt;/li>&lt;li> &lt;a href="https://store.kde.org/p/1709567" target="_blank" rel="nofollow">Active Accent Dark&lt;/a>: With titlebar, for schemes with dark background and dark accent&lt;/li>&lt;/ul>&lt;strong>If there are problems with the window decoration, please follow the sugggestions listed in the readme.&lt;/strong> For more information on installation and troubleshooting as well as any requests, please visit &lt;a href="https://github.com/nclarius/Plasma-window-decorations" target="_blank" rel="nofollow">the GitHub page&lt;/a>.[newline</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/63/33/24/1678088/screenshot6.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/63/33/24/1678088/screenshot6.png</previewBig>
+  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2NDgzMDI0NDMiLCJvIjoiMSIsInMiOiI0NmYzZTRjZGMzYzY1ZWExNjJmM2E1Mzg5NTcwYzY5YmJiYjI2YTFlNmU4ZWQ0ZGU0YjgwYmRiN2JhZDk4NzAyNTI3YTdmYTAwZTYwZWI5OTJlYmZhZWY3NzkxYzA4NWU1ZWUwM2ViOThkYzZiMTk3NmIwOWRkODVmZWZiZmRiZSIsInQiOjE2OTkxMDcyNjEsInN0ZnAiOm51bGwsInN0aXAiOiIxNzEuNjYuMTMuNTMifQ.MsU85Xyh1NVCJ1IfTEEdw6YMPOma2Mngx-MZjPbXPKE/ActiveAccentFrame_v9.0.zip</payload>
+  <tags>border,plasma,theme,unix,color,efi,gplv3,hlighlight,frame,active,linux,kde</tags>
+  <status>installed</status>
+ </stuff>
+</hotnewstuffregistry>
