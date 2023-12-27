@@ -52,3 +52,19 @@ url = "https://github.com/nclarius/Plasma-window-decorations/archive/refs/heads/
 exact = true
 stripcomponents = 2
 include = ["*/ActiveAccentFrame/*"]
+
+[".local/share/color-schemes/One-Dark-Blue.colors"]
+type = "file"
+url = "https://raw.githubusercontent.com/Prayag2/kde_onedark/v2.1/color-schemes/One-Dark/One-Dark-Blue.colors"
+
+[".local/share/color-schemes/One-Dark-Green.colors"]
+type = "file"
+url = "https://raw.githubusercontent.com/Prayag2/kde_onedark/v2.1/color-schemes/One-Dark/One-Dark-Green.colors"
+
+[".local/share/color-schemes/One-Dark-Red.colors"]
+type = "file"
+url = "https://raw.githubusercontent.com/Prayag2/kde_onedark/v2.1/color-schemes/One-Dark/One-Dark-Red.colors"
+
+[".local/share/color-schemes/One-Dark-Yellow.colors"]
+type = "file"
+url = "https://raw.githubusercontent.com/Prayag2/kde_onedark/v2.1/color-schemes/One-Dark/One-Dark-Yellow.colors"

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE khotnewstuff3>
+<hotnewstuffregistry>
+ <stuff category="112">
+  <name>One Dark Colours</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>prayagjain</author>
+  <homepage>https://store.kde.org/p/1571635</homepage>
+  <licence></licence>
+  <version>v1</version>
+  <rating>64</rating>
+  <downloads>13288</downloads>
+  <installedfile>/home/lietk12/.local/share/color-schemes/One-Dark-Blue.colors</installedfile>
+  <installedfile>/home/lietk12/.local/share/color-schemes/One-Dark-Green.colors</installedfile>
+  <installedfile>/home/lietk12/.local/share/color-schemes/One-Dark-Red.colors</installedfile>
+  <installedfile>/home/lietk12/.local/share/color-schemes/One-Dark-Yellow.colors</installedfile>
+  <id>1571635</id>
+  <releasedate>2021-08-09</releasedate>
+  <summary>-----&lt;br />
+Window Decorations/Aurorae Theme: https://www.pling.com/p/1571643/&lt;br />
+Icons: https://www.pling.com/p/1281798&lt;br />
+Wallpapers: https://www.pling.com/p/1571655/&lt;br />
+-----&lt;br />
+4 dark colour schemes based on the "One Dark" colour palette!</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/60/43/39/1571635/8990b50961dff436a86fcea8e3f3f18a5b358909fd36a16b07d3fa10b9500c3cebeb.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/60/43/39/1571635/8990b50961dff436a86fcea8e3f3f18a5b358909fd36a16b07d3fa10b9500c3cebeb.png</previewBig>
+  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2Mjg1MzIyNTAiLCJvIjoiMSIsInMiOiI5NTE5NGNlNWUzNmY2YThhZDFjNGIzNjI1OTU5MTJkYTg2ZDRiN2QwYTgwZGE0NzhkMWM2OTViMjhhYTZiZDkyNDMyZjBjMTU1Mzg4Zjk0MDEyNDZmMjZkNjdhYTRlNGM0NzI5Yjg0YjRiMzZjZDFhNTY2OTZjZTNiNTIwNTNlYiIsInQiOjE2OTk1NjkzMDUsInN0ZnAiOm51bGwsInN0aXAiOiIxMjguMTIuMTIyLjUzIn0.aGbIw01CaD4tSEq6uOopUXBwcVe1YzKdB-im6nwnuKk/One-Dark.tar.gz</payload>
+  <tags>theme,unix,efi,gplv3,colorscheme,kde,linux,plasma</tags>
+  <status>installed</status>
+ </stuff>
+</hotnewstuffregistry>
