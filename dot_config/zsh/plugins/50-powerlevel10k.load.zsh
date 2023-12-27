@@ -7,8 +7,8 @@ _zsh_plugins_powerlevel10k_load() {
 
   local xdg_config_home="${XDG_CONFIG_HOME:-$HOME/.config}"
   local zsh_configs="${xdg_config_home}/zsh"
-  if [[ -f "${zsh_configs}/.p10k.zsh" ]]; then
-    source "${zsh_configs}/.p10k.zsh"
+  if [[ -f "${zsh_configs}/p10k.zsh" ]]; then
+    source "${zsh_configs}/p10k.zsh"
   fi
 }
 _zsh_plugins_powerlevel10k_load
