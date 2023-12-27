@@ -20,7 +20,10 @@ preview_plain_text() {
 }
 
 preview_image() {
-  chafa -f sixel -s "$2x$3" --animate off --polite on "$1"
+  if [[ $ZELLIJ == "0" ]]; then
+    format="--format symbols" # In Zellij, the sixel format doesn't display for some reason
+  fi
+  chafa $format -s "$2x$3" --animate off --polite on "$1"
 }
 
 case "$mimetype" in
