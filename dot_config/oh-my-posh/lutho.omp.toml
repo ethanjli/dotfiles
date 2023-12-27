@@ -32,6 +32,7 @@ tf      = "#844fba" #   / 140
 
 [[blocks]]
 type = "prompt"
+newline = true
 alignment = "left"
 
 [[blocks.segments]]
