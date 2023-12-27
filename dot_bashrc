@@ -55,6 +55,7 @@ _bash_integrations() {
 
   # Look for host-provided neovim (needed when the host uses musl instead of glibc, e.g. in Alpine Linux)
   if command -v nvim &> /dev/null; then
+    # FIXME: this breaks on musl hosts when we open a shell inside a shell!
     local nvim_host_path="$(which nvim)"
   fi
 

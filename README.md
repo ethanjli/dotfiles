@@ -143,14 +143,6 @@ On a machine without aqua, you can install aqua as follows:
 curl -sSfL https://raw.githubusercontent.com/aquaproj/aqua-installer/v2.2.0/aqua-installer | bash
 ```
 
-Then you will need to allow use of non-standard aqua packages provided by this repository:
-
-```
-cd ${XDG_CONFIG_HOME:-$HOME/.config}/aquaproj-aqua
-git init
-aqua policy allow "${XDG_CONFIG_HOME:-$HOME/.config}/aquaproj-aqua/aqua-policy.yaml"
-```
-
 (this is only needed when this repository has packages which I have not yet contributed upstream
 to the standard aqua repository)
 
@@ -180,6 +172,22 @@ to install, delete the cached plugin directory in `~/.cache/zsh/plugins` or `~/.
 and run `chezmoi apply`.
 
 ## Maintenance
+
+### Add an aqua program
+
+If using local packages from this repository, you may first need to configure aqua to allow that:
+
+```
+cd ${XDG_CONFIG_HOME:-$HOME/.config}/aquaproj-aqua
+git init
+aqua policy allow "${XDG_CONFIG_HOME:-$HOME/.config}/aquaproj-aqua/aqua-policy.yaml"
+```
+
+Then you can run:
+
+```
+aqua g -o ${XDG_CONFIG_HOME:-$HOME/.config}/aquaproj-aqua/aqua.yaml
+```
 
 ### Upgrade aqua programs
 

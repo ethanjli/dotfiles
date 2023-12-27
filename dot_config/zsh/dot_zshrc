@@ -34,6 +34,7 @@ _zsh_integrations_pre() {
   # Look for host-provided neovim (needed when the host uses musl instead of glibc, e.g. in Alpine Linux)
   # before it gets clobbered by aqua
   if command -v nvim &> /dev/null; then
+    # FIXME: this breaks on musl hosts when we open a shell inside a shell!
     _zsh_integration_nvim_host_path="$(which nvim)"
   fi
 
