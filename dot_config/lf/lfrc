@@ -164,15 +164,7 @@ cmd fzf_search ${{
 }}
 map gs :fzf_search
 
-# Integrate eza
+# Integrate lsd
 cmd on-select &{{
     lf -remote "send $id set statfmt \"$(lsd -l --color always --icon always --classify --git "$f")\""
-}}
-
-# Integrate starship
-cmd on-cd &{{
-    echo "hi!"
-    export STARSHIP_SHELL=
-    fmt="$(starship prompt)"
-    lf -remote "send $id set promptfmt \"$fmt\""
 }}

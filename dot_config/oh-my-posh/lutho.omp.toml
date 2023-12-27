@@ -41,7 +41,7 @@ template = "{{ .Path }}"
 [blocks.segments.properties]
 style = "agnoster_short"
 max_depth = 4
-folder_icon = "<p:fb>...</>"
+folder_icon = "<p:fg>...</>"
 folder_separator_icon = "/"
 folder_format = "%s"
 edge_format = "<b>%s</b>"
