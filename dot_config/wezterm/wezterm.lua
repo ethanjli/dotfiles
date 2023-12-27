@@ -62,7 +62,9 @@ config.window_padding = {
 config.font = wezterm.font {
   family = 'IntoneMono Nerd Font',
 }
-config.freetype_load_target = "Normal"
+config.freetype_load_target = 'Normal'
+
+config.default_cursor_style = 'SteadyBar'
 
 config.window_close_confirmation = 'NeverPrompt'
 
