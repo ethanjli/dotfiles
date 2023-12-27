@@ -13,13 +13,14 @@ I use them:
 
 ### Theme
 
-- A visual theme emphasizing visual comfort, notably:
+- A visual theme emphasizing visual consistency and readability, notably:
   - Use of the [One Dark](https://onedarktheme.com/) color scheme wherever possible
   - Use of [Atkinson Hyperlegible](https://brailleinstitute.org/freefont) as the sans serif font
     wherever possible
   - Use of the [Intel One Mono](https://www.intel.com/content/www/us/en/company-overview/one-monospace-font.html)'s
     [patched Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/IntelOneMono)
     as the monospace font wherever possible
+  - Avoidance of visual clutter
 
 TODO: add screenshots
 
@@ -27,12 +28,12 @@ TODO: add screenshots
 
 - A self-contained configuration for [zsh](https://www.zsh.org/), notably:
   - Fast startup times (~0.2 s on my laptop)
-  - A clean prompt line, using [powerlevel10k](https://github.com/romkatv/powerlevel10k) with a
-    similar look-and-feel as Starship's [plain text symbols](https://starship.rs/presets/plain-text.html)
-    preset
+  - A clean prompt line, using [powerlevel10k](https://github.com/romkatv/powerlevel10k):
+    - with a similar look-and-feel as Starship's
+      [plain text symbols](https://starship.rs/presets/plain-text.html) preset (only using ASCII
+      symbols, for compatibility with virtual consoles)
     - using [instant prompt](https://github.com/romkatv/powerlevel10k?tab=readme-ov-file#instant-prompt)
       for fast startup times
-    - sticking to ASCII symbols for compatibility with virtual consoles
     - left-alignment of all elements to prevent terminal resizing weirdness
     - a reduced set of elements focused on the kinds of projects I work on or might work on
   - Synchronized, fuzzy-searchable shell history using [atuin](https://github.com/atuinsh/atuin)
@@ -40,9 +41,10 @@ TODO: add screenshots
     pinned versions
   - Organization of files into `$HOME/.config/zsh` and `$HOME/.cache/zsh`
 - A self-contained configuration for bash:
-  - Somewhat reasonable startup times (~0.4 s on my laptop)
-  - A clean prompt line, using [starship](https://starship.rs/)
-    - sticking to ASCII symbols for compatibility with virtual consoles
+  - Fast startup times (~0.2 s on my laptop)
+  - A clean prompt line, using [oh-my-posh](https://ohmyposh.dev/) (which I found to be extremely
+    fast, in contrast to Starship)
+    - configured to have a similar look-and-feel as my powerlevel10k prompt configuration
     - a reduced set of modules focused on the kinds of projects I work on or might work on
   - Synchronized, fuzzy-searchable shell history using [atuin](https://github.com/atuinsh/atuin)
   - A fast, simple, and generalizable plugin system which just uses chezmoi to download plugins at

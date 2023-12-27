@@ -12,7 +12,7 @@ packages: # comments are added for the first package in each section
   - name: neovim/neovim@v0.9.4
   - name: rclone/rclone@v1.65.0
   - name: zellij-org/zellij@v0.39.2 # Shell
-  - name: starship/starship@v1.16.0
+  - name: JanDeDobbeleer/oh-my-posh@v19.3.0
   - name: atuinsh/atuin@v17.1.0
   - name: direnv/direnv@v2.33.0
   - name: charmbracelet/gum@v0.13.0

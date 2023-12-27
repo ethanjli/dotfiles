@@ -1,0 +1,140 @@
+"$schema" = "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json"
+version = 2
+final_space = true
+pwd = "osc7"
+console_title_template = '{{ .UserName }}@{{ .HostName | splitList "." | first }}:{{ .PWD }}'
+
+[palette] # hex, ansi16 / ansi256
+bg      = "#282c34" # 0 / 59
+red     = "#e06c75" # 1 / 167
+green   = "#98c379" # 2 / 150
+yellow  = "#e5c07b" # 3 / 186
+blue    = "#61afef" # 4 / 111
+magenta = "#c678dd" # 5 / 176
+cyan    = "#56b6c2" # 6 / 116
+fg      = "#abb2bf" # 7 / 146
+gray    = "#323842" # 8 / 59
+nodejs  = "#44883e" #   / 71
+python  = "#ffdf76" #   / 222 # use yellow because it's more unique
+golang  = "#01acd8" #   / 38
+rust    = "#e33b26" #   / 167
+julia   = "#9558b2" #   / 139 # use purple because it's more unique
+docker  = "#1d63ed" #   / 69
+k8s     = "#326ce5" #   / 68
+google  = "#0f9d58" #   / 36  # use green because aws uses orange and azure uses blue
+azure   = "#008ad7" #   / 38
+aws     = "#ff9900" #   / 214
+neovim  = "#5fb950" #   / 114
+nix     = "#7ebae4" #   / 116
+tf      = "#844fba" #   / 140
+
+# First line
+
+[[blocks]]
+type = "prompt"
+alignment = "left"
+
+[[blocks.segments]]
+type = "path"
+foreground = "p:blue"
+template = "{{ .Path }}"
+[blocks.segments.properties]
+style = "agnoster_short"
+max_depth = 4
+folder_icon = "<p:fb>...</>"
+folder_separator_icon = "/"
+folder_format = "%s"
+edge_format = "<b>%s</b>"
+
+[[blocks.segments]]
+type = "git"
+template = """ on <p:green>{{ .HEAD }}</>\
+  {{ if gt .Behind 0 }} <{{ .Behind }}{{ end }}\
+  {{ if gt .Ahead 0 }} >{{ .Ahead }}{{ end }}\
+  {{ if gt .StashCount 0 }} *{{ .StashCount }}{{ end }}\
+  {{/* we don't check git status, so we never know the number of staged files */}} <p:yellow>-</>\
+  """
+[blocks.segments.properties]
+branch_icon = ""
+branch_max_length = 32
+truncate_symbol = "<7>...</>"
+commit_icon = "@"
+tag_icon = "#"
+
+[[blocks.segments]]
+type = "project"
+template = "{{ if .Version }} <p:cyan>pkg {{ .Version }}</>{{ end }}"
+
+[[blocks.segments]]
+type = "node"
+template = "{{ if .Full }} <p:nodejs>node {{ .Full }}</>{{ end }}"
+
+[[blocks.segments]]
+type = "python"
+template = "{{ if .Venv }} <p:python>py {{ .Venv }}</>{{ else }} <221>py {{ .Full }}{{ end }}"
+[blocks.segments.properties]
+display_default = false
+display_mode = "context"
+
+[[blocks.segments]]
+type = "golang"
+template = " <p:golang>go {{ .Full }}"
+parse_mod_file = true
+
+[[blocks.segments]]
+type = "rust"
+template = " <p:rust>rust {{ .Full }}"
+
+# TODO: add a segment for distrobox/toolbox
+
+[[blocks.segments]]
+type = "session"
+template = """\
+  {{ if .Root }} as <b><p:yellow>{{ .UserName}}@{{ .HostName | splitList "." | first }}</></>\
+  {{ else if .SSHSession }} as <p:yellow>{{ .UserName}}@{{ .HostName | splitList "." | first }}</>\
+  {{ end }}\
+  """
+
+[[blocks.segments]]
+type = "docker"
+template = " <p:docker>docker {{ .Context }}"
+
+[[blocks.segments]]
+type = "gcp"
+template = " <p:google>gcp {{ .Account }}@{{ .Project }}:{{ .Region }}"
+
+[[blocks.segments]]
+type = "azure"
+template = " <p:azure>azure {{ .Name }}"
+
+[[blocks.segments]]
+type = "aws"
+template = " <p:aws>aws {{ .Profile }}{{ if .Region }}@{{ .Region }}{{ end }}"
+
+[[blocks.segments]]
+type = "status"
+template = """\
+  {{ if and .Error (contains "|" .String) }}\
+    {{ if eq .Code 0 }} <p:green>ok{{ else }} <p:red>err{{ end }} {{ .String }}</>\
+  {{ end }}\
+  """
+
+[[blocks.segments]]
+type = "executiontime"
+template = " <p:gray>after {{ .FormattedMs }}</>"
+[blocks.segments.properties]
+threshold = 3000
+style = "round"
+
+# Second line
+
+[[blocks]]
+type = "prompt"
+newline = true
+alignment = "left"
+
+[[blocks.segments]]
+type = "status"
+template = "{{ if gt .Code 0 }}<p:red>></>{{ else }}<p:green>></>{{ end }}"
+[blocks.segments.properties]
+always_enabled = true
