@@ -165,9 +165,6 @@ global=Meta+Ctrl+Space
 immutability=1
 plugin=org.kde.paneltransparencybutton
 
-[Containments][134][Applets][347][Configuration][Appearance]
-transparencyEnabled=true
-
 [Containments][134][Applets][352]
 immutability=1
 plugin=org.kde.plasma.marginsseparator
@@ -1134,7 +1131,7 @@ immutability=1
 lastScreen=0
 location=0
 plugin=org.kde.desktopcontainment
-wallpaperplugin=a2n.blur
+wallpaperplugin=org.kde.image
 
 [Containments][76][Applets][282]
 immutability=1
@@ -1178,7 +1175,7 @@ ToolBoxButtonX=576
 ToolBoxButtonY=36
 
 [Containments][76][Wallpaper][a2n.blur][General]
-AnimationDuration=150
+AnimationDuration=100
 Image=/home/lietk12/Projects/Lutho/wallpapers/Black Mountain Dusk Color Graded.jpeg
 SlidePaths=/home/lietk12/.local/share/wallpapers/,/usr/share/wallpapers/
 

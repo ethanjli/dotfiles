@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE khotnewstuff3>
+<hotnewstuffregistry>
+ <stuff category="104">
+  <name>Arch</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>rkstrdee</author>
+  <homepage>https://store.kde.org/p/1540609</homepage>
+  <licence></licence>
+  <version>1.1.0</version>
+  <rating>58</rating>
+  <downloads>47725</downloads>
+  <installedfile>/home/lietk12/.local/share/plasma/desktoptheme/Arch</installedfile>
+  <id>1540609</id>
+  <releasedate>2021-07-19</releasedate>
+  <summary>KDE Plasma theme &lt;br />
+You'll need plasma 5.22 or above to enjoy full features like opaque/adaptive/translucent.&lt;br />
+To enable Glass effect go to settings -&amp;gt; Desktop Effects -&amp;gt; uncheck "Background Contrast"&lt;br />
+To disable Glass effect/change current theme go to settings -&amp;gt; Desktop...</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/61/50/12/1540609/95fd05ce442ff2cffa4e0bdbf59161a3fdf68848fddc9bc1a25dc754d29ea0024519.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/61/50/12/1540609/95fd05ce442ff2cffa4e0bdbf59161a3fdf68848fddc9bc1a25dc754d29ea0024519.png</previewBig>
+  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2MjY3MDA4MzIiLCJvIjoiMSIsInMiOiI5MzJiZjcxYWNmYThkZTdlODM3MzQ4NmNmNmYwYjFmNjA5NzhmNDdkZDExN2VhMDE3ZmJhMWYxMjk2OTIwNjk3ZWU2NDc0M2Q3NDBhMDI2OTdkOGJmMzVhY2MxNWY1NThkMDU5YzE0MzYyZTVmNDMwMzBmMjFlYTU4OWIxNzFmNSIsInQiOjE3MDM3MjAxOTcsInN0ZnAiOm51bGwsInN0aXAiOiIxMjguMTIuMTIzLjg4In0.ZgUiC62YJuYFdyD4UwAWCRRzd5-Wq62KDRCGyrc9ClY/Arch.tar.gz</payload>
+  <tags>gplv2-later,efi,theme,unix,plasma,kde,linux,plasma##majorversion=4,plasma##majorversion=5,arch</tags>
+  <status>installed</status>
+ </stuff>
+</hotnewstuffregistry>

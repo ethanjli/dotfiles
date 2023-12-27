@@ -240,17 +240,18 @@ serialize_pane_viewport true
 //
 themes {
   one-dark-nuanced {
-    fg 171 178 191
-      bg 50 56 66
-      black 63 68 81
-      red 224 108 117
-      green 152 195 121
-      yellow 209 154 102
-      blue 97 175 239
-      magenta 198 120 221
-      cyan 86 182 194
-      white 230 230 230
-      orange 216 133 76
+    fg "#abb2bf"
+    bg "#323842"
+    // black "#1e2227" // from the official One Dark colorscheme
+    black "#1e222a" // integrate with KDE Plasma's One Dark colorscheme
+    red "#e06c75"
+    green "#98c379"
+    yellow "#e5c07b"
+    blue "#61afef"
+    magenta "#c678dd"
+    cyan "#56b6c2"
+    white "#d4d8df"
+    orange "#d19a66" // from https://github.com/monsonjeremy/onedark.nvim/blob/master/lua/onedark/colors.lua
   }
 }
 

@@ -7,12 +7,12 @@ LatencyPolicy=Medium
 [Desktops]
 Id_1=de5b4f4b-b47b-4a10-b44f-d66914196398
 Id_2=95ece43a-8d3b-42fd-b10c-6820af57e06c
-Id_3=c570cde8-7760-4a54-b2cf-4f4a8f3e7b02
+Id_3=00d2fecd-2efa-4c8c-964b-32276c29f07d
 Number=3
 Rows=1
 
 [Effect-blur]
-NoiseStrength=14
+NoiseStrength=0
 
 [Effect-diminactive]
 DimKeepAbove=true
@@ -43,7 +43,7 @@ NightTemperature=3000
 [Plugins]
 autocomposerEnabled=false
 blurEnabled=true
-contrastEnabled=true
+contrastEnabled=false
 desktopgridEnabled=false
 diminactiveEnabled=true
 dynamicVirtualDesktopsEnabled=true

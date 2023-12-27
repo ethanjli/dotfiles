@@ -1,5 +1,11 @@
 # Shell plugins
 
+[".config/bash/plugins/bash-preexec"]
+type = "archive"
+url = "https://github.com/rcaloras/bash-preexec/archive/refs/tags/0.5.0.tar.gz"
+exact = true
+stripcomponents = 1
+
 [".config/zsh/plugins/powerlevel10k"]
 type = "archive"
 url = "https://github.com/romkatv/powerlevel10k/archive/refs/tags/v1.19.0.tar.gz"
@@ -27,12 +33,6 @@ stripcomponents = 1
 [".config/zsh/plugins/zsh-vim-mode"]
 type = "archive"
 url = "https://github.com/softmoth/zsh-vim-mode/archive/1f9953b.tar.gz"
-exact = true
-stripcomponents = 1
-
-[".config/bash/plugins/bash-preexec"]
-type = "archive"
-url = "https://github.com/rcaloras/bash-preexec/archive/refs/tags/0.5.0.tar.gz"
 exact = true
 stripcomponents = 1
 
@@ -68,3 +68,11 @@ url = "https://raw.githubusercontent.com/Prayag2/kde_onedark/v2.1/color-schemes/
 [".local/share/color-schemes/One-Dark-Yellow.colors"]
 type = "file"
 url = "https://raw.githubusercontent.com/Prayag2/kde_onedark/v2.1/color-schemes/One-Dark/One-Dark-Yellow.colors"
+
+[".local/share/plasma/desktoptheme/Arch/"]
+type = "archive"
+# Note: there are no release tags, so we must pull from master
+url = "https://github.com/ddh4r4m/Arch/archive/refs/heads/main.tar.gz"
+exact = true
+include = ["*/plasma/desktoptheme/Arch/**"]
+stripcomponents = 4

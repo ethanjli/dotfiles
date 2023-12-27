@@ -15,37 +15,43 @@ end
 
 config.color_scheme = 'OneDark (base16)'
 
-config.use_fancy_tab_bar = false
+config.use_fancy_tab_bar = true
 config.hide_tab_bar_if_only_one_tab = true
 config.tab_max_width = 32
 config.window_frame = {
   font = wezterm.font { family = 'Atkinson Hyperlegible', weight = 'Bold' },
-  active_titlebar_bg = '#323842',
+  -- active_titlebar_bg = '#323842', -- from the official One Dark colorscheme
+  active_titlebar_bg = '#1E222A', -- integrate with KDE Plasma's One Dark colorscheme
   inactive_titlebar_bg = '#21252B',
 }
 config.colors = {
   tab_bar = {
-    background = '#1E2227',
+    -- background = '#1E2227', -- from the official One Dark colorscheme
+    background = '#1E222A', -- integrate with KDE Plasma's One Dark colorscheme
     active_tab = {
-      bg_color = '#282c34',
+      bg_color = '#282C34',
       fg_color = '#F6F7F9',
       intensity = 'Bold',
     },
     inactive_tab = {
-      bg_color = '#1E2227',
+      -- bg_color = '#1E2227', -- from the official One Dark colorscheme
+      bg_color = '#1E222A', -- integrate with KDE Plasma's One Dark colorscheme
       fg_color = '#ABB2BF',
     },
     inactive_tab_hover = {
-      bg_color = '#1E2227',
+      -- bg_color = '#1E2227', -- from the official One Dark colorscheme
+      bg_color = '#1E222A', -- integrate with KDE Plasma's One Dark colorscheme
       fg_color = '#ABB2BF',
       intensity = 'Bold',
     },
     new_tab = {
-      bg_color = '#1E2227',
+      -- bg_color = '#1E2227', -- from the official One Dark colorscheme
+      bg_color = '#1E222A', -- integrate with KDE Plasma's One Dark colorscheme
       fg_color = '#ABB2BF',
     },
     new_tab_hover = {
-      bg_color = '#1E2227',
+      -- bg_color = '#1E2227', -- from the official One Dark colorscheme
+      bg_color = '#1E222A', -- integrate with KDE Plasma's One Dark colorscheme
       fg_color = '#ABB2BF',
       intensity = 'Bold',
     },
