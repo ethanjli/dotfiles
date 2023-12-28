@@ -1,6 +1,40 @@
 # Aqua package registry: see https://aquaproj.github.io/ for details.
 packages:
   - type: github_release
+    repo_owner: neovim
+    repo_name: neovim
+    description: Hyperextensible Vim-based text editor (binary named neovim instead of nvim)
+    supported_envs:
+      - darwin
+      - linux
+      - amd64
+    replacements:
+      windows: win64
+      linux: linux64
+      darwin: macos
+    asset: nvim-{{.OS}}.{{.Format}}
+    format: tar.gz
+    files:
+      - name: neovim
+        src: nvim-{{.OS}}/bin/nvim
+    overrides:
+      - goos: windows
+        format: zip
+    version_constraint: semver(">= 0.7.2")
+    version_overrides:
+      - version_constraint: "true"
+        overrides:
+          - goos: windows
+            format: zip
+          - goos: darwin
+            files:
+              - name: neovim
+                src: nvim-osx64/bin/nvim
+    checksum:
+      type: github_release
+      asset: "{{.Asset}}.sha256sum"
+      algorithm: sha256
+  - type: github_release
     repo_owner: git-ecosystem
     repo_name: git-credential-manager
     description: Secure, cross-platform Git credential storage with authentication to GitHub, Azure Repos, and other popular Git hosting services

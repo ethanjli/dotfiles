@@ -18,3 +18,5 @@ packages:
     registry: local
   - name: git-ecosystem/git-credential-manager@v2.4.1
     registry: local
+  - name: neovim/neovim@v0.9.4
+    registry: local
