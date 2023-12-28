@@ -94,3 +94,63 @@ type = "archive"
 url = "https://github.com/DualityKyle/plasma-desktop-indicator/archive/3298648.tar.gz"
 exact = true
 stripcomponents = 1
+
+# KWin Scripts
+[".local/share/kwin/scripts/autocomposer"]
+type = "archive"
+url = "https://gitlab.com/es20490446e/kwin-script-autocomposer/-/archive/5f4d617a.tar.gz"
+exact = true
+include = ["*/root/usr/share/kwin/scripts/autocomposer/**"]
+stripcomponents = 7
+
+[".local/share/kwin/scripts/dynamic_workspaces"]
+type = "archive"
+url = "https://github.com/d86leader/dynamic_workspaces/archive/refs/tags/v2.0.tar.gz"
+exact = true
+stripcomponents = 1
+
+[".local/share/kwin/scripts/kwin-live-captions-assistant"]
+type = "archive"
+url = "https://github.com/abb128/kwin-live-captions-assistant/archive/6e403ec.tar.gz"
+exact = true
+stripcomponents = 1
+
+[".local/share/kwin/scripts/restoreToScreen"]
+type = "archive"
+url = "https://github.com/Hegemonia123/restoreToScreen/archive/53e1b4a.tar.gz"
+exact = true
+stripcomponents = 1
+
+[".local/share/kwin/scripts/stepmove"]
+type = "archive"
+url = "https://github.com/nclarius/KWin-window-geometry-scripts/archive/refs/tags/step-move_v3.2.tar.gz"
+exact = true
+include = ["*/step-move/**"]
+stripcomponents = 2
+
+[".local/share/kwin/scripts/stepregrid"]
+type = "archive"
+url = "https://github.com/nclarius/KWin-window-geometry-scripts/archive/refs/tags/step-regrid_v3.0.tar.gz"
+exact = true
+include = ["*/step-regrid/**"]
+stripcomponents = 2
+
+[".local/share/kwin/scripts/stepresize"]
+type = "archive"
+url = "https://github.com/nclarius/KWin-window-geometry-scripts/archive/refs/tags/step-resize_v2.0.tar.gz"
+exact = true
+include = ["*/step-resize/**"]
+stripcomponents = 2
+
+[".local/share/kwin/scripts/swapsides"]
+type = "archive"
+url = "https://github.com/nclarius/KWin-window-geometry-scripts/archive/refs/tags/swap-sides_v5.0.tar.gz"
+exact = true
+include = ["*/swap-sides/**"]
+stripcomponents = 2
+
+[".local/share/kwin/scripts/tilegaps"]
+type = "archive"
+url = "https://github.com/nclarius/tile-gaps/archive/refs/tags/window-gaps_v8.0.tar.gz"
+exact = true
+stripcomponents = 1

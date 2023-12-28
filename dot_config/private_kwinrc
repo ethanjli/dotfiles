@@ -50,6 +50,7 @@ dynamicVirtualDesktopsEnabled=true
 dynamic_workspacesEnabled=true
 invertEnabled=true
 kdesnapassistEnabled=false
+kwin-live-captions-assistantEnabled=true
 kwin4_effect_dimscreenEnabled=true
 kwin4_effect_fadeEnabled=true
 kwin4_effect_fullscreenEnabled=false
