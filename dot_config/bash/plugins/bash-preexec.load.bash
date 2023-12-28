@@ -1,8 +1,8 @@
 _bash_plugins_bash-preexec_load() {
   unset -f "$0"
 
-  local xdg_cache_home="${XDG_CACHE_HOME:-$HOME/.cache}"
-  local cached_plugin="${xdg_cache_home}/bash/plugins/bash-preexec"
-  source "${cached_plugin}/bash-preexec.sh"
+  local xdg_config_home="${XDG_CONFIG:-$HOME/.config}"
+  local plugin="${xdg_config_home}/bash/plugins/bash-preexec"
+  source "${plugin}/bash-preexec.sh"
 }
 _bash_plugins_bash-preexec_load
