@@ -3,7 +3,7 @@ ShadowSize=ShadowVeryLarge
 ShadowStrength=128
 
 [Style]
-MenuOpacity=60
+MenuOpacity=0
 
 [Windeco]
 ButtonSize=ButtonSmall

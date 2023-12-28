@@ -64,11 +64,8 @@ case "$mimetype" in
     ;;
   *)
     case "$lowercased" in
-      *.tar.*)
-        tar -tf "$1"
-        ;;
-      *.zip)
-        unzip -l "$1"
+      *.tar | *.zip | *.7z | *.gz | *.xz | *.lzma | *.bz | *.bz2 | *.lz4 | *.sz | *.zst | *.rar)
+        ouch list -t "$1"
         ;;
       *)
         echo "Unknown file type: $mimetype"

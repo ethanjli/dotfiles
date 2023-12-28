@@ -10,6 +10,11 @@ _k_friendly_name=Keyboard Layout Switcher
 _k_friendly_name=LF
 _launch=Meta+F2,none,LF
 
+[Steam--Steam--1703791259.427194.desktop]
+Configure=none,none,Configure in Bottles
+_k_friendly_name=Steam
+_launch=,none,Launch Steam
+
 [Zellij Host.desktop]
 _k_friendly_name=Zellij
 _launch=Meta+F1,none,Launch Zellij
@@ -284,11 +289,11 @@ view_zoom_out=Meta+Ctrl+-,Meta+-,Zoom Out
 
 [mediacontrol]
 _k_friendly_name=Media Controller
-mediavolumedown=none,none,Media volume down
-mediavolumeup=none,none,Media volume up
+mediavolumedown=none,,Media volume down
+mediavolumeup=none,,Media volume up
 nextmedia=Media Next,Media Next,Media playback next
 pausemedia=Media Pause,Media Pause,Pause media playback
-playmedia=none,none,Play media playback
+playmedia=none,,Play media playback
 playpausemedia=Media Play,Media Play,Play/Pause media playback
 previousmedia=Media Previous,Media Previous,Media playback previous
 stopmedia=Media Stop,Media Stop,Stop media playback

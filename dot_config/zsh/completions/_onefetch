@@ -1,0 +1,77 @@
+#compdef onefetch
+
+autoload -U is-at-least
+
+_onefetch() {
+    typeset -A opt_args
+    typeset -a _arguments_options
+    local ret=1
+
+    if is-at-least 5.2; then
+        _arguments_options=(-s -S -C)
+    else
+        _arguments_options=(-s -C)
+    fi
+
+    local context curcontext="$curcontext" state line
+    _arguments "${_arguments_options[@]}" \
+'*-d+[Allows you to disable FIELD(s) from appearing in the output]:FIELD:(project description head pending version created languages dependencies authors last-change contributors url commits churn lines-of-code size license)' \
+'*--disabled-fields=[Allows you to disable FIELD(s) from appearing in the output]:FIELD:(project description head pending version created languages dependencies authors last-change contributors url commits churn lines-of-code size license)' \
+'--number-of-authors=[Maximum NUM of authors to be shown]:NUM: ' \
+'--number-of-languages=[Maximum NUM of languages to be shown]:NUM: ' \
+'--number-of-file-churns=[Maximum NUM of file churns to be shown]:NUM: ' \
+'--churn-pool-size=[Minimum NUM of commits from HEAD used to compute the churn summary]:NUM: ' \
+'*-e+[Ignore all files & directories matching EXCLUDE]:EXCLUDE: ' \
+'*--exclude=[Ignore all files & directories matching EXCLUDE]:EXCLUDE: ' \
+'--no-bots=[Exclude \[bot\] commits. Use <REGEX> to override the default pattern]' \
+'*-T+[Filters output by language type]:TYPE:(programming markup prose data)' \
+'*--type=[Filters output by language type]:TYPE:(programming markup prose data)' \
+'*-t+[Changes the text colors (X X X...)]:X: ' \
+'*--text-colors=[Changes the text colors (X X X...)]:X: ' \
+'--number-separator=[Which thousands SEPARATOR to use]:SEPARATOR:(plain comma space underscore)' \
+'--ascii-input=[Takes a non-empty STRING as input to replace the ASCII logo]:STRING:_cmdstring' \
+'*-c+[Colors (X X X...) to print the ascii art]:X: ' \
+'*--ascii-colors=[Colors (X X X...) to print the ascii art]:X: ' \
+'-a+[Which LANGUAGE'\''s ascii art to print]:LANGUAGE:(abnf abap ada agda arduino assembly autohotkey bash c cmake c# ceylon clojure coffeescript coldfusion coq c++ crystal css d dart dockerfile emacs-lisp elixir elm emojicode erlang f# fish forth fortran fortranmodern gdscript glsl go graphql groovy haskell haxe hcl hlsl holyc html idris java javascript json jsonnet jsx julia jupyter-notebooks kotlin llvm lisp lua makefile markdown nim nix ocaml objective-c odin org pascal perl raku php powershell processing prolog protocol-buffers purescript python qml r racket renpy ruby rust sass scala scheme shell solidity sql svelte swift systemverilog tcl tex toml tsx typescript vala verilog vhdl vimscript visualbasic vue webassembly wolfram xsl xaml xml yaml zig zsh)' \
+'--ascii-language=[Which LANGUAGE'\''s ascii art to print]:LANGUAGE:(abnf abap ada agda arduino assembly autohotkey bash c cmake c# ceylon clojure coffeescript coldfusion coq c++ crystal css d dart dockerfile emacs-lisp elixir elm emojicode erlang f# fish forth fortran fortranmodern gdscript glsl go graphql groovy haskell haxe hcl hlsl holyc html idris java javascript json jsonnet jsx julia jupyter-notebooks kotlin llvm lisp lua makefile markdown nim nix ocaml objective-c odin org pascal perl raku php powershell processing prolog protocol-buffers purescript python qml r racket renpy ruby rust sass scala scheme shell solidity sql svelte swift systemverilog tcl tex toml tsx typescript vala verilog vhdl vimscript visualbasic vue webassembly wolfram xsl xaml xml yaml zig zsh)' \
+'--true-color=[Specify when to use true color]:WHEN:(auto never always)' \
+'-i+[Path to the IMAGE file]:IMAGE:_files' \
+'--image=[Path to the IMAGE file]:IMAGE:_files' \
+'--image-protocol=[Which image PROTOCOL to use]:PROTOCOL:(kitty sixel iterm)' \
+'--color-resolution=[VALUE of color resolution to use with SIXEL backend]:VALUE:(16 32 64 128 256)' \
+'-o+[Outputs Onefetch in a specific format]:FORMAT:(json yaml)' \
+'--output=[Outputs Onefetch in a specific format]:FORMAT:(json yaml)' \
+'--generate=[If provided, outputs the completion file for given SHELL]:SHELL:(bash elvish fish powershell zsh)' \
+'--no-title[Hides the title]' \
+'--no-merges[Ignores merge commits]' \
+'-E[Show the email address of each author]' \
+'--email[Show the email address of each author]' \
+'--include-hidden[Count hidden files and directories]' \
+'-z[Use ISO 8601 formatted timestamps]' \
+'--iso-time[Use ISO 8601 formatted timestamps]' \
+'--no-bold[Turns off bold formatting]' \
+'--no-color-palette[Hides the color palette]' \
+'--no-art[Hides the ascii art or image if provided]' \
+'-l[Prints out supported languages]' \
+'--languages[Prints out supported languages]' \
+'-p[Prints out supported package managers]' \
+'--package-managers[Prints out supported package managers]' \
+'-h[Print help (see more with '\''--help'\'')]' \
+'--help[Print help (see more with '\''--help'\'')]' \
+'-V[Print version]' \
+'--version[Print version]' \
+'::input -- Run as if onefetch was started in <input> instead of the current working directory:_files -/' \
+&& ret=0
+}
+
+(( $+functions[_onefetch_commands] )) ||
+_onefetch_commands() {
+    local commands; commands=()
+    _describe -t commands 'onefetch commands' commands "$@"
+}
+
+if [ "$funcstack[1]" = "_onefetch" ]; then
+    _onefetch "$@"
+else
+    compdef _onefetch onefetch
+fi

@@ -36,7 +36,6 @@ TODO: add screenshots
       for fast startup times
     - left-alignment of all elements to prevent terminal resizing weirdness
     - a reduced set of elements focused on the kinds of projects I work on or might work on
-  - Synchronized, fuzzy-searchable shell history using [atuin](https://github.com/atuinsh/atuin)
   - A fast, simple, and generalizable plugin system which just uses chezmoi to download plugins at
     pinned versions
   - Organization of files into `$HOME/.config/zsh` and `$HOME/.cache/zsh`
@@ -46,9 +45,9 @@ TODO: add screenshots
     fast, in contrast to Starship)
     - configured to have a similar look-and-feel as my powerlevel10k prompt configuration
     - a reduced set of modules focused on the kinds of projects I work on or might work on
-  - Synchronized, fuzzy-searchable shell history using [atuin](https://github.com/atuinsh/atuin)
   - A fast, simple, and generalizable plugin system which just uses chezmoi to download plugins at
     pinned versions
+- Synchronized, fuzzy-searchable shell history using [atuin](https://github.com/atuinsh/atuin)
 - A [Zellij](https://zellij.dev/) configuration, notably:
   - Custom keybindings for a simpler, more vim-like experience
   - A modal usage model which defaults to locked mode as the base and enters normal mode using
@@ -109,11 +108,15 @@ If you want to take advantage of certain features, you will need to have some pa
 your host environment:
 
 - If you want to use Neovim: the Neovim build downloaded by aqua doesn't run on musl hosts such as
-  Alpine Linux - in such environments, Neovim needs to be provided by the host.
+  Alpine Linux - in such environments, Neovim needs to be provided by the host. The shell
+  configurations will default to using the host-provided neovim if it exists; otherwise, the
+  aqua-provided Neovim will be used as a fallback.
 - If you want to preview SVG images in LF, you will need ImageMagick, which is not provided by aqua.
-  I will eventually look for an alternative which could be provided via aqua.
+  I will eventually look for an alternative which could be provided via aqua, or I will investigate
+  whether I can specify a Docker container with ImageMagick as part of the dotfiles environment.
 - If you want to preview videos in LF, you will need FFMPEG, which is not provided by aqua.
-  I will eventually look for an alternative which could be provided via aqua.
+  I will eventually look for an alternative which could be provided via aqua, or I will investigate
+  whether I can specify a Docker container with FFMPEG as part of the dotfiles environment.
 - If you want to use zsh, you will need to have it already installed
   I will eventually investigate the [statically-linked zsh build](https://github.com/romkatv/zsh-bin)
   to determine whether it might make sense to provide zsh via aqua or chezmoi.
