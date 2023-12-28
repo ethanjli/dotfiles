@@ -31,13 +31,6 @@ _zsh_plugins_installation
 _zsh_integrations_pre() {
   unset -f "$0"
 
-  # Look for host-provided neovim (needed when the host uses musl instead of glibc, e.g. in Alpine Linux)
-  # before it gets clobbered by aqua
-  if command -v nvim &> /dev/null; then
-    # FIXME: this breaks on musl hosts when we open a shell inside a shell!
-    _zsh_integration_nvim_host_path="$(which nvim)"
-  fi
-
   # Set env vars so that aqua will provide direnv if needed
   local xdg_config_home="${XDG_CONFIG_HOME:-$HOME/.config}"
   local zsh_configs="${xdg_config_home}/zsh"
@@ -127,8 +120,6 @@ _zsh_plugins_loading
 _zsh_integrations_post() {
   unset -f "$0"
 
-  local nvim_host_path="$_zsh_integration_nvim_host_path"
-
   # Set up integrations
   local xdg_config_home="${XDG_CONFIG_HOME:-$HOME/.config}"
   local zsh_configs="${xdg_config_home}/zsh"
@@ -151,6 +142,5 @@ _zsh_integrations_post() {
   done
 }
 _zsh_integrations_post
-unset _zsh_integration_nvim_host_path
 
 # TODO: include https://github.com/marlonrichert/zsh-autocomplete
