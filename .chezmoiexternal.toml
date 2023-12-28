@@ -46,9 +46,7 @@ url = "https://raw.githubusercontent.com/aristocratos/btop/v1.2.13/themes/onedar
 
 [".local/share/aurorae/themes/ActiveAccentFrame"]
 type = "archive"
-# Note: the latest tagged release, v9.2, has an incorrect config value for maximized titlebar
-# thickness, so we must pull from master.
-url = "https://github.com/nclarius/Plasma-window-decorations/archive/refs/heads/master.tar.gz"
+url = "https://github.com/nclarius/Plasma-window-decorations/archive/0205869.tar.gz"
 exact = true
 stripcomponents = 2
 include = ["*/ActiveAccentFrame/*"]
@@ -72,7 +70,7 @@ url = "https://raw.githubusercontent.com/Prayag2/kde_onedark/v2.1/color-schemes/
 [".local/share/plasma/desktoptheme/Arch"]
 type = "archive"
 # Note: there are no release tags, so we must pull from main
-url = "https://github.com/ddh4r4m/Arch/archive/refs/heads/main.tar.gz"
+url = "https://github.com/ddh4r4m/Arch/archive/14ab5e5.tar.gz"
 exact = true
 include = ["*/plasma/desktoptheme/Arch/**"]
 stripcomponents = 4
@@ -93,6 +91,6 @@ stripcomponents = 1
 [".local/share/plasma/plasmoids/org.kde.plasma.minimaldesktopindicator"]
 type = "archive"
 # Note: there are no release tags, so we must pull from main
-url = "https://github.com/DualityKyle/plasma-desktop-indicator/archive/refs/heads/main.tar.gz"
+url = "https://github.com/DualityKyle/plasma-desktop-indicator/archive/3298648.tar.gz"
 exact = true
 stripcomponents = 1
