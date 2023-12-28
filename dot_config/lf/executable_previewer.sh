@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-#
+
 get_tmpfile() {
   if has mktemp; then
     printf "%s%s" "$(mktemp)" "$1"

@@ -16,8 +16,8 @@ keybinds clear-defaults=true {
     bind "Alt =" { Resize "Increase"; }
     bind "Alt -" { Resize "Decrease"; }
 
-    bind "Alt o" { NewTab; }
-    bind "Alt u" { NewPane; }
+    // bind "Alt o" { NewTab; } // this is disabled because Zellij misreports the state as locked afterwards
+    // bind "Alt u" { NewPane; } // this is disabled for consistency with `Alt o`
     bind "Alt y" { ToggleFloatingPanes; }
     bind "Alt Y" { TogglePaneEmbedOrFloating; }
     bind "Alt p" { ToggleFocusFullscreen; }
