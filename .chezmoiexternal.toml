@@ -44,7 +44,7 @@ url = "https://raw.githubusercontent.com/aristocratos/btop/v1.2.13/themes/onedar
 
 # KDE Plasma Theming
 
-[".local/share/aurorae/themes/ActiveAccentFrame/"]
+[".local/share/aurorae/themes/ActiveAccentFrame"]
 type = "archive"
 # Note: the latest tagged release, v9.2, has an incorrect config value for maximized titlebar
 # thickness, so we must pull from master.
@@ -69,10 +69,30 @@ url = "https://raw.githubusercontent.com/Prayag2/kde_onedark/v2.1/color-schemes/
 type = "file"
 url = "https://raw.githubusercontent.com/Prayag2/kde_onedark/v2.1/color-schemes/One-Dark/One-Dark-Yellow.colors"
 
-[".local/share/plasma/desktoptheme/Arch/"]
+[".local/share/plasma/desktoptheme/Arch"]
 type = "archive"
-# Note: there are no release tags, so we must pull from master
+# Note: there are no release tags, so we must pull from main
 url = "https://github.com/ddh4r4m/Arch/archive/refs/heads/main.tar.gz"
 exact = true
 include = ["*/plasma/desktoptheme/Arch/**"]
 stripcomponents = 4
+
+[".local/share/plasma/plasmoids/com.github.zren.simpleweather"]
+type = "archive"
+url = "https://github.com/Zren/plasma-applet-simpleweather/archive/refs/tags/v8.tar.gz"
+exact = true
+include = ["*/package/**"]
+stripcomponents = 2
+
+[".local/share/plasma/plasmoids/org.kde.paneltransparencybutton"]
+type = "archive"
+url = "https://github.com/psifidotos/paneltransparencybutton/archive/refs/tags/0.2.0.tar.gz"
+exact = true
+stripcomponents = 1
+
+[".local/share/plasma/plasmoids/org.kde.plasma.minimaldesktopindicator"]
+type = "archive"
+# Note: there are no release tags, so we must pull from main
+url = "https://github.com/DualityKyle/plasma-desktop-indicator/archive/refs/heads/main.tar.gz"
+exact = true
+stripcomponents = 1

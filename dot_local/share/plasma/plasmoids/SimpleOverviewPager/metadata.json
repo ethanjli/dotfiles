@@ -1,0 +1,29 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "no@microsoft.com",
+                "Name": "tuxg0d"
+            }
+        ],
+        "Category": "Windows and Tasks",
+        "Dependencies": [
+        ],
+        "Description": "Switch between virtual desktops",
+        "EnabledByDefault": true,
+        "Icon": "user-desktop",
+        "Id": "SimpleOverviewPager",
+        "License": "GPL-2.0+",
+        "Name": "SimpleOverviewPager",
+        "ServiceTypes": [
+            "Plasma/Applet"
+        ],
+        "Version": "4.0",
+        "Website": "http://userbase.kde.org/Plasma/Pager"
+    },
+    "X-Plasma-API": "declarativeappletscript",
+    "X-Plasma-MainScript": "ui/main.qml",
+    "X-Plasma-Provides": [
+        "org.kde.plasma.virtualdesktops"
+    ]
+}
