@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE khotnewstuff3>
+<hotnewstuffregistry>
+ <stuff category="298">
+  <name>Black Mountain Dusk 1</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>ethanjli</author>
+  <homepage>https://store.kde.org/p/2117226</homepage>
+  <licence></licence>
+  <version></version>
+  <rating>50</rating>
+  <downloads>1</downloads>
+  <installedfile>/home/lietk12/.local/share/wallpapers/Black-Mountain-Dusk-1.jpg</installedfile>
+  <id>2117226</id>
+  <releasedate>2023-12-28</releasedate>
+  <summary>A view of clouds over the San Francisco Bay Area at sunset, from Black Mountain.&lt;br />
+&lt;br />
+Photographed on September 12, 2022.</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/75/71/21/2117226/black-mountain-dusk-1.jpg</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/75/71/21/2117226/black-mountain-dusk-1.jpg</previewBig>
+  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE3MDM3MjQ0MjIiLCJvIjoiMSIsInMiOiI4OGIwMDI4YmI0YmE2MTJkYjQzZDU4OTI4YTAzYjZhMWJmOGNlZWRiNGRhZDUzYmUxNTI0OWY4ZjgxNmRiZmZjMmY4Y2NkZTQ2ODgwYTVmMGQ0OTZhOTU1OTJlOWM2NDRiZGFiODdjOThkODI1NWFjOTYzNWVjNTljYzc0NTNhMyIsInQiOjE3MDM3MjgzNTMsInN0ZnAiOm51bGwsInN0aXAiOiIxMjguMTIuMTIzLjg4In0.nzRmhr9Y25t4NAPoPAKJxnJN47gApTmMPJO5JiNX0o4/Black-Mountain-Dusk-1.jpg</payload>
+  <tags>citylights,dark,clouds,grassfield,cc-by,original-product,sunset</tags>
+  <status>installed</status>
+ </stuff>
+</hotnewstuffregistry>

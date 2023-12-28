@@ -73,7 +73,7 @@ DialogHeight=540
 DialogWidth=720
 
 [Containments][134][Applets][135][Shortcuts]
-global=Meta+Shift+Space
+global=Alt+F2
 
 [Containments][134][Applets][137]
 immutability=1
@@ -963,7 +963,7 @@ immutability=1
 lastScreen=1
 location=0
 plugin=org.kde.desktopcontainment
-wallpaperplugin=a2n.blur
+wallpaperplugin=org.kde.image
 
 [Containments][297][ConfigDialog]
 DialogHeight=1071
@@ -979,6 +979,7 @@ Image=/usr/share/wallpapers/F39/
 SlidePaths=/home/lietk12/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][297][Wallpaper][org.kde.image][General]
+Image=file:///home/lietk12/.local/share/wallpapers/No Logo QAT 02.png
 PreviewImage=/usr/share/backgrounds/f39/default/f39-01-night.png
 
 [Containments][58]
@@ -1123,8 +1124,8 @@ shownItems=org.kde.plasma.notifications
 [Containments][76]
 ItemGeometries-1805x1203=Applet-282:1537,1177,72,54,0;Applet-98:294.5,1197,315,54,0;
 ItemGeometries-1920x1080=Applet-282:1988,1478,72,54,0;Applet-98:520,1498,315,54,0;
-ItemGeometries-2256x1504=Applet-282:1988,1478,72,54,0;Applet-98:520,1498,315,54,0;
-ItemGeometriesHorizontal=Applet-282:1988,1478,72,54,0;Applet-98:520,1498,315,54,0;
+ItemGeometries-2256x1504=Applet-358:1872,112,192,160,0;
+ItemGeometriesHorizontal=Applet-358:1872,112,192,160,0;
 activityId=20702779-8c04-4fc1-b7b7-dbcfe8d9f80d
 formfactor=0
 immutability=1
@@ -1133,37 +1134,20 @@ location=0
 plugin=org.kde.desktopcontainment
 wallpaperplugin=org.kde.image
 
-[Containments][76][Applets][282]
+[Containments][76][Applets][358]
 immutability=1
-plugin=org.kde.plasma.minimaldesktopindicator
+plugin=com.github.zren.simpleweather
 
-[Containments][76][Applets][282][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
+[Containments][76][Applets][358][Configuration][ConfigDialog]
+DialogHeight=600
+DialogWidth=800
 
-[Containments][76][Applets][282][Configuration][General]
-activeDot=⚫
-desktopWrapOn=true
-dotSize=1
-dotSizeCustom=20
-dotType=1
-inactiveDot=⚪
-leftClickAction=GoToClicked
-singleRow=true
-
-[Containments][76][Applets][98]
-immutability=1
-plugin=org.kde.plasma.taskmanager
-
-[Containments][76][Applets][98][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
-
-[Containments][76][Applets][98][Configuration][General]
-groupedTaskVisualization=1
-highlightWindows=false
-launchers=
-showToolTips=false
+[Containments][76][Applets][358][Configuration][General]
+fontFamily=Atkinson Hyperlegible
+forecastFontSize=20
+minMaxFontSize=24
+source=bbcukmet|weather|Palo Alto, United States, US|5380748
+textColor=#abb2bf
 
 [Containments][76][ConfigDialog]
 DialogHeight=877
@@ -1180,7 +1164,7 @@ Image=/home/lietk12/Projects/Lutho/wallpapers/Black Mountain Dusk Color Graded.j
 SlidePaths=/home/lietk12/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][76][Wallpaper][org.kde.image][General]
-Image=/home/lietk12/Projects/Lutho/wallpapers/Black Mountain Dusk Color Graded.jpeg
+Image=/home/lietk12/.local/share/wallpapers/Black-Mountain-Dusk-1.jpg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][76][Wallpaper][org.kde.slideshow][General]

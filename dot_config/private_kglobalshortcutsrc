@@ -124,8 +124,8 @@ MoveZoomRight=none,Meta+Ctrl+Right,Move Right
 MoveZoomUp=none,Meta+Ctrl+Up,Move Up
 Overview=Meta+Alt+Space,Meta+W,Toggle Overview
 Setup Window Shortcut=none,,Setup Window Shortcut
-Show Desktop=none,Meta+D,Peek at Desktop
-ShowDesktopGrid=none,Meta+F8,Show Desktop Grid
+Show Desktop=Meta+Shift+Space,Meta+D,Peek at Desktop
+ShowDesktopGrid=none,Ctrl+F8,Show Desktop Grid
 Step move: center=none,none,Step Move: Center
 Step move: down=Meta+Shift+Down,none,Step Move: Down
 Step move: left=Meta+Shift+Left,none,Step Move: Left
@@ -322,7 +322,7 @@ _launch=Ctrl+Alt+T,Ctrl+Alt+T,Konsole
 [org.kde.krunner.desktop]
 RunClipboard=none,Alt+Shift+F2,Run command on clipboard contents
 _k_friendly_name=KRunner
-_launch=Alt+F2\tSearch\tAlt+Space,Alt+Space\tAlt+F2\tSearch,KRunner
+_launch=Alt+Space\tSearch,Alt+Space\tAlt+F2\tSearch,KRunner
 
 [org.kde.okular.desktop]
 _k_friendly_name=Okular
@@ -383,8 +383,8 @@ activate widget 103=none,none,Activate Activity Pager Widget
 activate widget 109=none,none,Activate Application Launcher Widget
 activate widget 112=none,none,Activate Digital Clock Widget
 activate widget 131=none,none,Activate Minimal Desktop Indicator Widget
-activate widget 135=Meta+Shift+Space,none,Activate Global Menu Widget
-activate widget 137=Alt+F1,none,Activate Application Launcher Widget
+activate widget 135=Alt+F2,none,Activate Global Menu Widget
+activate widget 137=none,none,Activate Application Launcher Widget
 activate widget 139=none,none,Activate System Tray Widget
 activate widget 201=none,none,Activate Application Launcher Widget
 activate widget 228=none,none,Activate Panel Transparency Button Widget
