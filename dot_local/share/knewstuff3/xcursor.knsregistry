@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE khotnewstuff3>
+<hotnewstuffregistry>
+ <stuff category="107">
+  <name>PearDarkCursors</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>adhe</author>
+  <homepage>https://store.kde.org/p/1312474</homepage>
+  <licence></licence>
+  <version>0.1</version>
+  <rating>69</rating>
+  <downloads>133614</downloads>
+  <installedfile>/home/lietk12/.icons/PearDarkCursors/*</installedfile>
+  <id>1312474</id>
+  <releasedate>2019-09-26</releasedate>
+  <summary>Cursor theme based on a breeze and deepin theme cursor.&lt;br />
+&lt;br />
+Thanks to&lt;br />
+&lt;ul>&lt;li> VDG KDE&lt;/li>&lt;li> Deepin team&lt;/li>&lt;/ul></summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/53/17/49/1312474/a0b361d058ed6cb2294c98cf87e5f383a0181.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/53/17/49/1312474/a0b361d058ed6cb2294c98cf87e5f383a0181.png</previewBig>
+  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE1Njk1MjQ0OTYiLCJvIjoiMSIsInMiOiIzYWI2MDU4MzUyNjdlYjM3MzgxYmQ1ODlmZTk1ZTA4ZjYzNWE3ZTg0MWY2N2RjOWRlMmU4MmI3NGRiNDg5NzgwM2MwZDVlOTIzMDRlZWUwYWY4OWNlOGNkZjdhMjI5YTdjYmRiOGUxOGIzMjliMDIzY2Y5YTdkZjNiYTNhYzk2ZCIsInQiOjE2OTkxNTM5MzksInN0ZnAiOm51bGwsInN0aXAiOiIxMjguMTIuMTIyLjEyNiJ9.fmnjW0Qpox1OKjJGhfCNnWiyRpKPRQMolp1PKkNc7VY/PearDarkCursors.tar.gz</payload>
+  <tags>linux,deepin,cursor,breeze,cc-by-sa,unix,theme</tags>
+  <status>installed</status>
+ </stuff>
+</hotnewstuffregistry>
