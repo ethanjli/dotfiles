@@ -95,7 +95,17 @@ url = "https://github.com/DualityKyle/plasma-desktop-indicator/archive/3298648.t
 exact = true
 stripcomponents = 1
 
+# Extra icons
+
+[".local/share/icons/distrobox"]
+type = "archive"
+url = "https://github.com/89luca89/distrobox/archive/refs/tags/1.6.0.1.tar.gz"
+exact = true
+include = ["*/docs/assets/png/distros/**"]
+stripcomponents = 5
+
 # KWin Scripts
+
 [".local/share/kwin/scripts/autocomposer"]
 type = "archive"
 url = "https://gitlab.com/es20490446e/kwin-script-autocomposer/-/archive/5f4d617a.tar.gz"
