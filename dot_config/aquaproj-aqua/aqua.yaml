@@ -81,6 +81,7 @@ packages: # comments are added for the first package in each section
   - name: casey/just@1.19.0 # Command-running
   - name: watchexec/watchexec@v1.24.2
   - name: stateful/runme@v2.0.6
+  - name: elkowar/pipr@v0.0.16
   - name: topgrade-rs/topgrade@v13.0.0 # Package management
   - name: pemistahl/grex@v1.4.4 # Help
   - name: dbrgn/tealdeer@v1.6.1

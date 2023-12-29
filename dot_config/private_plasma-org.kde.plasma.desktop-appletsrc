@@ -783,7 +783,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][242][Applets][288][Configuration]
-PreloadWeight=20
+PreloadWeight=12
 
 [Containments][242][Applets][331][Configuration]
 PreloadWeight=42

@@ -72,7 +72,8 @@ keybinds clear-defaults=true {
     bind "8" { GoToTab 8; SwitchToMode "locked"; }
     bind "9" { GoToTab 9; SwitchToMode "locked"; }
 
-    bind "Z" { Detach; }
+    bind "q" { Detach; }
+    bind "Z" { Quit; }
   }
 
   shared_among "pane" "resize" {

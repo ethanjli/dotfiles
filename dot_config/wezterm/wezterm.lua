@@ -59,10 +59,10 @@ config.colors = {
 }
 
 config.window_padding = {
-  left = 0,
-  right = 0,
-  top = 0,
-  bottom = 0,
+  left = "6pt",
+  right = "6pt",
+  top = "6pt",
+  bottom = "6pt",
 }
 
 config.font = wezterm.font {
