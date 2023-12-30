@@ -78,7 +78,7 @@ packages: # comments are added for the first package in each section
   - name: Builditluc/wiki-tui@v0.8.2
   - name: Rigellute/spotify-tui@v0.25.0
   - name: jpbruinsslot/slack-term@v0.5.0
-  - name: casey/just@1.19.0 # Command-running
+  - name: casey/just@1.16.0 # Command-running
   - name: watchexec/watchexec@v1.24.2
   - name: stateful/runme@v2.0.6
   - name: elkowar/pipr@v0.0.16

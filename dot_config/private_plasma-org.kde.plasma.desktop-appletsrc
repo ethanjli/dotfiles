@@ -489,7 +489,7 @@ plugin=org.kde.plasma.kickoff
 [Containments][200][Applets][201][Configuration]
 PreloadWeight=100
 popupHeight=720
-popupWidth=739
+popupWidth=743
 
 [Containments][200][Applets][201][Configuration][ConfigDialog]
 DialogHeight=540
@@ -769,7 +769,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][242][Applets][256][Configuration]
-PreloadWeight=22
+PreloadWeight=27
 
 [Containments][242][Applets][257]
 immutability=1
@@ -783,7 +783,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][242][Applets][288][Configuration]
-PreloadWeight=12
+PreloadWeight=0
 
 [Containments][242][Applets][331][Configuration]
 PreloadWeight=42
@@ -952,9 +952,11 @@ extraItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.battery,org.kde.pla
 knownItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.nightcolorcontrol,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.vault,org.kde.plasma.volume
 
 [Containments][297]
+ItemGeometries-1024x768=
 ItemGeometries-1097x617=
 ItemGeometries-1280x800=
 ItemGeometries-1920x1080=
+ItemGeometries-585x439=
 ItemGeometries-640x480=
 ItemGeometriesHorizontal=
 activityId=20702779-8c04-4fc1-b7b7-dbcfe8d9f80d
@@ -966,7 +968,7 @@ plugin=org.kde.desktopcontainment
 wallpaperplugin=org.kde.image
 
 [Containments][297][ConfigDialog]
-DialogHeight=1071
+DialogHeight=768
 DialogWidth=952
 
 [Containments][297][General]
@@ -979,8 +981,8 @@ Image=/usr/share/wallpapers/F39/
 SlidePaths=/home/lietk12/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][297][Wallpaper][org.kde.image][General]
-Image=file:///home/lietk12/.local/share/wallpapers/No Logo QAT 02.png
-PreviewImage=/usr/share/backgrounds/f39/default/f39-01-night.png
+Image=/usr/share/wallpapers/F39/
+SlidePaths=/home/lietk12/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][58]
 activityId=
@@ -1124,8 +1126,8 @@ shownItems=org.kde.plasma.notifications
 [Containments][76]
 ItemGeometries-1805x1203=Applet-282:1537,1177,72,54,0;Applet-98:294.5,1197,315,54,0;
 ItemGeometries-1920x1080=Applet-282:1988,1478,72,54,0;Applet-98:520,1498,315,54,0;
-ItemGeometries-2256x1504=Applet-358:1872,112,192,160,0;
-ItemGeometriesHorizontal=Applet-358:1872,112,192,160,0;
+ItemGeometries-2256x1504=Applet-358:1872,112,208,160,0;
+ItemGeometriesHorizontal=Applet-358:1872,112,208,160,0;
 activityId=20702779-8c04-4fc1-b7b7-dbcfe8d9f80d
 formfactor=0
 immutability=1
