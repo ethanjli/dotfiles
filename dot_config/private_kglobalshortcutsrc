@@ -28,6 +28,10 @@ _k_friendly_name=Visual Studio Code
 _launch=none,none,Launch Visual Studio Code
 new-empty-window=none,none,New Empty Window
 
+[com.github.finefindus.eyedropper.desktop]
+_k_friendly_name=Eyedropper
+_launch=none,none,Launch Eyedropper
+
 [com.github.junrrein.PDFSlicer.desktop]
 _k_friendly_name=PDF Slicer
 _launch=none,none,Launch PDF Slicer

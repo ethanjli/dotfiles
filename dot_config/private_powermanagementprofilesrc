@@ -18,7 +18,7 @@ triggerLidActionWhenExternalMonitorPresent=false
 profile=power-saver
 
 [AC][SuspendSession]
-idleTime=900000
+idleTime=3600000
 suspendThenHibernate=true
 suspendType=1
 

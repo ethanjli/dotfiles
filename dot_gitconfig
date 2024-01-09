@@ -25,3 +25,6 @@
 	allowedSignersFile = /var/home/lietk12/.ssh/allowed_signers
 [credential "https://dev.azure.com"]
 	useHttpPath = true
+[push]
+	default = current
+	autoSetupRemote = true

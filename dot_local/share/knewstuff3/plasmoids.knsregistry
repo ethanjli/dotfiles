@@ -2,23 +2,27 @@
 <!DOCTYPE khotnewstuff3>
 <hotnewstuffregistry>
  <stuff category="105">
-  <name>Simple Overview Pager</name>
+  <name>Panel Transparency Button</name>
   <providerid>https://api.kde-look.org/ocs/v1/</providerid>
-  <author>tuxg0d</author>
-  <homepage>https://store.kde.org/p/1833220</homepage>
+  <author>Psifidotos</author>
+  <homepage>https://store.kde.org/p/1338479</homepage>
   <licence></licence>
-  <version>1.0</version>
-  <rating>65</rating>
-  <downloads>3786</downloads>
-  <installedfile>/home/lietk12/.local/share/plasma/plasmoids/SimpleOverviewPager</installedfile>
-  <id>1833220</id>
-  <releasedate>2022-06-20</releasedate>
-  <summary>Fork of Simple Pager by adhe that opens the Overview instead. Requires Plasma 5.24 and above.</summary>
+  <version>0.2.0</version>
+  <rating>81</rating>
+  <downloads>68371</downloads>
+  <installedfile>/home/lietk12/.local/share/plasma/plasmoids/org.kde.paneltransparencybutton</installedfile>
+  <id>1338479</id>
+  <releasedate>2020-01-22</releasedate>
+  <summary>Plasma 5 applet that enables/disables transparency for plasma panels. Plasma 5.17.3 is required to work correctly and enable/disable panel shadows when needed.&lt;br />
+&lt;br />
+How To Use:&lt;br />
+1. Unlock your widgets and add transparency button in a plasma panel&lt;br />
+2. Activate it and your plasma...</summary>
   <changelog></changelog>
-  <preview>https://images.pling.com/cache/100x100-0/img/00/00/49/96/54/1833220/simpleoverviewpager-icon.png</preview>
-  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/49/96/54/1833220/simpleoverviewpager-icon.png</previewBig>
-  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2NTU2OTMwMTYiLCJvIjoiMSIsInMiOiI5MzA4OWJhYjE5OWYzNDUxNmRlODI0YzE3Y2RlOWU3ZWY5YjYxMjAxMGEwYWMxNWExOTFlMWQ3ODU0ZjVjNzhjYjM5YmQ1NjgzMTE5NTY3MGU2NDNkOTQ2MzY4Y2ExZTk4NDUwZWM4MGEyODA1ODJkODNiMGYxNmI0NmMyNTdmNCIsInQiOjE3MDMyODA3MjYsInN0ZnAiOm51bGwsInN0aXAiOiIxMjguMTIuMTIyLjk4In0.tH3iSzTHb8l8LdDsQm3lu-hEkT_Rb-5TaDhoSLByNVw/SimpleOverviewPager.plasmoid</payload>
-  <tags>widget,plasma,plasma##majorversion=5,kde,linux,unix,gplv2-later,extension,efi</tags>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/02/97/22/1338479/00c7953536ec34f6b9a640b6ad3d9e62e556.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/02/97/22/1338479/00c7953536ec34f6b9a640b6ad3d9e62e556.png</previewBig>
+  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE1Nzk2ODU3MzIiLCJvIjoiMSIsInMiOiI3ZTI5YTViMmQ5YjFmODcyYTQzMzU0NDZhOWFiNmQ1MDIwNDJmMTNjYmJjZmFjNzg2NzczNzQyNTJjYzM3Mjc0NzQ0NzE0ZTg5N2VhNTNlOGU4ZGE1NzA0YWU5YTU1ODE1MjI1ZjEzYWUwNTdlNGQyODk3OGIzZTcyMDBmZDYxNiIsInQiOjE2OTkxMDA4MTQsInN0ZnAiOm51bGwsInN0aXAiOiIxNzEuNjYuMTMuNTMifQ.DKU6fcahedqKL7A_0WorvmTinJ0GreUXS8lILnaI38E/paneltransparencybutton-0.2.0.plasmoid</payload>
+  <tags>button,original-product,plasma,plasma##majorversion=5,panel,gplv2-later,extension,unix,kde,linux,widget</tags>
   <status>installed</status>
  </stuff>
  <stuff category="105">
@@ -43,30 +47,6 @@ As a former GNOME user, I was a huge fan of the Workspace Indicator...</summary>
   <tags>linux,kde,gplv3,extension,desktops,pager,original-product,plasma##majorversion=5,plasma,switcher,unix,widget,workspaces</tags>
   <status>installed</status>
  </stuff>
- <stuff category="105">
-  <name>Panel Transparency Button</name>
-  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
-  <author>Psifidotos</author>
-  <homepage>https://store.kde.org/p/1338479</homepage>
-  <licence></licence>
-  <version>0.2.0</version>
-  <rating>81</rating>
-  <downloads>68371</downloads>
-  <installedfile>/home/lietk12/.local/share/plasma/plasmoids/org.kde.paneltransparencybutton</installedfile>
-  <id>1338479</id>
-  <releasedate>2020-01-22</releasedate>
-  <summary>Plasma 5 applet that enables/disables transparency for plasma panels. Plasma 5.17.3 is required to work correctly and enable/disable panel shadows when needed.&lt;br />
-&lt;br />
-How To Use:&lt;br />
-1. Unlock your widgets and add transparency button in a plasma panel&lt;br />
-2. Activate it and your plasma...</summary>
-  <changelog></changelog>
-  <preview>https://images.pling.com/cache/100x100-0/img/00/00/02/97/22/1338479/00c7953536ec34f6b9a640b6ad3d9e62e556.png</preview>
-  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/02/97/22/1338479/00c7953536ec34f6b9a640b6ad3d9e62e556.png</previewBig>
-  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE1Nzk2ODU3MzIiLCJvIjoiMSIsInMiOiI3ZTI5YTViMmQ5YjFmODcyYTQzMzU0NDZhOWFiNmQ1MDIwNDJmMTNjYmJjZmFjNzg2NzczNzQyNTJjYzM3Mjc0NzQ0NzE0ZTg5N2VhNTNlOGU4ZGE1NzA0YWU5YTU1ODE1MjI1ZjEzYWUwNTdlNGQyODk3OGIzZTcyMDBmZDYxNiIsInQiOjE2OTkxMDA4MTQsInN0ZnAiOm51bGwsInN0aXAiOiIxNzEuNjYuMTMuNTMifQ.DKU6fcahedqKL7A_0WorvmTinJ0GreUXS8lILnaI38E/paneltransparencybutton-0.2.0.plasmoid</payload>
-  <tags>button,original-product,plasma,plasma##majorversion=5,panel,gplv2-later,extension,unix,kde,linux,widget</tags>
-  <status>installed</status>
- </stuff>
  <stuff category="424">
   <name>Simple Weather</name>
   <providerid>https://api.kde-look.org/ocs/v1/</providerid>
@@ -89,6 +69,54 @@ While...</summary>
   <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/43/39/56/1287571/3cab05b20f1e34062ab8ea4441e6a1d2f333.png</previewBig>
   <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2NDQ3OTg4NjMiLCJvIjoiMSIsInMiOiJhYzZjMjFkM2RmNzJiMzA5YTNmOGNjYTdjMTcyMjk3Y2JjYWU0YzZhMThiYjI3ZTJkNmE3NTVkOGUwN2YxNDVlZTg1Y2Y0N2EwMWU0ZjZmY2FkODhiZjE0NWEyZDI5NjllNGI5N2U4ZTgzMWM0NDVkMTIxYTcyYmI0NjQ0MzVlMyIsInQiOjE3MDM3MjA5NjMsInN0ZnAiOm51bGwsInN0aXAiOiIxMjguMTIuMTIzLjg4In0.HfhZMgvYYIQRhWDM4T60Dv0cYga3choTU_ilE9ogeM8/simpleweather-v8-qt5.12.plasmoid</payload>
   <tags>linux,kde,plasma##majorversion=5,plasma,widget,weather,unix,gplv2-later,extension</tags>
+  <status>installed</status>
+ </stuff>
+ <stuff category="105">
+  <name>Simple Overview Pager</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>tuxg0d</author>
+  <homepage>https://store.kde.org/p/1833220</homepage>
+  <licence></licence>
+  <version>1.0</version>
+  <rating>65</rating>
+  <downloads>3786</downloads>
+  <installedfile>/home/lietk12/.local/share/plasma/plasmoids/SimpleOverviewPager</installedfile>
+  <id>1833220</id>
+  <releasedate>2022-06-20</releasedate>
+  <summary>Fork of Simple Pager by adhe that opens the Overview instead. Requires Plasma 5.24 and above.</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/49/96/54/1833220/simpleoverviewpager-icon.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/49/96/54/1833220/simpleoverviewpager-icon.png</previewBig>
+  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2NTU2OTMwMTYiLCJvIjoiMSIsInMiOiI5MzA4OWJhYjE5OWYzNDUxNmRlODI0YzE3Y2RlOWU3ZWY5YjYxMjAxMGEwYWMxNWExOTFlMWQ3ODU0ZjVjNzhjYjM5YmQ1NjgzMTE5NTY3MGU2NDNkOTQ2MzY4Y2ExZTk4NDUwZWM4MGEyODA1ODJkODNiMGYxNmI0NmMyNTdmNCIsInQiOjE3MDMyODA3MjYsInN0ZnAiOm51bGwsInN0aXAiOiIxMjguMTIuMTIyLjk4In0.tH3iSzTHb8l8LdDsQm3lu-hEkT_Rb-5TaDhoSLByNVw/SimpleOverviewPager.plasmoid</payload>
+  <tags>widget,plasma,plasma##majorversion=5,kde,linux,unix,gplv2-later,extension,efi</tags>
+  <status>installed</status>
+ </stuff>
+ <stuff category="105">
+  <name>Control Centre</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>prayagjain</author>
+  <homepage>https://store.kde.org/p/1916655</homepage>
+  <licence></licence>
+  <version>0.1.0</version>
+  <rating>82</rating>
+  <downloads>131949</downloads>
+  <installedfile>/home/lietk12/.local/share/plasma/plasmoids/com.github.prayag2.controlcentre</installedfile>
+  <id>1916655</id>
+  <releasedate>2022-10-17</releasedate>
+  <summary>NOTE&lt;br />
+This is a beta release. Please expect some bugs!&lt;br />
+&lt;br />
+If you like my work, then please consider supporting me!&lt;br />
+Paypal Address: prayagjain2@gmail.com&lt;br />
+Ko-Fi: https://ko-fi.com/prayagjain&lt;br />
+Liberapay: https://liberapay.com/Prayag/donate&lt;br />
+&lt;br />
+This is a...</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/60/43/39/1916655/logo1.jpg</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/60/43/39/1916655/logo1.jpg</previewBig>
+  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2NjU5OTA5NzgiLCJvIjoiMSIsInMiOiJkOTdlN2ZlYTBhN2ZhY2RjZjM2M2Y5ODBjMzEzMDBiZTRhNTU1NjNkOWNiN2FmZjE1NmVmNjA0OTY3NmQ3MWEzMTBjMzFlMDIxYmY3OGQ1ZTEwZGJiYTEzYWUzN2JmNGJlYzE5MDJjZGEwNzVlMjFjNTA4ZjJiZTJkODg5NzI0YiIsInQiOjE3MDQwODE4MzAsInN0ZnAiOm51bGwsInN0aXAiOiIxMjguMTIuMTIyLjY3In0.yZV8XNkg3NVjQey5woFMrAS3aKJav2TU9vLh866J4pk/kde-controlcentre0.1.0.tar.gz</payload>
+  <tags>control,center,centre,gplv3,extension,widget,original-product,plasma,plasma##majorversion=5,unix,kde,linux,mac,macos</tags>
   <status>installed</status>
  </stuff>
 </hotnewstuffregistry>

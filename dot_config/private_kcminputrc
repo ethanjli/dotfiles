@@ -1,14 +1,28 @@
 [$Version]
 update_info=delete_cursor_old_default_size.upd:DeleteCursorOldDefaultSize,kcminputrc_fix_botched_5_21_0.upd:kcminputrc_fix_botched_5_21_0_pre,kcminputrc_fix_botched_5_21_0.upd:kcminputrc_fix_botched_5_21_0,kcminputrc_repeat.upd:kcminputrc_migrate_key_repeat
 
+[Keyboard]
+NumLock=1
+
+[Libinput][0][0][OpenTabletDriver Virtual Artist Tablet]
+OutputArea=0,0,1,1
+OutputName=DP-2
+
+[Libinput][1133][49276][Logitech G700s Rechargeable Gaming Mouse]
+PointerAcceleration=1.000
+
 [Libinput][12972][6][FRMW0004:00 32AC:0006 Consumer Control]
 NaturalScroll=false
+ScrollFactor=2
 
 [Libinput][2362][628][PIXA3854:00 093A:0274 Touchpad]
 LmrTapButtonMap=false
 NaturalScroll=true
 PointerAcceleration=0.400
 TapToClick=true
+
+[Libinput][6780][407][Kingsis Peripherals Evoluent VerticalMouse D]
+PointerAcceleration=-0.200
 
 [Mouse]
 X11LibInputXAccelProfileFlat=true

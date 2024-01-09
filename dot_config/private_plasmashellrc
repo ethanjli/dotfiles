@@ -78,11 +78,11 @@ floating=0
 panelVisibility=0
 
 [PlasmaViews][Panel 200][Defaults]
-minLength=58
+minLength=1080
 thickness=36
 
 [PlasmaViews][Panel 200][Vertical1080]
-minLength=58
+minLength=1080
 
 [PlasmaViews][Panel 231]
 alignment=132
