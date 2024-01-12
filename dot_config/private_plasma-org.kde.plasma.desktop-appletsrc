@@ -150,6 +150,7 @@ fontSize=5
 fontStyleName=Bold
 fontWeight=75
 selectedTimeZones=America/Los_Angeles,Local,UTC,Europe/Paris,Asia/Taipei,Asia/Seoul,Asia/Tokyo
+showSeconds=true
 showWeekNumbers=true
 use24hFormat=2
 
@@ -730,7 +731,7 @@ immutability=1
 plugin=org.kde.kscreen
 
 [Containments][242][Applets][244][Configuration]
-PreloadWeight=85
+PreloadWeight=100
 
 [Containments][242][Applets][245]
 immutability=1
@@ -823,7 +824,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][242][Applets][288][Configuration]
-PreloadWeight=0
+PreloadWeight=5
 
 [Containments][242][Applets][331][Configuration]
 PreloadWeight=42
@@ -1254,7 +1255,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][378][Applets][394][Configuration]
-PreloadWeight=18
+PreloadWeight=23
 
 [Containments][378][ConfigDialog]
 DialogHeight=600
