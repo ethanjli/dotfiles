@@ -125,10 +125,6 @@ showToolTips=false
 wheelEnabled=false
 wheelSkipMinimized=false
 
-[Containments][134][Applets][341]
-immutability=1
-plugin=org.kde.plasma.panelspacer
-
 [Containments][134][Applets][343]
 immutability=1
 plugin=org.kde.plasma.digitalclock
@@ -185,12 +181,16 @@ plugin=org.kde.plasma.marginsseparator
 immutability=1
 plugin=SimpleOverviewPager
 
+[Containments][134][Applets][404]
+immutability=1
+plugin=org.kde.plasma.panelspacer
+
 [Containments][134][ConfigDialog]
 DialogHeight=81
 DialogWidth=2256
 
 [Containments][134][General]
-AppletOrder=137;352;356;353;337;329;343;341;135;355;354;241;347
+AppletOrder=137;352;356;355;337;404;343;329;135;353;241;347;354
 
 [Containments][139]
 activityId=
@@ -716,7 +716,7 @@ lastScreen=0
 location=3
 plugin=org.kde.plasma.private.systemtray
 popupHeight=480
-popupWidth=480
+popupWidth=626
 wallpaperplugin=org.kde.image
 
 [Containments][242][Applets][243]
@@ -786,7 +786,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][242][Applets][253][Configuration]
-PreloadWeight=75
+PreloadWeight=100
 
 [Containments][242][Applets][253][Configuration][General]
 migrated=true
@@ -810,7 +810,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][242][Applets][256][Configuration]
-PreloadWeight=24
+PreloadWeight=41
 
 [Containments][242][Applets][257]
 immutability=1
@@ -824,7 +824,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][242][Applets][288][Configuration]
-PreloadWeight=5
+PreloadWeight=0
 
 [Containments][242][Applets][331][Configuration]
 PreloadWeight=42
@@ -849,7 +849,7 @@ DialogWidth=720
 
 [Containments][242][General]
 extraItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.nightcolorcontrol,org.kde.plasma.notifications,org.kde.plasma.vault,org.kde.plasma.volume,touchpad,org.kde.plasma.printmanager,org.kde.plasma.battery
-hiddenItems=SyncThingy,Discover Notifier_org.kde.DiscoverNotifier,crow-translate,org.kde.plasma.nightcolorcontrol,zoom,org.kde.plasma.clipboard,org.kde.plasma.bluetooth,org.kde.plasma.devicenotifier,Xwayland Video Bridge_pipewireToXProxy,Barrier
+hiddenItems=SyncThingy,Discover Notifier_org.kde.DiscoverNotifier,crow-translate,org.kde.plasma.nightcolorcontrol,zoom,org.kde.plasma.clipboard,org.kde.plasma.bluetooth,org.kde.plasma.devicenotifier,Xwayland Video Bridge_pipewireToXProxy,Barrier,org.kde.kscreen
 iconSpacing=6
 knownItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.nightcolorcontrol,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.vault,org.kde.plasma.volume
 shownItems=org.kde.plasma.battery
@@ -1134,14 +1134,14 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][360][Applets][374][Configuration]
-PreloadWeight=2
+PreloadWeight=0
 
 [Containments][360][Applets][375]
 immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][360][Applets][375][Configuration]
-PreloadWeight=34
+PreloadWeight=26
 
 [Containments][360][Applets][376]
 immutability=1
@@ -1177,6 +1177,9 @@ wallpaperplugin=org.kde.image
 immutability=1
 plugin=org.kde.kdeconnect
 
+[Containments][378][Applets][379][Configuration]
+PreloadWeight=55
+
 [Containments][378][Applets][380]
 immutability=1
 plugin=org.kde.kscreen
@@ -1211,7 +1214,7 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][378][Applets][386][Configuration]
-PreloadWeight=65
+PreloadWeight=70
 
 [Containments][378][Applets][387]
 immutability=1
@@ -1231,6 +1234,9 @@ migrated=true
 [Containments][378][Applets][390]
 immutability=1
 plugin=org.kde.plasma.bluetooth
+
+[Containments][378][Applets][390][Configuration]
+PreloadWeight=42
 
 [Containments][378][Applets][391]
 immutability=1
@@ -1255,7 +1261,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][378][Applets][394][Configuration]
-PreloadWeight=23
+PreloadWeight=0
 
 [Containments][378][ConfigDialog]
 DialogHeight=600
@@ -1433,7 +1439,7 @@ fontFamily=Atkinson Hyperlegible
 forecastFontSize=20
 minMaxFontSize=24
 source=bbcukmet|weather|Palo Alto, United States, US|5380748
-textColor=#abb2bf
+textColor=#e4edff
 
 [Containments][76][ConfigDialog]
 DialogHeight=877
@@ -1448,6 +1454,9 @@ ToolBoxButtonY=36
 AnimationDuration=100
 Image=/home/lietk12/Projects/Lutho/wallpapers/Black Mountain Dusk Color Graded.jpeg
 SlidePaths=/home/lietk12/.local/share/wallpapers/,/usr/share/wallpapers/
+
+[Containments][76][Wallpaper][org.kde.color][General]
+Color=10,13,17
 
 [Containments][76][Wallpaper][org.kde.image][General]
 Image=/home/lietk12/.local/share/wallpapers/Black-Mountain-Dusk-1.jpg

@@ -27,11 +27,7 @@ detailViewIconSize=16
 klipperClearHistoryAskAgain=false
 
 [PlasmaTransientsConfig]
-PreloadWeight=0
-
-[PlasmaTransientsConfig][ConfigDialog]
-DialogHeight=81
-DialogWidth=2256
+PreloadWeight=34
 
 [PlasmaViews][Panel 121]
 alignment=132

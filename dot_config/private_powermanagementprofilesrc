@@ -14,9 +14,6 @@ powerButtonAction=1
 powerDownAction=16
 triggerLidActionWhenExternalMonitorPresent=false
 
-[AC][PowerProfile]
-profile=power-saver
-
 [AC][SuspendSession]
 idleTime=3600000
 suspendThenHibernate=true
