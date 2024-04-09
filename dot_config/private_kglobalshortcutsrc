@@ -62,6 +62,13 @@ _launch=none,none,Launch Chrome Remote Desktop
 _k_friendly_name=Google Keep
 _launch=Meta+F4,none,Google Keep
 
+[firefox.desktop]
+_k_friendly_name=Firefox (Host)
+_launch=,none,Launch Firefox (Host)
+new-private-window=none,none,New Private Window
+new-window=none,none,New Window
+profile-manager-window=none,none,Open the Profile Manager
+
 [gnome-system-monitor.desktop]
 _k_friendly_name=gnome-system-monitor
 _launch=none,none,Launch gnome-system-monitor
@@ -329,6 +336,13 @@ _launch=none,none,Launch Connections
 [org.gnome.Logs.desktop]
 _k_friendly_name=Logs
 _launch=none,none,Launch Logs
+
+[org.gnome.Ptyxis.desktop]
+_k_friendly_name=Ptyxis
+_launch=none,none,Ptyxis
+new-tab=none,none,New Tab
+new-window=none,none,New Window
+preferences=none,none,Preferences
 
 [org.kde.dolphin.desktop]
 _k_friendly_name=Dolphin

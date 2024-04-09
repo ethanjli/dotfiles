@@ -164,3 +164,24 @@ type = "archive"
 url = "https://github.com/nclarius/tile-gaps/archive/refs/tags/window-gaps_v8.0.tar.gz"
 exact = true
 stripcomponents = 1
+
+# Fonts
+
+[".local/share/fonts/Intel One Mono"]
+type = "archive"
+url = "https://github.com/intel/intel-one-mono/archive/refs/heads/main.zip"
+exact = true
+stripcomponents = 3
+include = ["*/fonts/ttf/*"]
+
+[".local/share/fonts/Atkinson Hyperlegible"]
+type = "archive"
+url = "https://github.com/googlefonts/atkinson-hyperlegible/archive/refs/heads/main.zip"
+exact = true
+stripcomponents = 3
+include = ["*/fonts/ttf/*"]
+
+[".local/share/fonts/Intone Mono Nerd Font"]
+type = "archive"
+url = "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/IntelOneMono.zip"
+exact = true
