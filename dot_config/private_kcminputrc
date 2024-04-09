@@ -1,6 +1,11 @@
 [$Version]
 update_info=delete_cursor_old_default_size.upd:DeleteCursorOldDefaultSize,kcminputrc_fix_botched_5_21_0.upd:kcminputrc_fix_botched_5_21_0_pre,kcminputrc_fix_botched_5_21_0.upd:kcminputrc_fix_botched_5_21_0,kcminputrc_repeat.upd:kcminputrc_migrate_key_repeat
 
+[ButtonRebinds][Mouse]
+ExtraButton1=Key,Meta+Esc
+ExtraButton2=Key,Alt+F4
+ExtraButton3=Key,Meta+S
+
 [Keyboard]
 NumLock=1
 
@@ -19,10 +24,12 @@ ScrollFactor=2
 LmrTapButtonMap=false
 NaturalScroll=true
 PointerAcceleration=0.400
+ScrollFactor=0.5
 TapToClick=true
 
 [Libinput][6780][407][Kingsis Peripherals Evoluent VerticalMouse D]
 PointerAcceleration=-0.200
+ScrollFactor=1.5
 
 [Mouse]
 X11LibInputXAccelProfileFlat=true

@@ -81,7 +81,7 @@ plugin=org.kde.plasma.kickoff
 [Containments][134][Applets][137][Configuration]
 PreloadWeight=100
 popupHeight=573
-popupWidth=858
+popupWidth=853
 
 [Containments][134][Applets][137][Configuration][ConfigDialog]
 DialogHeight=610
@@ -789,6 +789,7 @@ plugin=org.kde.plasma.volume
 PreloadWeight=100
 
 [Containments][242][Applets][253][Configuration][General]
+currentTab=streams
 migrated=true
 
 [Containments][242][Applets][254]
@@ -810,7 +811,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][242][Applets][256][Configuration]
-PreloadWeight=38
+PreloadWeight=35
 
 [Containments][242][Applets][257]
 immutability=1
@@ -1141,7 +1142,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][360][Applets][375][Configuration]
-PreloadWeight=18
+PreloadWeight=10
 
 [Containments][360][Applets][376]
 immutability=1
@@ -1236,7 +1237,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][378][Applets][390][Configuration]
-PreloadWeight=34
+PreloadWeight=26
 
 [Containments][378][Applets][391]
 immutability=1

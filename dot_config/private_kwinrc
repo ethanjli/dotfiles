@@ -7,9 +7,8 @@ LatencyPolicy=Medium
 [Desktops]
 Id_1=de5b4f4b-b47b-4a10-b44f-d66914196398
 Id_2=95ece43a-8d3b-42fd-b10c-6820af57e06c
-Id_3=80409e89-1a83-4b28-98b3-1aa3e9e6c159
-Id_4=0b3382b4-00d1-496f-b863-42643237b174
-Number=4
+Id_3=ee08040c-2ba4-4453-85b8-1cd22f94cb46
+Number=3
 Rows=1
 
 [Effect-blur]

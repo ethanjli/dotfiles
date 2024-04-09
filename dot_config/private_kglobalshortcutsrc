@@ -36,6 +36,10 @@ _launch=none,none,Launch Eyedropper
 _k_friendly_name=PDF Slicer
 _launch=none,none,Launch PDF Slicer
 
+[com.github.muriloventuroso.easyssh-2.desktop]
+_k_friendly_name=EasySSH
+_launch=none,none,Launch EasySSH
+
 [com.github.unrud.RemoteTouchpad.desktop]
 _k_friendly_name=Remote Touchpad
 _launch=none,none,Launch Remote Touchpad
@@ -46,6 +50,10 @@ _launch=none,none,Google Chrome
 new-private-window=none,none,New Incognito Window
 new-window=Meta+F3,none,New Window
 
+[com.google.Chrome.flextop.chrome-aaanfdldlfhmjfdagojbccckmhelibbf-Default.desktop]
+_k_friendly_name=Threads
+_launch=none,none,Launch Threads
+
 [com.google.Chrome.flextop.chrome-cmkncekebbebpfilplodngbpllndjkfo-Default.desktop]
 _k_friendly_name=Chrome Remote Desktop
 _launch=none,none,Launch Chrome Remote Desktop
@@ -53,6 +61,10 @@ _launch=none,none,Launch Chrome Remote Desktop
 [com.google.Chrome.flextop.chrome-eilembjdkfgodjkcjnpgpaenohkicgjd-Default.desktop]
 _k_friendly_name=Google Keep
 _launch=Meta+F4,none,Google Keep
+
+[gnome-system-monitor.desktop]
+_k_friendly_name=gnome-system-monitor
+_launch=none,none,Launch gnome-system-monitor
 
 [io.crow_translate.CrowTranslate.desktop]
 CopyTranslatedSelection=none,none,Translate selected text and copy to clipboard
@@ -293,11 +305,11 @@ view_zoom_out=Meta+Ctrl+-,Meta+-,Zoom Out
 
 [mediacontrol]
 _k_friendly_name=Media Controller
-mediavolumedown=none,none,Media volume down
-mediavolumeup=none,none,Media volume up
+mediavolumedown=none,,Media volume down
+mediavolumeup=none,,Media volume up
 nextmedia=Media Next,Media Next,Media playback next
 pausemedia=Media Pause,Media Pause,Pause media playback
-playmedia=none,none,Play media playback
+playmedia=none,,Play media playback
 playpausemedia=Media Play,Media Play,Play/Pause media playback
 previousmedia=Media Previous,Media Previous,Media playback previous
 stopmedia=Media Stop,Media Stop,Stop media playback
