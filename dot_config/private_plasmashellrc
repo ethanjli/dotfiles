@@ -27,7 +27,7 @@ detailViewIconSize=16
 klipperClearHistoryAskAgain=false
 
 [PlasmaTransientsConfig]
-PreloadWeight=34
+PreloadWeight=10
 
 [PlasmaViews][Panel 121]
 alignment=132

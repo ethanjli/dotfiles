@@ -64,7 +64,7 @@ _launch=Meta+F4,none,Google Keep
 
 [firefox.desktop]
 _k_friendly_name=Firefox (Host)
-_launch=,none,Launch Firefox (Host)
+_launch=none,none,Launch Firefox (Host)
 new-private-window=none,none,New Private Window
 new-window=none,none,New Window
 profile-manager-window=none,none,Open the Profile Manager

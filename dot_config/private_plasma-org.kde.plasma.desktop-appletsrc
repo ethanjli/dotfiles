@@ -161,15 +161,7 @@ global=Meta+Ctrl+Space
 immutability=1
 plugin=org.kde.paneltransparencybutton
 
-[Containments][134][Applets][352]
-immutability=1
-plugin=org.kde.plasma.marginsseparator
-
 [Containments][134][Applets][353]
-immutability=1
-plugin=org.kde.plasma.marginsseparator
-
-[Containments][134][Applets][354]
 immutability=1
 plugin=org.kde.plasma.marginsseparator
 
@@ -185,12 +177,16 @@ plugin=SimpleOverviewPager
 immutability=1
 plugin=org.kde.plasma.panelspacer
 
+[Containments][134][Applets][405]
+immutability=1
+plugin=org.kde.plasma.marginsseparator
+
 [Containments][134][ConfigDialog]
 DialogHeight=81
 DialogWidth=2256
 
 [Containments][134][General]
-AppletOrder=137;352;356;355;337;404;343;329;135;353;241;347;354
+AppletOrder=137;405;356;355;337;404;343;329;135;353;241;347
 
 [Containments][139]
 activityId=
@@ -511,9 +507,6 @@ global=
 immutability=1
 plugin=org.kde.paneltransparencybutton
 
-[Containments][200][Applets][311][Configuration][Appearance]
-transparencyEnabled=true
-
 [Containments][200][Applets][335]
 immutability=1
 plugin=org.kde.plasma.icontasks
@@ -811,7 +804,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][242][Applets][256][Configuration]
-PreloadWeight=35
+PreloadWeight=5
 
 [Containments][242][Applets][257]
 immutability=1
@@ -850,7 +843,7 @@ DialogWidth=720
 
 [Containments][242][General]
 extraItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.nightcolorcontrol,org.kde.plasma.notifications,org.kde.plasma.vault,org.kde.plasma.volume,touchpad,org.kde.plasma.printmanager,org.kde.plasma.battery
-hiddenItems=SyncThingy,Discover Notifier_org.kde.DiscoverNotifier,crow-translate,org.kde.plasma.nightcolorcontrol,zoom,org.kde.plasma.clipboard,org.kde.plasma.bluetooth,org.kde.plasma.devicenotifier,Xwayland Video Bridge_pipewireToXProxy,Barrier,org.kde.kscreen
+hiddenItems=SyncThingy,Discover Notifier_org.kde.DiscoverNotifier,crow-translate,org.kde.plasma.nightcolorcontrol,zoom,org.kde.plasma.clipboard,org.kde.plasma.bluetooth,org.kde.plasma.devicenotifier,Xwayland Video Bridge_pipewireToXProxy,Barrier,org.kde.kscreen,Portal,Plasma_microphone
 iconSpacing=6
 knownItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.nightcolorcontrol,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.vault,org.kde.plasma.volume
 shownItems=org.kde.plasma.battery
@@ -1142,7 +1135,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][360][Applets][375][Configuration]
-PreloadWeight=10
+PreloadWeight=0
 
 [Containments][360][Applets][376]
 immutability=1
@@ -1237,7 +1230,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][378][Applets][390][Configuration]
-PreloadWeight=26
+PreloadWeight=0
 
 [Containments][378][Applets][391]
 immutability=1
@@ -1415,10 +1408,10 @@ scaleIconsToFit=true
 shownItems=org.kde.plasma.notifications
 
 [Containments][76]
-ItemGeometries-1805x1203=Applet-282:1537,1177,72,54,0;Applet-98:294.5,1197,315,54,0;
+ItemGeometries-1805x1203=
 ItemGeometries-1920x1080=Applet-282:1988,1478,72,54,0;Applet-98:520,1498,315,54,0;
-ItemGeometries-2256x1504=Applet-358:1872,112,208,160,0;
-ItemGeometriesHorizontal=Applet-358:1872,112,208,160,0;
+ItemGeometries-2256x1504=
+ItemGeometriesHorizontal=
 activityId=20702779-8c04-4fc1-b7b7-dbcfe8d9f80d
 formfactor=0
 immutability=1
@@ -1426,21 +1419,6 @@ lastScreen=0
 location=0
 plugin=org.kde.desktopcontainment
 wallpaperplugin=org.kde.image
-
-[Containments][76][Applets][358]
-immutability=1
-plugin=com.github.zren.simpleweather
-
-[Containments][76][Applets][358][Configuration][ConfigDialog]
-DialogHeight=600
-DialogWidth=800
-
-[Containments][76][Applets][358][Configuration][General]
-fontFamily=Atkinson Hyperlegible
-forecastFontSize=20
-minMaxFontSize=24
-source=bbcukmet|weather|Palo Alto, United States, US|5380748
-textColor=#e4edff
 
 [Containments][76][ConfigDialog]
 DialogHeight=877
@@ -1457,7 +1435,7 @@ Image=/home/lietk12/Projects/Lutho/wallpapers/Black Mountain Dusk Color Graded.j
 SlidePaths=/home/lietk12/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][76][Wallpaper][org.kde.color][General]
-Color=10,13,17
+Color=48,48,48
 
 [Containments][76][Wallpaper][org.kde.image][General]
 Image=/home/lietk12/.local/share/wallpapers/Black-Mountain-Dusk-1.jpg
