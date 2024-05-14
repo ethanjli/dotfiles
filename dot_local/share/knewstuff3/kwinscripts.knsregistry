@@ -9,7 +9,7 @@
   <licence></licence>
   <version>v3.0</version>
   <rating>50</rating>
-  <downloads>833</downloads>
+  <downloads>894</downloads>
   <installedfile>/home/lietk12/.local/share/kwin/scripts/stepregrid</installedfile>
   <id>1636998</id>
   <releasedate>2022-02-18</releasedate>
@@ -19,8 +19,126 @@ Example: shift rightwards (analogous for leftwards/upwards/downwards):&lt;ul>&lt
   <preview>https://images.pling.com/cache/100x100-0/img/00/00/63/33/24/1636998/f9990f438e981347800f6e09d71a18d942775657442ff6403c8b8812b53bdea99af4.png</preview>
   <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/63/33/24/1636998/f9990f438e981347800f6e09d71a18d942775657442ff6403c8b8812b53bdea99af4.png</previewBig>
   <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2NDUyMjgyNDYiLCJvIjoiMSIsInMiOiJjYjRiMWJlNTQ1YmYzMjMzNjlhNWViNWI4ODY5MTljZDJhZTA1MDYzODMxZTQ2ZjE1Y2UwZTg2MGRiMjRiZGNhZjcxZWRmZGNjNGU2MmJiMjJhOTJiNTQ2ZTc5NjNhYzU4MjAxYzMyNjA0NzQ2MDdlNWYwYzg3OTc5NjYyODBkMyIsInQiOjE2OTkxMzc3NzcsInN0ZnAiOm51bGwsInN0aXAiOiIxNzEuNjYuMTMuNTMifQ.uv9IMMhRxC_1s-YPpazzMWB_IRrpCdwNLI_0Blrp6-c/step-regrid_v3.0.kwinscript</payload>
-  <tags>linux,move,gplv3,grid,unix,tiles,tiling,original-product,resize</tags>
+  <tags>linux,move,grid,unix,tiles,tiling,original-product,resize,gplv3</tags>
   <status>installed</status>
+ </stuff>
+ <stuff category="210">
+  <name>Step Move</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>nclarius</author>
+  <homepage>https://store.kde.org/p/1632259</homepage>
+  <licence></licence>
+  <version>v3.2</version>
+  <rating>55</rating>
+  <downloads>715</downloads>
+  <installedfile>/home/lietk12/.local/share/kwin/scripts/stepmove</installedfile>
+  <id>1632259</id>
+  <releasedate>2022-02-19</releasedate>
+  <summary>Adds keyboard shortcuts to stepwise move (left/right/top/bottom/center) windows.&lt;br />
+&lt;br />
+The step sizes and the keyboard shortcuts are configurable.&lt;br />
+&lt;br />
+Related:&lt;ul>&lt;li> &lt;a href="https://store.kde.org/p/1632260" target="_blank" rel="nofollow">Step Resize&lt;/a>&lt;/li>&lt;li> &lt;a href="https://store.kde.org/p/1636998" target="_blank" rel="nofollow">Step Re-Grid&lt;/a>&lt;/li>&lt;/ul>&lt;strong>On old Plasma versions, additional steps may be required after installation to make the configuration menu available.&lt;/strong> For more information on installation and configuration as well as any requests, please visit &lt;a href="https://github.com/nclarius/KWin-window-geometry-scripts/tree/main/step-move" target="_blank" rel="nofollow">the GitHub page&lt;/a>.[newline</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/63/33/24/1632259/feab248af283bebdc7bdadb18f1c3db181732bf20e9552351259c34240023b8bddcd.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/63/33/24/1632259/feab248af283bebdc7bdadb18f1c3db181732bf20e9552351259c34240023b8bddcd.png</previewBig>
+  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2NDUzMDIzMTUiLCJvIjoiMSIsInMiOiIzNThkNjIwMzNjZTBiOWRjZGIxOWUzZjI5MTNiNzcwYWQwNWNkOTQyZGI5MTQ1MTk4NGM4ZjBmOTc1ZjFiNmE5NjFiMzRmMGJhOWMzMDQxZDY1YTY4NjIxODcxOWFjNmNmNTcxYjY2NDEzMGI0ODFmYmFlMjMzOGU4NGQ5N2FhZiIsInQiOjE2OTkwODMzNzUsInN0ZnAiOm51bGwsInN0aXAiOiIxNzEuNjYuMTMuNTMifQ.H-_nEA6xfUwxg8kbq4En_gGA_SlF9lbBpdw2fhIKqNA/step-move_v3.2.kwinscript</payload>
+  <tags>gplv3,linux,move,original-product,unix</tags>
+  <status>installed</status>
+ </stuff>
+ <stuff category="210">
+  <name>restoreToScreen</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>hegemonia</author>
+  <homepage>https://store.kde.org/p/1912797</homepage>
+  <licence></licence>
+  <version>1.6</version>
+  <rating>50</rating>
+  <downloads>666</downloads>
+  <installedfile>/home/lietk12/.local/share/kwin/scripts/restoreToScreen</installedfile>
+  <id>1912797</id>
+  <releasedate>2023-04-12</releasedate>
+  <summary>A simple Kwin script, which tries to remember the screen a window was in, and to restore it when the screen is reconnected. Useful when you have to disconnect you external monitors frequently.</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/65/58/48/1912797/logo.jpg</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/65/58/48/1912797/logo.jpg</previewBig>
+  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2ODEzMTMzNjMiLCJvIjoiMSIsInMiOiIxYTNkYjkyZDBlZmJiMGJjOTM0Yjg4MDllNTdhM2VkYjA0N2JlZTE2MDQ1OTBiMWI1NWFjMjU5Mjc4NDc1YzNlODQ1YzUyMzRkM2JmMGUyNzgzOWI2MTBhMWY5ZmFkMjViMjY4NTVlYzhlM2RlY2FlOWUxYmQyODEwZDBiOTgxZiIsInQiOjE2OTkwODQ4NzgsInN0ZnAiOm51bGwsInN0aXAiOiIxNzEuNjYuMTMuNTMifQ.Nmyv0rzPcYIUxkt4XQotp6i969m2sw4iFczDM4CgpEI/restoreToScreen.kwinscript</payload>
+  <tags>gplv3,screen,original-product,kwinscript,monitor,linux,unix</tags>
+  <status>installed</status>
+ </stuff>
+ <stuff category="210">
+  <name>Live Captions Assistant</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>abb128</author>
+  <homepage>https://store.kde.org/p/1989729</homepage>
+  <licence></licence>
+  <version></version>
+  <rating>50</rating>
+  <downloads>577</downloads>
+  <installedfile>/home/lietk12/.local/share/kwin/scripts/kwin-live-captions-assistant</installedfile>
+  <id>1989729</id>
+  <releasedate>2023-02-17</releasedate>
+  <summary>Allows keeping Live Captions (v0.3+) window above even on Wayland. Companion script for https://flathub.org/apps/details/net.sapples.LiveCaptions</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/70/39/04/1989729/net.sapples.livecaptions.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/70/39/04/1989729/net.sapples.livecaptions.png</previewBig>
+  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2NzY2NjkzMTQiLCJvIjoiMSIsInMiOiIxNjY4MmYyMzkwOTYzNDk1YjFjMjJjOGNiYmYzMDVmNDY2ZDI2YmQ1OTFkN2E3MTU1NzdmMzEwMmNjYzExODE3YzRmZmI5ZDIwMjExYjAyY2U2NzRlNzU0MTJiZmQ1ZDlmYmM3MzRhZGJjYWY0M2NlNzA5NWE4NTFiOTE1YTJhYiIsInQiOjE3MDI2NTgxNTYsInN0ZnAiOm51bGwsInN0aXAiOiIxMjguMTIuMTIyLjE3MSJ9._y2R18qYPWjZosBMqBBQZM1NMvqwzynStlAPAFRbLy4/kwin-live-captions-assistant-main.zip</payload>
+  <tags>mit-license,linux,original-product,unix</tags>
+  <status>installed</status>
+ </stuff>
+ <stuff category="210">
+  <name>Autocomposer</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>es20490446e</author>
+  <homepage>https://store.kde.org/p/1502826</homepage>
+  <licence></licence>
+  <version>4</version>
+  <rating>81</rating>
+  <downloads>15936</downloads>
+  <installedfile>/home/lietk12/.local/share/kwin/scripts/autocomposer</installedfile>
+  <id>1502826</id>
+  <releasedate>2024-05-04</releasedate>
+  <summary>Blocks compositing on fullscreen, to improve graphical performance.&lt;br />
+&lt;br />
+? In the process of being ported to Plasma 6.</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/60/99/72/1502826/115a90ae2934e8ccba6d4c24c9181b1e4518f769e6725d1e17f8cbc0a70649fbf5a5.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/60/99/72/1502826/115a90ae2934e8ccba6d4c24c9181b1e4518f769e6725d1e17f8cbc0a70649fbf5a5.png</previewBig>
+  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2NTE0NTA2MDciLCJvIjoiMSIsInMiOiI1MGFhNjk3Mzg5ZjIzYjllOGNmYTg4Njc2ZTY3OTIxYzEyZTg2MDJlMDI2MjFhOGE3OWE3YjRjZDNiOWQ1MWJiNGI0YzhhYjZjNWM1ZDNhYjhhNDY3YjUyNTM4MTU5M2FhMzUzZTExZTFhNTlmZDhlYmRjNTg1ZDljNjk3MTZmYyIsInQiOjE3MTQ5NjIxODAsInN0ZnAiOm51bGwsInN0aXAiOiI2OS43MC4xMzMuMjE0In0.30DYpafhkJZhU8atAtdyUfZ7GwOGtbNfXU8tr5ivyss/autocomposer.kwinscript</payload>
+  <tags>original-product,unix,compositing,compositor,fullscreen,gaming,desktop,gplv3,linux</tags>
+  <status>installed</status>
+ </stuff>
+ <stuff category="210">
+  <name>KWin dynamic workspaces</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>d86leader</author>
+  <homepage>https://store.kde.org/p/1312691</homepage>
+  <licence></licence>
+  <version>2.0</version>
+  <rating>75</rating>
+  <downloads>1092</downloads>
+  <installedfile>/home/lietk12/.local/share/kwin/scripts/dynamic_workspaces</installedfile>
+  <id>1312691</id>
+  <releasedate>2020-07-22</releasedate>
+  <summary>A kwin script that creates and deletes desktops as you move windows on the last one.&lt;br />
+&lt;br />
+I intented to replicate some of gnome-desktop's behavior with moving windows around.&lt;br />
+As this is a simple script for satisfying my needs, it only workds horizontally left-toright.&lt;br />
+The behaviour is following:&lt;br />
+&lt;br />
+- There is always an empty desktop on the right&lt;br />
+- When you move a window to that desktop, a new desktop is created&lt;br />
+- When you move window away from last desktop, or close the window,&lt;br />
+  the desktop is destroyed&lt;br />
+&lt;br />
+If you encounter problems, file an issue at my github repo: https://github.com/d86leader/dynamic_workspaces&lt;br />
+If you don't encounter problems, file a star on my github repo: https://github.com/d86leader/dynamic_workspaces , why don't ya.</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/53/85/99/1312691/f3197437783b57b5ca24861dc05d50a390d1.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/53/85/99/1312691/f3197437783b57b5ca24861dc05d50a390d1.png</previewBig>
+  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE3MTM3MjUzOTgiLCJvIjoiMSIsInMiOiIzMDI2ZjFmMjBhYzUwM2I5Mzg4NjVjMTNkYTIzNTM5MjRjNDNlYjhmNDNiNDNiMmIzZTY5YmM5YjMzMjMwMjI5YjMxMDE4YjdiYWMzZDg2N2YwOGIxZDkwODIyMjNkOWQyYTQ4ZGFlZDhiZjUyYjE3NmNhNzAwZWUzNGEyZDBiZSIsInQiOjE3MTQ5NjIxODAsInN0ZnAiOm51bGwsInN0aXAiOiI2OS43MC4xMzMuMjE0In0.1joioTkBtd1SHJqlFTZag5c4molbEDSTvq61lWzHXXY/dynamic-workspaces.tar.gz</payload>
+  <tags>bsd-license,original-product,linux,unix</tags>
+  <status>updateable</status>
  </stuff>
  <stuff category="210">
   <name>Step Resize</name>
@@ -30,7 +148,7 @@ Example: shift rightwards (analogous for leftwards/upwards/downwards):&lt;ul>&lt
   <licence></licence>
   <version>v2.0</version>
   <rating>50</rating>
-  <downloads>864</downloads>
+  <downloads>968</downloads>
   <installedfile>/home/lietk12/.local/share/kwin/scripts/stepresize</installedfile>
   <id>1632260</id>
   <releasedate>2022-02-18</releasedate>
@@ -39,7 +157,7 @@ Example: shift rightwards (analogous for leftwards/upwards/downwards):&lt;ul>&lt
   <preview>https://images.pling.com/cache/100x100-0/img/00/00/63/33/24/1632260/7bfc07ed3ee7561994a2b2bcd491748cf76cdb3e13c0dc6131fe2503e3b7ef11bac1.png</preview>
   <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/63/33/24/1632260/7bfc07ed3ee7561994a2b2bcd491748cf76cdb3e13c0dc6131fe2503e3b7ef11bac1.png</previewBig>
   <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2NDUyMjg1ODYiLCJvIjoiMSIsInMiOiI1MDk3OTk3Y2Q1M2MyNzc1NDdkZWU0YTc3NjRiMTdkM2UyMTVlNzc5Mjg4ZDQ4ZjE1YzlmOTYwZmVkNjJlMmM4N2M1MDRlNDU5Y2JmNzA3Y2NlODU5OWU0OWE3N2IxZTBmNjJjYTIyODM2MWE5MDZkZWMwNjFhZTMzYzFkM2Q2MSIsInQiOjE2OTkxNDczNzcsInN0ZnAiOm51bGwsInN0aXAiOiIxNzEuNjYuMTMuNTMifQ.zD9HT_zu06LSHmpwurVJQffRkyHQHWaktQxJjxQTFN0/step-resize_v2.0.kwinscript</payload>
-  <tags>original-product,resize,linux,gplv3,unix</tags>
+  <tags>unix,linux,gplv3,original-product,resize</tags>
   <status>installed</status>
  </stuff>
  <stuff category="210">
@@ -50,7 +168,7 @@ Example: shift rightwards (analogous for leftwards/upwards/downwards):&lt;ul>&lt
   <licence></licence>
   <version>v5.0</version>
   <rating>50</rating>
-  <downloads>1766</downloads>
+  <downloads>1834</downloads>
   <installedfile>/home/lietk12/.local/share/kwin/scripts/swapsides</installedfile>
   <id>1617645</id>
   <releasedate>2022-05-03</releasedate>
@@ -73,103 +191,7 @@ If you would like to thank me, you can always make me happy with a review or a c
   <preview>https://images.pling.com/cache/100x100-0/img/00/00/63/33/24/1617645/59f1bb2aadd9d2a8b9dbf80255c8af55b29d68be686373cc088ba59642bae1c0623c.png</preview>
   <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/63/33/24/1617645/59f1bb2aadd9d2a8b9dbf80255c8af55b29d68be686373cc088ba59642bae1c0623c.png</previewBig>
   <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2NTE2MjA2NDIiLCJvIjoiMSIsInMiOiJkZDllMDg0ZjdiNDRhNGYyZTJjOTZlNDgwNjIxYWMyNzJiNzgwMjk2Zjc2MjVjMzJlYWEwNjUxNWY4YzZkMTk3ZjhlNTlhZDM2NDA5NjhiOWZkZWM0OTRiMmNlNTljZGEyZDNmNWE0ODY1YzY3M2QwNjg4N2IzNzY0ZGRiYWUxMyIsInQiOjE2OTkxMzcyNjIsInN0ZnAiOm51bGwsInN0aXAiOiIxNzEuNjYuMTMuNTMifQ._CoCAr9gPsNN1SOvFctKgOMj0c8UmiPonnZYU7sV0iQ/swap-sides_v5.0.kwinscript</payload>
-  <tags>left,linux,gplv3,half,right,original-product,swap,unix</tags>
-  <status>installed</status>
- </stuff>
- <stuff category="210">
-  <name>Step Move</name>
-  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
-  <author>nclarius</author>
-  <homepage>https://store.kde.org/p/1632259</homepage>
-  <licence></licence>
-  <version>v3.2</version>
-  <rating>55</rating>
-  <downloads>660</downloads>
-  <installedfile>/home/lietk12/.local/share/kwin/scripts/stepmove</installedfile>
-  <id>1632259</id>
-  <releasedate>2022-02-19</releasedate>
-  <summary>Adds keyboard shortcuts to stepwise move (left/right/top/bottom/center) windows.&lt;br />
-&lt;br />
-The step sizes and the keyboard shortcuts are configurable.&lt;br />
-&lt;br />
-Related:&lt;ul>&lt;li> &lt;a href="https://store.kde.org/p/1632260" target="_blank" rel="nofollow">Step Resize&lt;/a>&lt;/li>&lt;li> &lt;a href="https://store.kde.org/p/1636998" target="_blank" rel="nofollow">Step Re-Grid&lt;/a>&lt;/li>&lt;/ul>&lt;strong>On old Plasma versions, additional steps may be required after installation to make the configuration menu available.&lt;/strong> For more information on installation and configuration as well as any requests, please visit &lt;a href="https://github.com/nclarius/KWin-window-geometry-scripts/tree/main/step-move" target="_blank" rel="nofollow">the GitHub page&lt;/a>.[newline</summary>
-  <changelog></changelog>
-  <preview>https://images.pling.com/cache/100x100-0/img/00/00/63/33/24/1632259/feab248af283bebdc7bdadb18f1c3db181732bf20e9552351259c34240023b8bddcd.png</preview>
-  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/63/33/24/1632259/feab248af283bebdc7bdadb18f1c3db181732bf20e9552351259c34240023b8bddcd.png</previewBig>
-  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2NDUzMDIzMTUiLCJvIjoiMSIsInMiOiIzNThkNjIwMzNjZTBiOWRjZGIxOWUzZjI5MTNiNzcwYWQwNWNkOTQyZGI5MTQ1MTk4NGM4ZjBmOTc1ZjFiNmE5NjFiMzRmMGJhOWMzMDQxZDY1YTY4NjIxODcxOWFjNmNmNTcxYjY2NDEzMGI0ODFmYmFlMjMzOGU4NGQ5N2FhZiIsInQiOjE2OTkwODMzNzUsInN0ZnAiOm51bGwsInN0aXAiOiIxNzEuNjYuMTMuNTMifQ.H-_nEA6xfUwxg8kbq4En_gGA_SlF9lbBpdw2fhIKqNA/step-move_v3.2.kwinscript</payload>
-  <tags>gplv3,linux,move,unix,original-product</tags>
-  <status>installed</status>
- </stuff>
- <stuff category="210">
-  <name>Autocomposer</name>
-  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
-  <author>es20490446e</author>
-  <homepage>https://store.kde.org/p/1502826</homepage>
-  <licence></licence>
-  <version>4</version>
-  <rating>81</rating>
-  <downloads>11769</downloads>
-  <installedfile>/home/lietk12/.local/share/kwin/scripts/autocomposer</installedfile>
-  <id>1502826</id>
-  <releasedate>2022-05-02</releasedate>
-  <summary>Blocks compositing on fullscreen, to improve graphical performance</summary>
-  <changelog></changelog>
-  <preview>https://images.pling.com/cache/100x100-0/img/00/00/60/99/72/1502826/115a90ae2934e8ccba6d4c24c9181b1e4518f769e6725d1e17f8cbc0a70649fbf5a5.png</preview>
-  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/60/99/72/1502826/115a90ae2934e8ccba6d4c24c9181b1e4518f769e6725d1e17f8cbc0a70649fbf5a5.png</previewBig>
-  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2NTE0NTA2MDciLCJvIjoiMSIsInMiOiI5Y2EyM2IyOWRhZmMyNTIyNzc4NWYzYWI3NTcxODJlYzA5MDQ0ZDRhMDVkODhiYjA0YTg1M2QwYTllN2M1YzIxMGRlNDNjZGE0ZWJlOGZjOTQwYzllZDFlN2JiODhjOThmZDg4YTBlYjA3YTE1NzVkYTRmMzRjOTkzMmM0NzNjNyIsInQiOjE2OTkxMzg5NzUsInN0ZnAiOm51bGwsInN0aXAiOiIxNzEuNjYuMTMuNTMifQ.DNlazm2GuABGbbygXXlNBpg357RhZDkNyP64QnseRWw/autocomposer.kwinscript</payload>
-  <tags>original-product,unix,linux,gplv3,fullscreen,gaming,compositing,compositor,desktop</tags>
-  <status>installed</status>
- </stuff>
- <stuff category="210">
-  <name>Live Captions Assistant</name>
-  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
-  <author>abb128</author>
-  <homepage>https://store.kde.org/p/1989729</homepage>
-  <licence></licence>
-  <version></version>
-  <rating>50</rating>
-  <downloads>447</downloads>
-  <installedfile>/home/lietk12/.local/share/kwin/scripts/kwin-live-captions-assistant</installedfile>
-  <id>1989729</id>
-  <releasedate>2023-02-17</releasedate>
-  <summary>Allows keeping Live Captions (v0.3+) window above even on Wayland. Companion script for https://flathub.org/apps/details/net.sapples.LiveCaptions</summary>
-  <changelog></changelog>
-  <preview>https://images.pling.com/cache/100x100-0/img/00/00/70/39/04/1989729/net.sapples.livecaptions.png</preview>
-  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/70/39/04/1989729/net.sapples.livecaptions.png</previewBig>
-  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2NzY2NjkzMTQiLCJvIjoiMSIsInMiOiIxNjY4MmYyMzkwOTYzNDk1YjFjMjJjOGNiYmYzMDVmNDY2ZDI2YmQ1OTFkN2E3MTU1NzdmMzEwMmNjYzExODE3YzRmZmI5ZDIwMjExYjAyY2U2NzRlNzU0MTJiZmQ1ZDlmYmM3MzRhZGJjYWY0M2NlNzA5NWE4NTFiOTE1YTJhYiIsInQiOjE3MDI2NTgxNTYsInN0ZnAiOm51bGwsInN0aXAiOiIxMjguMTIuMTIyLjE3MSJ9._y2R18qYPWjZosBMqBBQZM1NMvqwzynStlAPAFRbLy4/kwin-live-captions-assistant-main.zip</payload>
-  <tags>original-product,unix,mit-license,linux</tags>
-  <status>installed</status>
- </stuff>
- <stuff category="210">
-  <name>KWin dynamic workspaces</name>
-  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
-  <author>d86leader</author>
-  <homepage>https://store.kde.org/p/1312691</homepage>
-  <licence></licence>
-  <version>2.0</version>
-  <rating>75</rating>
-  <downloads>2640</downloads>
-  <installedfile>/home/lietk12/.local/share/kwin/scripts/dynamic_workspaces</installedfile>
-  <id>1312691</id>
-  <releasedate>2020-07-22</releasedate>
-  <summary>A kwin script that creates and deletes desktops as you move windows on the last one.&lt;br />
-&lt;br />
-I intented to replicate some of gnome-desktop's behavior with moving windows around.&lt;br />
-As this is a simple script for satisfying my needs, it only workds horizontally left-toright.&lt;br />
-The behaviour is following:&lt;br />
-&lt;br />
-- There is always an empty desktop on the right&lt;br />
-- When you move a window to that desktop, a new desktop is created&lt;br />
-- When you move window away from last desktop, or close the window,&lt;br />
-  the desktop is destroyed&lt;br />
-&lt;br />
-If you encounter problems, file an issue at my github repo: https://github.com/d86leader/dynamic_workspaces&lt;br />
-If you don't encounter problems, file a star on my github repo: https://github.com/d86leader/dynamic_workspaces , why don't ya.</summary>
-  <changelog></changelog>
-  <preview>https://images.pling.com/cache/100x100-0/img/00/00/53/85/99/1312691/f3197437783b57b5ca24861dc05d50a390d1.png</preview>
-  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/53/85/99/1312691/f3197437783b57b5ca24861dc05d50a390d1.png</previewBig>
-  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2Nzg1MzUwOTciLCJvIjoiMSIsInMiOiJmZWY0ZTM5ZGM0YTJiNjI4NGZkMmNhMDUyYTMzOTlmNWU5YjliMTQ4MTEzMmY2YWI0ZWVjNjU4NjYyY2YwMDc0YmE4MTk2NDFkMjdkNzVmZmU1MDU4ODQ0ZWZkNDllM2RhZDg2ODAyNTIwYWFiOGM4OTMzYjRmZjFmN2ViZTQ1OSIsInQiOjE2OTkwMDkxNjQsInN0ZnAiOm51bGwsInN0aXAiOiIxMjguMTIuMTIyLjExNiJ9.P-Nl6U09gGE-eeHIdrqPyMvzELtpdE3aN6WX74CZnmM/dynamic-workspaces.tar.gz</payload>
-  <tags>bsd-license,original-product,linux,unix</tags>
+  <tags>swap,unix,left,half,linux,right,original-product,gplv3</tags>
   <status>installed</status>
  </stuff>
  <stuff category="210">
@@ -180,7 +202,7 @@ If you don't encounter problems, file a star on my github repo: https://github.c
   <licence></licence>
   <version>v8.0</version>
   <rating>73</rating>
-  <downloads>21501</downloads>
+  <downloads>23392</downloads>
   <installedfile>/home/lietk12/.local/share/kwin/scripts/tilegaps</installedfile>
   <id>1619642</id>
   <releasedate>2022-11-27</releasedate>
@@ -205,27 +227,7 @@ If you would like to thank me, you can always make me happy with a review or a c
   <preview>https://images.pling.com/cache/100x100-0/img/00/00/63/33/24/1619642/icon.png</preview>
   <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/63/33/24/1619642/icon.png</previewBig>
   <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2Njk1MTM1NDciLCJvIjoiMSIsInMiOiJiYWExNjUxOGQxNjJkMDllODRiZDU4OWE5ZWU2YzEwNzA0Y2Y4MTczMjA5YTY1MDg2YmYxY2NmMmUwMGI0MWNmOWM2ZjkzYWJkOWJhMTcxZjVhYzkwYWE0MDFjMDljYmUyYzA0NGIyZGVlYWQ4OWJjNTcyNGFjYWMxMTY2Y2UyMiIsInQiOjE3MDI1MDc1NDgsInN0ZnAiOm51bGwsInN0aXAiOiIxMjguMTIuMTIzLjQ5In0.-KAhxIViUDHK8-DLRNG2ZZXeNsIFQN-OX--5829GRKU/window-gaps-v8.0.kwinscript</payload>
-  <tags>linux,margins,tiling,unix,space,original-product,gplv3,gaps,windows</tags>
-  <status>installed</status>
- </stuff>
- <stuff category="210">
-  <name>restoreToScreen</name>
-  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
-  <author>hegemonia</author>
-  <homepage>https://store.kde.org/p/1912797</homepage>
-  <licence></licence>
-  <version>1.6</version>
-  <rating>50</rating>
-  <downloads>515</downloads>
-  <installedfile>/home/lietk12/.local/share/kwin/scripts/restoreToScreen</installedfile>
-  <id>1912797</id>
-  <releasedate>2023-04-12</releasedate>
-  <summary>A simple Kwin script, which tries to remember the screen a window was in, and to restore it when the screen is reconnected. Useful when you have to disconnect you external monitors frequently.</summary>
-  <changelog></changelog>
-  <preview>https://images.pling.com/cache/100x100-0/img/00/00/65/58/48/1912797/logo.jpg</preview>
-  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/65/58/48/1912797/logo.jpg</previewBig>
-  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2ODEzMTMzNjMiLCJvIjoiMSIsInMiOiIxYTNkYjkyZDBlZmJiMGJjOTM0Yjg4MDllNTdhM2VkYjA0N2JlZTE2MDQ1OTBiMWI1NWFjMjU5Mjc4NDc1YzNlODQ1YzUyMzRkM2JmMGUyNzgzOWI2MTBhMWY5ZmFkMjViMjY4NTVlYzhlM2RlY2FlOWUxYmQyODEwZDBiOTgxZiIsInQiOjE2OTkwODQ4NzgsInN0ZnAiOm51bGwsInN0aXAiOiIxNzEuNjYuMTMuNTMifQ.Nmyv0rzPcYIUxkt4XQotp6i969m2sw4iFczDM4CgpEI/restoreToScreen.kwinscript</payload>
-  <tags>gplv3,unix,kwinscript,linux,monitor,screen,original-product</tags>
+  <tags>linux,margins,space,unix,tiling,gplv3,gaps,original-product,windows</tags>
   <status>installed</status>
  </stuff>
 </hotnewstuffregistry>

@@ -44,8 +44,9 @@ packages: # comments are added for the first package in each section
   - name: simeji/jid@v0.7.6
   - name: sharkdp/hexyl@v0.14.0
   - name: jesseduffield/lazydocker@v0.23.1 # Containers
-  - name: bcicen/ctop@v0.7.7
   - name: wagoodman/dive@v0.12.0
+  - name: google/go-containerregistry@v0.19.1
+  - name: bcicen/ctop@v0.7.7
   - name: jqlang/jq@jq-1.7.1 # Parsing
   - name: mikefarah/yq@v4.42.1
   - name: wader/fq@v0.10.0

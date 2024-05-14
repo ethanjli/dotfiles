@@ -72,6 +72,7 @@ swapsidesEnabled=true
 thumbnailasideEnabled=true
 tilegapsEnabled=false
 tileseditorEnabled=false
+wobblywindowsEnabled[$d]
 zoomEnabled=false
 
 [Script-desktopchangeosd]
