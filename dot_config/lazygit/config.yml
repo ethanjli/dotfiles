@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=https://json.schemastore.org/lazygit.json
+
+gui:
+  scrollHeight: 1
+  scrollOffMargin: 5
+  nerdFontsVersion: "2"
+  theme:
+    selectedLineBgColor:
+      - reverse
+    selectedRangeBgColor:
+      - reverse
+git:
+  log:
+    showWholeGraph: true
+  mainBranches: [master, main, edge]
+  branchLogCmd: "git log --graph --color=always --abbrev-commit --decorate --date=relative --pretty='format:%h%d%n%s%n' --"
+  allBranchesLogCmd: "git log --graph --all --color=always --abbrev-commit --decorate --date=relative  --pretty='format:%h%d%n%s%n'"

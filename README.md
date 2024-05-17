@@ -72,7 +72,6 @@ TODO: add screenshots
 - A [lazygit](https://github.com/jesseduffield/lazygit) configuration for doing most of what I need
   to do with git within a Zellij pane and/or from within lf, notably:
   - A cleaner (and denser) view of the Git log
-  - (WIP) Custom keybindings
 
 ### Desktop
 
@@ -112,11 +111,7 @@ your host environment:
   configurations will default to using the host-provided neovim if it exists; otherwise, the
   aqua-provided Neovim will be used as a fallback.
 - If you want to preview SVG images in LF, you will need ImageMagick, which is not provided by aqua.
-  I will eventually look for an alternative which could be provided via aqua, or I will investigate
-  whether I can specify a Docker container with ImageMagick as part of the dotfiles environment.
 - If you want to preview videos in LF, you will need FFMPEG, which is not provided by aqua.
-  I will eventually look for an alternative which could be provided via aqua, or I will investigate
-  whether I can specify a Docker container with FFMPEG as part of the dotfiles environment.
 - If you want to use zsh, you will need to have it already installed
   I will eventually investigate the [statically-linked zsh build](https://github.com/romkatv/zsh-bin)
   to determine whether it might make sense to provide zsh via aqua or chezmoi.
