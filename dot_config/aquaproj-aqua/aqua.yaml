@@ -29,18 +29,18 @@ packages: # comments are added for the first package in each section
   - name: acheronfail/repgrep@0.15.0
   - name: jesseduffield/lazygit@v0.40.2 # Git
   - name: cli/cli@v2.45.0
-  - name: git-ecosystem/git-credential-manager@v2.4.1
+  - name: git-ecosystem/git-credential-manager@v2.5.0
     registry: ethanjli/dotfiles
-  - name: o2sh/onefetch@2.19.0
+  - name: o2sh/onefetch@2.21.0
   - name: FiloSottile/age@v1.1.1 # Secrets
   - name: sharkdp/bat@v0.24.0 # Viewers
   - name: charmbracelet/glow@v1.5.1
   - name: hpjansson/chafa@1.14.0
     registry: ethanjli/dotfiles
   - name: maaslalani/slides@v0.9.0
-  - name: dandavison/delta@0.16.5
-  - name: Wilfred/difftastic@0.56.1
-  - name: antonmedv/fx@32.0.0
+  - name: dandavison/delta@0.17.0
+  - name: Wilfred/difftastic@0.58.0
+  - name: antonmedv/fx@34.0.0
   - name: simeji/jid@v0.7.6
   - name: sharkdp/hexyl@v0.14.0
   - name: jesseduffield/lazydocker@v0.23.1 # Containers
@@ -49,8 +49,8 @@ packages: # comments are added for the first package in each section
   - name: bcicen/ctop@v0.7.7
   - name: jqlang/jq@jq-1.7.1 # Parsing
   - name: mikefarah/yq@v4.42.1
-  - name: wader/fq@v0.10.0
-  - name: johnkerl/miller@v6.11.0
+  - name: wader/fq@v0.11.0
+  - name: johnkerl/miller@v6.12.0
   - name: tomnomnom/gron@v0.7.1
   - name: ericchiang/pup@v0.4.0
   - name: aristocratos/btop@v1.3.2 # System Info & Dashboards
@@ -62,32 +62,32 @@ packages: # comments are added for the first package in each section
   - name: ekzhang/bore@v0.5.0 # Network
   - name: yudai/gotty@v1.0.1
   - name: veeso/termscp@v0.13.0
-  - name: svenstaro/miniserve@v0.26.0
+  - name: svenstaro/miniserve@v0.27.1
   - name: charmbracelet/skate@v0.2.2
   - name: charmbracelet/charm@v0.12.6
-  - name: EdJoPaTo/mqttui@v0.20.0
+  - name: EdJoPaTo/mqttui@v0.21.0
   - name: ogham/dog@v0.1.0
   - name: sachaos/tcpterm@v0.0.2
   - name: gcla/termshark@v2.4.0
   - name: orf/gping@gping-v1.16.1
-  - name: fujiapple852/trippy@0.9.0
+  - name: fujiapple852/trippy@0.10.0
   - name: imsnif/bandwhich@v0.22.2
-  - name: rclone/rclone@v1.65.0 # File transfer
-  - name: schollz/croc@v9.6.6
-  - name: filebrowser/filebrowser@v2.26.0
-  - name: zquestz/s@v0.6.9 # Web-ish
+  - name: rclone/rclone@v1.66.0 # File transfer
+  - name: schollz/croc@v9.6.15
+  - name: zquestz/s@v0.7.0 # Web-ish
   - name: Builditluc/wiki-tui@v0.8.2
   - name: Rigellute/spotify-tui@v0.25.0
   - name: jpbruinsslot/slack-term@v0.5.0
-  - name: casey/just@1.18.1 # Command-running
-  - name: watchexec/watchexec@v1.24.2
-  - name: stateful/runme@v2.0.6
+  - name: casey/just@1.26.0 # Command-running
+  - name: watchexec/watchexec@v2.1.1
+  - name: stateful/runme@v3.3.0
   - name: elkowar/pipr@v0.0.16
-  - name: topgrade-rs/topgrade@v13.0.0 # Package management
-  - name: pemistahl/grex@v1.4.4 # Help
+  - name: topgrade-rs/topgrade@v14.0.1 # Package management
+  - name: pemistahl/grex@v1.4.5 # Help
   - name: dbrgn/tealdeer@v1.6.1
-  - name: printfn/fend@v1.4.0 # Miscellaneous
+  - name: printfn/fend@v1.4.8 # Miscellaneous
   - name: sharkdp/pastel@v0.9.0
   - name: sharkdp/hyperfine@v1.18.0
   - name: ouch-org/ouch@0.5.1
   - name: TaKO8Ki/gobang@v0.1.0-alpha.5
+  - name: zellij-org/zellij@v0.40.1
