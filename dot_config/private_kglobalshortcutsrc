@@ -8,7 +8,7 @@ _k_friendly_name=Keyboard Layout Switcher
 
 [LF.desktop]
 _k_friendly_name=LF
-_launch=Meta+F2,none,LF
+_launch=Meta+F3,none,LF
 
 [Steam--Steam--1703791259.427194.desktop]
 Configure=none,none,Configure in Bottles
@@ -17,7 +17,7 @@ _launch=none,none,Launch Steam
 
 [Zellij Host.desktop]
 _k_friendly_name=Zellij
-_launch=Meta+F1,none,Launch Zellij
+_launch=Meta+F4,none,Launch Zellij
 
 [app.ytmdesktop.ytmdesktop.desktop]
 _k_friendly_name=Ytmdesktop
@@ -48,7 +48,7 @@ _launch=none,none,Launch Remote Touchpad
 _k_friendly_name=Google Chrome
 _launch=none,none,Google Chrome
 new-private-window=none,none,New Incognito Window
-new-window=Meta+F3,none,New Window
+new-window=Meta+F1,none,New Window
 
 [com.google.Chrome.flextop.chrome-aaanfdldlfhmjfdagojbccckmhelibbf-Default.desktop]
 _k_friendly_name=Threads
@@ -60,7 +60,7 @@ _launch=none,none,Launch Chrome Remote Desktop
 
 [com.google.Chrome.flextop.chrome-eilembjdkfgodjkcjnpgpaenohkicgjd-Default.desktop]
 _k_friendly_name=Google Keep
-_launch=Meta+F4,none,Google Keep
+_launch=none,none,Google Keep
 
 [firefox.desktop]
 _k_friendly_name=Firefox (Host)
@@ -146,10 +146,10 @@ Move Tablet to Next Output=none,none,Move the tablet to the next output
 MoveMouseToCenter=none,Meta+F6,Move Mouse to Center
 MoveMouseToFocus=none,Meta+F5,Move Mouse to Focus
 MoveWindowToCenter=none,none,Move Window to Center
-MoveZoomDown=none,Meta+Ctrl+Down,Move Down
-MoveZoomLeft=none,Meta+Ctrl+Left,Move Left
-MoveZoomRight=none,Meta+Ctrl+Right,Move Right
-MoveZoomUp=none,Meta+Ctrl+Up,Move Up
+MoveZoomDown=none,none,Move Zoomed Area Downwards
+MoveZoomLeft=none,none,Move Zoomed Area to Left
+MoveZoomRight=none,none,Move Zoomed Area to Right
+MoveZoomUp=none,none,Move Zoomed Area Upwards
 Overview=Meta+Alt+Space,Meta+W,Toggle Overview
 Setup Window Shortcut=none,,Setup Window Shortcut
 Show Desktop=Meta+Shift+Space,Meta+D,Peek at Desktop
@@ -307,7 +307,7 @@ Window to Screen 6=none,,Window to Screen 6
 Window to Screen 7=none,,Window to Screen 7
 _k_friendly_name=KWin
 view_actual_size=Meta+Ctrl+0,Meta+0,Zoom to Actual Size
-view_zoom_in=Meta+Ctrl+=,Meta++,Zoom In
+view_zoom_in=Meta+Ctrl+=,Meta++\tMeta+=,Zoom In
 view_zoom_out=Meta+Ctrl+-,Meta+-,Zoom Out
 
 [mediacontrol]
@@ -346,7 +346,7 @@ preferences=none,none,Preferences
 
 [org.kde.dolphin.desktop]
 _k_friendly_name=Dolphin
-_launch=none,Meta+E,Dolphin
+_launch=Meta+F2,Meta+E,Dolphin
 
 [org.kde.konsole.desktop]
 NewTab=none,none,Open a New Tab

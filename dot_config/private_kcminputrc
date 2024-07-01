@@ -3,7 +3,7 @@ update_info=delete_cursor_old_default_size.upd:DeleteCursorOldDefaultSize,kcminp
 
 [ButtonRebinds][Mouse]
 ExtraButton1=Key,Meta+Esc
-ExtraButton2=Key,Alt+F4
+ExtraButton2=Key,Ctrl+W
 ExtraButton3=Key,Meta+S
 
 [Keyboard]
@@ -28,6 +28,7 @@ ScrollFactor=0.5
 TapToClick=true
 
 [Libinput][6780][407][Kingsis Peripherals Evoluent VerticalMouse D]
+MiddleButtonEmulation=true
 PointerAcceleration=-0.200
 ScrollFactor=1.5
 

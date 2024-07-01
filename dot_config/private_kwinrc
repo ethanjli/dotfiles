@@ -7,9 +7,8 @@ LatencyPolicy=Medium
 [Desktops]
 Id_1=de5b4f4b-b47b-4a10-b44f-d66914196398
 Id_2=95ece43a-8d3b-42fd-b10c-6820af57e06c
-Id_3=71f154eb-24dc-4f27-9057-4088e1ce7b06
-Id_4=786b554b-c5c4-4a22-9a79-a12c6b8c9e2c
-Number=4
+Id_3=349ee6af-5d06-470c-8659-cba99fb57e34
+Number=3
 Rows=1
 
 [Effect-blur]
@@ -73,7 +72,6 @@ thumbnailasideEnabled=true
 tilegapsEnabled=false
 tileseditorEnabled=false
 wobblywindowsEnabled[$d]
-zoomEnabled=false
 
 [Script-desktopchangeosd]
 PopupHideDelay=500
@@ -137,7 +135,13 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 [Tiling][bbb4a692-5beb-53aa-beab-9ef789c7ce5f]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Tiling][e18c833d-fa66-5919-9c0d-4dcd37b1a98d]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][f3cde8c4-8b75-517a-9ad6-309b5ac86198]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][f86c54d0-95a0-52d3-bb82-0562efd4e0e7]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Wayland]

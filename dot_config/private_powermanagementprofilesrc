@@ -31,7 +31,7 @@ idleTime=120000
 
 [Battery][HandleButtonEvents]
 lidAction=1
-powerButtonAction=2
+powerButtonAction=1
 powerDownAction=16
 triggerLidActionWhenExternalMonitorPresent=false
 
