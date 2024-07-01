@@ -6,8 +6,8 @@ LatencyPolicy=Medium
 
 [Desktops]
 Id_1=de5b4f4b-b47b-4a10-b44f-d66914196398
-Id_2=95ece43a-8d3b-42fd-b10c-6820af57e06c
-Id_3=349ee6af-5d06-470c-8659-cba99fb57e34
+Id_2=987cc14b-9dab-4ea6-be37-eec758f70dc3
+Id_3=d848b986-526b-46bf-b277-76c6377feebb
 Number=3
 Rows=1
 
@@ -23,6 +23,12 @@ ComboboxPopups=97
 Dialogs=97
 Menus=96
 MoveResize=100
+
+[Effect-overview]
+BorderActivate=9
+
+[Effect-shakecursor]
+Magnification=2
 
 [Effect-thumbnailaside]
 MaxWidth=400
@@ -45,8 +51,11 @@ autocomposerEnabled=false
 blurEnabled=true
 contrastEnabled=true
 desktopgridEnabled=false
+dimscreenEnabled=true
 dynamicVirtualDesktopsEnabled=true
 dynamic_workspacesEnabled=true
+fullscreenEnabled=false
+highlightwindowEnabled=false
 invertEnabled=true
 kdesnapassistEnabled=false
 kwin-live-captions-assistantEnabled=true
@@ -57,17 +66,21 @@ kwin4_effect_maximizeEnabled=false
 kwin4_effect_scaleEnabled=false
 kwin4_effect_squashEnabled=false
 kwin4_effect_translucencyEnabled=true
+maximizeEnabled=false
 maximized-window-gapEnabled=true
 ministackEnabled=true
 movewindowtocenterEnabled=true
 quarter-tilingEnabled=true
 quickTileToCenterEnabled=true
 restoreToScreenEnabled=true
+scaleEnabled=false
 slideEnabled=false
+squashEnabled=false
 stepmoveEnabled=true
 stepregridEnabled=false
 stepresizeEnabled=false
 swapsidesEnabled=true
+temporary-virtual-desktopsEnabled=true
 thumbnailasideEnabled=true
 tilegapsEnabled=false
 tileseditorEnabled=false
@@ -84,6 +97,9 @@ stepVertical=50
 [Script-stepregrid]
 resizeOthers=false
 
+[Script-temporary-virtual-desktops]
+oneSpare=true
+
 [Script-tilegaps]
 gapBottom=5
 gapLeft=10
@@ -93,11 +109,13 @@ gapTop=5
 includeMaximized=true
 
 [TabBox]
+HighlightWindows=false
 LayoutName=thumbnail_grid
 MinimizedMode=1
 MultiScreenMode=1
 
 [TabBoxAlternative]
+HighlightWindows=false
 LayoutName=thumbnail_grid
 MinimizedMode=2
 MultiScreenMode=1
@@ -138,6 +156,9 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 [Tiling][e18c833d-fa66-5919-9c0d-4dcd37b1a98d]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Tiling][ed39b2a4-1e89-575d-8f80-864a4608c8f4]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][f3cde8c4-8b75-517a-9ad6-309b5ac86198]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
@@ -149,7 +170,6 @@ EnablePrimarySelection=false
 VirtualKeyboardEnabled=true
 
 [Windows]
-ActiveMouseScreen=false
 BorderSnapZone=5
 BorderlessMaximizedWindows=false
 CenterSnapZone=20

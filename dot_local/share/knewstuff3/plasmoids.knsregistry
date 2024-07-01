@@ -1,157 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE khotnewstuff3>
 <hotnewstuffregistry>
- <stuff category="105">
-  <name>Simple Overview Pager</name>
-  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
-  <author>tuxg0d</author>
-  <homepage>https://store.kde.org/p/1833220</homepage>
+ <stuff category="706">
+  <name>Desktop Indicator</name>
+  <providerid>api.kde-look.org</providerid>
+  <author>dhruv8sh</author>
+  <homepage>https://store.kde.org/p/2131462</homepage>
   <licence></licence>
-  <version>1.0</version>
-  <rating>65</rating>
-  <downloads>4270</downloads>
-  <installedfile>/home/lietk12/.local/share/plasma/plasmoids/SimpleOverviewPager</installedfile>
-  <id>1833220</id>
-  <releasedate>2022-06-20</releasedate>
-  <summary>Fork of Simple Pager by adhe that opens the Overview instead. Requires Plasma 5.24 and above.</summary>
+  <version>v0.3</version>
+  <rating>69</rating>
+  <downloads>5491</downloads>
+  <installedfile>/var/home/lietk12/.local/share/plasma/plasmoids/org.kde.plasma.plasm6desktopindicator/</installedfile>
+  <id>2131462</id>
+  <releasedate>2024-03-18</releasedate>
+  <summary>A minimal virtual desktop indicator to be used as an alternative for a Pager.</summary>
   <changelog></changelog>
-  <preview>https://images.pling.com/cache/100x100-0/img/00/00/49/96/54/1833220/simpleoverviewpager-icon.png</preview>
-  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/49/96/54/1833220/simpleoverviewpager-icon.png</previewBig>
-  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2NTU2OTMwMTYiLCJvIjoiMSIsInMiOiI5MzA4OWJhYjE5OWYzNDUxNmRlODI0YzE3Y2RlOWU3ZWY5YjYxMjAxMGEwYWMxNWExOTFlMWQ3ODU0ZjVjNzhjYjM5YmQ1NjgzMTE5NTY3MGU2NDNkOTQ2MzY4Y2ExZTk4NDUwZWM4MGEyODA1ODJkODNiMGYxNmI0NmMyNTdmNCIsInQiOjE3MDMyODA3MjYsInN0ZnAiOm51bGwsInN0aXAiOiIxMjguMTIuMTIyLjk4In0.tH3iSzTHb8l8LdDsQm3lu-hEkT_Rb-5TaDhoSLByNVw/SimpleOverviewPager.plasmoid</payload>
-  <tags>plasma,plasma##majorversion=5,unix,kde,linux,widget,extension,gplv2-later,efi</tags>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/62/52/79/2131462/screenshot-20240221-034215-2.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/62/52/79/2131462/screenshot-20240221-034215-2.png</previewBig>
+  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE3MTA3MjMxNzQiLCJvIjoiMSIsInMiOiJiZjQ2YzUyM2IzY2FmMTZjOTJmYTllMzk2YWZmZTM3Njk2MTM1ZjczMjI2YzFhZTY3NjU1NmVmNjk4MzM1MGRiNjZjOWU3NWUyMDhkMWI2Y2ZkMDY0MDM2NzM3MzRhZTllMDQ4MDk2OGRmZWUwY2JmNTk3Yjc4NTI4OTI2ZmYyYSIsInQiOjE3MTk4NzM3OTQsInN0ZnAiOm51bGwsInN0aXAiOiIxNzEuNjQuODMuMjQwIn0.Y-OMzIMVEELRcDL4DZ2KVivkKZvaN3RN7H8G_7PvZPs/v0.3.tar.gz</payload>
+  <tags>original-product,pager,plasma,unix,virtual-desktop,extension,linux,kde,kde-plasma,gplv3,applet</tags>
   <status>installed</status>
  </stuff>
- <stuff category="105">
-  <name>Minimal Desktop Indicator</name>
-  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
-  <author>dualitykyle</author>
-  <homepage>https://store.kde.org/p/1878511</homepage>
+ <stuff category="706">
+  <name>Panel Transparency Toggle</name>
+  <providerid>api.kde-look.org</providerid>
+  <author>sanjay-kr-xo</author>
+  <homepage>https://store.kde.org/p/2107649</homepage>
   <licence></licence>
-  <version>3.0</version>
-  <rating>73</rating>
-  <downloads>18173</downloads>
-  <installedfile>/home/lietk12/.local/share/plasma/plasmoids/org.kde.plasma.minimaldesktopindicator</installedfile>
-  <id>1878511</id>
-  <releasedate>2022-09-12</releasedate>
-  <summary>An indicator/switcher for your virtual desktops/workspaces (also known as a "pager"), which shows the amount of virtual desktops available, and highlights the current one - all using simple unicode text characters.&lt;br />
-&lt;br />
-As a former GNOME user, I was a huge fan of the Workspace Indicator extension found at , so I decided to re-create it for Plasma to help me feel at home. I enjoy the minimalist style (hence my naming choice), and I'm hoping you do too!&lt;br />
-&lt;br />
-Features:&lt;br />
-* Customisable left-click/right-click actions&lt;br />
-* Switch desktops by scrolling widget&lt;br />
-* Workspace wraparound&lt;br />
-* Show desktops in a single row or follow Plasma setting&lt;br />
-* Customisable indicator size and icon/character&lt;br />
-&lt;br />
-To-Do:&lt;br />
-* Support for multi-monitor setups&lt;br />
-&lt;br />
-If you find any bugs, or if there is a feature that you'd like to see, please don't hesitate to open an issue on the GitHub repo and I'll try to get to it as soon as I can!</summary>
+  <version>1.1</version>
+  <rating>60</rating>
+  <downloads>2737</downloads>
+  <installedfile>/var/home/lietk12/.local/share/plasma/plasmoids/org.kde.panel.transparency.toggle/</installedfile>
+  <id>2107649</id>
+  <releasedate>2024-04-16</releasedate>
+  <summary>A plasma 6 widget to make desktop panel transaprent</summary>
   <changelog></changelog>
-  <preview>https://images.pling.com/cache/100x100-0/img/00/00/67/33/97/1878511/screenshot-20220811-011709.png</preview>
-  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/67/33/97/1878511/screenshot-20220811-011709.png</previewBig>
-  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2NjI5NTgwOTciLCJvIjoiMSIsInMiOiJjYThmNjNkODEwNjQ3ZmRkZDYzYmJmYjA4NjBjMzEzYjkzOTU1OTc3NTg5MzczZWIyOTNjM2IxZDQyZThhODNlNTFiNTZlYjcwZmI1MjZkNjNiNzUxMmI4MTgzOTI3N2Y4Y2Q4NzVkMzgzNjJiMjY3YTRiZGE3YzhlYjNmZTFlNSIsInQiOjE2OTkwNzQ5ODcsInN0ZnAiOm51bGwsInN0aXAiOiIxNzEuNjYuMTMuNTMifQ.iwXA1EKRF3OFHdO-xTMK_a2egJqsotbnJEs0djkdnqc/plasma-desktop-indicator.plasmoid</payload>
-  <tags>extension,gplv3,desktops,unix,switcher,kde,linux,plasma##majorversion=5,plasma,pager,original-product,widget,workspaces</tags>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/75/03/12/2107649/screenshot-20231121-220911-21.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/75/03/12/2107649/screenshot-20231121-220911-21.png</previewBig>
+  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE3MTMzMDcxMDMiLCJvIjoiMSIsInMiOiJmNjc3ZjMyY2Q1OWEyMzY4M2MxNDIzMjdmZGYxMTc0MTA2ZmMwMzg3NmMzMzgwODNhZDgxODYwMTViYjIwYWEwMDU0N2IzZmE4ODYxOTVlYzJlODMxMjNhOGYwNDQ1MTdjYzMzZjViMTU3NjUyODRmZDFlNTJkODdiOTk0ZWRjYiIsInQiOjE3MTk4NzQ0MzEsInN0ZnAiOm51bGwsInN0aXAiOiIxNzEuNjQuODMuMjQwIn0.PYc5yDIHzFQhlYBPatO5qToyO_zXlo-OdQqLn4nnddU/content.plasmoid</payload>
+  <tags>extension,transparency,unix,kde,gplv2-later,linux,original-product,plasma,plasma6,plasmoid</tags>
   <status>installed</status>
  </stuff>
- <stuff category="105">
-  <name>Control Centre</name>
-  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
-  <author>prayagjain</author>
-  <homepage>https://store.kde.org/p/1916655</homepage>
+ <stuff category="706">
+  <name>Ginti</name>
+  <providerid>api.kde-look.org</providerid>
+  <author>dhruv8sh</author>
+  <homepage>https://store.kde.org/p/2146553</homepage>
   <licence></licence>
-  <version>0.1.0</version>
-  <rating>81</rating>
-  <downloads>176644</downloads>
-  <installedfile>/home/lietk12/.local/share/plasma/plasmoids/com.github.prayag2.controlcentre</installedfile>
-  <id>1916655</id>
-  <releasedate>2022-10-17</releasedate>
-  <summary>NOTE&lt;br />
-This is a beta release. Please expect some bugs!&lt;br />
-&lt;br />
-If you like my work, then please consider supporting me!&lt;br />
-Paypal Address: prayagjain2@gmail.com&lt;br />
-Ko-Fi: https://ko-fi.com/prayagjain&lt;br />
-Liberapay: https://liberapay.com/Prayag/donate&lt;br />
-&lt;br />
-This is a control centre for KDE inspired by the one in MacOS!</summary>
+  <version>v0.4</version>
+  <rating>50</rating>
+  <downloads>708</downloads>
+  <installedfile>/var/home/lietk12/.local/share/plasma/plasmoids/org.kde.plasma.ginti/</installedfile>
+  <id>2146553</id>
+  <releasedate>2024-04-20</releasedate>
+  <summary>Desktop Indicator applet that uses Gnome Workspace switcher as an inspiration.</summary>
   <changelog></changelog>
-  <preview>https://images.pling.com/cache/100x100-0/img/00/00/60/43/39/1916655/logo1.jpg</preview>
-  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/60/43/39/1916655/logo1.jpg</previewBig>
-  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2NjU5OTA5NzgiLCJvIjoiMSIsInMiOiJkOTdlN2ZlYTBhN2ZhY2RjZjM2M2Y5ODBjMzEzMDBiZTRhNTU1NjNkOWNiN2FmZjE1NmVmNjA0OTY3NmQ3MWEzMTBjMzFlMDIxYmY3OGQ1ZTEwZGJiYTEzYWUzN2JmNGJlYzE5MDJjZGEwNzVlMjFjNTA4ZjJiZTJkODg5NzI0YiIsInQiOjE3MDQwODE4MzAsInN0ZnAiOm51bGwsInN0aXAiOiIxMjguMTIuMTIyLjY3In0.yZV8XNkg3NVjQey5woFMrAS3aKJav2TU9vLh866J4pk/kde-controlcentre0.1.0.tar.gz</payload>
-  <tags>gplv3,extension,control,center,centre,unix,widget,original-product,plasma,plasma##majorversion=5,linux,mac,macos,kde</tags>
-  <status>installed</status>
- </stuff>
- <stuff category="105">
-  <name>Panel Transparency Button</name>
-  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
-  <author>Psifidotos</author>
-  <homepage>https://store.kde.org/p/1338479</homepage>
-  <licence></licence>
-  <version>0.2.0</version>
-  <rating>81</rating>
-  <downloads>74887</downloads>
-  <installedfile>/home/lietk12/.local/share/plasma/plasmoids/org.kde.paneltransparencybutton</installedfile>
-  <id>1338479</id>
-  <releasedate>2020-01-22</releasedate>
-  <summary>Plasma 5 applet that enables/disables transparency for plasma panels. Plasma 5.17.3 is required to work correctly and enable/disable panel shadows when needed.&lt;br />
-&lt;br />
-How To Use:&lt;br />
-1. Unlock your widgets and add transparency button in a plasma panel&lt;br />
-2. Activate it and your plasma panel will become completely transparent without altering your plasma theme files.&lt;br />
-3. Based on Plasma Desktop version:&lt;br />
-  - For Plasma &amp;gt;= 5.18, exit Configure Layout desktop mode in order to hide the transparency button completely&lt;br />
-  - For Plasma &amp;lt; 5.18, lock your widgets in the end in order to hide the transparency button completely.&lt;br />
-&lt;br />
-&lt;br />
-Reguirements:&lt;br />
- - Plasma Desktop &amp;gt;= 5.18 - you need v0.2.x&lt;br />
- - Plasma Desktop &amp;lt; 5.18 - you need v0.1.x</summary>
-  <changelog></changelog>
-  <preview>https://images.pling.com/cache/100x100-0/img/00/00/02/97/22/1338479/00c7953536ec34f6b9a640b6ad3d9e62e556.png</preview>
-  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/02/97/22/1338479/00c7953536ec34f6b9a640b6ad3d9e62e556.png</previewBig>
-  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE1Nzk2ODU3MzIiLCJvIjoiMSIsInMiOiI3ZTI5YTViMmQ5YjFmODcyYTQzMzU0NDZhOWFiNmQ1MDIwNDJmMTNjYmJjZmFjNzg2NzczNzQyNTJjYzM3Mjc0NzQ0NzE0ZTg5N2VhNTNlOGU4ZGE1NzA0YWU5YTU1ODE1MjI1ZjEzYWUwNTdlNGQyODk3OGIzZTcyMDBmZDYxNiIsInQiOjE2OTkxMDA4MTQsInN0ZnAiOm51bGwsInN0aXAiOiIxNzEuNjYuMTMuNTMifQ.DKU6fcahedqKL7A_0WorvmTinJ0GreUXS8lILnaI38E/paneltransparencybutton-0.2.0.plasmoid</payload>
-  <tags>extension,gplv2-later,original-product,plasma,plasma##majorversion=5,panel,kde,linux,widget,button,unix</tags>
-  <status>installed</status>
- </stuff>
- <stuff category="424">
-  <name>Simple Weather [Plasma 5]</name>
-  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
-  <author>Zren</author>
-  <homepage>https://store.kde.org/p/1287571</homepage>
-  <licence></licence>
-  <version>8</version>
-  <rating>74</rating>
-  <downloads>24546</downloads>
-  <installedfile>/home/lietk12/.local/share/plasma/plasmoids/com.github.zren.simpleweather</installedfile>
-  <id>1287571</id>
-  <releasedate>2024-03-14</releasedate>
-  <summary>Needs (&lt;strong>sudo apt install plasma-widgets-addons&lt;/strong>) if you don't already have the default KDE weather widget installed.&lt;br />
-&lt;br />
-&lt;strong>Plasma 6 Widget:&lt;/strong> &lt;a href="https://www.pling.com/p/2137431/" target="_blank" rel="nofollow">https://www.pling.com/p/2137431/&lt;/a>&lt;br />
-&lt;br />
-A simple desktop weather widget based on the default KDE widget that shows the current temp, forecast, and min/max temperature.&lt;br />
-&lt;br />
-While useful for users, this can also serve as an example widget for other developers to use as a starting point to create their own weather widget.&lt;br />
-&lt;br />
-Layout based on: &lt;a href="https://www.deviantart.com/speedracker/art/Simple-Weather-Conky-Manager-587605695" target="_blank" rel="nofollow">https://www.deviantart.com/speedracker/art/Simple-Weather-Conky-Manager-587605695&lt;/a>&lt;br />
-&lt;br />
-&lt;ul>&lt;li>Shows Environment Canada weather warnings (can be turned off).&lt;/li>&lt;/ul>&lt;br />
-&lt;hr />&lt;br />
-If you'd like to play around with the CurrentWeatherView, edit the files in:&lt;br />
-&lt;strong>~/.local/share/plasma/plasmoids/com.github.zren.simpleweather/contents/ui/&lt;/strong>&lt;br />
-&lt;br />
-To test, use:&lt;br />
-&lt;strong>plasmawindowed com.github.zren.simpleweather&lt;/strong>&lt;br />
-&lt;br />
-If you wish to upload a fork to the KDE Store, please make sure to edit &lt;strong>X-KDE-PluginInfo-Name&lt;/strong> in &lt;strong>metadata.desktop&lt;/strong> beforehand. Follow the instructions in the tutorial below:&lt;br />
-&lt;a href="https://zren.github.io/kde/docs/widget/" target="_blank" rel="nofollow">https://zren.github.io/kde/docs/widget/&lt;/a></summary>
-  <changelog></changelog>
-  <preview>https://images.pling.com/cache/100x100-0/img/00/00/43/39/56/1287571/3cab05b20f1e34062ab8ea4441e6a1d2f333.png</preview>
-  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/43/39/56/1287571/3cab05b20f1e34062ab8ea4441e6a1d2f333.png</previewBig>
-  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2NDQ3OTg4NjMiLCJvIjoiMSIsInMiOiI0MDU0OGFjYTI5NzEyYTE1ZTRmNjNkMDEwYzA2NTY3M2EzZTU3MDdlYjAyZGQ0ZmE4NTdiZmNmOWFlMjEzZWQ0ZTgxZTZkN2U1NmUzMTQ5NGM3ZWY4MGNlNzMzMDQyYzE0NzU0N2I5NWViZjA2ZmJlNmYyN2ZmNjhkM2E3OThjMiIsInQiOjE3MTQ5NjIxODAsInN0ZnAiOm51bGwsInN0aXAiOiI2OS43MC4xMzMuMjE0In0.68gwqtf0nnxcaa3NQfE-4XoflE4sz3LyYDEKeLAbhCw/simpleweather-v8-qt5.12.plasmoid</payload>
-  <tags>plasma,plasma##majorversion=5,linux,kde,widget,weather,gplv2-later,extension,unix</tags>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/62/52/79/2146553/screenshot-20240414-020220.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/62/52/79/2146553/screenshot-20240414-020220.png</previewBig>
+  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE3MTM2MDMyMDIiLCJvIjoiMSIsInMiOiJiNWU3NDA1NDk5Y2YzNzRlMzg5Y2ZiZTVmYzdlNWI1YjgwZTM2ZjBiMzRjM2M4MzY5NzZkMzZmMjQxNzQ2YTQ3M2JhMGU3OWVlNGRiNGE5YjNkNWM1NjIwMzNhZjI5ZjA1NDQ4MGZmYzkxMGMzMWZjZWQ1NDNiMzdlMjk4N2JmZCIsInQiOjE3MTk4NzUzMjIsInN0ZnAiOm51bGwsInN0aXAiOiIxNzEuNjQuODMuMjQwIn0.k0aw8vS5M-CxEyan69D4xdcb6hTV_tDdycxdH_xIhCQ/v0.5.tar.gz</payload>
+  <tags>unix,virtual-desktop,plasma,original-product,pager,workspace,workspaces,linux,gplv3,kde,desktop,extension</tags>
   <status>installed</status>
  </stuff>
 </hotnewstuffregistry>

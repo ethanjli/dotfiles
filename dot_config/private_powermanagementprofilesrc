@@ -79,3 +79,6 @@ suspendType=1
 btOption=1
 wifiOption=1
 wwanOption=1
+
+[Migration]
+MigratedProfilesToPlasma6=powerdevilrc

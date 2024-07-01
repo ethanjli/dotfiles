@@ -12,11 +12,6 @@ ColumnState=AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlwAAAACAQAAAQAA
 [General]
 Number of Actions=0
 
-[KFileDialog Settings]
-Recent Files[$e]=default-dark.png,file:$HOME/Pictures/Wallpapers/Fedora/f29-03-night.png,file:$HOME/Pictures/Wallpapers/Fedora/f29-02-dusk.png,file:$HOME/Pictures/Wallpapers/Fedora/f29-01-day.png,file:$HOME/Pictures/Wallpapers/Fedora/f29-00-dawn.png,file:$HOME/Pictures/Wallpapers/Fedora/f28.png,file:$HOME/Pictures/Wallpapers/Fedora/f40-01-night.png,file:$HOME/Pictures/Wallpapers/Fedora/F38-01-night.jpg,file:$HOME/Pictures/Wallpapers/Fedora/F37-01-night.jpg,file:$HOME/Pictures/Wallpapers/Fedora/F18-alpha-wallpaper-standard.png,file:$HOME/Pictures/Wallpapers/GNOME/Sandstone.webp,file:$HOME/Pictures/Wallpapers/GNOME/Field.webp,file:$HOME/Pictures/Wallpapers/Chrome OS/World Trade Center station dark bluer.jpg,file:///var/home/lietk12/Projects/Lutho/icons/fedora_icon_white.svg
-Recent URLs[$e]=file:///usr/,file:$HOME/Pictures/,file:///var/home/lietk12/,file:///var/home/lietk12/Projects/Lutho/icons/,file:$HOME/Projects/Lutho/,file:///var/home/lietk12/Projects/Lutho/,file:$HOME/,file:$HOME/Pictures/Wallpapers/Chrome OS/,file:$HOME/Pictures/Wallpapers/,file:$HOME/Pictures/Wallpapers/GNOME/,file:$HOME/Pictures/Wallpapers/Fedora/
-detailViewIconSize=16
-
 [KPropertiesDialog]
 2 screens: Height=549
 2 screens: Width=471
@@ -25,9 +20,6 @@ detailViewIconSize=16
 
 [Notification Messages]
 klipperClearHistoryAskAgain=false
-
-[PlasmaTransientsConfig]
-PreloadWeight=0
 
 [PlasmaViews][Panel 121]
 alignment=132
@@ -291,4 +283,4 @@ maxLength=2256
 minLength=2256
 
 [Updates]
-performed=/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/00-start-here-2.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/containmentactions_middlebutton.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/digitalclock_migrate_font_settings.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/digitalclock_rename_timezonedisplay_key.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/keyboardlayout_migrateiconsetting.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/keyboardlayout_remove_shortcut.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/klipper_clear_config.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/maintain_existing_desktop_icon_sizes.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/mediaframe_migrate_useBackground_setting.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/move_desktop_layout_config.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/no_middle_click_paste_on_panels.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/systemloadviewer_systemmonitor.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/unlock_widgets.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/folderview_fix_recursive_screenmapping.js
+performed=/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/00-start-here-2.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/containmentactions_middlebutton.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/digitalclock_migrate_font_settings.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/digitalclock_rename_timezonedisplay_key.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/keyboardlayout_migrateiconsetting.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/keyboardlayout_remove_shortcut.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/klipper_clear_config.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/maintain_existing_desktop_icon_sizes.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/mediaframe_migrate_useBackground_setting.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/move_desktop_layout_config.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/no_middle_click_paste_on_panels.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/systemloadviewer_systemmonitor.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/unlock_widgets.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/folderview_fix_recursive_screenmapping.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/digitalclock_migrate_showseconds_setting.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/migrate_font_weights.js

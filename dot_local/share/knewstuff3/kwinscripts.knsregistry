@@ -2,24 +2,47 @@
 <!DOCTYPE khotnewstuff3>
 <hotnewstuffregistry>
  <stuff category="210">
-  <name>Step Re-Grid</name>
+  <name>restoreToScreen</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>hegemonia</author>
+  <homepage>https://store.kde.org/p/1912797</homepage>
+  <licence></licence>
+  <version>1.6</version>
+  <rating>50</rating>
+  <downloads>684</downloads>
+  <installedfile>/home/lietk12/.local/share/kwin/scripts/restoreToScreen</installedfile>
+  <id>1912797</id>
+  <releasedate>2023-04-12</releasedate>
+  <summary>A simple Kwin script, which tries to remember the screen a window was in, and to restore it when the screen is reconnected. Useful when you have to disconnect you external monitors frequently.</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/65/58/48/1912797/logo.jpg</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/65/58/48/1912797/logo.jpg</previewBig>
+  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2ODEzMTMzNjMiLCJvIjoiMSIsInMiOiIxYTNkYjkyZDBlZmJiMGJjOTM0Yjg4MDllNTdhM2VkYjA0N2JlZTE2MDQ1OTBiMWI1NWFjMjU5Mjc4NDc1YzNlODQ1YzUyMzRkM2JmMGUyNzgzOWI2MTBhMWY5ZmFkMjViMjY4NTVlYzhlM2RlY2FlOWUxYmQyODEwZDBiOTgxZiIsInQiOjE2OTkwODQ4NzgsInN0ZnAiOm51bGwsInN0aXAiOiIxNzEuNjYuMTMuNTMifQ.Nmyv0rzPcYIUxkt4XQotp6i969m2sw4iFczDM4CgpEI/restoreToScreen.kwinscript</payload>
+  <tags>kwinscript,linux,monitor,gplv3,unix,screen,original-product</tags>
+  <status>installed</status>
+ </stuff>
+ <stuff category="210">
+  <name>Step Move</name>
   <providerid>https://api.kde-look.org/ocs/v1/</providerid>
   <author>nclarius</author>
-  <homepage>https://store.kde.org/p/1636998</homepage>
+  <homepage>https://store.kde.org/p/1632259</homepage>
   <licence></licence>
-  <version>v3.0</version>
-  <rating>50</rating>
-  <downloads>903</downloads>
-  <installedfile>/home/lietk12/.local/share/kwin/scripts/stepregrid</installedfile>
-  <id>1636998</id>
-  <releasedate>2022-02-18</releasedate>
-  <summary>Adds keyboard shortcuts to stepwise reshape the window grid, that is, resize the active or all windows from the center axes depending of their position:&lt;br />
-Example: shift rightwards (analogous for leftwards/upwards/downwards):&lt;ul>&lt;li> windows at the left screen edge: grow to right&lt;/li>&lt;li> windows at the right screen edge: shrink from left&lt;/li>&lt;li> windows in the middle: move right&lt;/li>&lt;li> windows in full width: do nothing&lt;/li>&lt;/ul>Whether to resize only the active or all present windows, as well as the step sizes and the keyboard shortcuts are configurable.[newline</summary>
+  <version>v3.2</version>
+  <rating>55</rating>
+  <downloads>726</downloads>
+  <installedfile>/home/lietk12/.local/share/kwin/scripts/stepmove</installedfile>
+  <id>1632259</id>
+  <releasedate>2022-02-19</releasedate>
+  <summary>Adds keyboard shortcuts to stepwise move (left/right/top/bottom/center) windows.&lt;br />
+&lt;br />
+The step sizes and the keyboard shortcuts are configurable.&lt;br />
+&lt;br />
+Related:&lt;ul>&lt;li> &lt;a href="https://store.kde.org/p/1632260" target="_blank" rel="nofollow">Step Resize&lt;/a>&lt;/li>&lt;li> &lt;a href="https://store.kde.org/p/1636998" target="_blank" rel="nofollow">Step Re-Grid&lt;/a>&lt;/li>&lt;/ul>&lt;strong>On old Plasma versions, additional steps may be required after installation to make the configuration menu available.&lt;/strong> For more information on installation and configuration as well as any requests, please visit &lt;a href="https://github.com/nclarius/KWin-window-geometry-scripts/tree/main/step-move" target="_blank" rel="nofollow">the GitHub page&lt;/a>.[newline</summary>
   <changelog></changelog>
-  <preview>https://images.pling.com/cache/100x100-0/img/00/00/63/33/24/1636998/f9990f438e981347800f6e09d71a18d942775657442ff6403c8b8812b53bdea99af4.png</preview>
-  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/63/33/24/1636998/f9990f438e981347800f6e09d71a18d942775657442ff6403c8b8812b53bdea99af4.png</previewBig>
-  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2NDUyMjgyNDYiLCJvIjoiMSIsInMiOiJjYjRiMWJlNTQ1YmYzMjMzNjlhNWViNWI4ODY5MTljZDJhZTA1MDYzODMxZTQ2ZjE1Y2UwZTg2MGRiMjRiZGNhZjcxZWRmZGNjNGU2MmJiMjJhOTJiNTQ2ZTc5NjNhYzU4MjAxYzMyNjA0NzQ2MDdlNWYwYzg3OTc5NjYyODBkMyIsInQiOjE2OTkxMzc3NzcsInN0ZnAiOm51bGwsInN0aXAiOiIxNzEuNjYuMTMuNTMifQ.uv9IMMhRxC_1s-YPpazzMWB_IRrpCdwNLI_0Blrp6-c/step-regrid_v3.0.kwinscript</payload>
-  <tags>linux,move,grid,gplv3,tiles,tiling,unix,original-product,resize</tags>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/63/33/24/1632259/feab248af283bebdc7bdadb18f1c3db181732bf20e9552351259c34240023b8bddcd.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/63/33/24/1632259/feab248af283bebdc7bdadb18f1c3db181732bf20e9552351259c34240023b8bddcd.png</previewBig>
+  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2NDUzMDIzMTUiLCJvIjoiMSIsInMiOiIzNThkNjIwMzNjZTBiOWRjZGIxOWUzZjI5MTNiNzcwYWQwNWNkOTQyZGI5MTQ1MTk4NGM4ZjBmOTc1ZjFiNmE5NjFiMzRmMGJhOWMzMDQxZDY1YTY4NjIxODcxOWFjNmNmNTcxYjY2NDEzMGI0ODFmYmFlMjMzOGU4NGQ5N2FhZiIsInQiOjE2OTkwODMzNzUsInN0ZnAiOm51bGwsInN0aXAiOiIxNzEuNjYuMTMuNTMifQ.H-_nEA6xfUwxg8kbq4En_gGA_SlF9lbBpdw2fhIKqNA/step-move_v3.2.kwinscript</payload>
+  <tags>linux,gplv3,move,original-product,unix</tags>
   <status>installed</status>
  </stuff>
  <stuff category="210">
@@ -57,43 +80,39 @@ If you would like to thank me, you can always make me happy with a review or a c
   <status>installed</status>
  </stuff>
  <stuff category="210">
-  <name>Step Resize</name>
+  <name>Window Gaps</name>
   <providerid>https://api.kde-look.org/ocs/v1/</providerid>
   <author>nclarius</author>
-  <homepage>https://store.kde.org/p/1632260</homepage>
+  <homepage>https://store.kde.org/p/1619642</homepage>
   <licence></licence>
-  <version>v2.0</version>
-  <rating>50</rating>
-  <downloads>987</downloads>
-  <installedfile>/home/lietk12/.local/share/kwin/scripts/stepresize</installedfile>
-  <id>1632260</id>
-  <releasedate>2022-02-18</releasedate>
-  <summary>Adds keyboard shortcuts to stepwise resize (increase/decrease width/height) windows in consideration of their position:&lt;ul>&lt;li> If the window is positioned in the middle of the screen, resize it on both sides evenly.&lt;/li>&lt;li> If the window is tiled to a screen edge, resize it on the side facing the mid.&lt;/li>&lt;/ul>The advantage over the built-in pack grow/shrink shortcuts, which always resize from the bottom right corner, is that tiled windows remain resizable and will stick to their screen edge; e.g. a window in the bottom right quarter of the screen will be enlarged and reduced from its top left corner, rather than being blocked by or being detached from the bottom and right screen edges, and centered windows will remain centered.[newline</summary>
+  <version>v8.0</version>
+  <rating>73</rating>
+  <downloads>23635</downloads>
+  <installedfile>/home/lietk12/.local/share/kwin/scripts/tilegaps</installedfile>
+  <id>1619642</id>
+  <releasedate>2022-11-27</releasedate>
+  <summary>Adds space around windows touching a screen edge or other window.&lt;br />
+&lt;br />
+The size of the gap and the layouts and applications to be gapped are configurable.&lt;br />
+&lt;br />
+Please note this script does not do any automatic tiling. Its purpose is to reshape windows that have been manually positioned with the default KWin window management system.&lt;br />
+&lt;br />
+&lt;strong>Please make sure to install the most recent version (v7.1) and to not use Discover for installation.&lt;/strong> &lt;strong>On old Plasma versions, additional steps may be required after installation to make the configuration menu available.&lt;/strong> For more information on installation, configuration and usage as well as any requests, please visit &lt;a href="https://github.com/nclarius/tile-gaps" target="_blank" rel="nofollow">the GitHub page&lt;/a>.&lt;br />
+&lt;br />
+© 2021-2022 Natalie Clarius ‹natalie_clarius@yahoo.de›&lt;br />
+&lt;br />
+This work is licensed under the GNU General Public License v3.0.&lt;br />
+This program comes with absolutely no warranty.&lt;br />
+This is free software, and you are welcome to redistribute and/or modify it under certain conditions.&lt;br />
+&lt;br />
+If you would like to thank me, you can always make me happy with a review or a cup of coffee:&lt;br />
+&lt;a href="https://www.paypal.com/donate/?hosted_button_id=7LUUJD83BWRM4" target="_blank" rel="nofollow">&lt;img src="https://www.paypalobjects.com/en_US/DK/i/btn/btn_donateCC_LG.gif" alt="btn_donateCC_LG" />&lt;/a> &lt;a href="https://www.buymeacoffee.com/nclarius" target="_blank" rel="nofollow">&lt;img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="default-yellow" />&lt;/a>&lt;br />
+</summary>
   <changelog></changelog>
-  <preview>https://images.pling.com/cache/100x100-0/img/00/00/63/33/24/1632260/7bfc07ed3ee7561994a2b2bcd491748cf76cdb3e13c0dc6131fe2503e3b7ef11bac1.png</preview>
-  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/63/33/24/1632260/7bfc07ed3ee7561994a2b2bcd491748cf76cdb3e13c0dc6131fe2503e3b7ef11bac1.png</previewBig>
-  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2NDUyMjg1ODYiLCJvIjoiMSIsInMiOiI1MDk3OTk3Y2Q1M2MyNzc1NDdkZWU0YTc3NjRiMTdkM2UyMTVlNzc5Mjg4ZDQ4ZjE1YzlmOTYwZmVkNjJlMmM4N2M1MDRlNDU5Y2JmNzA3Y2NlODU5OWU0OWE3N2IxZTBmNjJjYTIyODM2MWE5MDZkZWMwNjFhZTMzYzFkM2Q2MSIsInQiOjE2OTkxNDczNzcsInN0ZnAiOm51bGwsInN0aXAiOiIxNzEuNjYuMTMuNTMifQ.zD9HT_zu06LSHmpwurVJQffRkyHQHWaktQxJjxQTFN0/step-resize_v2.0.kwinscript</payload>
-  <tags>unix,original-product,resize,linux,gplv3</tags>
-  <status>installed</status>
- </stuff>
- <stuff category="210">
-  <name>restoreToScreen</name>
-  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
-  <author>hegemonia</author>
-  <homepage>https://store.kde.org/p/1912797</homepage>
-  <licence></licence>
-  <version>1.6</version>
-  <rating>50</rating>
-  <downloads>684</downloads>
-  <installedfile>/home/lietk12/.local/share/kwin/scripts/restoreToScreen</installedfile>
-  <id>1912797</id>
-  <releasedate>2023-04-12</releasedate>
-  <summary>A simple Kwin script, which tries to remember the screen a window was in, and to restore it when the screen is reconnected. Useful when you have to disconnect you external monitors frequently.</summary>
-  <changelog></changelog>
-  <preview>https://images.pling.com/cache/100x100-0/img/00/00/65/58/48/1912797/logo.jpg</preview>
-  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/65/58/48/1912797/logo.jpg</previewBig>
-  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2ODEzMTMzNjMiLCJvIjoiMSIsInMiOiIxYTNkYjkyZDBlZmJiMGJjOTM0Yjg4MDllNTdhM2VkYjA0N2JlZTE2MDQ1OTBiMWI1NWFjMjU5Mjc4NDc1YzNlODQ1YzUyMzRkM2JmMGUyNzgzOWI2MTBhMWY5ZmFkMjViMjY4NTVlYzhlM2RlY2FlOWUxYmQyODEwZDBiOTgxZiIsInQiOjE2OTkwODQ4NzgsInN0ZnAiOm51bGwsInN0aXAiOiIxNzEuNjYuMTMuNTMifQ.Nmyv0rzPcYIUxkt4XQotp6i969m2sw4iFczDM4CgpEI/restoreToScreen.kwinscript</payload>
-  <tags>kwinscript,linux,monitor,gplv3,unix,screen,original-product</tags>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/63/33/24/1619642/icon.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/63/33/24/1619642/icon.png</previewBig>
+  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2Njk1MTM1NDciLCJvIjoiMSIsInMiOiJiYWExNjUxOGQxNjJkMDllODRiZDU4OWE5ZWU2YzEwNzA0Y2Y4MTczMjA5YTY1MDg2YmYxY2NmMmUwMGI0MWNmOWM2ZjkzYWJkOWJhMTcxZjVhYzkwYWE0MDFjMDljYmUyYzA0NGIyZGVlYWQ4OWJjNTcyNGFjYWMxMTY2Y2UyMiIsInQiOjE3MDI1MDc1NDgsInN0ZnAiOm51bGwsInN0aXAiOiIxMjguMTIuMTIzLjQ5In0.-KAhxIViUDHK8-DLRNG2ZZXeNsIFQN-OX--5829GRKU/window-gaps-v8.0.kwinscript</payload>
+  <tags>original-product,margins,linux,gplv3,space,unix,tiling,gaps,windows</tags>
   <status>installed</status>
  </stuff>
  <stuff category="210">
@@ -116,6 +135,73 @@ If you would like to thank me, you can always make me happy with a review or a c
   <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/60/99/72/1502826/115a90ae2934e8ccba6d4c24c9181b1e4518f769e6725d1e17f8cbc0a70649fbf5a5.png</previewBig>
   <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2NTE0NTA2MDciLCJvIjoiMSIsInMiOiI1MGFhNjk3Mzg5ZjIzYjllOGNmYTg4Njc2ZTY3OTIxYzEyZTg2MDJlMDI2MjFhOGE3OWE3YjRjZDNiOWQ1MWJiNGI0YzhhYjZjNWM1ZDNhYjhhNDY3YjUyNTM4MTU5M2FhMzUzZTExZTFhNTlmZDhlYmRjNTg1ZDljNjk3MTZmYyIsInQiOjE3MTQ5NjIxODAsInN0ZnAiOm51bGwsInN0aXAiOiI2OS43MC4xMzMuMjE0In0.30DYpafhkJZhU8atAtdyUfZ7GwOGtbNfXU8tr5ivyss/autocomposer.kwinscript</payload>
   <tags>compositing,compositor,desktop,fullscreen,gaming,unix,gplv3,linux,original-product</tags>
+  <status>installed</status>
+ </stuff>
+ <stuff category="210">
+  <name>Step Re-Grid</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>nclarius</author>
+  <homepage>https://store.kde.org/p/1636998</homepage>
+  <licence></licence>
+  <version>v3.0</version>
+  <rating>50</rating>
+  <downloads>903</downloads>
+  <installedfile>/home/lietk12/.local/share/kwin/scripts/stepregrid</installedfile>
+  <id>1636998</id>
+  <releasedate>2022-02-18</releasedate>
+  <summary>Adds keyboard shortcuts to stepwise reshape the window grid, that is, resize the active or all windows from the center axes depending of their position:&lt;br />
+Example: shift rightwards (analogous for leftwards/upwards/downwards):&lt;ul>&lt;li> windows at the left screen edge: grow to right&lt;/li>&lt;li> windows at the right screen edge: shrink from left&lt;/li>&lt;li> windows in the middle: move right&lt;/li>&lt;li> windows in full width: do nothing&lt;/li>&lt;/ul>Whether to resize only the active or all present windows, as well as the step sizes and the keyboard shortcuts are configurable.[newline</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/63/33/24/1636998/f9990f438e981347800f6e09d71a18d942775657442ff6403c8b8812b53bdea99af4.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/63/33/24/1636998/f9990f438e981347800f6e09d71a18d942775657442ff6403c8b8812b53bdea99af4.png</previewBig>
+  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2NDUyMjgyNDYiLCJvIjoiMSIsInMiOiJjYjRiMWJlNTQ1YmYzMjMzNjlhNWViNWI4ODY5MTljZDJhZTA1MDYzODMxZTQ2ZjE1Y2UwZTg2MGRiMjRiZGNhZjcxZWRmZGNjNGU2MmJiMjJhOTJiNTQ2ZTc5NjNhYzU4MjAxYzMyNjA0NzQ2MDdlNWYwYzg3OTc5NjYyODBkMyIsInQiOjE2OTkxMzc3NzcsInN0ZnAiOm51bGwsInN0aXAiOiIxNzEuNjYuMTMuNTMifQ.uv9IMMhRxC_1s-YPpazzMWB_IRrpCdwNLI_0Blrp6-c/step-regrid_v3.0.kwinscript</payload>
+  <tags>linux,move,grid,gplv3,tiles,tiling,unix,original-product,resize</tags>
+  <status>installed</status>
+ </stuff>
+ <stuff category="720">
+  <name>Temporary Virtual Desktops</name>
+  <providerid>api.kde-look.org</providerid>
+  <author>berlioz-ubiquitus</author>
+  <homepage>https://store.kde.org/p/2138035</homepage>
+  <licence></licence>
+  <version>0.3.1</version>
+  <rating>58</rating>
+  <downloads>518</downloads>
+  <installedfile>/var/home/lietk12/.local/share/kwin/scripts/temporary-virtual-desktops/</installedfile>
+  <id>2138035</id>
+  <releasedate>2024-05-23</releasedate>
+  <summary>Fork of original wsdfhjxc's script, adopted to Plasma 6.&lt;br />
+&lt;br />
+Changes to the original script:&lt;br />
+* ( Default) No spare empty desktop - create a new virtual desktop by dragging window in Overview to the "+" area.&lt;br />
+* UI config option to keep one spare virtual desktop&lt;br />
+* Improved empty desktops cleanup thanks to Plasma 6 new features.&lt;br />
+* Additional featuers</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/77/26/37/2138035/tvd.jpg</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/77/26/37/2138035/tvd.jpg</previewBig>
+  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE3MTU0Mjk2NTMiLCJvIjoiMSIsInMiOiJhYzllZjVkMzEzOGE1NTM4NDVkZjdkZjdmZjM3OGZkNjk4NzhlNjk0Y2NmYjJhMjg3YWU5NGUyZjI5YjBiNGIyYzQ2MTIyNGVjZmIwMmM0MDY3MDk0M2Y4MTIxNDdmNTgwODc4MjRhOTUwYjgyY2E1ZTY2ZmU0YzIyNzNlZGE0NyIsInQiOjE3MTk4NzQ3MTUsInN0ZnAiOm51bGwsInN0aXAiOiIxNzEuNjQuODMuMjQwIn0.VVOcXbcadbfeg9loN_0GguZ7232IbruZ-BKeqAXY8mo/temporary-virtual-desktops-0.3.1.kwinscript</payload>
+  <tags>lgplv3,kwinscirpt,linux,unix,virtual-desktop,original-product</tags>
+  <status>installed</status>
+ </stuff>
+ <stuff category="210">
+  <name>Step Resize</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>nclarius</author>
+  <homepage>https://store.kde.org/p/1632260</homepage>
+  <licence></licence>
+  <version>v2.0</version>
+  <rating>50</rating>
+  <downloads>987</downloads>
+  <installedfile>/home/lietk12/.local/share/kwin/scripts/stepresize</installedfile>
+  <id>1632260</id>
+  <releasedate>2022-02-18</releasedate>
+  <summary>Adds keyboard shortcuts to stepwise resize (increase/decrease width/height) windows in consideration of their position:&lt;ul>&lt;li> If the window is positioned in the middle of the screen, resize it on both sides evenly.&lt;/li>&lt;li> If the window is tiled to a screen edge, resize it on the side facing the mid.&lt;/li>&lt;/ul>The advantage over the built-in pack grow/shrink shortcuts, which always resize from the bottom right corner, is that tiled windows remain resizable and will stick to their screen edge; e.g. a window in the bottom right quarter of the screen will be enlarged and reduced from its top left corner, rather than being blocked by or being detached from the bottom and right screen edges, and centered windows will remain centered.[newline</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/63/33/24/1632260/7bfc07ed3ee7561994a2b2bcd491748cf76cdb3e13c0dc6131fe2503e3b7ef11bac1.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/63/33/24/1632260/7bfc07ed3ee7561994a2b2bcd491748cf76cdb3e13c0dc6131fe2503e3b7ef11bac1.png</previewBig>
+  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2NDUyMjg1ODYiLCJvIjoiMSIsInMiOiI1MDk3OTk3Y2Q1M2MyNzc1NDdkZWU0YTc3NjRiMTdkM2UyMTVlNzc5Mjg4ZDQ4ZjE1YzlmOTYwZmVkNjJlMmM4N2M1MDRlNDU5Y2JmNzA3Y2NlODU5OWU0OWE3N2IxZTBmNjJjYTIyODM2MWE5MDZkZWMwNjFhZTMzYzFkM2Q2MSIsInQiOjE2OTkxNDczNzcsInN0ZnAiOm51bGwsInN0aXAiOiIxNzEuNjYuMTMuNTMifQ.zD9HT_zu06LSHmpwurVJQffRkyHQHWaktQxJjxQTFN0/step-resize_v2.0.kwinscript</payload>
+  <tags>unix,original-product,resize,linux,gplv3</tags>
   <status>installed</status>
  </stuff>
  <stuff category="210">
@@ -151,30 +237,6 @@ If you don't encounter problems, file a star on my github repo: https://github.c
   <status>updateable</status>
  </stuff>
  <stuff category="210">
-  <name>Step Move</name>
-  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
-  <author>nclarius</author>
-  <homepage>https://store.kde.org/p/1632259</homepage>
-  <licence></licence>
-  <version>v3.2</version>
-  <rating>55</rating>
-  <downloads>726</downloads>
-  <installedfile>/home/lietk12/.local/share/kwin/scripts/stepmove</installedfile>
-  <id>1632259</id>
-  <releasedate>2022-02-19</releasedate>
-  <summary>Adds keyboard shortcuts to stepwise move (left/right/top/bottom/center) windows.&lt;br />
-&lt;br />
-The step sizes and the keyboard shortcuts are configurable.&lt;br />
-&lt;br />
-Related:&lt;ul>&lt;li> &lt;a href="https://store.kde.org/p/1632260" target="_blank" rel="nofollow">Step Resize&lt;/a>&lt;/li>&lt;li> &lt;a href="https://store.kde.org/p/1636998" target="_blank" rel="nofollow">Step Re-Grid&lt;/a>&lt;/li>&lt;/ul>&lt;strong>On old Plasma versions, additional steps may be required after installation to make the configuration menu available.&lt;/strong> For more information on installation and configuration as well as any requests, please visit &lt;a href="https://github.com/nclarius/KWin-window-geometry-scripts/tree/main/step-move" target="_blank" rel="nofollow">the GitHub page&lt;/a>.[newline</summary>
-  <changelog></changelog>
-  <preview>https://images.pling.com/cache/100x100-0/img/00/00/63/33/24/1632259/feab248af283bebdc7bdadb18f1c3db181732bf20e9552351259c34240023b8bddcd.png</preview>
-  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/63/33/24/1632259/feab248af283bebdc7bdadb18f1c3db181732bf20e9552351259c34240023b8bddcd.png</previewBig>
-  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2NDUzMDIzMTUiLCJvIjoiMSIsInMiOiIzNThkNjIwMzNjZTBiOWRjZGIxOWUzZjI5MTNiNzcwYWQwNWNkOTQyZGI5MTQ1MTk4NGM4ZjBmOTc1ZjFiNmE5NjFiMzRmMGJhOWMzMDQxZDY1YTY4NjIxODcxOWFjNmNmNTcxYjY2NDEzMGI0ODFmYmFlMjMzOGU4NGQ5N2FhZiIsInQiOjE2OTkwODMzNzUsInN0ZnAiOm51bGwsInN0aXAiOiIxNzEuNjYuMTMuNTMifQ.H-_nEA6xfUwxg8kbq4En_gGA_SlF9lbBpdw2fhIKqNA/step-move_v3.2.kwinscript</payload>
-  <tags>linux,gplv3,move,original-product,unix</tags>
-  <status>installed</status>
- </stuff>
- <stuff category="210">
   <name>Live Captions Assistant</name>
   <providerid>https://api.kde-look.org/ocs/v1/</providerid>
   <author>abb128</author>
@@ -192,42 +254,6 @@ Related:&lt;ul>&lt;li> &lt;a href="https://store.kde.org/p/1632260" target="_bla
   <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/70/39/04/1989729/net.sapples.livecaptions.png</previewBig>
   <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2NzY2NjkzMTQiLCJvIjoiMSIsInMiOiIxNjY4MmYyMzkwOTYzNDk1YjFjMjJjOGNiYmYzMDVmNDY2ZDI2YmQ1OTFkN2E3MTU1NzdmMzEwMmNjYzExODE3YzRmZmI5ZDIwMjExYjAyY2U2NzRlNzU0MTJiZmQ1ZDlmYmM3MzRhZGJjYWY0M2NlNzA5NWE4NTFiOTE1YTJhYiIsInQiOjE3MDI2NTgxNTYsInN0ZnAiOm51bGwsInN0aXAiOiIxMjguMTIuMTIyLjE3MSJ9._y2R18qYPWjZosBMqBBQZM1NMvqwzynStlAPAFRbLy4/kwin-live-captions-assistant-main.zip</payload>
   <tags>unix,original-product,linux,mit-license</tags>
-  <status>installed</status>
- </stuff>
- <stuff category="210">
-  <name>Window Gaps</name>
-  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
-  <author>nclarius</author>
-  <homepage>https://store.kde.org/p/1619642</homepage>
-  <licence></licence>
-  <version>v8.0</version>
-  <rating>73</rating>
-  <downloads>23635</downloads>
-  <installedfile>/home/lietk12/.local/share/kwin/scripts/tilegaps</installedfile>
-  <id>1619642</id>
-  <releasedate>2022-11-27</releasedate>
-  <summary>Adds space around windows touching a screen edge or other window.&lt;br />
-&lt;br />
-The size of the gap and the layouts and applications to be gapped are configurable.&lt;br />
-&lt;br />
-Please note this script does not do any automatic tiling. Its purpose is to reshape windows that have been manually positioned with the default KWin window management system.&lt;br />
-&lt;br />
-&lt;strong>Please make sure to install the most recent version (v7.1) and to not use Discover for installation.&lt;/strong> &lt;strong>On old Plasma versions, additional steps may be required after installation to make the configuration menu available.&lt;/strong> For more information on installation, configuration and usage as well as any requests, please visit &lt;a href="https://github.com/nclarius/tile-gaps" target="_blank" rel="nofollow">the GitHub page&lt;/a>.&lt;br />
-&lt;br />
-© 2021-2022 Natalie Clarius ‹natalie_clarius@yahoo.de›&lt;br />
-&lt;br />
-This work is licensed under the GNU General Public License v3.0.&lt;br />
-This program comes with absolutely no warranty.&lt;br />
-This is free software, and you are welcome to redistribute and/or modify it under certain conditions.&lt;br />
-&lt;br />
-If you would like to thank me, you can always make me happy with a review or a cup of coffee:&lt;br />
-&lt;a href="https://www.paypal.com/donate/?hosted_button_id=7LUUJD83BWRM4" target="_blank" rel="nofollow">&lt;img src="https://www.paypalobjects.com/en_US/DK/i/btn/btn_donateCC_LG.gif" alt="btn_donateCC_LG" />&lt;/a> &lt;a href="https://www.buymeacoffee.com/nclarius" target="_blank" rel="nofollow">&lt;img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="default-yellow" />&lt;/a>&lt;br />
-</summary>
-  <changelog></changelog>
-  <preview>https://images.pling.com/cache/100x100-0/img/00/00/63/33/24/1619642/icon.png</preview>
-  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/63/33/24/1619642/icon.png</previewBig>
-  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2Njk1MTM1NDciLCJvIjoiMSIsInMiOiJiYWExNjUxOGQxNjJkMDllODRiZDU4OWE5ZWU2YzEwNzA0Y2Y4MTczMjA5YTY1MDg2YmYxY2NmMmUwMGI0MWNmOWM2ZjkzYWJkOWJhMTcxZjVhYzkwYWE0MDFjMDljYmUyYzA0NGIyZGVlYWQ4OWJjNTcyNGFjYWMxMTY2Y2UyMiIsInQiOjE3MDI1MDc1NDgsInN0ZnAiOm51bGwsInN0aXAiOiIxMjguMTIuMTIzLjQ5In0.-KAhxIViUDHK8-DLRNG2ZZXeNsIFQN-OX--5829GRKU/window-gaps-v8.0.kwinscript</payload>
-  <tags>original-product,margins,linux,gplv3,space,unix,tiling,gaps,windows</tags>
   <status>installed</status>
  </stuff>
 </hotnewstuffregistry>

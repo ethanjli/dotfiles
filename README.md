@@ -4,12 +4,12 @@ dotfiles
 These are my personal dotfiles, managed with [chezmoi](https://chezmoi.io).
 
 I use them:
-- On my laptop running [a personal Fedora Kinoite-based fork](https://github.com/ethanjli/lutho-os)
-  of [ghcr.io/ublue-os/bluefin-dx](https://github.com/ublue-os/bluefin/pkgs/container/bluefin-dx)
-  (Bluefin is a [Fedora Silverblue](https://fedoraproject.org/silverblue/) OCI image)
+- On my laptop running [a personalized custom image](https://github.com/ethanjli/lutho-os)
+  of [ghcr.io/ublue-os/aurora-dx](https://github.com/ublue-os/bluefin/pkgs/container/aurora-dx)
 - In [Distrobox](https://github.com/89luca89/distrobox/) containers
 
 ## Features
+(Aurora is a [Fedora Kinoite](https://fedoraproject.org/silverblue/) OCI image)
 
 ### Theme
 
