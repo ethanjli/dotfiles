@@ -1,6 +1,7 @@
 [ActionPlugins][0]
 MiddleButton;NoModifier=org.kde.applauncher
 RightButton;NoModifier=org.kde.contextmenu
+wheel:Vertical;NoModifier=org.kde.switchdesktop
 
 [ActionPlugins][0][LeftButton;NoModifier]
 showAppsByName=false
@@ -53,7 +54,7 @@ activityId=
 formfactor=2
 immutability=1
 lastScreen=0
-location=3
+location=4
 plugin=org.kde.panel
 wallpaperplugin=org.kde.image
 
@@ -119,10 +120,10 @@ groupedTaskVisualization=3
 groupingStrategy=0
 highlightWindows=false
 iconSpacing=3
+indicateAudioStreams=false
 launchers=
 showOnlyCurrentScreen=true
 showToolTips=false
-wheelEnabled=false
 wheelSkipMinimized=false
 
 [Containments][134][Applets][343]
@@ -137,8 +138,9 @@ popupWidth=900
 [Containments][134][Applets][343][Configuration][Appearance]
 autoFontAndSize=false
 boldText=true
+customDateFormat=MMM d
 dateDisplayFormat=BesideTime
-dateFormat=longDate
+dateFormat=custom
 enabledCalendarPlugins=/usr/lib64/qt5/plugins/plasmacalendarplugins/astronomicalevents.so,/usr/lib64/qt5/plugins/plasmacalendarplugins/holidaysevents.so
 firstDayOfWeek=1
 fontFamily=Atkinson Hyperlegible
@@ -146,7 +148,6 @@ fontSize=5
 fontStyleName=Bold
 fontWeight=75
 selectedTimeZones=America/Los_Angeles,Local,UTC,Europe/Paris,Asia/Taipei,Asia/Seoul,Asia/Tokyo
-showSeconds=true
 showWeekNumbers=true
 use24hFormat=2
 
@@ -161,6 +162,9 @@ global=Meta+Ctrl+Space
 immutability=1
 plugin=org.kde.paneltransparencybutton
 
+[Containments][134][Applets][347][Configuration][Appearance]
+transparencyEnabled=true
+
 [Containments][134][Applets][353]
 immutability=1
 plugin=org.kde.plasma.marginsseparator
@@ -169,15 +173,44 @@ plugin=org.kde.plasma.marginsseparator
 immutability=1
 plugin=org.kde.plasma.marginsseparator
 
-[Containments][134][Applets][356]
+[Containments][134][Applets][405]
 immutability=1
-plugin=SimpleOverviewPager
+plugin=org.kde.plasma.marginsseparator
 
-[Containments][134][Applets][404]
+[Containments][134][Applets][406]
+immutability=1
+plugin=org.kde.plasma.marginsseparator
+
+[Containments][134][Applets][407]
+immutability=1
+plugin=org.kde.plasma.marginsseparator
+
+[Containments][134][Applets][408]
+immutability=1
+plugin=org.kde.plasma.marginsseparator
+
+[Containments][134][Applets][409]
+immutability=1
+plugin=org.kde.plasma.minimaldesktopindicator
+
+[Containments][134][Applets][409][Configuration][ConfigDialog]
+DialogHeight=617
+DialogWidth=1304
+
+[Containments][134][Applets][409][Configuration][General]
+activeDot=⚫
+desktopWrapOn=true
+dotSize=2
+dotSizeCustom=20
+dotType=1
+inactiveDot=⚪
+leftClickAction=GoToClicked
+
+[Containments][134][Applets][410]
 immutability=1
 plugin=org.kde.plasma.panelspacer
 
-[Containments][134][Applets][405]
+[Containments][134][Applets][411]
 immutability=1
 plugin=org.kde.plasma.marginsseparator
 
@@ -186,7 +219,7 @@ DialogHeight=81
 DialogWidth=2256
 
 [Containments][134][General]
-AppletOrder=137;405;356;355;337;404;343;329;;135;353;241;347
+AppletOrder=406;137;355;409;410;337;329;135;408;241;411;405;343;353;347;407
 
 [Containments][139]
 activityId=
@@ -519,9 +552,12 @@ DialogWidth=720
 groupPopups=false
 groupedTaskVisualization=3
 groupingStrategy=0
+highlightWindows=false
 iconSpacing=3
+indicateAudioStreams=false
 launchers=
 showOnlyCurrentScreen=true
+showToolTips=false
 wheelSkipMinimized=false
 
 [Containments][200][Applets][377]
@@ -531,10 +567,6 @@ plugin=org.kde.plasma.systemtray
 [Containments][200][Applets][377][Configuration]
 PreloadWeight=100
 SystrayContainmentId=378
-
-[Containments][200][Applets][395]
-immutability=1
-plugin=SimpleOverviewPager
 
 [Containments][200][Applets][396]
 immutability=1
@@ -550,6 +582,7 @@ PreloadWeight=100
 [Containments][200][Applets][398][Configuration][Appearance]
 showColorSwitcher=false
 showKDEConnect=true
+showNightColor=false
 showPercentage=true
 transparency=true
 
@@ -557,7 +590,7 @@ transparency=true
 DialogHeight=600
 DialogWidth=800
 
-[Containments][200][Applets][402]
+[Containments][200][Applets][416]
 immutability=1
 plugin=org.kde.plasma.marginsseparator
 
@@ -566,7 +599,7 @@ DialogHeight=1080
 DialogWidth=167
 
 [Containments][200][General]
-AppletOrder=201;396;395;335;377;402;398;311
+AppletOrder=201;335;377;416;398;311;396
 
 [Containments][206]
 activityId=
@@ -706,7 +739,7 @@ activityId=
 formfactor=2
 immutability=1
 lastScreen=0
-location=3
+location=4
 plugin=org.kde.plasma.private.systemtray
 popupHeight=480
 popupWidth=626
@@ -803,7 +836,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][242][Applets][256][Configuration]
-PreloadWeight=0
+PreloadWeight=5
 
 [Containments][242][Applets][257]
 immutability=1
@@ -817,7 +850,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][242][Applets][288][Configuration]
-PreloadWeight=0
+PreloadWeight=5
 
 [Containments][242][Applets][331][Configuration]
 PreloadWeight=42
@@ -842,9 +875,10 @@ DialogWidth=720
 
 [Containments][242][General]
 extraItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.nightcolorcontrol,org.kde.plasma.notifications,org.kde.plasma.vault,org.kde.plasma.volume,touchpad,org.kde.plasma.printmanager,org.kde.plasma.battery
-hiddenItems=SyncThingy,Discover Notifier_org.kde.DiscoverNotifier,crow-translate,org.kde.plasma.nightcolorcontrol,zoom,org.kde.plasma.clipboard,org.kde.plasma.bluetooth,org.kde.plasma.devicenotifier,Xwayland Video Bridge_pipewireToXProxy,Barrier,org.kde.kscreen,Portal,Plasma_microphone
+hiddenItems=SyncThingy,Discover Notifier_org.kde.DiscoverNotifier,crow-translate,org.kde.plasma.nightcolorcontrol,zoom,org.kde.plasma.clipboard,org.kde.plasma.bluetooth,org.kde.plasma.devicenotifier,Xwayland Video Bridge_pipewireToXProxy,Barrier,org.kde.kscreen,Portal,Plasma_microphone,org.kde.plasma.mediacontroller,1
 iconSpacing=6
 knownItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.nightcolorcontrol,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.vault,org.kde.plasma.volume
+scaleIconsToFit=true
 shownItems=org.kde.plasma.battery
 
 [Containments][242][Shortcuts]
@@ -986,11 +1020,12 @@ extraItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.battery,org.kde.pla
 knownItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.nightcolorcontrol,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.vault,org.kde.plasma.volume
 
 [Containments][297]
-ItemGeometries-0x0=Applet-403:1520,80,304,176,0;
+ItemGeometries-0x0=
 ItemGeometries-1024x768=
 ItemGeometries-1097x617=
 ItemGeometries-1280x800=
 ItemGeometries-1920x1080=
+ItemGeometries-3840x2160=
 ItemGeometries-585x439=
 ItemGeometries-640x480=
 ItemGeometriesHorizontal=
@@ -1003,8 +1038,8 @@ plugin=org.kde.desktopcontainment
 wallpaperplugin=org.kde.image
 
 [Containments][297][ConfigDialog]
-DialogHeight=768
-DialogWidth=952
+DialogHeight=1080
+DialogWidth=1884
 
 [Containments][297][General]
 ToolBoxButtonState=topcenter
@@ -1015,8 +1050,11 @@ AnimationDuration=150
 Image=/usr/share/wallpapers/F39/
 SlidePaths=/home/lietk12/.local/share/wallpapers/,/usr/share/wallpapers/
 
+[Containments][297][Wallpaper][org.kde.color][General]
+Color=30,34,42
+
 [Containments][297][Wallpaper][org.kde.image][General]
-Image=/usr/share/wallpapers/F39/
+Image=/home/lietk12/Pictures/Wallpapers/Fedora/f29-02-dusk.png
 SlidePaths=/home/lietk12/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][360]
@@ -1254,7 +1292,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][378][Applets][394][Configuration]
-PreloadWeight=0
+PreloadWeight=5
 
 [Containments][378][ConfigDialog]
 DialogHeight=600
@@ -1420,13 +1458,12 @@ plugin=org.kde.desktopcontainment
 wallpaperplugin=org.kde.image
 
 [Containments][76][ConfigDialog]
-DialogHeight=877
-DialogWidth=1551
+DialogHeight=1080
+DialogWidth=1884
 
 [Containments][76][General]
 ToolBoxButtonState=topcenter
 ToolBoxButtonX=576
-ToolBoxButtonY=36
 
 [Containments][76][Wallpaper][a2n.blur][General]
 AnimationDuration=100
@@ -1434,10 +1471,10 @@ Image=/home/lietk12/Projects/Lutho/wallpapers/Black Mountain Dusk Color Graded.j
 SlidePaths=/home/lietk12/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][76][Wallpaper][org.kde.color][General]
-Color=48,48,48
+Color=30,34,42
 
 [Containments][76][Wallpaper][org.kde.image][General]
-Image=/home/lietk12/.local/share/wallpapers/Black-Mountain-Dusk-1.jpg
+Image=/home/lietk12/Pictures/Wallpapers/Fedora/f29-02-dusk.png
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][76][Wallpaper][org.kde.slideshow][General]

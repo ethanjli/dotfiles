@@ -13,8 +13,8 @@ ColumnState=AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlwAAAACAQAAAQAA
 Number of Actions=0
 
 [KFileDialog Settings]
-Recent Files[$e]=default-dark.png,file:$HOME/Projects/Lutho/wallpapers/Black Mountain Dusk Color Graded.jpeg,file:///var/home/lietk12/Projects/Lutho/icons/fedora_icon_white.svg,file:$HOME/Projects/Lutho/wallpapers/Lutho Day.jpg,file:$HOME/Projects/Lutho/wallpapers/Lutho Night.png
-Recent URLs[$e]=file:///usr/,file:$HOME/Pictures/,file:///var/home/lietk12/,file:///var/home/lietk12/Projects/Lutho/icons/,file:$HOME/Projects/Lutho/wallpapers/,file:$HOME/Projects/Lutho/,file:///var/home/lietk12/Projects/Lutho/,file:$HOME/
+Recent Files[$e]=default-dark.png,file:$HOME/Pictures/Wallpapers/Fedora/f29-03-night.png,file:$HOME/Pictures/Wallpapers/Fedora/f29-02-dusk.png,file:$HOME/Pictures/Wallpapers/Fedora/f29-01-day.png,file:$HOME/Pictures/Wallpapers/Fedora/f29-00-dawn.png,file:$HOME/Pictures/Wallpapers/Fedora/f28.png,file:$HOME/Pictures/Wallpapers/Fedora/f40-01-night.png,file:$HOME/Pictures/Wallpapers/Fedora/F38-01-night.jpg,file:$HOME/Pictures/Wallpapers/Fedora/F37-01-night.jpg,file:$HOME/Pictures/Wallpapers/Fedora/F18-alpha-wallpaper-standard.png,file:$HOME/Pictures/Wallpapers/GNOME/Sandstone.webp,file:$HOME/Pictures/Wallpapers/GNOME/Field.webp,file:$HOME/Pictures/Wallpapers/Chrome OS/World Trade Center station dark bluer.jpg,file:///var/home/lietk12/Projects/Lutho/icons/fedora_icon_white.svg
+Recent URLs[$e]=file:///usr/,file:$HOME/Pictures/,file:///var/home/lietk12/,file:///var/home/lietk12/Projects/Lutho/icons/,file:$HOME/Projects/Lutho/,file:///var/home/lietk12/Projects/Lutho/,file:$HOME/,file:$HOME/Pictures/Wallpapers/Chrome OS/,file:$HOME/Pictures/Wallpapers/,file:$HOME/Pictures/Wallpapers/GNOME/,file:$HOME/Pictures/Wallpapers/Fedora/
 detailViewIconSize=16
 
 [KPropertiesDialog]
@@ -27,7 +27,7 @@ detailViewIconSize=16
 klipperClearHistoryAskAgain=false
 
 [PlasmaTransientsConfig]
-PreloadWeight=10
+PreloadWeight=0
 
 [PlasmaViews][Panel 121]
 alignment=132
@@ -50,7 +50,7 @@ thickness=31
 [PlasmaViews][Panel 134]
 alignment=132
 floating=0
-panelOpacity=0
+panelOpacity=2
 panelVisibility=0
 
 [PlasmaViews][Panel 134][Defaults]
@@ -71,14 +71,18 @@ thickness=44
 [PlasmaViews][Panel 200]
 alignment=1
 floating=0
+panelOpacity=2
 panelVisibility=0
 
 [PlasmaViews][Panel 200][Defaults]
-minLength=1080
+minLength=2160
 thickness=36
 
 [PlasmaViews][Panel 200][Vertical1080]
 minLength=1080
+
+[PlasmaViews][Panel 200][Vertical2160]
+minLength=2160
 
 [PlasmaViews][Panel 231]
 alignment=132
