@@ -1,6 +1,6 @@
 registries:
   - type: standard
-    ref: v4.111.0 # renovate: depName=aquaproj/aqua-registry
+    ref: v4.200.0 # renovate: depName=aquaproj/aqua-registry
   - name: ethanjli/dotfiles
     type: github_content
     repo_owner: ethanjli
@@ -8,47 +8,47 @@ registries:
     ref: master
     path: aqua-registry.yaml
 packages: # comments are added for the first package in each section
-  - name: twpayne/chezmoi@v2.47.1
-  - name: zellij-org/zellij@v0.39.2 # Shell
-  - name: JanDeDobbeleer/oh-my-posh@v19.16.1
-  - name: starship/starship@v1.17.1
-  - name: atuinsh/atuin@v18.1.0
+  - name: twpayne/chezmoi@v2.49.1
+  - name: zellij-org/zellij@v0.40.1 # Shell
+  - name: JanDeDobbeleer/oh-my-posh@v21.17.2
+  - name: starship/starship@v1.19.0
+  - name: atuinsh/atuin@v18.3.0
   - name: direnv/direnv@v2.34.0
-  - name: charmbracelet/gum@v0.13.0
-  - name: gokcehan/lf@r31 # Navigation
+  - name: charmbracelet/gum@v0.14.1
+  - name: gokcehan/lf@r32 # Navigation
   - name: ajeetdsouza/zoxide@v0.9.4
-  - name: junegunn/fzf@0.47.0
-  - name: lsd-rs/lsd@v1.0.0
-  - name: sharkdp/fd@v9.0.0
+  - name: junegunn/fzf@0.53.0
+  - name: lsd-rs/lsd@v1.1.2
+  - name: sharkdp/fd@v10.1.0
   - name: BurntSushi/ripgrep@14.1.0
   - name: phiresky/ripgrep-all@v0.10.6
   - name: konradsz/igrep@v1.2.0
-  - name: sharkdp/vivid@v0.9.0
-  - name: neovim/neovim@v0.9.5 # Editing
+  - name: sharkdp/vivid@v0.10.1
+  - name: neovim/neovim@v0.10.0 # Editing
     registry: ethanjli/dotfiles
   - name: acheronfail/repgrep@0.15.0
-  - name: jesseduffield/lazygit@v0.40.2 # Git
-  - name: cli/cli@v2.45.0
+  - name: jesseduffield/lazygit@v0.42.0 # Git
+  - name: cli/cli@v2.52.0
   - name: git-ecosystem/git-credential-manager@v2.5.0
     registry: ethanjli/dotfiles
   - name: o2sh/onefetch@2.21.0
-  - name: FiloSottile/age@v1.1.1 # Secrets
+  - name: FiloSottile/age@v1.2.0 # Secrets
   - name: sharkdp/bat@v0.24.0 # Viewers
   - name: charmbracelet/glow@v1.5.1
-  - name: hpjansson/chafa@1.14.0
+  - name: hpjansson/chafa@1.14.1
     registry: ethanjli/dotfiles
   - name: maaslalani/slides@v0.9.0
   - name: dandavison/delta@0.17.0
   - name: Wilfred/difftastic@0.58.0
-  - name: antonmedv/fx@34.0.0
+  - name: antonmedv/fx@35.0.0
   - name: simeji/jid@v0.7.6
   - name: sharkdp/hexyl@v0.14.0
-  - name: jesseduffield/lazydocker@v0.23.1 # Containers
+  - name: jesseduffield/lazydocker@v0.23.3 # Containers
   - name: wagoodman/dive@v0.12.0
-  - name: google/go-containerregistry@v0.19.1
+  - name: google/go-containerregistry@v0.19.2
   - name: bcicen/ctop@v0.7.7
   - name: jqlang/jq@jq-1.7.1 # Parsing
-  - name: mikefarah/yq@v4.42.1
+  - name: mikefarah/yq@v4.44.2
   - name: wader/fq@v0.11.0
   - name: johnkerl/miller@v6.12.0
   - name: tomnomnom/gron@v0.7.1
@@ -59,7 +59,7 @@ packages: # comments are added for the first package in each section
   - name: dylanaraps/neofetch@7.1.0
   - name: rs/curlie@v1.7.2 # HTTP
   - name: asciimoo/wuzz@v0.5.0
-  - name: ekzhang/bore@v0.5.0 # Network
+  - name: ekzhang/bore@v0.5.1 # Network
   - name: yudai/gotty@v1.0.1
   - name: veeso/termscp@v0.13.0
   - name: svenstaro/miniserve@v0.27.1
@@ -72,20 +72,20 @@ packages: # comments are added for the first package in each section
   - name: orf/gping@gping-v1.16.1
   - name: fujiapple852/trippy@0.10.0
   - name: imsnif/bandwhich@v0.22.2
-  - name: rclone/rclone@v1.66.0 # File transfer
-  - name: schollz/croc@v9.6.15
+  - name: rclone/rclone@v1.67.0 # File transfer
+  - name: schollz/croc@v10.0.9
   - name: zquestz/s@v0.7.0 # Web-ish
   - name: Builditluc/wiki-tui@v0.8.2
   - name: Rigellute/spotify-tui@v0.25.0
   - name: jpbruinsslot/slack-term@v0.5.0
-  - name: casey/just@1.26.0 # Command-running
+  - name: casey/just@1.29.1 # Command-running
   - name: watchexec/watchexec@v2.1.1
-  - name: stateful/runme@v3.3.0
+  - name: stateful/runme@v3.4.0
   - name: elkowar/pipr@v0.0.16
-  - name: topgrade-rs/topgrade@v14.0.1 # Package management
+  - name: topgrade-rs/topgrade@v15.0.0 # Package management
   - name: pemistahl/grex@v1.4.5 # Help
   - name: dbrgn/tealdeer@v1.6.1
-  - name: printfn/fend@v1.4.8 # Miscellaneous
+  - name: printfn/fend@v1.4.9 # Miscellaneous
   - name: sharkdp/pastel@v0.9.0
   - name: sharkdp/hyperfine@v1.18.0
   - name: ouch-org/ouch@0.5.1
