@@ -5,144 +5,99 @@ keybinds clear-defaults=true {
   shared_except "locked" {
     bind "Alt i" { SwitchToMode "locked"; }
 
-    bind "Alt j" { MoveFocus "Down"; }
-    bind "Alt k" { MoveFocus "Up"; }
-    bind "Alt h" { MoveFocusOrTab "Left"; }
-    bind "Alt l" { MoveFocusOrTab "Right"; }
-    bind "Alt J" { MovePane "Down"; }
-    bind "Alt K" { MovePane "Up"; }
-    bind "Alt H" { MovePane "Left"; }
-    bind "Alt L" { MovePane "Right"; }
     bind "Alt =" { Resize "Increase"; }
     bind "Alt -" { Resize "Decrease"; }
 
-    // bind "Alt o" { NewTab; } // this is disabled because Zellij misreports the state as locked afterwards
-    // bind "Alt u" { NewPane; } // this is disabled for consistency with `Alt o`
     bind "Alt y" { ToggleFloatingPanes; }
     bind "Alt Y" { TogglePaneEmbedOrFloating; }
     bind "Alt p" { ToggleFocusFullscreen; }
     bind "Alt P" { TogglePaneFrames; }
+
     bind "Alt [" { PreviousSwapLayout; }
     bind "Alt ]" { NextSwapLayout; }
+
+    bind "Alt 1" { GoToTab 1; }
+    bind "Alt 2" { GoToTab 2; }
+    bind "Alt 3" { GoToTab 3; }
+    bind "Alt 4" { GoToTab 4; }
+    bind "Alt 5" { GoToTab 5; }
+    bind "Alt 6" { GoToTab 6; }
+    bind "Alt 7" { GoToTab 7; }
+    bind "Alt 8" { GoToTab 8; }
+    bind "Alt 9" { GoToTab 9; }
+
+    bind "Alt q" { Detach; }
+    bind "Alt Z" { Quit; }
+  }
+  shared_except "locked" "pane" {
+    bind "Alt J" { GoToNextTab; }
+    bind "Alt K" { GoToPreviousTab; }
+  }
+  shared_except "locked" "resize" {
+    bind "Alt j" { MoveFocus "Down"; }
+    bind "Alt k" { MoveFocus "Up"; }
+    bind "Alt h" { MoveFocus "Left"; }
+    bind "Alt l" { MoveFocus "Right"; }
   }
   shared_except "locked" "renamepane" "renametab" "entersearch" {
     bind "Enter" "Esc" { SwitchToMode "locked"; }
 
-    bind "O" {
+    bind "Alt O" {
       SwitchToMode "locked";
       LaunchOrFocusPlugin "zellij:session-manager" {
         floating true
           move_to_focused_tab true
       };
     }
-    bind "e" { SwitchToMode "locked"; EditScrollback;  }
-    bind "?" { SwitchToMode "Scroll"; }
-    bind "/" { SwitchToMode "EnterSearch"; SearchInput 0; }
+    bind "Alt e" { SwitchToMode "locked"; EditScrollback;  }
+    bind "Alt ?" { SwitchToMode "Scroll"; }
+    bind "Alt /" { SwitchToMode "EnterSearch"; SearchInput 0; }
   }
   shared_except "pane" "locked" "renamepane" "renametab" "entersearch" {
-    bind "u" { SwitchToMode "Pane"; }
+    bind "Alt u" { SwitchToMode "Pane"; }
   }
   shared_except "tab" "locked" "renamepane" "renametab" "entersearch" {
-    bind "o" { SwitchToMode "Tab"; }
-  }
-  normal {
-    bind "j" { MoveFocus "Down"; SwitchToMode "locked"; }
-    bind "k" { MoveFocus "Up"; SwitchToMode "locked"; }
-    bind "h" { MoveFocusOrTab "Left"; SwitchToMode "locked"; }
-    bind "l" { MoveFocusOrTab "Right"; SwitchToMode "locked"; }
-    bind "J" { MovePane "Down"; SwitchToMode "locked"; }
-    bind "K" { MovePane "Up"; SwitchToMode "locked"; }
-    bind "H" { MovePane "Left"; SwitchToMode "locked"; }
-    bind "L" { MovePane "Right"; SwitchToMode "locked"; }
-    bind "=" { Resize "Increase"; SwitchToMode "locked"; }
-    bind "-" { Resize "Decrease"; SwitchToMode "locked"; }
-
-    bind "y" { ToggleFloatingPanes; SwitchToMode "locked"; }
-    bind "Y" { TogglePaneEmbedOrFloating; SwitchToMode "locked"; }
-    bind "p" { ToggleFocusFullscreen; SwitchToMode "locked"; }
-    bind "P" { TogglePaneFrames; SwitchToMode "locked"; }
-
-    bind "1" { GoToTab 1; SwitchToMode "locked"; }
-    bind "2" { GoToTab 2; SwitchToMode "locked"; }
-    bind "3" { GoToTab 3; SwitchToMode "locked"; }
-    bind "4" { GoToTab 4; SwitchToMode "locked"; }
-    bind "5" { GoToTab 5; SwitchToMode "locked"; }
-    bind "6" { GoToTab 6; SwitchToMode "locked"; }
-    bind "7" { GoToTab 7; SwitchToMode "locked"; }
-    bind "8" { GoToTab 8; SwitchToMode "locked"; }
-    bind "9" { GoToTab 9; SwitchToMode "locked"; }
-
-    bind "q" { Detach; }
-    bind "Z" { Quit; }
+    bind "Alt o" { SwitchToMode "Tab"; }
   }
 
-  shared_among "pane" "resize" {
-    bind "u" { NewPane; }
-    bind "d" { CloseFocus; }
-
-    bind "=" { Resize "Increase"; }
-    bind "-" { Resize "Decrease"; }
-
-    bind "y" { ToggleFloatingPanes; }
-    bind "Y" { TogglePaneEmbedOrFloating; }
-    bind "p" { ToggleFocusFullscreen; }
-    bind "P" { TogglePaneFrames; }
-    bind "[" { PreviousSwapLayout; }
-    bind "]" { NextSwapLayout; }
-  }
   pane {
-    bind "r" { TogglePaneFrames; SwitchToMode "RenamePane"; PaneNameInput 0; }
-    bind "R" { SwitchToMode "Resize"; }
+    bind "Alt u" { NewPane; }
+    bind "Alt d" { CloseFocus; }
 
-    bind "j" { MoveFocus "Down"; }
-    bind "J" { MovePane "Down"; }
-    bind "k" { MoveFocus "Up"; }
-    bind "K" { MovePane "Up"; }
-    bind "h" { MoveFocus "Left"; }
-    bind "H" { MovePane "Left"; }
-    bind "Alt H" { BreakPaneLeft; }
-    bind "l" { MoveFocus "Right"; }
-    bind "L" { MovePane "Right"; }
-    bind "Alt L" { BreakPaneRight; }
+    bind "Alt r" { TogglePaneFrames; SwitchToMode "RenamePane"; PaneNameInput 0; }
+    bind "Alt R" { SwitchToMode "Resize"; }
+
+    bind "Alt J" { MovePane "Down"; }
+    bind "Alt K" { MovePane "Up"; }
+    bind "Alt H" { MovePane "Left"; }
+    bind "Alt L" { MovePane "Right"; }
   }
   renamepane {
-    bind "Enter" "Ctrl d" { SwitchToMode "Pane"; TogglePaneFrames; }
+    bind "Enter" "Ctrl d" { SwitchToMode "Locked"; TogglePaneFrames; }
     bind "Esc" "Ctrl c" { UndoRenamePane; SwitchToMode "Pane"; TogglePaneFrames; }
   }
 
   resize {
-    bind "j" { Resize "Increase Down"; }
-    bind "J" { Resize "Decrease Down"; }
-    bind "k" { Resize "Increase Up"; }
-    bind "K" { Resize "Decrease Up"; }
-    bind "h" { Resize "Increase Left"; }
-    bind "H" { Resize "Decrease Left"; }
-    bind "l" { Resize "Increase Right"; }
-    bind "L" { Resize "Decrease Right"; }
+    bind "Alt j" { Resize "Increase Down"; }
+    bind "Alt J" { Resize "Decrease Down"; }
+    bind "Alt k" { Resize "Increase Up"; }
+    bind "Alt K" { Resize "Decrease Up"; }
+    bind "Alt h" { Resize "Increase Left"; }
+    bind "Alt H" { Resize "Decrease Left"; }
+    bind "Alt l" { Resize "Increase Right"; }
+    bind "Alt L" { Resize "Decrease Right"; }
   }
 
   tab {
-    bind "r" { SwitchToMode "RenameTab"; TabNameInput 0; }
-    bind "o" { NewTab; SwitchToMode "Tab"; }
-    bind "d" { CloseTab; }
+    bind "Alt r" { SwitchToMode "RenameTab"; TabNameInput 0; }
+    bind "Alt o" { NewTab; SwitchToMode "Tab"; }
+    bind "Alt d" { CloseTab; }
 
-    bind "j" "l" { GoToNextTab; }
-    bind "k" "h" { GoToPreviousTab; }
-    bind "K" "H" { BreakPaneLeft; }
-    bind "J" "L" { BreakPaneRight; }
-
-    bind "1" { GoToTab 1; }
-    bind "2" { GoToTab 2; }
-    bind "3" { GoToTab 3; }
-    bind "4" { GoToTab 4; }
-    bind "5" { GoToTab 5; }
-    bind "6" { GoToTab 6; }
-    bind "7" { GoToTab 7; }
-    bind "8" { GoToTab 8; }
-    bind "9" { GoToTab 9; }
+    bind "Alt H" { BreakPaneLeft; }
+    bind "Alt L" { BreakPaneRight; }
   }
   renametab {
-    bind "Enter" "Ctrl d" { SwitchToMode "Tab"; }
+    bind "Enter" "Ctrl d" { SwitchToMode "Locked"; }
     bind "Esc" "Ctrl c" { UndoRenameTab; SwitchToMode "Tab"; }
   }
 
