@@ -1,3 +1,19 @@
+-- Treesitter
+
+require("nvim-treesitter.configs").setup({
+  sync_install = false,
+  auto_install = true,
+  highlight = {
+    enable = true,
+  },
+  incremental_selection = {
+    enable = true,
+  },
+  indent = {
+    enable = true,
+  },
+})
+
 -- Mason
 
 require("mason").setup()
@@ -33,16 +49,24 @@ local on_attach = function(_, bufnr)
   vim.api.nvim_set_option_value("omnifunc", "v:lua.vim.lsp.omnifunc", {})
 
   -- Mappings.
-  local opts = { buffer = bufnr, noremap = true, silent = true }
-  vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
-  vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
-  vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
-  vim.keymap.set("n","<Enter>",vim.lsp.buf.hover, opts)
-  vim.keymap.set("n", "<space>rn", vim.lsp.buf.rename, opts)
-  vim.keymap.set('n', '<space>e', vim.diagnostic.open_float, opts)
-  vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, opts)
-  vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)
-  vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist, opts)
+  local map = function(keys, func, desc)
+    vim.keymap.set("n", keys, func, {
+      buffer = bufnr,
+      noremap = true,
+      silent = true,
+      desc = "LSP: " .. desc,
+    })
+  end
+  map("gD", vim.lsp.buf.declaration, "Goto symbol declaration")
+  map("gd", vim.lsp.buf.definition, "Goto symbol definition")
+  map("<leader>r", vim.lsp.buf.references, "Show all references")
+  map("<Enter>",vim.lsp.buf.hover, "Symbol summary")
+  map("<leader>rn", vim.lsp.buf.rename, "Rename symbol")
+  map("<leader>ca", vim.lsp.buf.rename, "Execute code action on symbol")
+  map("<leader>e", vim.diagnostic.open_float, "Show diagnostic message")
+  map("[d", vim.diagnostic.goto_prev, "Previous diagnostic message")
+  map("]d", vim.diagnostic.goto_next, "Next diagnostic message")
+  map("<leader>q", vim.diagnostic.setloclist, "Show all diagnostics")
 end
 
 -- prose
