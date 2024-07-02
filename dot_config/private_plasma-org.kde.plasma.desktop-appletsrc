@@ -866,7 +866,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][242][Applets][288][Configuration]
-PreloadWeight=5
+PreloadWeight=0
 
 [Containments][242][Applets][331][Configuration]
 PreloadWeight=42
@@ -1334,7 +1334,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][378][Applets][394][Configuration]
-PreloadWeight=5
+PreloadWeight=0
 
 [Containments][378][Applets][421]
 immutability=1
@@ -1520,8 +1520,8 @@ plugin=org.kde.desktopcontainment
 wallpaperplugin=org.kde.image
 
 [Containments][76][ConfigDialog]
-DialogHeight=1468
-DialogWidth=2256
+DialogHeight=1459
+DialogWidth=1118
 
 [Containments][76][General]
 ToolBoxButtonState=topcenter
@@ -1536,8 +1536,8 @@ SlidePaths=/home/lietk12/.local/share/wallpapers/,/usr/share/wallpapers/
 Color=30,34,42
 
 [Containments][76][Wallpaper][org.kde.image][General]
-Image=/home/lietk12/.local/share/wallpapers/f29-03-night.png
-PreviewImage=/home/lietk12/.local/share/wallpapers/f29-03-night.png
+Image=/home/lietk12/.local/share/wallpapers/f29-02-dusk.png
+PreviewImage=/home/lietk12/.local/share/wallpapers/f29-02-dusk.png
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][76][Wallpaper][org.kde.slideshow][General]

@@ -7,7 +7,8 @@ LatencyPolicy=Medium
 [Desktops]
 Id_1=de5b4f4b-b47b-4a10-b44f-d66914196398
 Id_2=d848b986-526b-46bf-b277-76c6377feebb
-Id_3=3e2e3d40-94b4-4b98-990e-952e60a29734
+Id_3=b4ef02ff-f843-4f22-920b-b3b53632c475
+Name_3=Desktop 4
 Number=3
 Rows=1
 
@@ -184,7 +185,6 @@ WindowSnapZone=5
 Scale=1
 
 [org.kde.kdecoration2]
-BorderSizeAuto=false
 ButtonsOnLeft=MN
 ButtonsOnRight=X
 library=org.kde.kwin.aurorae

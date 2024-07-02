@@ -7,7 +7,6 @@ MenuOpacity=0
 
 [Windeco]
 ButtonSize=ButtonSmall
-DrawBorderOnMaximizedWindows=true
 
 [Windeco Exception 0]
 BorderSize=0
