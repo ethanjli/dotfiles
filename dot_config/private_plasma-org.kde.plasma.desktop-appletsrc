@@ -145,7 +145,7 @@ fontFamily=Atkinson Hyperlegible
 fontSize=5
 fontStyleName=Bold
 fontWeight=700
-selectedTimeZones=America/Los_Angeles,Local,UTC,Europe/Paris,Asia/Taipei,Asia/Seoul,Asia/Tokyo
+selectedTimeZones=Asia/Seoul,Asia/Taipei,Asia/Tokyo,Europe/Paris,Local,America/Los_Angeles,UTC
 showWeekNumbers=true
 use24hFormat=2
 
@@ -845,7 +845,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][242][Applets][255][Configuration]
-PreloadWeight=92
+PreloadWeight=84
 
 [Containments][242][Applets][256]
 immutability=1
@@ -894,7 +894,7 @@ immutability=1
 plugin=org.kde.plasma.brightness
 
 [Containments][242][Applets][429][Configuration]
-PreloadWeight=57
+PreloadWeight=49
 
 [Containments][242][ConfigDialog]
 DialogHeight=570
@@ -1327,7 +1327,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][378][Applets][393][Configuration]
-PreloadWeight=39
+PreloadWeight=31
 
 [Containments][378][Applets][394]
 immutability=1
@@ -1345,7 +1345,7 @@ immutability=1
 plugin=org.kde.plasma.brightness
 
 [Containments][378][Applets][426][Configuration]
-PreloadWeight=42
+PreloadWeight=34
 
 [Containments][378][ConfigDialog]
 DialogHeight=570

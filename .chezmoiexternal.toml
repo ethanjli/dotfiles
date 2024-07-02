@@ -36,6 +36,20 @@ url = "https://github.com/softmoth/zsh-vim-mode/archive/1f9953b.tar.gz"
 exact = true
 stripcomponents = 1
 
+# Zellij plugins
+
+[".local/share/zellij/plugins/zj-quit.wasm"]
+type = "file"
+url = "https://github.com/cristiand391/zj-quit/releases/download/0.3.0/zj-quit.wasm"
+
+[".local/share/zellij/plugins/zellij-forgot.wasm"]
+type = "file"
+url = "https://github.com/karimould/zellij-forgot/releases/download/0.4.0/zellij_forgot.wasm"
+
+[".local/share/zellij/plugins/zjstatus.wasm"]
+type = "file"
+url = "https://github.com/dj95/zjstatus/releases/download/v0.16.0/zjstatus.wasm"
+
 # CLI Theming
 
 [".config/btop/themes/onedark.theme"]

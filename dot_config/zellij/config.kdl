@@ -26,31 +26,54 @@ keybinds clear-defaults=true {
     bind "Alt 8" { GoToTab 8; }
     bind "Alt 9" { GoToTab 9; }
 
+    bind "Down" "Ctrl e" { ScrollDown; }
+    bind "Up" "Ctrl y" { ScrollUp; }
+    bind "Ctrl d" { HalfPageScrollDown; }
+    bind "Ctrl u" { HalfPageScrollUp; }
+    bind "Ctrl f" "PageDown" { PageScrollDown; }
+    bind "Ctrl b" "PageUp" { PageScrollUp; }
+    bind "Home" { ScrollToTop; }
+    bind "End" { ScrollToBottom; }
+
     bind "Alt q" { Detach; }
-    bind "Alt Z" { Quit; }
+    bind "Alt Z" {
+      SwitchToMode "locked";
+      LaunchOrFocusPlugin "zj-quit" {
+        floating true
+        move_to_focused_tab true
+      };
+    }
+
+    bind "Alt ?" {
+      SwitchToMode "locked";
+      LaunchOrFocusPlugin "zellij-forgot" {
+        floating true
+        move_to_focused_tab true
+      }
+    }
   }
-  shared_except "locked" "pane" {
-    bind "Alt J" { GoToNextTab; }
-    bind "Alt K" { GoToPreviousTab; }
+  shared_except "locked" "pane" "tab" {
+    bind "Alt L" "Alt J" { GoToNextTab; }
+    bind "Alt H" "Alt K" { GoToPreviousTab; }
   }
-  shared_except "locked" "resize" {
+  shared_except "locked" "resize" "tab" {
     bind "Alt j" { MoveFocus "Down"; }
     bind "Alt k" { MoveFocus "Up"; }
     bind "Alt h" { MoveFocus "Left"; }
     bind "Alt l" { MoveFocus "Right"; }
   }
   shared_except "locked" "renamepane" "renametab" "entersearch" {
-    bind "Enter" "Esc" { SwitchToMode "locked"; }
+    bind "Esc" { SwitchToMode "locked"; }
 
     bind "Alt O" {
       SwitchToMode "locked";
       LaunchOrFocusPlugin "zellij:session-manager" {
         floating true
-          move_to_focused_tab true
+        move_to_focused_tab true
       };
     }
     bind "Alt e" { SwitchToMode "locked"; EditScrollback;  }
-    bind "Alt ?" { SwitchToMode "Scroll"; }
+    bind "Alt ." { SwitchToMode "Scroll"; }
     bind "Alt /" { SwitchToMode "EnterSearch"; SearchInput 0; }
   }
   shared_except "pane" "locked" "renamepane" "renametab" "entersearch" {
@@ -60,7 +83,13 @@ keybinds clear-defaults=true {
     bind "Alt o" { SwitchToMode "Tab"; }
   }
 
+  normal {
+    bind "Enter" { SwitchToMode "locked"; }
+  }
+
   pane {
+    bind "Enter" { SwitchToMode "Normal"; }
+
     bind "Alt u" { NewPane; }
     bind "Alt d" { CloseFocus; }
 
@@ -73,11 +102,13 @@ keybinds clear-defaults=true {
     bind "Alt L" { MovePane "Right"; }
   }
   renamepane {
-    bind "Enter" "Ctrl d" { SwitchToMode "Locked"; TogglePaneFrames; }
+    bind "Enter" "Ctrl d" { SwitchToMode "Pane"; TogglePaneFrames; }
     bind "Esc" "Ctrl c" { UndoRenamePane; SwitchToMode "Pane"; TogglePaneFrames; }
   }
 
   resize {
+    bind "Enter" { SwitchToMode "Pane"; }
+
     bind "Alt j" { Resize "Increase Down"; }
     bind "Alt J" { Resize "Decrease Down"; }
     bind "Alt k" { Resize "Increase Up"; }
@@ -89,29 +120,33 @@ keybinds clear-defaults=true {
   }
 
   tab {
+    bind "Enter" { SwitchToMode "Normal"; }
+
     bind "Alt r" { SwitchToMode "RenameTab"; TabNameInput 0; }
     bind "Alt o" { NewTab; SwitchToMode "Tab"; }
     bind "Alt d" { CloseTab; }
 
-    bind "Alt H" { BreakPaneLeft; }
-    bind "Alt L" { BreakPaneRight; }
+    bind "Alt l" "Alt j" { GoToNextTab; }
+    bind "Alt h" "Alt k" { GoToPreviousTab; }
+    bind "Alt H" { MoveTab "Left"; }
+    bind "Alt L" { MoveTab "Right"; }
+    bind "Alt J" { BreakPaneLeft; }
+    bind "Alt K" { BreakPaneRight; }
   }
   renametab {
-    bind "Enter" "Ctrl d" { SwitchToMode "Locked"; }
+    bind "Enter" "Ctrl d" { SwitchToMode "Tab"; }
     bind "Esc" "Ctrl c" { UndoRenameTab; SwitchToMode "Tab"; }
   }
 
   shared_among "scroll" "search" {
+    bind "Enter" { SwitchToMode "Normal"; }
+
     bind "Ctrl c" { ScrollToBottom; SwitchToMode "Normal"; }
 
-    bind "j" "Down" "Ctrl e" { ScrollDown; }
-    bind "k" "Up" "Ctrl y" { ScrollUp; }
-    bind "Ctrl d" { HalfPageScrollDown; }
-    bind "Ctrl u" { HalfPageScrollUp; }
-    bind "Ctrl f" "PageDown" { PageScrollDown; }
-    bind "Ctrl b" "PageUp" { PageScrollUp; }
-    bind "g" "Home" { ScrollToTop; }
-    bind "G" "End" { ScrollToBottom; }
+    bind "j" { ScrollDown; }
+    bind "k" { ScrollUp; }
+    bind "g" { ScrollToTop; }
+    bind "G" { ScrollToBottom; }
 
     bind "n" { Search "down"; }
     bind "N" { Search "up"; }
@@ -121,16 +156,25 @@ keybinds clear-defaults=true {
   }
   entersearch {
     bind "Enter" "Ctrl d" { SwitchToMode "Search"; }
-    bind "Esc" "Ctrl c" { SwitchToMode "Normal"; }
+    bind "Ctrl c" { SwitchToMode "Normal"; }
   }
 }
 
 plugins {
-  tab-bar { path "tab-bar"; }
-  status-bar { path "status-bar"; }
-  strider { path "strider"; }
-  compact-bar { path "compact-bar"; }
-  session-manager { path "session-manager"; }
+  tab-bar location="zellij:tab-bar"
+  status-bar location="zellij:status-bar"
+  strider location="zellij:strider"
+  compact-bar location="zellij:compact-bar"
+  session-manager location="zellij:session-manager"
+  welcome-screen location="zellij:session-manager" {
+    welcome_screen true
+  }
+  filepicker location="zellij:strider" {
+    cwd "/"
+  }
+  zj-quit location="file:~/.local/share/zellij/plugins/zj-quit.wasm"
+  zellij-forgot location="file:~/.local/share/zellij/plugins/zellij-forgot.wasm"
+  zjstatus location="file:~/.local/share/zellij/plugins/zjstatus.wasm"
 }
 
 // Choose what to do when zellij receives SIGTERM, SIGINT, SIGQUIT or SIGHUP

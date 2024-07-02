@@ -6,8 +6,8 @@ LatencyPolicy=Medium
 
 [Desktops]
 Id_1=de5b4f4b-b47b-4a10-b44f-d66914196398
-Id_2=987cc14b-9dab-4ea6-be37-eec758f70dc3
-Id_3=d848b986-526b-46bf-b277-76c6377feebb
+Id_2=d848b986-526b-46bf-b277-76c6377feebb
+Id_3=3e2e3d40-94b4-4b98-990e-952e60a29734
 Number=3
 Rows=1
 

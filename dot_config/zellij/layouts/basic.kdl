@@ -1,8 +1,27 @@
 layout {
   default_tab_template {
-     pane size=1 borderless=true {
-         plugin location="zellij:compact-bar"
-     }
-     children
+    pane size=1 borderless=true {
+      plugin location="zjstatus" {
+        format_left   "#[bold]{session} "
+        format_center "{tabs}"
+        format_right  "#[bold] {swap_layout}{mode}"
+
+        mode_normal "#[fg=magenta,bold] {name}"
+        mode_locked "#[fg=magenta,bold]"
+
+        tab_normal            "#[fg=#5c6370] {index} {name} "
+        tab_normal_fullscreen "#[fg=#5c6370] {index}:{name} "
+        tab_active            "#[fg=blue,bg=#1e222a,bold] {index} #[bg=#1e222a,bold]{name} "
+        tab_active_fullscreen "#[fg=blue,bg=#1e222a,bold] {index}:#[bg=#1e222a,bold]{name} "
+
+        tab_display_count         "6"
+        tab_truncate_start_format "#[fg=red,bold] < +{count} "
+        tab_truncate_end_format   "#[fg=red,bold] +{count} >"
+
+        format_hide_on_overlength "true"
+        format_precedence         "lrc"
+      }
+    }
+    children
   }
 }
