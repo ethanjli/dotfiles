@@ -3,7 +3,7 @@
 # not to attach any Zellij session, it will instead start a login shell (chosen using $SHELL).
 
 if command -v zellij &> /dev/null && [ -z "${ZELLIJ}" ]; then
-  zellij_sessions=$(zellij list-sessions --short | sort)
+  zellij_sessions=$(zellij list-sessions --short --reverse)
   num_sessions=$(echo "${zellij_sessions}" | wc -l)
   if [ "${num_sessions}" -eq 0 ] && gum confirm "Start a new Zellij session?"; then
     zellij attach -c
