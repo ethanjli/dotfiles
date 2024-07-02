@@ -8,6 +8,7 @@ set hidden                  " allow switching buffers with unsaved changes
 
 " Command line
 set wildmode=longest,list   " get bash-like tab completions
+"set noshowmode              " show mode in status line instead
 
 " Search
 set ignorecase              " case-insensitive search by default
@@ -22,7 +23,10 @@ set scrolloff=5             " show lines above and below current line at screen 
 set number                  " show line numbers
 set relativenumber          " show relative line number offsets
 "set colorcolumn=80,100      " show common column width limits
-set colorcolumn=100      " show common column width limits
+set colorcolumn=100         " show common column width limits
+set linebreak               " wrap long lines
+set breakindent             " indent wrapped lines
+set showbreak=↪\            " indicate wrapped lines
 
 " Files
 set encoding=utf-8
@@ -52,3 +56,9 @@ set mouse=a                 " enable mouse click
 nnoremap K i<CR><Esc>
 nnoremap <Up> :m-2<CR>==
 nnoremap <Down> :m+<CR>==
+
+" Lua bootstrapping
+source $HOME/.config/nvim/init.lua.vim
+
+" Graphics with nvim plugins
+colorscheme onedark

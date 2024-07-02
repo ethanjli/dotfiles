@@ -59,6 +59,8 @@ TODO: add screenshots
   - The same configuration for Neovim, Vim, and the Neovim Flatpak
   - Generally default keybindings to avoid disrupting muscle-memory on machines with the default
     keybindings
+  - [lazy.nvim](https://github.com/folke/lazy.nvim) as the plugin manager
+  - [mason.nvim](https://github.com/williamboman/mason.nvim) as the language support tools manager
 - (WIP) An [lf](https://github.com/gokcehan/lf) configuration, notably:
   - Nice previews of:
     - Markdown files, using [glow](https://github.com/charmbracelet/glow)
