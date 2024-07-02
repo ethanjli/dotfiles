@@ -17,7 +17,7 @@ set smartcase               " case-sensitive search when uppercase chars are in 
 set hlsearch                " highlight search matches
 set incsearch               " incremental search
 " clear search results:
-nnoremap <silent> <Esc> :nohlsearch<CR>
+"nnoremap <silent> <Esc> :nohlsearch<CR>
 
 " Substitution
 set inccommand=split

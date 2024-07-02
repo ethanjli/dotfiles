@@ -21,7 +21,7 @@ require("mason-lspconfig").setup({
   -- note: automatic_installation doesn't seem to work, so we manually add LSPs to ensure_installed
   ensure_installed = {
     -- refer to https://github.com/williamboman/mason-lspconfig.nvim#available-lsp-servers
-    "typos_lsp", "ltex",
+    "typos_lsp",
     "marksman",
     "texlab",
     "gopls", "golangci_lint_ls",
@@ -48,7 +48,7 @@ local lspconfig = require("lspconfig")
 local on_attach = function(_, bufnr)
   vim.api.nvim_set_option_value("omnifunc", "v:lua.vim.lsp.omnifunc", {})
 
-  -- Mappings.
+  -- Mappings:
   local map = function(keys, func, desc)
     vim.keymap.set("n", keys, func, {
       buffer = bufnr,
@@ -68,10 +68,20 @@ local on_attach = function(_, bufnr)
   map("]d", vim.diagnostic.goto_next, "Next diagnostic message")
   map("<leader>q", vim.diagnostic.setloclist, "Show all diagnostics")
 end
+local lsp_cmds = vim.api.nvim_create_augroup('lsp_cmds', {clear = true})
+vim.api.nvim_create_autocmd('LspAttach', {
+  group = lsp_cmds,
+  desc = 'global on_attach',
+  callback = function(event)
+    local bufnr = event.buf
+    local client = vim.lsp.get_client_by_id(event.data.client_id)
+
+    on_attach(client, bufnr)
+  end
+})
 
 -- prose
 lspconfig.typos_lsp.setup({})
-lspconfig.ltex.setup({})
 
 -- Markdown
 lspconfig.marksman.setup({})
@@ -100,7 +110,6 @@ lspconfig.gopls.setup({
       gofumpt = true,
     },
   },
-  on_attach=on_attach,
 })
 lspconfig.golangci_lint_ls.setup({
   root_dir = lspconfig.util.root_pattern(".git", "go.mod"),

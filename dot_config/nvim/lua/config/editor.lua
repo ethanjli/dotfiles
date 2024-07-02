@@ -29,5 +29,7 @@ vim.keymap.set("n", "[t", function()
   require("todo-comments").jump_next()
 end, { desc = "Previous todo comment" })
 
+require("scope").setup({})
+
 require("mini.ai").setup({ n_lines = 500 })
 require("mini.surround").setup()
