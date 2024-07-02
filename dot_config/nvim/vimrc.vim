@@ -1,3 +1,5 @@
+" Vim-compatible settings
+
 " Graphics
 if &term =~# '^xterm'
   set ttyfast               " improve redrawing smoothness
@@ -8,7 +10,6 @@ set hidden                  " allow switching buffers with unsaved changes
 
 " Command line
 set wildmode=longest,list   " get bash-like tab completions
-set noshowmode              " show mode in status line instead
 
 " Search
 set ignorecase              " case-insensitive search by default
@@ -72,14 +73,3 @@ set splitbelow              " when splitting horizontally, move focus to new pan
 
 " Undo
 set undofile                " save undo history to file
-
-" Lua bootstrapping
-source $HOME/.config/nvim/init.lua.vim
-
-" Graphics with nvim plugins
-colorscheme onedark
-
-" Folding with nvim plugins
-set foldmethod=expr
-set foldexpr=nvimtreesitter#foldexpr()
-set nofoldenable            " disable folding at startup
