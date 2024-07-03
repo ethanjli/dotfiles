@@ -8,6 +8,13 @@ vim.api.nvim_create_autocmd("TextYankPost", {
   end,
 })
 
+vim.diagnostic.config({
+  virtual_text = {
+    -- show diagnostic message virtual text just past the 100-character column marker:
+    virt_text_win_col = 97,
+  },
+})
+
 require("ibl").setup()
 
 require("Comment").setup()
