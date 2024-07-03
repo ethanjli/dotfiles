@@ -9,7 +9,6 @@ I use them:
 - In [Distrobox](https://github.com/89luca89/distrobox/) containers
 
 ## Features
-(Aurora is a [Fedora Kinoite](https://fedoraproject.org/silverblue/) OCI image)
 
 ### Theme
 
@@ -55,8 +54,7 @@ TODO: add screenshots
   - A command-line script with a fuzzy-search menu for attaching to any Zellij session or creating
     a new session, designed to be run as an application launcher for Zellij in graphical desktops
 - (WIP) A minimalistic [Neovim](https://neovim.io/) configuration, notably:
-  - Shell integration to use Neovim instead of Vim when Neovim is available
-  - The same configuration for Neovim, Vim, and the Neovim Flatpak
+  - The Vim compatibility for all plugin-independent configuration
   - Generally default keybindings to avoid disrupting muscle-memory on machines with the default
     keybindings
   - [lazy.nvim](https://github.com/folke/lazy.nvim) as the plugin manager
@@ -112,9 +110,12 @@ your host environment:
   Alpine Linux - in such environments, Neovim needs to be provided by the host. The shell
   configurations will default to using the host-provided neovim if it exists; otherwise, the
   aqua-provided Neovim will be used as a fallback.
+- If you want to use LSP servers and other tools managed by mason.nvim, you will need to have tools
+  such as `go`, `node` & `npm`, and `python` and `pip` installed (e.g. using Homebrew). Note: I have
+  not yet figured out how to manage Homebrew from my dotfiles.
 - If you want to preview SVG images in LF, you will need ImageMagick, which is not provided by aqua.
 - If you want to preview videos in LF, you will need FFMPEG, which is not provided by aqua.
-- If you want to use zsh, you will need to have it already installed
+- If you want to use zsh, you will need to have it already installed.
   I will eventually investigate the [statically-linked zsh build](https://github.com/romkatv/zsh-bin)
   to determine whether it might make sense to provide zsh via aqua or chezmoi.
 
