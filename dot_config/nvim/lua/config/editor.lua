@@ -9,10 +9,10 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 })
 
 vim.diagnostic.config({
-  virtual_text = {
-    -- show diagnostic message virtual text just past the 100-character column marker:
-    virt_text_win_col = 97,
-  },
+  -- virtual text adds visual clutter, and there's no clean way to move it past the 100-character
+  -- line if the line is longer than 100 characters or if there are multiple error markers on the
+  -- same line - so we'll just disable it for now:
+  virtual_text = false,
 })
 
 require("ibl").setup()
