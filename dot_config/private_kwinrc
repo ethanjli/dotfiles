@@ -6,11 +6,14 @@ LatencyPolicy=Medium
 
 [Desktops]
 Id_1=de5b4f4b-b47b-4a10-b44f-d66914196398
-Id_2=d848b986-526b-46bf-b277-76c6377feebb
-Id_3=b4ef02ff-f843-4f22-920b-b3b53632c475
-Name_3=Desktop 4
-Number=3
+Id_2=291a62fb-bd36-49e2-9f9c-67da2dd9ff6c
+Id_3=39ed6c3f-1e7b-44fd-9cfa-44092a426be1
+Id_4=6497035e-ac10-4961-a8c4-d8b77c33e8d0
+Number=4
 Rows=1
+
+[EdgeBarrier]
+EdgeBarrier=0
 
 [Effect-blur]
 NoiseStrength=0
@@ -130,6 +133,9 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 [Tiling][28ce108c-cf77-5990-877d-b16ca0a74af5]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Tiling][2b86a325-02b7-53c3-ad43-be01dd9034f1]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][3c373409-48e0-57e9-a1a9-eb32e49f8772]
 tiles={"layoutDirection":"horizontal","tiles":[]}
 
@@ -155,6 +161,9 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][e18c833d-fa66-5919-9c0d-4dcd37b1a98d]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][e46d2449-3a73-5b87-8d63-eb7ef83b53e6]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][ed39b2a4-1e89-575d-8f80-864a4608c8f4]

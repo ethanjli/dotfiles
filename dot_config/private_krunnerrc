@@ -11,9 +11,15 @@ appstreamEnabled=false
 baloosearchEnabled=true
 bookmarksEnabled=true
 browserhistoryEnabled=false
+browsertabsEnabled=false
 desktopsessionsEnabled=true
 katesessionsEnabled=false
+krunner_appstreamEnabled=false
+krunner_bookmarksrunnerEnabled=false
+krunner_dictionaryEnabled=false
+krunner_katesessionsEnabled=false
 krunner_killEnabled=false
+krunner_sessionsEnabled=true
 krunner_spellcheckEnabled=false
 org.kde.activities2Enabled=false
 org.kde.datetimeEnabled=true
@@ -21,3 +27,7 @@ org.kde.windowedwidgetsEnabled=false
 recentdocumentsEnabled=false
 shellEnabled=true
 webshortcutsEnabled=false
+windowsEnabled=false
+
+[Plugins][Favorites]
+plugins=krunner_powerdevil,krunner_sessions,krunner_placesrunner,krunner_services,krunner_systemsettings
