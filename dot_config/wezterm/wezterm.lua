@@ -126,8 +126,11 @@ config.keys = {
   { key = 'phys:Space', mods = 'SHIFT|CTRL', action = act.ActivateCopyMode },
 }
 
--- set the default shell
+-- set the default shell to zsh
 config.default_prog = { '/usr/bin/zsh', '-l' }
+config.set_environment_variables = {
+  SHELL = '/usr/bin/zsh'
+}
 
 -- and finally, return the configuration to wezterm
 return config
