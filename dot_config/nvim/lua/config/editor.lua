@@ -8,6 +8,8 @@ vim.api.nvim_create_autocmd("TextYankPost", {
   end,
 })
 
+require("marks").setup()
+
 vim.diagnostic.config({
   -- virtual text adds visual clutter, and there's no clean way to move it past the 100-character
   -- line if the line is longer than 100 characters or if there are multiple error markers on the
@@ -23,10 +25,10 @@ require("todo-comments").setup({
   signs = false,
   highlight = {
     keyword = "bg", -- workaround for https://github.com/folke/todo-comments.nvim/issues/10#issuecomment-920953839
-    pattern = [[.*<(KEYWORDS)(\([^\)]*\))?:]],
+    pattern = [[.*<(KEYWORDS)\s*(\([^\)]*\))?:]],
   },
   search = {
-    pattern = [[\b(KEYWORDS)(\([^\)]*\))?:]],
+    pattern = [[\b(KEYWORDS)\s*(\([^\)]*\))?:]],
   },
 })
 vim.keymap.set("n", "]t", function()
@@ -39,4 +41,3 @@ end, { desc = "Previous todo comment" })
 require("scope").setup({})
 
 require("mini.ai").setup({ n_lines = 500 })
-require("mini.surround").setup()
