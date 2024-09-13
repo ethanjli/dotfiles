@@ -83,12 +83,7 @@ keybinds clear-defaults=true {
     bind "Alt o" { SwitchToMode "Tab"; }
   }
 
-  normal {
-    bind "Enter" { SwitchToMode "locked"; }
-  }
-
   pane {
-    bind "Enter" { SwitchToMode "Normal"; }
 
     bind "Alt u" { NewPane; }
     bind "Alt d" { CloseFocus; }
@@ -103,12 +98,10 @@ keybinds clear-defaults=true {
   }
   renamepane {
     bind "Enter" "Ctrl d" { SwitchToMode "Pane"; TogglePaneFrames; }
-    bind "Esc" "Ctrl c" { UndoRenamePane; SwitchToMode "Pane"; TogglePaneFrames; }
+    bind "Esc" "Ctrl c" { UndoRenamePane; SwitchToMode "Locked"; TogglePaneFrames; }
   }
 
   resize {
-    bind "Enter" { SwitchToMode "Pane"; }
-
     bind "Alt j" { Resize "Increase Down"; }
     bind "Alt J" { Resize "Decrease Down"; }
     bind "Alt k" { Resize "Increase Up"; }
@@ -120,8 +113,6 @@ keybinds clear-defaults=true {
   }
 
   tab {
-    bind "Enter" { SwitchToMode "Normal"; }
-
     bind "Alt r" { SwitchToMode "RenameTab"; TabNameInput 0; }
     bind "Alt o" { NewTab; SwitchToMode "Tab"; }
     bind "Alt d" { CloseTab; }
@@ -135,12 +126,10 @@ keybinds clear-defaults=true {
   }
   renametab {
     bind "Enter" "Ctrl d" { SwitchToMode "Tab"; }
-    bind "Esc" "Ctrl c" { UndoRenameTab; SwitchToMode "Tab"; }
+    bind "Esc" "Ctrl c" { UndoRenameTab; SwitchToMode "Locked"; }
   }
 
   shared_among "scroll" "search" {
-    bind "Enter" { SwitchToMode "Normal"; }
-
     bind "Ctrl c" { ScrollToBottom; SwitchToMode "Normal"; }
 
     bind "j" { ScrollDown; }
