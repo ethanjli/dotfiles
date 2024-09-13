@@ -29,7 +29,7 @@ require("mason-lspconfig").setup({
     "ruff",
     "sqlls",
     "regols",
-    "tsserver", "biome", "stimulus_ls", "svelte",
+    "ts_ls", "biome", "stimulus_ls", "svelte",
     "html", "htmx",
     "cssls", "stylelint_lsp", "somesass_ls", "tailwindcss",
     "dockerls", "docker_compose_language_service",
@@ -134,7 +134,7 @@ lspconfig.sqlls.setup({})
 lspconfig.regols.setup({})
 
 -- JavaScript/TypeScript
-lspconfig.tsserver.setup({})
+lspconfig.ts_ls.setup({})
 lspconfig.biome.setup({
   single_file_support = true,
 })
