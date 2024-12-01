@@ -304,6 +304,9 @@ _launch=Meta+,
 [services][org.kde.dolphin.desktop]
 _launch=Meta+F2
 
+[services][org.kde.kate.desktop]
+_launch=
+
 [services][org.kde.konsole-2.desktop]
 _launch=none
 

@@ -1,5 +1,8 @@
 [Added Associations]
+application/json=Neovim.desktop;
 application/pdf=org.kde.okular.desktop;
+application/x-docbook+xml=Neovim.desktop;
+application/x-yaml=Neovim.desktop;
 audio/aac=org.kde.haruna.desktop;
 audio/mp4=org.kde.haruna.desktop;
 audio/mpeg=org.kde.haruna.desktop;
@@ -13,12 +16,18 @@ audio/x-oggflac=org.kde.haruna.desktop;
 audio/x-vorbis=org.kde.haruna.desktop;
 audio/x-vorbis+ogg=org.kde.haruna.desktop;
 audio/x-wav=org.kde.haruna.desktop;
+text/markdown=Neovim.desktop;
+text/plain=Neovim.desktop;
+text/x-cmake=Neovim.desktop;
 x-scheme-handler/http=com.google.Chrome.desktop;
 x-scheme-handler/https=com.google.Chrome.desktop;
 x-scheme-handler/mailto=org.mozilla.Thunderbird.desktop;
 
 [Default Applications]
+application/json=Neovim.desktop;
 application/pdf=org.kde.okular.desktop;
+application/x-docbook+xml=Neovim.desktop;
+application/x-yaml=Neovim.desktop;
 audio/aac=org.kde.haruna.desktop;
 audio/mp4=org.kde.haruna.desktop;
 audio/mpeg=org.kde.haruna.desktop;
@@ -32,6 +41,9 @@ audio/x-oggflac=org.kde.haruna.desktop;
 audio/x-vorbis=org.kde.haruna.desktop;
 audio/x-vorbis+ogg=org.kde.haruna.desktop;
 audio/x-wav=org.kde.haruna.desktop;
+text/markdown=Neovim.desktop;
+text/plain=Neovim.desktop;
+text/x-cmake=Neovim.desktop;
 x-scheme-handler/http=com.google.Chrome.desktop;
 x-scheme-handler/https=com.google.Chrome.desktop;
 x-scheme-handler/mailto=org.mozilla.Thunderbird.desktop;
