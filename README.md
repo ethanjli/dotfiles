@@ -111,13 +111,15 @@ your host environment:
   configurations will default to using the host-provided neovim if it exists; otherwise, the
   aqua-provided Neovim will be used as a fallback.
 - If you want to use LSP servers and other tools managed by mason.nvim, you will need to have tools
-  such as `go`, `node` & `npm`, and `python` and `pip` installed (e.g. using Homebrew). Note: I have
-  not yet figured out how to manage Homebrew from my dotfiles.
+  such as `go`, `node` & `npm`, and `python` and `pip` installed (e.g. using Homebrew). These tools
+  can be installed using Homebrew following the instructions below.
 - If you want to preview SVG images in LF, you will need ImageMagick, which is not provided by aqua.
+  These tools can be installed using Homebrew following the instructions below.
 - If you want to preview videos in LF, you will need FFMPEG, which is not provided by aqua.
+  These tools can be installed using Homebrew following the instructions below.
 - If you want to use zsh, you will need to have it already installed.
-  I will eventually investigate the [statically-linked zsh build](https://github.com/romkatv/zsh-bin)
-  to determine whether it might make sense to provide zsh via aqua or chezmoi.
+  I may eventually investigate [statically-linked zsh build](https://github.com/romkatv/zsh-bin) to
+  determine whether it might make sense to provide zsh via aqua or chezmoi.
 
 ### Set up dotfiles
 
@@ -136,7 +138,16 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- -b "$(mktemp -d)" init --apply ethanjli
 This will set up the global [aqua](https://aquaproj.github.io) configuration without you having to
 install chezmoi first. Then the next step will install chezmoi for you.
 
-### Set up global tools
+### Set up homebrew-managed global tools
+
+After restarting your terminal, you can install tools needed for Neovim LSP and treesitter plugins
+(all managed by mason.nvim) by running:
+
+```
+brew bundle install --global
+```
+
+### Set up aqua-managed global tools
 
 On a machine without aqua, you can install aqua as follows:
 
@@ -165,6 +176,11 @@ TODO: add a keybindings cheatsheet
 
 To bump the installed version of an aqua-provided tool after this repo bumps the configured version
 to install, just run `aqua i -a`.
+
+### Upgrade hombrew tools
+
+To bump the installed version of a brew package after this repo adds packages, run
+`brew bundle install --global`.
 
 ### Upgrade zsh & bash plugins
 
