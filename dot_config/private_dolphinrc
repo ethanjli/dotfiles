@@ -6,6 +6,7 @@ ShowViewMode=false
 DefaultProfile=Host.profile
 
 [DetailsMode]
+HighlightEntireRow=false
 IconSize=22
 SidePadding=0
 

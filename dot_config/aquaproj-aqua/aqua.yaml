@@ -9,7 +9,7 @@ registries:
     path: aqua-registry.yaml
 packages: # comments are added for the first package in each section
   - name: twpayne/chezmoi@v2.49.1
-  - name: zellij-org/zellij@v0.40.1 # Shell
+  - name: zellij-org/zellij@v0.41.2 # Shell
   - name: JanDeDobbeleer/oh-my-posh@v21.17.2
   - name: starship/starship@v1.19.0
   - name: atuinsh/atuin@v18.3.0
@@ -90,4 +90,3 @@ packages: # comments are added for the first package in each section
   - name: sharkdp/hyperfine@v1.18.0
   - name: ouch-org/ouch@0.5.1
   - name: TaKO8Ki/gobang@v0.1.0-alpha.5
-  - name: zellij-org/zellij@v0.40.1

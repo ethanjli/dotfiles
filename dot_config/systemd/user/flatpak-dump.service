@@ -2,7 +2,7 @@
 Description=Dump Flatpak configuration to Flatpakfile
 
 [Service]
-ExecStart=/usr/bin/flatpak list --columns=application > ~/.Flatpakfile
+ExecStart=/usr/bin/sh -c "/usr/bin/flatpak list --columns=application > ~/.Flatpakfile"
 
 [Install]
 WantedBy=default.target
