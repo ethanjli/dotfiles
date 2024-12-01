@@ -1,0 +1,29 @@
+[ContextMenu]
+ShowCopyMoveMenu=true
+ShowViewMode=false
+
+[DetailsMode]
+IconSize=22
+SidePadding=0
+
+[General]
+DoubleClickViewAction=CUSTOM_COMMAND
+DoubleClickViewCustomAction=flatpak run org.wezfurlong.wezterm start --cwd {path}
+OpenNewTabAfterLastTab=true
+RememberOpenedTabs=false
+Version=202
+ViewPropsTimestamp=2024,11,30,21,57,5.777
+
+[IconsMode]
+IconSize=22
+PreviewSize=32
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+
+[MainWindow]
+ToolBarsMovable=Disabled
+
+[PreviewSettings]
+Plugins=audiothumbnail,avif,blenderthumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,heif,imagethumbnail,jpegthumbnail,jxl,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,mobithumbnail,opendocumentthumbnail,gsthumbnail,rawthumbnail,svgthumbnail,gdk-pixbuf-thumbnailer,ffmpegthumbs

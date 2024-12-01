@@ -1,0 +1,37 @@
+[Added Associations]
+application/pdf=org.kde.okular.desktop;
+audio/aac=org.kde.haruna.desktop;
+audio/mp4=org.kde.haruna.desktop;
+audio/mpeg=org.kde.haruna.desktop;
+audio/mpegurl=org.kde.haruna.desktop;
+audio/ogg=org.kde.haruna.desktop;
+audio/vorbis=org.kde.haruna.desktop;
+audio/x-flac=org.kde.haruna.desktop;
+audio/x-mp3=org.kde.haruna.desktop;
+audio/x-mpegurl=org.kde.haruna.desktop;
+audio/x-oggflac=org.kde.haruna.desktop;
+audio/x-vorbis=org.kde.haruna.desktop;
+audio/x-vorbis+ogg=org.kde.haruna.desktop;
+audio/x-wav=org.kde.haruna.desktop;
+x-scheme-handler/http=com.google.Chrome.desktop;
+x-scheme-handler/https=com.google.Chrome.desktop;
+x-scheme-handler/mailto=org.mozilla.Thunderbird.desktop;
+
+[Default Applications]
+application/pdf=org.kde.okular.desktop;
+audio/aac=org.kde.haruna.desktop;
+audio/mp4=org.kde.haruna.desktop;
+audio/mpeg=org.kde.haruna.desktop;
+audio/mpegurl=org.kde.haruna.desktop;
+audio/ogg=org.kde.haruna.desktop;
+audio/vorbis=org.kde.haruna.desktop;
+audio/x-flac=org.kde.haruna.desktop;
+audio/x-mp3=org.kde.haruna.desktop;
+audio/x-mpegurl=org.kde.haruna.desktop;
+audio/x-oggflac=org.kde.haruna.desktop;
+audio/x-vorbis=org.kde.haruna.desktop;
+audio/x-vorbis+ogg=org.kde.haruna.desktop;
+audio/x-wav=org.kde.haruna.desktop;
+x-scheme-handler/http=com.google.Chrome.desktop;
+x-scheme-handler/https=com.google.Chrome.desktop;
+x-scheme-handler/mailto=org.mozilla.Thunderbird.desktop;
