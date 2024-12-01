@@ -288,6 +288,9 @@ _launch=Meta+F3
 [services][Zellij Host.desktop]
 _launch=Meta+F4
 
+[services][Zellij.desktop]
+_launch=Meta+F4
+
 [services][com.google.Chrome.desktop]
 new-window=Meta+F1
 

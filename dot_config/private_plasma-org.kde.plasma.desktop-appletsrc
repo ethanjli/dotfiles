@@ -126,7 +126,7 @@ fontFamily=Atkinson Hyperlegible
 fontSize=5
 fontStyleName=Bold
 fontWeight=700
-selectedTimeZones=Asia/Seoul,Asia/Taipei,Asia/Tokyo,Europe/Paris,Local,America/Los_Angeles,UTC
+selectedTimeZones=America/Los_Angeles,Local,UTC,Europe/Paris,Asia/Taipei,Asia/Seoul,Asia/Tokyo
 showWeekNumbers=true
 use24hFormat=2
 
@@ -552,7 +552,7 @@ plugin=org.kde.plasma.kickoff
 [Containments][200][Applets][201][Configuration]
 PreloadWeight=100
 popupHeight=519
-popupWidth=790
+popupWidth=828
 
 [Containments][200][Applets][201][Configuration][ConfigDialog]
 DialogHeight=540

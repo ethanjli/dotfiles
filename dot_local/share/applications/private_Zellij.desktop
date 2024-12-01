@@ -1,0 +1,14 @@
+[Desktop Entry]
+Comment=Zellij session selector
+Exec=/usr/bin/zsh -i -c '~/.local/bin/attach-zellij.sh'
+GenericName=Terminal Multiplexer
+Icon=/var/home/lietk12/.local/share/icons/applications/zellij.png
+Name=Zellij
+NoDisplay=false
+Path=
+StartupNotify=true
+Terminal=true
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=
