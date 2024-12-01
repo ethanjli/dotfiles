@@ -141,7 +141,7 @@ install chezmoi first. Then the next step will install chezmoi for you.
 On a machine without aqua, you can install aqua as follows:
 
 ```
-curl -sSfL https://raw.githubusercontent.com/aquaproj/aqua-installer/v2.2.0/aqua-installer | bash
+curl -sSfL https://raw.githubusercontent.com/aquaproj/aqua-installer/v3.0.1/aqua-installer | bash
 ```
 
 (this is only needed when this repository has packages which I have not yet contributed upstream

@@ -7,7 +7,7 @@ gtk-button-images=1
 gtk-cursor-theme-size=24
 gtk-cursor-theme-name="PearDarkCursors"
 gtk-icon-theme-name="breeze-dark"
-gtk-font-name="Atkinson Hyperlegible,  10"
+gtk-font-name="Atkinson Hyperlegible,  11"
 include "/usr/share/themes/Adwaita/gtk-2.0/gtkrc"
 
 gtk-theme-name="Breeze-Dark"

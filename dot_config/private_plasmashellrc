@@ -21,6 +21,9 @@ Number of Actions=0
 [Notification Messages]
 klipperClearHistoryAskAgain=false
 
+[PIMEventsPlugin]
+calendars=8
+
 [PlasmaViews][Panel 121]
 alignment=132
 floating=0

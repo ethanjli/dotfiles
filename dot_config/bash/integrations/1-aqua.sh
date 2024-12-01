@@ -7,7 +7,7 @@ _sh_integrations_util_among_paths() {
 _sh_integrations_aqua_update_path() {
   unset -f "$0"
   local xdg_data_home="${XDG_DATA_HOME:-$HOME/.local/share}"
-  local aqua_bin_path="${xdg_data_home}/aquaproj-aqua/bin"
+  local aqua_bin_path="${AQUA_ROOT_DIR:-${xdg_data_home}/aquaproj-aqua}/bin"
   if [ -d "$aqua_bin_path" ] && ! _sh_integrations_util_among_paths "$aqua_bin_path" "$PATH"; then
     export PATH="${aqua_bin_path}:$PATH"
   fi
