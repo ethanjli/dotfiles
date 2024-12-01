@@ -1,0 +1,8 @@
+[Unit]
+Description=Dump Homebrew configuration to Brewfile
+
+[Service]
+ExecStart=/home/linuxbrew/.linuxbrew/bin/brew bundle dump --global --force
+
+[Install]
+WantedBy=default.target
