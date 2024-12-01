@@ -7,11 +7,12 @@ gui:
   theme:
     selectedLineBgColor:
       - reverse
-    selectedRangeBgColor:
-      - reverse
 git:
   log:
     showWholeGraph: true
   mainBranches: [master, main, edge]
   branchLogCmd: "git log --graph --color=always --abbrev-commit --decorate --date=relative --pretty='format:%h%d%n%s%n' --"
   allBranchesLogCmd: "git log --graph --all --color=always --abbrev-commit --decorate --date=relative  --pretty='format:%h%d%n%s%n'"
+
+os:
+  editPreset: nvim
