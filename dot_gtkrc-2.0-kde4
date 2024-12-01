@@ -1,13 +1,13 @@
 gtk-sound-theme-name="ocean"
 gtk-enable-animations=1
-gtk-primary-button-warps-slider=0
+gtk-primary-button-warps-slider=1
 gtk-toolbar-style=3
 gtk-menu-images=1
 gtk-button-images=1
 gtk-cursor-theme-size=24
 gtk-cursor-theme-name="PearDarkCursors"
 gtk-icon-theme-name="breeze-dark"
-gtk-font-name="Atkinson Hyperlegible,  11"
+gtk-font-name="Atkinson Hyperlegible,  10"
 include "/usr/share/themes/Adwaita/gtk-2.0/gtkrc"
 
 gtk-theme-name="Breeze-Dark"

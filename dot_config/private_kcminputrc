@@ -31,6 +31,7 @@ TapToClick=true
 MiddleButtonEmulation=true
 PointerAcceleration=-0.200
 ScrollFactor=1.5
+ScrollMethod=4
 
 [Mouse]
 X11LibInputXAccelProfileFlat=true
