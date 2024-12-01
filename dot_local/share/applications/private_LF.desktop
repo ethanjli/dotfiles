@@ -1,0 +1,17 @@
+[Desktop Entry]
+Comment=Terminal file manager
+Exec=/usr/bin/zsh -i -c '/var/home/lietk12/.local/share/aquaproj-aqua/bin/lf %u'
+GenericName=File Manager
+Icon=system-file-manager
+Keywords=files;file management;file browsing;Explorer;Finder;
+MimeType=inode/directory;
+Name=LF
+NoDisplay=false
+Path=
+StartupNotify=true
+StartupWMClass=lf
+Terminal=true
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

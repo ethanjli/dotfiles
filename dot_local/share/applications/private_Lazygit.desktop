@@ -1,0 +1,17 @@
+[Desktop Entry]
+Comment=Simple Git TUI
+Exec=/usr/bin/zsh -i -c '/var/home/lietk12/.local/share/aquaproj-aqua/bin/lazygit -p %u'
+GenericName=Git TUI
+Icon=preferences-git
+Keywords=git
+MimeType=inode/directory;
+Name=Lazygit
+NoDisplay=false
+Path=
+StartupNotify=true
+StartupWMClass=lazygit
+Terminal=true
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

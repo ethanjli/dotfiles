@@ -2,6 +2,9 @@
 ShowCopyMoveMenu=true
 ShowViewMode=false
 
+[Desktop Entry]
+DefaultProfile=Host.profile
+
 [DetailsMode]
 IconSize=22
 SidePadding=0
