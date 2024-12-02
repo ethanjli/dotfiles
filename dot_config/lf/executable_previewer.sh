@@ -44,9 +44,9 @@ case "$mimetype" in
     case "$mimetype" in
       text/plain)
         case "$lowercased" in
-          *.md)
-            glow -s dark "$1"
-            ;;
+          #*.md)
+          #  glow -s dark "$1"
+          #  ;;
           *)
             preview_plain_text "$file_path"
             ;;
