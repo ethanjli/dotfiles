@@ -118,11 +118,12 @@ stripcomponents = 5
 
 # KWin Scripts
 
-[".local/share/kwin/scripts/temporary-virtual-desktops"]
+[".local/share/kwin/scripts/kwin-swapdesktop"]
 type = "archive"
-url = "https://github.com/Ubiquitine/temporary-virtual-desktops/archive/refs/tags/v0.3.1.tar.gz"
+url = "https://github.com/dedean16/kwin-swapdesktop/archive/refs/tags/v2.0.tar.gz"
 exact = true
-stripcomponents = 1
+stripcomponents = 2
+include = ["*/swapdesktop2/**"]
 
 # Fonts
 
