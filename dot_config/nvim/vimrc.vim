@@ -19,9 +19,6 @@ set incsearch               " incremental search
 " clear search results:
 "nnoremap <silent> <Esc> :nohlsearch<CR>
 
-" Substitution
-set inccommand=split
-
 " Scrolling
 set scrolloff=5             " show lines above and below current line at screen edges
 

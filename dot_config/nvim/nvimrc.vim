@@ -10,3 +10,6 @@ colorscheme onedark
 set foldmethod=expr
 set foldexpr=nvimtreesitter#foldexpr()
 set nofoldenable            " disable folding at startup
+
+" Substitution
+set inccommand=split
