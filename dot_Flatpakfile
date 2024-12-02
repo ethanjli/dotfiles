@@ -21,8 +21,10 @@ org.chromium.Chromium
 org.cockpit_project.CockpitClient
 org.fedoraproject.MediaWriter
 org.fkoehler.KTailctl
+org.freedesktop.Bustle
 org.gnome.Boxes
 org.gnome.World.PikaBackup
+org.gnome.dspy
 org.inkscape.Inkscape
 org.jupyter.JupyterLab
 org.kde.filelight
