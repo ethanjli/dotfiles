@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+server="$(cat "${XDG_RUNTIME_DIR:-$HOME/.cache/nvim}/nvim-last-server")"
+echo "Opening in server $server..."
+nvim --server "${XDG_RUNTIME_DIR:-$HOME/.cache/nvim}/nvim-server-$server" --remote $@

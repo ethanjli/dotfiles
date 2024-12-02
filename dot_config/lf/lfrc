@@ -96,7 +96,6 @@ cmd delete ${{
     read ans
     [ "$ans" = "y" ] && rm -rf $fx
 }}
-
 map D delete
 
 # extract the current file with the right command
@@ -112,7 +111,6 @@ cmd extract ${{
         *.7z) 7z x $f;;
     esac
 }}
-
 # compress current file or selected files with tar and gunzip
 cmd tar ${{
     set -f
@@ -121,7 +119,6 @@ cmd tar ${{
     tar czf $1.tar.gz $1
     rm -rf $1
 }}
-
 # compress current file or selected files with zip
 cmd zip ${{
     set -f
@@ -133,6 +130,15 @@ cmd zip ${{
 
 # open the cwd in lazygit
 cmd lg $lazygit
+
+# open the cwd in nvim as a server
+cmd nvs $nvim-server $1
+# open the selection in nvim as a server
+cmd nvss $nvim-server $1 -- $fx
+# open the selected files in the nvim server
+cmd nvo $nvim-open $1 $fx
+# open the selected files in the last started/opened nvim server
+cmd nvol $nvim-open-last $fx
 
 # open the selection in lazygit
 cmd mt &flatpak run com.github.marktext.marktext $fx &
@@ -146,7 +152,6 @@ cmd yank-basename-without-extension &basename -a -- $fx | sed -E 's/\.[^.]+$//' 
 
 # bulk add to chezmoi
 cmd cza $chezmoi add $fx
-
 # bulk re-add to chezmoi
 cmd czr $chezmoi re-add
 

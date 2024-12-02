@@ -66,7 +66,9 @@ TODO: add screenshots
     - Raster images, using [chafa](https://hpjansson.org/chafa/) with sixel-based graphics
     - SVG images, using [ImageMagick](https://imagemagick.org/index.php)
     - Videos, using [FFMPEG](https://ffmpeg.org/)
-  - (WIP) Integration with Neovim, the shell, and other tools
+  - (WIP) Integration with Neovim, the shell, and other tools, including:
+    - Commands (intended for use with Zellij) for launching a Neovim server instance and then using
+      LF to browse and (remotely) open files in that server instance.
 - [zoxide](https://github.com/ajeetdsouza/zoxide) shell integration for easier navigation between
   directories
 - A [lazygit](https://github.com/jesseduffield/lazygit) configuration for doing most of what I need
