@@ -3,4 +3,5 @@ if [[ ! -z "$WAYLAND_DISPLAY" ]]; then
   if [[ -S "${XDG_RUNTIME_DIR}/$display" ]]; then
     export WAYLAND_DISPLAY="$display"
   fi
+  export "$(dbus-launch)"
 fi
