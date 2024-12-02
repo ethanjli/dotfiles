@@ -88,7 +88,12 @@ TODO: add screenshots
 
 All general-purpose CLI tools are installed and version-managed with
 [aqua](https://aquaproj.github.io/), except for packages listed in the
-[prerequisites](#prerequisites) section.
+[prerequisites](#prerequisites) section which can be installed via Homebrew as part of the setup
+process described below.
+
+This repository also keeps track of the Flatpak apps installed on the system via a Brewfile-like
+"Flatpakfile` (in `~/.Flatpakfile`). `~/.Brewfile` and `~/.Flatpakfile` are both automatically
+updated according to the system's actual configuration upon every user login.
 
 
 ## Setup
@@ -144,7 +149,7 @@ After restarting your terminal, you can install tools needed for Neovim LSP and 
 (all managed by mason.nvim) by running:
 
 ```
-brew bundle install --global
+systemctl --user start homebrew-install.service
 ```
 
 ### Set up aqua-managed global tools
@@ -167,6 +172,14 @@ aqua i -a
 ### Set up atuin sync
 
 Run `atuin login`.
+
+### (Optional) Set up Flatpak-managed GUI tools
+
+You can install the full list of Flatpaks specifie by this repo by running:
+
+```
+systemctl --user start flatpak-install.service
+```
 
 ## Operations
 
