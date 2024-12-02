@@ -23,7 +23,6 @@ return {
       "nvim-lua/plenary.nvim",
     },
   },
-  "tiagovla/scope.nvim",
   "moll/vim-bbye",
   "echasnovski/mini.nvim",
   {

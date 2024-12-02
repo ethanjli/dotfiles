@@ -5,4 +5,17 @@ return {
       "nvim-tree/nvim-web-devicons",
     },
   },
+  {
+    "rmagatti/auto-session",
+    lazy = false,
+    opts = {
+      suppressed_dirs = {
+        "~/",
+        "~/Projects",
+        "~/Downloads",
+        "~/Dropbox",
+        "/",
+      },
+    },
+  },
 }

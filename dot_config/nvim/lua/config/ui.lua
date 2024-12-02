@@ -36,6 +36,9 @@ require("lualine").setup({
       },
     },
     lualine_x = {
+      function()
+        return require('auto-session.lib').current_session_name(true)
+      end,
       "%{(&fenc!='utf-8'&&&fenc!='')?&fenc:''}", -- don't show file encoding if it's utf-8
       {
         "fileformat",
@@ -89,3 +92,5 @@ require("lualine").setup({
   winbar = {},
   inactive_winbar = {},
 })
+
+vim.o.sessionoptions="blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
