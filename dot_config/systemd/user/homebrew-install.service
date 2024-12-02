@@ -1,0 +1,8 @@
+[Unit]
+Description=Dump Homebrew configuration to Brewfile
+
+[Service]
+ExecStart=/home/linuxbrew/.linuxbrew/bin/brew bundle install --global
+
+[Install]
+WantedBy=default.target

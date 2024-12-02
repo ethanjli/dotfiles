@@ -134,7 +134,7 @@ ForegroundVisited=199,120,221
 
 [DirSelect Dialog]
 DirSelectDialog Size=831,587
-History Items[$e]=file:$HOME/Dropbox/Drawings,file:$HOME/Pictures,file:$HOME/Videos,file:$HOME/Documents/Calibre Library,file:$HOME/Downloads,file:$HOME/Projects/Art,file:///run/media/lietk12/Kleio/Backup,file:///run/media/lietk12/Kleio/Backup/lutho-ext,file:$HOME/Pictures,file:$HOME/Downloads,file:$HOME/Projects/Art,file:$HOME/Documents/Calibre Library,file:$HOME/Documents,file:$HOME/Documents/Calibre Library,file:$HOME/Downloads,file:$HOME/Dropbox
+History Items[$e]=file:$HOME/Projects/Art/zoule,file:$HOME/Projects/Art/zoule,file:$HOME/Dropbox/Drawings,file:$HOME/Pictures,file:$HOME/Videos,file:$HOME/Documents/Calibre Library,file:$HOME/Downloads,file:$HOME/Projects/Art,file:///run/media/lietk12/Kleio/Backup,file:///run/media/lietk12/Kleio/Backup/lutho-ext,file:$HOME/Pictures,file:$HOME/Downloads,file:$HOME/Projects/Art,file:$HOME/Documents/Calibre Library,file:$HOME/Documents,file:$HOME/Documents/Calibre Library,file:$HOME/Downloads,file:$HOME/Dropbox
 
 [General]
 ColorScheme=One-Dark-Blue
@@ -156,7 +156,7 @@ ShowDeleteCommand=false
 [KFileDialog Settings]
 Allow Expansion=false
 Automatically select filename extension=true
-Breadcrumb Navigation=false
+Breadcrumb Navigation=true
 Decoration position=2
 LocationCombo Completionmode=5
 PathCombo Completionmode=5
