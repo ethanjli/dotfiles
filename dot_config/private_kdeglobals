@@ -1,0 +1,187 @@
+[ColorEffects:Disabled]
+ChangeSelectionColor=
+Color=56,56,56
+ColorAmount=0
+ColorEffect=0
+ContrastAmount=0.65
+ContrastEffect=1
+Enable=
+IntensityAmount=0.1
+IntensityEffect=2
+
+[ColorEffects:Inactive]
+ChangeSelectionColor=true
+Color=112,111,110
+ColorAmount=0.025
+ColorEffect=2
+ContrastAmount=0.1
+ContrastEffect=2
+Enable=false
+IntensityAmount=0
+IntensityEffect=0
+
+[Colors:Button]
+BackgroundAlternate=30,87,116
+BackgroundNormal=51,58,72
+DecorationFocus=97,175,239
+DecorationHover=97,175,239
+ForegroundActive=98,174,239
+ForegroundInactive=171,178,191
+ForegroundLink=98,152,239
+ForegroundNegative=224,107,116
+ForegroundNeutral=229,192,122
+ForegroundNormal=252,252,252
+ForegroundPositive=152,195,121
+ForegroundVisited=199,120,221
+
+[Colors:Complementary]
+BackgroundAlternate=30,87,116
+BackgroundNormal=30,34,42
+DecorationFocus=97,175,239
+DecorationHover=97,175,239
+ForegroundActive=98,174,239
+ForegroundInactive=171,178,191
+ForegroundLink=98,152,239
+ForegroundNegative=224,107,116
+ForegroundNeutral=229,192,122
+ForegroundNormal=252,252,252
+ForegroundPositive=152,195,121
+ForegroundVisited=199,120,221
+
+[Colors:Header]
+BackgroundAlternate=37,42,52
+BackgroundNormal=30,34,42
+DecorationFocus=97,175,239
+DecorationHover=97,175,239
+ForegroundActive=98,174,239
+ForegroundInactive=171,178,191
+ForegroundLink=98,152,239
+ForegroundNegative=224,107,116
+ForegroundNeutral=229,192,122
+ForegroundNormal=252,252,252
+ForegroundPositive=152,195,121
+ForegroundVisited=199,120,221
+
+[Colors:Header][Inactive]
+BackgroundAlternate=49,54,59
+BackgroundNormal=42,46,50
+DecorationFocus=61,174,233
+DecorationHover=61,174,233
+ForegroundActive=61,174,233
+ForegroundInactive=161,169,177
+ForegroundLink=29,153,243
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=252,252,252
+ForegroundPositive=39,174,96
+ForegroundVisited=155,89,182
+
+[Colors:Selection]
+BackgroundAlternate=30,87,116
+BackgroundNormal=97,175,239
+DecorationFocus=97,175,239
+DecorationHover=97,175,239
+ForegroundActive=252,252,252
+ForegroundInactive=171,178,191
+ForegroundLink=229,192,122
+ForegroundNegative=224,107,116
+ForegroundNeutral=229,192,122
+ForegroundNormal=255,255,255
+ForegroundPositive=152,195,121
+ForegroundVisited=199,120,221
+
+[Colors:Tooltip]
+BackgroundAlternate=37,42,52
+BackgroundNormal=30,34,42
+DecorationFocus=97,175,239
+DecorationHover=97,175,239
+ForegroundActive=98,174,239
+ForegroundInactive=171,178,191
+ForegroundLink=98,152,239
+ForegroundNegative=224,107,116
+ForegroundNeutral=229,192,122
+ForegroundNormal=252,252,252
+ForegroundPositive=152,195,121
+ForegroundVisited=199,120,221
+
+[Colors:View]
+BackgroundAlternate=24,26,30
+BackgroundNormal=30,34,42
+DecorationFocus=97,175,239
+DecorationHover=97,175,239
+ForegroundActive=98,174,239
+ForegroundInactive=171,178,191
+ForegroundLink=98,152,239
+ForegroundNegative=224,107,116
+ForegroundNeutral=229,192,122
+ForegroundNormal=252,252,252
+ForegroundPositive=152,195,121
+ForegroundVisited=199,120,221
+
+[Colors:Window]
+BackgroundAlternate=37,42,52
+BackgroundNormal=30,34,42
+DecorationFocus=97,175,239
+DecorationHover=97,175,239
+ForegroundActive=98,174,239
+ForegroundInactive=171,178,191
+ForegroundLink=98,152,239
+ForegroundNegative=224,107,116
+ForegroundNeutral=229,192,122
+ForegroundNormal=252,252,252
+ForegroundPositive=152,195,121
+ForegroundVisited=199,120,221
+
+[DirSelect Dialog]
+DirSelectDialog Size=831,587
+History Items[$e]=file:$HOME/Dropbox/Drawings,file:$HOME/Pictures,file:$HOME/Videos,file:$HOME/Documents/Calibre Library,file:$HOME/Downloads,file:$HOME/Projects/Art,file:///run/media/lietk12/Kleio/Backup,file:///run/media/lietk12/Kleio/Backup/lutho-ext,file:$HOME/Pictures,file:$HOME/Downloads,file:$HOME/Projects/Art,file:$HOME/Documents/Calibre Library,file:$HOME/Documents,file:$HOME/Documents/Calibre Library,file:$HOME/Downloads,file:$HOME/Dropbox
+
+[General]
+ColorScheme=One-Dark-Blue
+ColorSchemeHash=babca25f3a5cf7ece26a85de212ab43d0a141257
+TerminalApplication=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=wezterm org.wezfurlong.wezterm start --cwd .
+TerminalService=org.wezfurlong.wezterm.desktop
+XftAntialias=true
+XftHintStyle=hintslight
+XftSubPixel=rgb
+fixed=Intel One Mono,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+font=Atkinson Hyperlegible,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+menuFont=Atkinson Hyperlegible,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+smallestReadableFont=Atkinson Hyperlegible,9,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+toolBarFont=Atkinson Hyperlegible,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+
+[KDE]
+ShowDeleteCommand=false
+
+[KFileDialog Settings]
+Allow Expansion=false
+Automatically select filename extension=true
+Breadcrumb Navigation=false
+Decoration position=2
+LocationCombo Completionmode=5
+PathCombo Completionmode=5
+Show Bookmarks=false
+Show Full Path=false
+Show Inline Previews=true
+Show Preview=false
+Show Speedbar=true
+Show hidden files=true
+Sort by=Name
+Sort directories first=true
+Sort hidden files last=false
+Sort reversed=false
+Speedbar Width=140
+View Style=DetailTree
+
+[PreviewSettings]
+EnableRemoteFolderThumbnail=false
+MaximumRemoteSize=0
+
+[WM]
+activeBackground=30,34,42
+activeBlend=252,252,252
+activeFont=Atkinson Hyperlegible,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+activeForeground=252,252,252
+inactiveBackground=30,34,42
+inactiveBlend=171,178,191
+inactiveForeground=171,178,191
