@@ -127,10 +127,7 @@ config.keys = {
 }
 
 -- set the default shell to zsh
--- note: we use dbus-launch as a workaround for an issue in the WezTerm flatpak where various env
--- vars (e.g. $WAYLAND_DISPLAY and $DBUS_SESSION_BUS_ADDRESS) are set to nonexistent paths in
--- `/run/flatpak` rather than `/run/user/1000`:
-config.default_prog = { '/usr/bin/dbus-launch', '/usr/bin/zsh', '-l' }
+config.default_prog = { '/usr/bin/zsh', '-l' }
 config.set_environment_variables = {
   SHELL = '/usr/bin/zsh'
 }
