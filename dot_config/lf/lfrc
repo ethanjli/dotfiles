@@ -131,6 +131,18 @@ cmd zip ${{
     rm -rf $1
 }}
 
+# open the cwd in lazygit
+cmd lg ${{
+    lazygit
+}}
+
+# yank paths onto clipboard
+cmd yank-file $printf '%s' "$f" | wl-copy
+cmd yank-paths $printf '%s' "$fx" | wl-copy
+cmd yank-dirname &printf '%s' "$PWD" | wl-copy
+cmd yank-basename &basename -a -- $fx | head -c-1 | wl-copy
+cmd yank-basename-without-extension &basename -a -- $fx | sed -E 's/\.[^.]+$//' | head -c-1 | wl-copy
+
 # Integrate fzf
 cmd fzf_jump ${{
     res="$(find . -maxdepth 1 | fzf --reverse --header='Jump to location')"
