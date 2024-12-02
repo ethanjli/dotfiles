@@ -177,10 +177,15 @@ TODO: add a keybindings cheatsheet
 To bump the installed version of an aqua-provided tool after this repo bumps the configured version
 to install, just run `aqua i -a`.
 
-### Upgrade hombrew tools
+### Install any new homebrew tools
 
-To bump the installed version of a brew package after this repo adds packages, run
-`brew bundle install --global`.
+To install new packages when this repo adds packages to the Brewfile, run
+`systemctl --user start homebrew-install.service`.
+
+### Install any new Flatpak apps
+
+To install new packages when this repo adds packages to the Flatpakfile, run
+`systemctl --user start flatpak-install.service`.
 
 ### Upgrade zsh & bash plugins
 
