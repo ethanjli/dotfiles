@@ -132,9 +132,7 @@ cmd zip ${{
 }}
 
 # open the cwd in lazygit
-cmd lg ${{
-    lazygit
-}}
+cmd lg ${{lazygit}}
 
 # yank paths onto clipboard
 cmd yank-file $printf '%s' "$f" | wl-copy
@@ -142,6 +140,15 @@ cmd yank-paths $printf '%s' "$fx" | wl-copy
 cmd yank-dirname &printf '%s' "$PWD" | wl-copy
 cmd yank-basename &basename -a -- $fx | head -c-1 | wl-copy
 cmd yank-basename-without-extension &basename -a -- $fx | sed -E 's/\.[^.]+$//' | head -c-1 | wl-copy
+
+# bulk add to chezmoi
+cmd cza ${{
+    chezmoi add $fx
+}}
+
+# bulk re-add to chezmoi
+
+cmd czr ${{chezmoi re-add}}
 
 # Integrate fzf
 cmd fzf_jump ${{
