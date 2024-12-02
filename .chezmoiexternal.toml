@@ -40,7 +40,7 @@ stripcomponents = 1
 
 [".local/share/zellij/plugins/zj-quit.wasm"]
 type = "file"
-url = "https://github.com/cristiand391/zj-quit/releases/download/0.3.0/zj-quit.wasm"
+url = "https://github.com/cristiand391/zj-quit/releases/download/0.3.1/zj-quit.wasm"
 
 [".local/share/zellij/plugins/zellij-forgot.wasm"]
 type = "file"
@@ -48,7 +48,7 @@ url = "https://github.com/karimould/zellij-forgot/releases/download/0.4.0/zellij
 
 [".local/share/zellij/plugins/zjstatus.wasm"]
 type = "file"
-url = "https://github.com/dj95/zjstatus/releases/download/v0.16.0/zjstatus.wasm"
+url = "https://github.com/dj95/zjstatus/releases/download/v0.19.1/zjstatus.wasm"
 
 # CLI Theming
 

@@ -37,7 +37,6 @@ org.freedesktop.Platform.openh264
 org.freedesktop.Sdk
 org.gnome.Boxes
 org.gnome.Boxes.Extension.OsinfoDb
-org.gnome.DejaDup
 org.gnome.Platform
 org.gnome.Platform
 org.gnome.World.PikaBackup
