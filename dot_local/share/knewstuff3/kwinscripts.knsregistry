@@ -1,30 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE khotnewstuff3>
-<hotnewstuffregistry>
- <stuff category="720">
-  <name>Temporary Virtual Desktops</name>
-  <providerid>api.kde-look.org</providerid>
-  <author>berlioz-ubiquitus</author>
-  <homepage>https://store.kde.org/p/2138035</homepage>
-  <licence></licence>
-  <version>0.3.1</version>
-  <rating>58</rating>
-  <downloads>518</downloads>
-  <installedfile>/var/home/lietk12/.local/share/kwin/scripts/temporary-virtual-desktops/</installedfile>
-  <id>2138035</id>
-  <releasedate>2024-05-23</releasedate>
-  <summary>Fork of original wsdfhjxc's script, adopted to Plasma 6.&lt;br />
-&lt;br />
-Changes to the original script:&lt;br />
-* ( Default) No spare empty desktop - create a new virtual desktop by dragging window in Overview to the "+" area.&lt;br />
-* UI config option to keep one spare virtual desktop&lt;br />
-* Improved empty desktops cleanup thanks to Plasma 6 new features.&lt;br />
-* Additional featuers</summary>
-  <changelog></changelog>
-  <preview>https://images.pling.com/cache/100x100-0/img/00/00/77/26/37/2138035/tvd.jpg</preview>
-  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/77/26/37/2138035/tvd.jpg</previewBig>
-  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE3MTU0Mjk2NTMiLCJvIjoiMSIsInMiOiJhYzllZjVkMzEzOGE1NTM4NDVkZjdkZjdmZjM3OGZkNjk4NzhlNjk0Y2NmYjJhMjg3YWU5NGUyZjI5YjBiNGIyYzQ2MTIyNGVjZmIwMmM0MDY3MDk0M2Y4MTIxNDdmNTgwODc4MjRhOTUwYjgyY2E1ZTY2ZmU0YzIyNzNlZGE0NyIsInQiOjE3MTk4NzQ3MTUsInN0ZnAiOm51bGwsInN0aXAiOiIxNzEuNjQuODMuMjQwIn0.VVOcXbcadbfeg9loN_0GguZ7232IbruZ-BKeqAXY8mo/temporary-virtual-desktops-0.3.1.kwinscript</payload>
-  <tags>lgplv3,kwinscirpt,linux,unix,virtual-desktop,original-product</tags>
-  <status>installed</status>
- </stuff>
-</hotnewstuffregistry>
+<hotnewstuffregistry/>

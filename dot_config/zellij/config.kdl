@@ -84,7 +84,6 @@ keybinds clear-defaults=true {
   }
 
   pane {
-
     bind "Alt u" { NewPane; }
     bind "Alt d" { CloseFocus; }
 

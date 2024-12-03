@@ -1,6 +1,30 @@
 [ActionsWidget]
 ColumnState=AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlwAAAACAQAAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAACAAAA+gAAAAEAAAAAAAABYgAAAAEAAAAAAAAD6AAAAABk
 
+[Applets][475]
+immutability=1
+plugin=org.kde.plasma.weather
+
+[Applets][475][Configuration]
+PreloadWeight=75
+
+[Applets][475][Configuration][Appearance]
+showTemperatureInBadge=true
+showTemperatureInCompactMode=true
+
+[Applets][475][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Applets][475][Configuration][Units]
+pressureUnit=5010
+speedUnit=9002
+temperatureUnit=6002
+visibilityUnit=2024
+
+[Applets][475][Configuration][WeatherStation]
+source=wettercom|weather|Stanford, California, US|US0CA1069;Stanford
+
 [ConfigDialog]
 2256x1504 screen: Height=550
 2256x1504 screen: Width=810
@@ -257,6 +281,13 @@ thickness=36
 [PlasmaViews][Panel 324][Horizontal2256]
 maxLength=1018
 minLength=894
+
+[PlasmaViews][Panel 451]
+floating=0
+panelOpacity=2
+
+[PlasmaViews][Panel 451][Defaults]
+thickness=36
 
 [PlasmaViews][Panel 52]
 alignment=1
