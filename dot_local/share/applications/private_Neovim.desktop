@@ -1,6 +1,6 @@
 [Desktop Entry]
 Comment=hyperextensible Vim-based text editor
-Exec=/var/home/linuxbrew/.linuxbrew/bin/nvim -- %U
+Exec=/usr/bin/zsh -i -c '/var/home/linuxbrew/.linuxbrew/bin/nvim -- %U'
 GenericName=Text Editor
 Icon=/var/home/lietk12/.local/share/icons/applications/neovim.png
 Keywords=text;txt;editor;programming;programmer;development;developer;code;
