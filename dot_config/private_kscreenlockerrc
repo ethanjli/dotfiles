@@ -5,5 +5,6 @@ update_info=kscreenlocker.upd:0.1-autolock
 Timeout=15
 
 [Greeter][Wallpaper][org.kde.image][General]
-Image=/home/lietk12/.local/share/wallpapers/Black-Mountain-Dusk-1.jpg
-PreviewImage=/home/lietk12/.local/share/wallpapers/Black-Mountain-Dusk-1.jpg
+Image=/home/lietk12/.local/share/wallpapers/f29-03-night.png
+PreviewImage=/home/lietk12/.local/share/wallpapers/f29-03-night.png
+SlidePaths=/home/lietk12/.local/share/wallpapers/,/usr/share/wallpapers/

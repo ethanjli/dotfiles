@@ -909,7 +909,7 @@ immutability=1
 plugin=org.kde.plasma.brightness
 
 [Containments][242][Applets][429][Configuration]
-PreloadWeight=10
+PreloadWeight=25
 
 [Containments][242][Applets][429][Configuration][ConfigDialog]
 DialogHeight=540
@@ -1484,6 +1484,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][451][Applets][456][Configuration]
+PreloadWeight=55
 SystrayContainmentId=457
 
 [Containments][451][General]
@@ -1496,6 +1497,8 @@ immutability=1
 lastScreen=1
 location=6
 plugin=org.kde.plasma.private.systemtray
+popupHeight=432
+popupWidth=432
 wallpaperplugin=org.kde.image
 
 [Containments][457][Applets][458]
@@ -1517,6 +1520,9 @@ plugin=org.kde.plasma.clipboard
 [Containments][457][Applets][462]
 immutability=1
 plugin=org.kde.plasma.devicenotifier
+
+[Containments][457][Applets][462][Configuration]
+PreloadWeight=55
 
 [Containments][457][Applets][463][Configuration]
 PreloadWeight=42
