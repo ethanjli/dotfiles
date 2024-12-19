@@ -2,15 +2,6 @@
 
 Additional setup instructions
 
-## Enable hibernation
-
-Disable Secure Boot in the BIOS, then follow the instructions at https://discussion.fedoraproject.org/t/setup-hibernation-on-silverblue-kionite/78834/8 , but with the following adjustments:
-
-- In step 6, to add kernel parameters for the swapfile, use `sudo rpm-ostree kargs --editor` instead of `sudo grubby --args='...' --update-kernel=ALL`
-- Afterwards, follow the instructions at https://discussion.fedoraproject.org/t/setup-hibernation-on-silverblue-kionite/78834/20
-
-To enable suspend-then-hibernate, edit `/etc/systemd/sleep.conf` to set the `HibernateDelaySec` to `30min`, and set the `SuspendEstimationSec` to some very long time (e.g. `24h`).
-
 ## Work around graphics driver issues
 
 Using `sudo rpm-ostree kargs --editor`, add the following kernel arguments:
