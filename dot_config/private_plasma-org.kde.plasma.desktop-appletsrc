@@ -75,7 +75,7 @@ DialogWidth=720
 alphaSort=true
 compactMode=true
 favoritesPortedToKAstats=true
-icon=/usr/share/icons/hicolor/scalable/distributor-logo-white.svg
+icon=/var/home/lietk12/.local/share/icons/applications/fedora-icon-white.svg
 systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
 
 [Containments][134][Applets][241]
@@ -1446,9 +1446,14 @@ PreloadWeight=100
 popupHeight=519
 popupWidth=699
 
+[Containments][451][Applets][452][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
 [Containments][451][Applets][452][Configuration][General]
 favoritesPortedToKAstats=true
-icon=distributor-logo-white
+icon=/var/home/lietk12/.local/share/icons/applications/fedora-icon-white.svg
+systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
 
 [Containments][451][Applets][453]
 immutability=1

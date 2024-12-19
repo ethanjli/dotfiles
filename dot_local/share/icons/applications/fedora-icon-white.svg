@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="512.04102"
+   height="502.439"
+   viewBox="0 0 135.47752 132.93699"
+   version="1.1"
+   id="svg2"
+   sodipodi:docname="fedora_icon_white.svg"
+   inkscape:export-filename="fedora_icon_white.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect4"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="Use fill-rule evenodd on &lt;b&gt;fill and stroke&lt;/b&gt; dialog if no flatten result after convert clip to paths." />
+  </defs>
+  <sodipodi:namedview
+     id="namedview2"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="2.3127186"
+     inkscape:cx="255.9758"
+     inkscape:cy="199.33251"
+     inkscape:window-width="2216"
+     inkscape:window-height="1408"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <path
+     id="path1"
+     clip-path="none"
+     style="fill:#ffffff;fill-opacity:1;stroke-width:0.915663"
+     d="m 67.771647,5.6057765 c -34.253241,0 -61.98679,27.2246005 -62.0473885,60.8355695 h -0.011356 v 47.092944 h 0.011356 c 0.015932,7.62262 6.3200885,13.79704 14.0941945,13.79704 h 47.959345 c 34.259312,-0.0218 61.986822,-27.2428 61.986822,-60.835568 4e-5,-33.610969 -27.76383,-60.8355695 -62.047389,-60.8355695 z m 12.610296,25.0322655 -0.0066,0.01798 c 10.415948,0 20.250287,7.822884 20.250287,18.614501 0,1.001004 0.006,2.002288 -0.16088,3.137196 -0.28859,2.870901 -2.963265,4.934056 -5.875971,4.529296 -2.912712,-0.409488 -4.889583,-3.122019 -4.350907,-5.960199 0.04935,-0.323925 0.06719,-0.832883 0.06719,-1.707239 0,-6.119896 -5.104898,-8.482732 -9.931141,-8.482732 -4.825024,0 -9.173791,3.979456 -9.180201,8.482732 0.08342,5.206762 0,10.373525 0,15.572414 l 8.955913,-0.0653 c 6.992481,-0.142073 7.070971,10.185459 0.08044,10.136974 l -9.034461,0.06577 c -0.02206,4.188191 0.03316,3.430776 0.01136,5.540013 0,0 0.07588,5.122589 -0.07997,9.004177 -1.080984,11.403625 -10.979673,20.516695 -22.874083,20.516695 -12.609423,0 -22.995218,-10.106719 -22.995218,-22.504059 0.37859,-12.748752 10.74325,-22.776761 23.801047,-22.661624 l 7.283215,-0.05394 V 74.93969 l -7.283215,0.06577 h -0.03833 c -7.174201,0.208194 -13.324648,4.988088 -13.439783,12.524649 0,6.865186 5.65577,12.367085 12.676068,12.367085 7.010635,0 12.621652,-5.003497 12.621652,-12.355254 l -0.01136,-38.324891 c 0.0046,-0.711366 0.02746,-1.27698 0.106939,-2.061653 1.183375,-9.373753 9.731321,-16.517359 19.408026,-16.517359 z" />
+</svg>
