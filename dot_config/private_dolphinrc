@@ -11,6 +11,7 @@ IconSize=22
 SidePadding=0
 
 [General]
+ConfirmClosingMultipleTabs=false
 DoubleClickViewAction=CUSTOM_COMMAND
 DoubleClickViewCustomAction=flatpak run org.wezfurlong.wezterm start --cwd {path}
 OpenNewTabAfterLastTab=true

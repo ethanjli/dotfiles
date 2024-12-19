@@ -126,7 +126,7 @@ fontFamily=Atkinson Hyperlegible
 fontSize=5
 fontStyleName=Bold
 fontWeight=700
-selectedTimeZones=Asia/Seoul,Asia/Taipei,Asia/Tokyo,Europe/Paris,Local,America/Los_Angeles,UTC
+selectedTimeZones=America/Los_Angeles,Local,UTC,Europe/Paris,Asia/Taipei,Asia/Seoul,Asia/Tokyo
 showWeekNumbers=true
 use24hFormat=2
 
@@ -158,8 +158,8 @@ immutability=1
 plugin=org.kde.panel.transparency.toggle
 
 [Containments][134][Applets][438][Configuration][ConfigDialog]
-DialogHeight=570
-DialogWidth=760
+DialogHeight=540
+DialogWidth=720
 
 [Containments][134][Applets][438][Configuration][General]
 hideInEditModeEnabled=true
@@ -208,6 +208,10 @@ wrapPage=true
 [Containments][134][Applets][440]
 immutability=1
 plugin=org.kde.plasma.marginsseparator
+
+[Containments][134][Applets][440][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
 
 [Containments][134][Applets][441]
 immutability=1
@@ -605,6 +609,7 @@ DialogWidth=720
 groupingStrategy=0
 highlightWindows=false
 iconSpacing=3
+indicateAudioStreams=false
 launchers=
 showOnlyCurrentScreen=true
 showToolTips=false
@@ -857,7 +862,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][242][Applets][255][Configuration]
-PreloadWeight=15
+PreloadWeight=74
 
 [Containments][242][Applets][256]
 immutability=1
@@ -909,7 +914,7 @@ immutability=1
 plugin=org.kde.plasma.brightness
 
 [Containments][242][Applets][429][Configuration]
-PreloadWeight=42
+PreloadWeight=100
 
 [Containments][242][Applets][429][Configuration][ConfigDialog]
 DialogHeight=540
@@ -920,7 +925,7 @@ immutability=1
 plugin=org.kde.plasma.weather
 
 [Containments][242][Applets][475][Configuration]
-PreloadWeight=59
+PreloadWeight=43
 
 [Containments][242][Applets][475][Configuration][Appearance]
 showTemperatureInBadge=true
@@ -1339,7 +1344,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][378][Applets][394][Configuration]
-PreloadWeight=5
+PreloadWeight=0
 
 [Containments][378][Applets][421]
 immutability=1
@@ -1376,12 +1381,12 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][446][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
+DialogHeight=1468
+DialogWidth=2256
 
 [Containments][446][Wallpaper][org.kde.image][General]
-Image=/home/lietk12/.local/share/wallpapers/f29-02-dusk.png
-PreviewImage=/home/lietk12/.local/share/wallpapers/f29-02-dusk.png
+Image=/home/lietk12/.local/share/wallpapers/World Trade Center station dark bluer.jpg
+PreviewImage=/home/lietk12/.local/share/wallpapers/World Trade Center station dark bluer.jpg
 SlidePaths=/home/lietk12/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][447]
@@ -1397,12 +1402,11 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][447][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
+DialogHeight=1080
+DialogWidth=1884
 
 [Containments][447][Wallpaper][org.kde.image][General]
-Image=/home/lietk12/.local/share/wallpapers/f29-02-dusk.png
-PreviewImage=/home/lietk12/.local/share/wallpapers/f29-02-dusk.png
+Image=/home/lietk12/.local/share/wallpapers/World Trade Center station dark bluer.jpg
 SlidePaths=/home/lietk12/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][450]
@@ -1488,7 +1492,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][451][Applets][456][Configuration]
-PreloadWeight=60
+PreloadWeight=75
 SystrayContainmentId=457
 
 [Containments][451][General]
@@ -1526,7 +1530,7 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][457][Applets][462][Configuration]
-PreloadWeight=70
+PreloadWeight=100
 
 [Containments][457][Applets][463][Configuration]
 PreloadWeight=42
@@ -1542,6 +1546,9 @@ plugin=org.kde.plasma.manage-inputmethod
 [Containments][457][Applets][466]
 immutability=1
 plugin=org.kde.plasma.notifications
+
+[Containments][457][Applets][466][Configuration]
+PreloadWeight=60
 
 [Containments][457][Applets][467]
 immutability=1
@@ -1562,13 +1569,22 @@ migrated=true
 immutability=1
 plugin=org.kde.plasma.brightness
 
+[Containments][457][Applets][470][Configuration]
+PreloadWeight=34
+
 [Containments][457][Applets][471]
 immutability=1
 plugin=org.kde.plasma.battery
 
+[Containments][457][Applets][471][Configuration]
+PreloadWeight=34
+
 [Containments][457][Applets][472]
 immutability=1
 plugin=org.kde.plasma.mediacontroller
+
+[Containments][457][Applets][472][Configuration]
+PreloadWeight=10
 
 [Containments][457][Applets][473]
 immutability=1
