@@ -4,6 +4,7 @@ com.calibre_ebook.calibre
 com.github.flxzt.rnote
 com.github.marktext.marktext
 com.github.tchx84.Flatseal
+com.github.wwmm.easyeffects
 com.github.zocker_160.SyncThingy
 com.google.Chrome
 com.slack.Slack
@@ -39,7 +40,6 @@ org.kde.kweather
 org.kde.okular
 org.kicad.KiCad
 org.libreoffice.LibreOffice
-org.localsend.localsend_app
 org.mozilla.Thunderbird
 org.mozilla.firefox
 org.raspberrypi.rpi-imager

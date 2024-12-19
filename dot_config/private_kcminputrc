@@ -27,6 +27,9 @@ PointerAcceleration=0.400
 ScrollFactor=0.5
 TapToClick=true
 
+[Libinput][6127][24717][PixArt Lenovo USB Optical Mouse]
+ScrollMethod=4
+
 [Libinput][6780][407][Kingsis Peripherals Evoluent VerticalMouse D]
 MiddleButtonEmulation=true
 PointerAcceleration=-0.200

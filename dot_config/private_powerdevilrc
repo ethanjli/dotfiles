@@ -22,6 +22,5 @@ DisplayBrightness=0
 PowerProfile=power-saver
 
 [LowBattery][SuspendAndShutdown]
-LidAction=2
-PowerButtonAction=2
+PowerButtonAction=1
 SleepMode=3

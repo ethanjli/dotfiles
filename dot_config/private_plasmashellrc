@@ -6,7 +6,7 @@ immutability=1
 plugin=org.kde.plasma.weather
 
 [Applets][475][Configuration]
-PreloadWeight=75
+PreloadWeight=59
 
 [Applets][475][Configuration][Appearance]
 showTemperatureInBadge=true

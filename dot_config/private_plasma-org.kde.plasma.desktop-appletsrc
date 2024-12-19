@@ -126,7 +126,7 @@ fontFamily=Atkinson Hyperlegible
 fontSize=5
 fontStyleName=Bold
 fontWeight=700
-selectedTimeZones=America/Los_Angeles,Local,UTC,Europe/Paris,Asia/Taipei,Asia/Seoul,Asia/Tokyo
+selectedTimeZones=Asia/Seoul,Asia/Taipei,Asia/Tokyo,Europe/Paris,Local,America/Los_Angeles,UTC
 showWeekNumbers=true
 use24hFormat=2
 
@@ -857,7 +857,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][242][Applets][255][Configuration]
-PreloadWeight=5
+PreloadWeight=15
 
 [Containments][242][Applets][256]
 immutability=1
@@ -881,7 +881,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][242][Applets][288][Configuration]
-PreloadWeight=5
+PreloadWeight=0
 
 [Containments][242][Applets][331][Configuration]
 PreloadWeight=42
@@ -909,7 +909,7 @@ immutability=1
 plugin=org.kde.plasma.brightness
 
 [Containments][242][Applets][429][Configuration]
-PreloadWeight=25
+PreloadWeight=42
 
 [Containments][242][Applets][429][Configuration][ConfigDialog]
 DialogHeight=540
@@ -920,7 +920,7 @@ immutability=1
 plugin=org.kde.plasma.weather
 
 [Containments][242][Applets][475][Configuration]
-PreloadWeight=75
+PreloadWeight=59
 
 [Containments][242][Applets][475][Configuration][Appearance]
 showTemperatureInBadge=true
@@ -944,7 +944,7 @@ DialogHeight=540
 DialogWidth=720
 
 [Containments][242][General]
-extraItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.vault,org.kde.plasma.volume,org.kde.plasma.printmanager,org.kde.plasma.battery,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.weather,steam
+extraItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.vault,org.kde.plasma.volume,org.kde.plasma.printmanager,org.kde.plasma.battery,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.weather
 hiddenItems=SyncThingy,Discover Notifier_org.kde.DiscoverNotifier,crow-translate,org.kde.plasma.nightcolorcontrol,zoom,org.kde.plasma.clipboard,org.kde.plasma.bluetooth,Xwayland Video Bridge_pipewireToXProxy,Barrier,org.kde.kscreen,Portal,Plasma_microphone,1,Trayscale,org.kde.plasma.weather,org.kde.plasma.mediacontroller,org.kde.plasma.devicenotifier,steam
 iconSpacing=6
 knownItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.vault,org.kde.plasma.volume,org.kde.plasma.brightness,org.kde.plasma.cameraindicator
@@ -1376,8 +1376,8 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][446][ConfigDialog]
-DialogHeight=1468
-DialogWidth=2256
+DialogHeight=540
+DialogWidth=720
 
 [Containments][446][Wallpaper][org.kde.image][General]
 Image=/home/lietk12/.local/share/wallpapers/f29-02-dusk.png
@@ -1472,6 +1472,10 @@ plugin=org.kde.plasma.panelspacer
 immutability=1
 plugin=org.kde.plasma.appmenu
 
+[Containments][451][Applets][455][Configuration]
+popupHeight=27
+popupWidth=92
+
 [Containments][451][Applets][455][Configuration][Appearance]
 compactView=true
 
@@ -1484,7 +1488,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][451][Applets][456][Configuration]
-PreloadWeight=55
+PreloadWeight=60
 SystrayContainmentId=457
 
 [Containments][451][General]
@@ -1522,7 +1526,7 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][457][Applets][462][Configuration]
-PreloadWeight=55
+PreloadWeight=70
 
 [Containments][457][Applets][463][Configuration]
 PreloadWeight=42
@@ -1579,7 +1583,7 @@ DialogHeight=540
 DialogWidth=720
 
 [Containments][457][General]
-extraItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.vault,org.kde.plasma.volume,chrome_status_icon_1,steam
+extraItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.vault,org.kde.plasma.volume
 hiddenItems=SyncThingy,Xwayland Video Bridge_pipewireToXProxy,org.kde.plasma.bluetooth,org.kde.plasma.devicenotifier,org.kde.kdeconnect,org.kde.plasma.keyboardlayout,org.kde.plasma.networkmanagement,org.kde.plasma.battery,org.kde.plasma.printmanager,org.kde.plasma.clipboard,org.kde.plasma.vault,chrome_status_icon_1,steam
 iconSpacing=6
 knownItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.vault,org.kde.plasma.volume
