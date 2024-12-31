@@ -126,7 +126,7 @@ fontFamily=Atkinson Hyperlegible
 fontSize=5
 fontStyleName=Bold
 fontWeight=700
-selectedTimeZones=America/Los_Angeles,Local,UTC,Europe/Paris,Asia/Taipei,Asia/Seoul,Asia/Tokyo
+selectedTimeZones=Asia/Seoul,Asia/Taipei,Asia/Tokyo,Europe/Paris,Local,America/Los_Angeles,UTC
 showWeekNumbers=true
 use24hFormat=2
 
@@ -862,7 +862,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][242][Applets][255][Configuration]
-PreloadWeight=79
+PreloadWeight=100
 
 [Containments][242][Applets][256]
 immutability=1
@@ -1410,6 +1410,7 @@ Image=/home/lietk12/.local/share/wallpapers/World Trade Center station dark blue
 SlidePaths=/home/lietk12/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][450]
+ItemGeometries-1280x720=
 ItemGeometries-1920x1080=
 ItemGeometriesHorizontal=
 activityId=211327b6-e365-4f10-ac54-c66f4b1c5365
@@ -1497,7 +1498,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][451][Applets][456][Configuration]
-PreloadWeight=75
+PreloadWeight=80
 SystrayContainmentId=457
 
 [Containments][451][General]

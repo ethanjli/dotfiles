@@ -1,6 +1,6 @@
 [Desktop Entry]
 Comment=Zellij session selector
-Exec=/usr/bin/zsh -i -c '~/.local/bin/attach-zellij.sh'
+Exec=~/.local/bin/run-in-zsh.sh attach-zellij.sh -- %F
 GenericName=Terminal Multiplexer
 Icon=/var/home/lietk12/.local/share/icons/applications/zellij.png
 Name=Zellij

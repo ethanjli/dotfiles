@@ -1,6 +1,6 @@
 [Desktop Entry]
 Comment=Terminal file manager
-Exec=/usr/bin/zsh -i -c '/var/home/lietk12/.local/share/aquaproj-aqua/bin/lf %u'
+Exec=~/.local/bin/run-in-zsh.sh lf %u
 GenericName=File Manager
 Icon=system-file-manager
 Keywords=files;file management;file browsing;Explorer;Finder;
