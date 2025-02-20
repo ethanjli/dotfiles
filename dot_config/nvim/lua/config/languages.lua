@@ -225,7 +225,7 @@ lspconfig.taplo.setup({})
 local conform = require("conform")
 conform.setup({
 	formatters_by_ft = {
-		["*"] = { "typos" },
+		-- ["*"] = { "typos" },
 		markdown = { "markdownfmt", "mdsf" },
 		go = { "goimports", "gofumpt", "golines" },
 		rust = { "rustfmt" },

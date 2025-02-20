@@ -48,6 +48,9 @@ klipperClearHistoryAskAgain=false
 [PIMEventsPlugin]
 calendars=8
 
+[PlasmaTransientsConfig]
+PreloadWeight=42
+
 [PlasmaViews][Panel 121]
 alignment=132
 floating=0
@@ -69,7 +72,7 @@ thickness=31
 [PlasmaViews][Panel 134]
 alignment=132
 floating=0
-panelOpacity=2
+panelOpacity=1
 panelVisibility=0
 
 [PlasmaViews][Panel 134][Defaults]

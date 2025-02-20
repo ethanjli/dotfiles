@@ -11,6 +11,7 @@ com.slack.Slack
 com.spotify.Client
 com.usebottles.bottles
 com.valvesoftware.Steam
+com.zettlr.Zettlr
 dev.vencord.Vesktop
 io.github.dvlv.boxbuddyrs
 io.github.flattool.Warehouse
