@@ -81,14 +81,6 @@ url = "https://raw.githubusercontent.com/Prayag2/kde_onedark/v2.1/color-schemes/
 type = "file"
 url = "https://raw.githubusercontent.com/Prayag2/kde_onedark/v2.1/color-schemes/One-Dark/One-Dark-Yellow.colors"
 
-[".local/share/plasma/desktoptheme/Arch"]
-type = "archive"
-# Note: there are no release tags, so we must pull from main
-url = "https://github.com/ddh4r4m/Arch/archive/14ab5e5.tar.gz"
-exact = true
-include = ["*/plasma/desktoptheme/Arch/**"]
-stripcomponents = 4
-
 [".local/share/plasma/plasmoids/org.kde.panel.transparency.toggle"]
 type = "archive"
 url = "https://github.com/sanjay-kr-commit/panelTransparencyToggleForPlasma6/archive/refs/heads/main.zip"

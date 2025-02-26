@@ -100,6 +100,7 @@ groupingStrategy=0
 highlightWindows=false
 iconSpacing=3
 indicateAudioStreams=false
+interactiveMute=false
 launchers=
 showOnlyCurrentScreen=true
 showToolTips=false
@@ -111,8 +112,8 @@ plugin=org.kde.plasma.digitalclock
 
 [Containments][134][Applets][343][Configuration]
 PreloadWeight=100
-popupHeight=454
-popupWidth=814
+popupHeight=457
+popupWidth=818
 
 [Containments][134][Applets][343][Configuration][Appearance]
 autoFontAndSize=false
@@ -126,7 +127,7 @@ fontFamily=Atkinson Hyperlegible
 fontSize=5
 fontStyleName=Bold
 fontWeight=700
-selectedTimeZones=Asia/Seoul,Asia/Taipei,Asia/Tokyo,Europe/Paris,Local,America/Los_Angeles,UTC
+selectedTimeZones=America/Los_Angeles,Local,UTC,Europe/Paris,Asia/Taipei,Asia/Seoul,Asia/Tokyo
 showWeekNumbers=true
 use24hFormat=2
 
@@ -515,7 +516,7 @@ DialogHeight=540
 DialogWidth=720
 
 [Containments][242][General]
-extraItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.vault,org.kde.plasma.volume,org.kde.plasma.printmanager,org.kde.plasma.battery,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.weather,KTailctl
+extraItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.vault,org.kde.plasma.volume,org.kde.plasma.printmanager,org.kde.plasma.battery,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.weather
 hiddenItems=SyncThingy,Discover Notifier_org.kde.DiscoverNotifier,crow-translate,org.kde.plasma.nightcolorcontrol,zoom,org.kde.plasma.clipboard,org.kde.plasma.bluetooth,Xwayland Video Bridge_pipewireToXProxy,Barrier,org.kde.kscreen,Portal,Plasma_microphone,1,Trayscale,org.kde.plasma.weather,org.kde.plasma.mediacontroller,org.kde.plasma.devicenotifier,steam,KTailctl
 iconSpacing=6
 knownItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.vault,org.kde.plasma.volume,org.kde.plasma.brightness,org.kde.plasma.cameraindicator
@@ -663,6 +664,9 @@ wallpaperplugin=org.kde.image
 DialogHeight=1468
 DialogWidth=2256
 
+[Containments][446][General]
+positions={"2256x1504":[]}
+
 [Containments][446][Wallpaper][org.kde.image][General]
 Image=/home/lietk12/.local/share/wallpapers/World Trade Center station dark bluer.jpg
 PreviewImage=/home/lietk12/.local/share/wallpapers/World Trade Center station dark bluer.jpg
@@ -686,6 +690,9 @@ wallpaperplugin=org.kde.image
 DialogHeight=1080
 DialogWidth=1884
 
+[Containments][447][General]
+positions={"1920x1080":[]}
+
 [Containments][447][Wallpaper][org.kde.image][General]
 Image=/home/lietk12/.local/share/wallpapers/World Trade Center station dark bluer.jpg
 SlidePaths=/home/lietk12/.local/share/wallpapers/,/usr/share/wallpapers/
@@ -705,6 +712,9 @@ wallpaperplugin=org.kde.image
 [Containments][450][ConfigDialog]
 DialogHeight=540
 DialogWidth=720
+
+[Containments][450][General]
+positions={"1920x1080":[]}
 
 [Containments][450][Wallpaper][org.kde.image][General]
 Image=/home/lietk12/.local/share/wallpapers/f29-02-dusk.png
@@ -750,6 +760,7 @@ groupingStrategy=0
 highlightWindows=false
 iconSpacing=3
 indicateAudioStreams=false
+interactiveMute=false
 launchers=
 showOnlyCurrentScreen=true
 showToolTips=false
@@ -857,7 +868,7 @@ immutability=1
 plugin=org.kde.plasma.brightness
 
 [Containments][457][Applets][470][Configuration]
-PreloadWeight=15
+PreloadWeight=7
 
 [Containments][457][Applets][471]
 immutability=1

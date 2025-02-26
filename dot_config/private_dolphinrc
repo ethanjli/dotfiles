@@ -27,8 +27,5 @@ PreviewSize=32
 Places Icons Auto-resize=false
 Places Icons Static Size=22
 
-[MainWindow]
-ToolBarsMovable=Disabled
-
 [PreviewSettings]
 Plugins=audiothumbnail,avif,blenderthumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,heif,imagethumbnail,jpegthumbnail,jxl,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,mobithumbnail,opendocumentthumbnail,gsthumbnail,rawthumbnail,svgthumbnail,gdk-pixbuf-thumbnailer,ffmpegthumbs

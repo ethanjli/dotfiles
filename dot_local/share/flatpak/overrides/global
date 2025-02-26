@@ -1,2 +1,6 @@
 [Context]
-filesystems=~/.icons:ro
+filesystems=xdg-config/gtk-4.0:ro;~/.icons:ro;
+
+[Environment]
+QT_QPA_PLATFORMTHEME=kde
+USE_POINTER_VIEWPORT=1

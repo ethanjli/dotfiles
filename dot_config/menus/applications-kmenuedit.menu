@@ -296,6 +296,7 @@
    <Filename>LF.desktop</Filename>
   </Layout>
  </Menu>
+ <Include/>
  <Layout>
   <Merge type="menus"/>
   <Menuname>Development</Menuname>
@@ -311,5 +312,8 @@
   <Menuname>Utilities</Menuname>
   <Menuname>Applications</Menuname>
  </Layout>
- <Include/>
+ <Menu>
+  <Name>Help</Name>
+  <Deleted/>
+ </Menu>
 </Menu>
