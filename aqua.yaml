@@ -16,7 +16,7 @@ packages:
   - name: twpayne/chezmoi@v2.42.2
   - name: hpjansson/chafa@v1.12.5
     registry: local
-  - name: git-ecosystem/git-credential-manager@v2.4.1
+  - name: git-ecosystem/git-credential-manager@v2.6.1
     registry: local
   - name: neovim/neovim@v0.11.1
     registry: local
