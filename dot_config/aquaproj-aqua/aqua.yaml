@@ -86,5 +86,5 @@ packages: # comments are added for the first package in each section
   #- name: printfn/fend@v1.4.9 # Miscellaneous
   #- name: sharkdp/pastel@v0.9.0
   - name: sharkdp/hyperfine@v1.19.0
-  #- name: ouch-org/ouch@0.5.1
+  #- name: ouch-org/ouch@0.6.1
   #- name: TaKO8Ki/gobang@v0.1.0-alpha.5
