@@ -31,62 +31,60 @@ packages: # comments are added for the first package in each section
   - name: cli/cli@v2.73.0
   - name: git-ecosystem/git-credential-manager@v2.6.1
     registry: ethanjli/dotfiles
-  - name: o2sh/onefetch@2.24.0
+  #- name: o2sh/onefetch@2.24.0
   - name: FiloSottile/age@v1.2.1 # Secrets
   - name: sharkdp/bat@v0.25.0 # Viewers
   - name: charmbracelet/glow@v2.1.0
   - name: hpjansson/chafa@1.16.1
     registry: ethanjli/dotfiles
-  - name: maaslalani/slides@v0.9.0
+  #- name: maaslalani/slides@v0.9.0
   - name: dandavison/delta@0.18.2
   - name: Wilfred/difftastic@0.63.0
   - name: antonmedv/fx@36.0.3
   - name: simeji/jid@v0.7.6
-  - name: sharkdp/hexyl@v0.16.0
+  #- name: sharkdp/hexyl@v0.16.0
   - name: jesseduffield/lazydocker@v0.24.1 # Containers
   - name: wagoodman/dive@v0.13.1
   - name: google/go-containerregistry@v0.20.5
-  - name: bcicen/ctop@v0.7.7
+  #- name: bcicen/ctop@v0.7.7
   - name: jqlang/jq@jq-1.7.1 # Parsing
   - name: mikefarah/yq@v4.45.4
-  - name: wader/fq@v0.15.0
-  - name: johnkerl/miller@v6.13.0
-  - name: tomnomnom/gron@v0.7.1
-  - name: ericchiang/pup@v0.4.0
+  #- name: wader/fq@v0.15.0
+  #- name: johnkerl/miller@v6.13.0
+  #- name: tomnomnom/gron@v0.7.1
+  #- name: ericchiang/pup@v0.4.0
   - name: aristocratos/btop@v1.4.3 # System Info & Dashboards
   - name: Byron/dua-cli@v2.30.1
   - name: wtfutil/wtf@v0.43.0
-  - name: dylanaraps/neofetch@7.1.0
+  - name: fastfetch-cli/fastfetch@2.44.0
   - name: rs/curlie@v1.8.2 # HTTP
   - name: asciimoo/wuzz@v0.5.0
   - name: ekzhang/bore@v0.5.3 # Network
-  - name: yudai/gotty@v1.0.1
-  - name: veeso/termscp@v0.17.0
+  #- name: yudai/gotty@v1.0.1
   - name: svenstaro/miniserve@v0.29.0
-  - name: charmbracelet/skate@v1.0.1
-  - name: charmbracelet/charm@v0.12.6
   - name: EdJoPaTo/mqttui@v0.22.1
   - name: ogham/dog@v0.1.0
-  - name: sachaos/tcpterm@v0.0.2
-  - name: gcla/termshark@v2.4.0
-  - name: orf/gping@gping-v1.16.1
-  - name: fujiapple852/trippy@0.10.0
-  - name: imsnif/bandwhich@v0.22.2
+  #- name: sachaos/tcpterm@v0.0.2
+  #- name: gcla/termshark@v2.4.0
+  #- name: orf/gping@gping-v1.16.1
+  #- name: fujiapple852/trippy@0.10.0
+  #- name: imsnif/bandwhich@v0.22.2
   - name: rclone/rclone@v1.67.0 # File transfer
   - name: schollz/croc@v10.0.9
-  - name: zquestz/s@v0.7.0 # Web-ish
-  - name: Builditluc/wiki-tui@v0.8.2
-  - name: Rigellute/spotify-tui@v0.25.0
-  - name: jpbruinsslot/slack-term@v0.5.0
+  - name: veeso/termscp@v0.17.0
+  #- name: zquestz/s@v0.7.0 # Web-ish
+  #- name: Builditluc/wiki-tui@v0.8.2
+  #- name: Rigellute/spotify-tui@v0.25.0
+  #- name: jpbruinsslot/slack-term@v0.5.0
   - name: casey/just@1.29.1 # Command-running
   - name: watchexec/watchexec@v2.1.1
-  - name: stateful/runme@v3.4.0
+  #- name: stateful/runme@v3.4.0
   - name: elkowar/pipr@v0.0.16
   - name: topgrade-rs/topgrade@v15.0.0 # Package management
   - name: pemistahl/grex@v1.4.5 # Help
   - name: dbrgn/tealdeer@v1.6.1
-  - name: printfn/fend@v1.4.9 # Miscellaneous
-  - name: sharkdp/pastel@v0.9.0
+  #- name: printfn/fend@v1.4.9 # Miscellaneous
+  #- name: sharkdp/pastel@v0.9.0
   - name: sharkdp/hyperfine@v1.18.0
-  - name: ouch-org/ouch@0.5.1
-  - name: TaKO8Ki/gobang@v0.1.0-alpha.5
+  #- name: ouch-org/ouch@0.5.1
+  #- name: TaKO8Ki/gobang@v0.1.0-alpha.5
