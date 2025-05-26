@@ -16,7 +16,7 @@ packages: # comments are added for the first package in each section
   - name: direnv/direnv@v2.36.0
   - name: charmbracelet/gum@v0.16.0
   - name: gokcehan/lf@r35 # Navigation
-  - name: ajeetdsouza/zoxide@v0.9.7
+  - name: ajeetdsouza/zoxide@v0.9.8
   - name: junegunn/fzf@v0.62.0
   - name: lsd-rs/lsd@v1.1.5
   - name: sharkdp/fd@v10.2.0
