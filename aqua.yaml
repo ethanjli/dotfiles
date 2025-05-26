@@ -13,7 +13,7 @@ registries:
     type: local
     path: aqua-registry.yaml
 packages:
-  - name: twpayne/chezmoi@v2.42.2
+  - name: twpayne/chezmoi@v2.62.5
   - name: hpjansson/chafa@1.16.1
     registry: local
   - name: git-ecosystem/git-credential-manager@v2.6.1
