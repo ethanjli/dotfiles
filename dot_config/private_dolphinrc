@@ -7,7 +7,7 @@ DefaultProfile=Host.profile
 
 [DetailsMode]
 HighlightEntireRow=false
-IconSize=22
+IconSize=32
 SidePadding=0
 
 [General]

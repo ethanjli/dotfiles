@@ -305,5 +305,10 @@ conform.formatters.golines = {
 	prepend_args = { "-m", "100", "-t", "2" },
 }
 
+-- bash
+conform.formatters.shfmt = {
+	prepend_args = { "-i", "2" },
+}
+
 -- Mason-Conform
 require("mason-conform").setup()

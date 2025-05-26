@@ -8,64 +8,64 @@ registries:
     ref: master
     path: aqua-registry.yaml
 packages: # comments are added for the first package in each section
-  - name: twpayne/chezmoi@v2.49.1
-  - name: zellij-org/zellij@v0.41.2 # Shell
-  - name: JanDeDobbeleer/oh-my-posh@v21.17.2
-  - name: starship/starship@v1.19.0
-  - name: atuinsh/atuin@v18.3.0
-  - name: direnv/direnv@v2.34.0
-  - name: charmbracelet/gum@v0.14.1
-  - name: gokcehan/lf@r32 # Navigation
-  - name: ajeetdsouza/zoxide@v0.9.4
-  - name: junegunn/fzf@0.53.0
-  - name: lsd-rs/lsd@v1.1.2
-  - name: sharkdp/fd@v10.1.0
-  - name: BurntSushi/ripgrep@14.1.0
-  - name: phiresky/ripgrep-all@v0.10.6
-  - name: konradsz/igrep@v1.2.0
+  - name: twpayne/chezmoi@v2.62.5
+  - name: zellij-org/zellij@v0.42.2 # Shell
+  - name: JanDeDobbeleer/oh-my-posh@v25.23.3
+  - name: starship/starship@v1.23.0
+  - name: atuinsh/atuin@v18.6.1
+  - name: direnv/direnv@v2.36.0
+  - name: charmbracelet/gum@v0.16.0
+  - name: gokcehan/lf@r35 # Navigation
+  - name: ajeetdsouza/zoxide@v0.9.7
+  - name: junegunn/fzf@v0.62.0
+  - name: lsd-rs/lsd@v1.1.5
+  - name: sharkdp/fd@v10.2.0
+  - name: BurntSushi/ripgrep@14.1.1
+  - name: phiresky/ripgrep-all@v0.10.9
+  - name: konradsz/igrep@v1.3.0
   - name: sharkdp/vivid@v0.10.1
-  - name: neovim/neovim@v0.10.0 # Editing
+  - name: neovim/neovim@v0.11.1 # Editing
     registry: ethanjli/dotfiles
-  - name: acheronfail/repgrep@0.15.0
-  - name: jesseduffield/lazygit@v0.42.0 # Git
-  - name: cli/cli@v2.52.0
-  - name: git-ecosystem/git-credential-manager@v2.5.0
+  - name: acheronfail/repgrep@0.16.1
+  - name: jesseduffield/lazygit@v0.51.1 # Git
+  - name: cli/cli@v2.73.0
+  - name: git-ecosystem/git-credential-manager@v2.6.1
     registry: ethanjli/dotfiles
-  - name: o2sh/onefetch@2.21.0
-  - name: FiloSottile/age@v1.2.0 # Secrets
-  - name: sharkdp/bat@v0.24.0 # Viewers
-  - name: charmbracelet/glow@v1.5.1
-  - name: hpjansson/chafa@1.14.1
+  - name: o2sh/onefetch@2.24.0
+  - name: FiloSottile/age@v1.2.1 # Secrets
+  - name: sharkdp/bat@v0.25.0 # Viewers
+  - name: charmbracelet/glow@v2.1.0
+  - name: hpjansson/chafa@1.16.1
     registry: ethanjli/dotfiles
   - name: maaslalani/slides@v0.9.0
-  - name: dandavison/delta@0.17.0
-  - name: Wilfred/difftastic@0.58.0
-  - name: antonmedv/fx@35.0.0
+  - name: dandavison/delta@0.18.2
+  - name: Wilfred/difftastic@0.63.0
+  - name: antonmedv/fx@36.0.3
   - name: simeji/jid@v0.7.6
-  - name: sharkdp/hexyl@v0.14.0
-  - name: jesseduffield/lazydocker@v0.23.3 # Containers
-  - name: wagoodman/dive@v0.12.0
-  - name: google/go-containerregistry@v0.19.2
+  - name: sharkdp/hexyl@v0.16.0
+  - name: jesseduffield/lazydocker@v0.24.1 # Containers
+  - name: wagoodman/dive@v0.13.1
+  - name: google/go-containerregistry@v0.20.5
   - name: bcicen/ctop@v0.7.7
   - name: jqlang/jq@jq-1.7.1 # Parsing
-  - name: mikefarah/yq@v4.44.2
-  - name: wader/fq@v0.11.0
-  - name: johnkerl/miller@v6.12.0
+  - name: mikefarah/yq@v4.45.4
+  - name: wader/fq@v0.15.0
+  - name: johnkerl/miller@v6.13.0
   - name: tomnomnom/gron@v0.7.1
   - name: ericchiang/pup@v0.4.0
-  - name: aristocratos/btop@v1.3.2 # System Info & Dashboards
-  - name: Byron/dua-cli@v2.29.0
+  - name: aristocratos/btop@v1.4.3 # System Info & Dashboards
+  - name: Byron/dua-cli@v2.30.1
   - name: wtfutil/wtf@v0.43.0
   - name: dylanaraps/neofetch@7.1.0
-  - name: rs/curlie@v1.7.2 # HTTP
+  - name: rs/curlie@v1.8.2 # HTTP
   - name: asciimoo/wuzz@v0.5.0
-  - name: ekzhang/bore@v0.5.1 # Network
+  - name: ekzhang/bore@v0.5.3 # Network
   - name: yudai/gotty@v1.0.1
-  - name: veeso/termscp@v0.13.0
-  - name: svenstaro/miniserve@v0.27.1
-  - name: charmbracelet/skate@v0.2.2
+  - name: veeso/termscp@v0.17.0
+  - name: svenstaro/miniserve@v0.29.0
+  - name: charmbracelet/skate@v1.0.1
   - name: charmbracelet/charm@v0.12.6
-  - name: EdJoPaTo/mqttui@v0.21.0
+  - name: EdJoPaTo/mqttui@v0.22.1
   - name: ogham/dog@v0.1.0
   - name: sachaos/tcpterm@v0.0.2
   - name: gcla/termshark@v2.4.0

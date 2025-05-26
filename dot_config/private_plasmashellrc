@@ -32,6 +32,8 @@ source=wettercom|weather|Stanford, California, US|US0CA1069;Stanford
 [FileDialogSize]
 2 screens: Height=812
 2 screens: Width=1148
+3 screens: Height=752
+3 screens: Width=1128
 
 [General]
 Number of Actions=0

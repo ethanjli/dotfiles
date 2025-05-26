@@ -2,5 +2,5 @@
 
 server="$1"
 shift
-echo "$server" > "${XDG_RUNTIME_DIR:-$HOME/.cache/nvim}/nvim-last-server"
-nvim --server "${XDG_RUNTIME_DIR:-$HOME/.cache/nvim}/nvim-server-$server" --remote $@
+echo "$server" >"${XDG_RUNTIME_DIR:-$HOME/.cache/nvim}/nvim-last-server"
+nvim --server "${XDG_RUNTIME_DIR:-$HOME/.cache/nvim}/nvim-server-$server" --remote "$@"

@@ -1,6 +1,7 @@
 [Context]
 filesystems=xdg-config/gtk-4.0:ro;~/.icons:ro;
+unset-environment=QT_QPA_PLATFORMTHEME;
 
 [Environment]
-QT_QPA_PLATFORMTHEME=kde
+QT_QPA_PLATFORMTHEME=
 USE_POINTER_VIEWPORT=1

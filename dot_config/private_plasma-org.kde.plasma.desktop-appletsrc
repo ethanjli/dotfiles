@@ -127,7 +127,7 @@ fontFamily=Atkinson Hyperlegible
 fontSize=5
 fontStyleName=Bold
 fontWeight=700
-selectedTimeZones=America/Los_Angeles,Local,UTC,Europe/Paris,Asia/Taipei,Asia/Seoul,Asia/Tokyo
+selectedTimeZones=Asia/Seoul,Asia/Taipei,Asia/Tokyo,Europe/Paris,Local,America/Los_Angeles,UTC
 showWeekNumbers=true
 use24hFormat=2
 
@@ -263,7 +263,7 @@ plugin=org.kde.plasma.kickoff
 
 [Containments][200][Applets][201][Configuration]
 PreloadWeight=100
-popupHeight=519
+popupHeight=521
 popupWidth=828
 
 [Containments][200][Applets][201][Configuration][ConfigDialog]
@@ -273,7 +273,7 @@ DialogWidth=720
 [Containments][200][Applets][201][Configuration][General]
 alphaSort=true
 favoritesPortedToKAstats=true
-icon=/usr/share/icons/hicolor/scalable/distributor-logo-white.svg
+icon=/var/home/lietk12/.local/share/icons/applications/fedora-icon-white.svg
 systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
 
 [Containments][200][Applets][201][Configuration][Shortcuts]
@@ -318,6 +318,7 @@ groupingStrategy=0
 highlightWindows=false
 iconSpacing=3
 indicateAudioStreams=false
+interactiveMute=false
 launchers=
 showOnlyCurrentScreen=true
 showToolTips=false
@@ -415,6 +416,7 @@ plugin=org.kde.plasma.volume
 PreloadWeight=100
 
 [Containments][242][Applets][253][Configuration][General]
+currentTab=streams
 migrated=true
 
 [Containments][242][Applets][254]
@@ -511,15 +513,22 @@ visibilityUnit=2024
 [Containments][242][Applets][475][Configuration][WeatherStation]
 source=wettercom|weather|Stanford, California, US|US0CA1069;Stanford
 
+[Containments][242][Applets][477]
+immutability=1
+plugin=org.kde.merkuro.contact.applet
+
+[Containments][242][Applets][477][Configuration]
+PreloadWeight=55
+
 [Containments][242][ConfigDialog]
 DialogHeight=540
 DialogWidth=720
 
 [Containments][242][General]
-extraItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.vault,org.kde.plasma.volume,org.kde.plasma.printmanager,org.kde.plasma.battery,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.weather
-hiddenItems=SyncThingy,Discover Notifier_org.kde.DiscoverNotifier,crow-translate,org.kde.plasma.nightcolorcontrol,zoom,org.kde.plasma.clipboard,org.kde.plasma.bluetooth,Xwayland Video Bridge_pipewireToXProxy,Barrier,org.kde.kscreen,Portal,Plasma_microphone,1,Trayscale,org.kde.plasma.weather,org.kde.plasma.mediacontroller,org.kde.plasma.devicenotifier,steam,KTailctl
+extraItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.vault,org.kde.plasma.volume,org.kde.plasma.printmanager,org.kde.plasma.battery,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.weather,org.kde.merkuro.contact.applet
+hiddenItems=SyncThingy,Discover Notifier_org.kde.DiscoverNotifier,crow-translate,org.kde.plasma.nightcolorcontrol,zoom,org.kde.plasma.clipboard,org.kde.plasma.bluetooth,Xwayland Video Bridge_pipewireToXProxy,Barrier,org.kde.kscreen,Portal,Plasma_microphone,1,Trayscale,org.kde.plasma.weather,org.kde.plasma.mediacontroller,org.kde.plasma.devicenotifier,steam,KTailctl,org.kde.merkuro.contact.applet
 iconSpacing=6
-knownItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.vault,org.kde.plasma.volume,org.kde.plasma.brightness,org.kde.plasma.cameraindicator
+knownItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.vault,org.kde.plasma.volume,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.merkuro.contact.applet
 shownItems=org.kde.plasma.battery
 
 [Containments][242][Shortcuts]
@@ -577,7 +586,7 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][378][Applets][386][Configuration]
-PreloadWeight=75
+PreloadWeight=80
 
 [Containments][378][Applets][387]
 immutability=1
@@ -590,6 +599,9 @@ plugin=org.kde.plasma.vault
 [Containments][378][Applets][389]
 immutability=1
 plugin=org.kde.plasma.volume
+
+[Containments][378][Applets][389][Configuration]
+PreloadWeight=55
 
 [Containments][378][Applets][389][Configuration][General]
 migrated=true
@@ -635,17 +647,21 @@ immutability=1
 plugin=org.kde.plasma.brightness
 
 [Containments][378][Applets][426][Configuration]
-PreloadWeight=0
+PreloadWeight=1
+
+[Containments][378][Applets][478]
+immutability=1
+plugin=org.kde.merkuro.contact.applet
 
 [Containments][378][ConfigDialog]
 DialogHeight=540
 DialogWidth=720
 
 [Containments][378][General]
-extraItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.vault,org.kde.plasma.volume,org.kde.plasma.brightness,org.kde.plasma.cameraindicator
+extraItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.vault,org.kde.plasma.volume,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.merkuro.contact.applet
 hiddenItems=Barrier,Discover Notifier_org.kde.DiscoverNotifier,Xwayland Video Bridge_pipewireToXProxy,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.devicenotifier,org.kde.kdeconnect,org.kde.plasma.keyboardlayout,org.kde.plasma.networkmanagement,org.kde.plasma.printmanager,org.kde.plasma.clipboard,org.kde.plasma.nightcolorcontrol,org.kde.plasma.vault,Wallet Manager,SyncThingy,chrome_status_icon_1,1,Trayscale
 iconSpacing=6
-knownItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.vault,org.kde.plasma.volume,org.kde.plasma.brightness,org.kde.plasma.cameraindicator
+knownItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.vault,org.kde.plasma.volume,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.merkuro.contact.applet
 shownItems=org.kde.kscreen
 
 [Containments][446]
@@ -691,7 +707,7 @@ DialogHeight=1080
 DialogWidth=1884
 
 [Containments][447][General]
-positions={"1920x1080":[]}
+positions={"1920x1080":[],"800x600":[]}
 
 [Containments][447][Wallpaper][org.kde.image][General]
 Image=/home/lietk12/.local/share/wallpapers/World Trade Center station dark bluer.jpg
@@ -815,6 +831,9 @@ plugin=org.kde.kdeconnect
 immutability=1
 plugin=org.kde.kscreen
 
+[Containments][457][Applets][459][Configuration]
+PreloadWeight=55
+
 [Containments][457][Applets][460]
 immutability=1
 plugin=org.kde.plasma.cameraindicator
@@ -846,7 +865,7 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][457][Applets][466][Configuration]
-PreloadWeight=75
+PreloadWeight=90
 
 [Containments][457][Applets][467]
 immutability=1
@@ -868,7 +887,7 @@ immutability=1
 plugin=org.kde.plasma.brightness
 
 [Containments][457][Applets][470][Configuration]
-PreloadWeight=7
+PreloadWeight=100
 
 [Containments][457][Applets][471]
 immutability=1
@@ -889,21 +908,25 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][457][Applets][473][Configuration]
-PreloadWeight=18
+PreloadWeight=2
 
 [Containments][457][Applets][474]
 immutability=1
 plugin=org.kde.plasma.networkmanagement
+
+[Containments][457][Applets][479]
+immutability=1
+plugin=org.kde.merkuro.contact.applet
 
 [Containments][457][ConfigDialog]
 DialogHeight=540
 DialogWidth=720
 
 [Containments][457][General]
-extraItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.vault,org.kde.plasma.volume
-hiddenItems=SyncThingy,Xwayland Video Bridge_pipewireToXProxy,org.kde.plasma.bluetooth,org.kde.plasma.devicenotifier,org.kde.kdeconnect,org.kde.plasma.keyboardlayout,org.kde.plasma.networkmanagement,org.kde.plasma.battery,org.kde.plasma.printmanager,org.kde.plasma.clipboard,org.kde.plasma.vault,chrome_status_icon_1,steam
+extraItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.vault,org.kde.plasma.volume,org.kde.merkuro.contact.applet
+hiddenItems=SyncThingy,Xwayland Video Bridge_pipewireToXProxy,org.kde.plasma.bluetooth,org.kde.plasma.devicenotifier,org.kde.kdeconnect,org.kde.plasma.keyboardlayout,org.kde.plasma.networkmanagement,org.kde.plasma.battery,org.kde.plasma.printmanager,org.kde.plasma.clipboard,org.kde.plasma.vault,chrome_status_icon_1,steam,KTailctl,org.kde.merkuro.contact.applet
 iconSpacing=6
-knownItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.vault,org.kde.plasma.volume
+knownItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.vault,org.kde.plasma.volume,org.kde.merkuro.contact.applet
 shownItems=org.kde.kscreen
 
 [Containments][8][Applets][25][Configuration]

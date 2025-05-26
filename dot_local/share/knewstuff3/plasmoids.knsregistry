@@ -9,16 +9,17 @@
   <licence></licence>
   <version>v0.3</version>
   <rating>69</rating>
-  <downloads>5491</downloads>
+  <downloads>10744</downloads>
   <installedfile>/var/home/lietk12/.local/share/plasma/plasmoids/org.kde.plasma.plasm6desktopindicator/</installedfile>
   <id>2131462</id>
   <releasedate>2024-03-18</releasedate>
-  <summary>A minimal virtual desktop indicator to be used as an alternative for a Pager.</summary>
+  <summary>&lt;p>A minimal virtual desktop indicator to be used as an alternative for a Pager.&lt;/p>
+</summary>
   <changelog></changelog>
   <preview>https://images.pling.com/cache/100x100-0/img/00/00/62/52/79/2131462/screenshot-20240221-034215-2.png</preview>
   <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/62/52/79/2131462/screenshot-20240221-034215-2.png</previewBig>
   <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE3MTA3MjMxNzQiLCJvIjoiMSIsInMiOiJiZjQ2YzUyM2IzY2FmMTZjOTJmYTllMzk2YWZmZTM3Njk2MTM1ZjczMjI2YzFhZTY3NjU1NmVmNjk4MzM1MGRiNjZjOWU3NWUyMDhkMWI2Y2ZkMDY0MDM2NzM3MzRhZTllMDQ4MDk2OGRmZWUwY2JmNTk3Yjc4NTI4OTI2ZmYyYSIsInQiOjE3MTk4NzM3OTQsInN0ZnAiOm51bGwsInN0aXAiOiIxNzEuNjQuODMuMjQwIn0.Y-OMzIMVEELRcDL4DZ2KVivkKZvaN3RN7H8G_7PvZPs/v0.3.tar.gz</payload>
-  <tags>original-product,pager,plasma,unix,virtual-desktop,extension,linux,kde,kde-plasma,gplv3,applet</tags>
+  <tags>original-product,pager,plasma,plasma##majorversion=6,applet,linux,gplv3,kde,kde-plasma,extension,unix,virtual-desktop,widget</tags>
   <status>installed</status>
  </stuff>
  <stuff category="706">
@@ -29,36 +30,38 @@
   <licence></licence>
   <version>1.1</version>
   <rating>60</rating>
-  <downloads>2737</downloads>
+  <downloads>7315</downloads>
   <installedfile>/var/home/lietk12/.local/share/plasma/plasmoids/org.kde.panel.transparency.toggle/</installedfile>
   <id>2107649</id>
   <releasedate>2024-04-16</releasedate>
-  <summary>A plasma 6 widget to make desktop panel transaprent</summary>
+  <summary>&lt;p>A plasma 6 widget to make desktop panel transaprent&lt;/p>
+</summary>
   <changelog></changelog>
   <preview>https://images.pling.com/cache/100x100-0/img/00/00/75/03/12/2107649/screenshot-20231121-220911-21.png</preview>
   <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/75/03/12/2107649/screenshot-20231121-220911-21.png</previewBig>
   <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE3MTMzMDcxMDMiLCJvIjoiMSIsInMiOiJmNjc3ZjMyY2Q1OWEyMzY4M2MxNDIzMjdmZGYxMTc0MTA2ZmMwMzg3NmMzMzgwODNhZDgxODYwMTViYjIwYWEwMDU0N2IzZmE4ODYxOTVlYzJlODMxMjNhOGYwNDQ1MTdjYzMzZjViMTU3NjUyODRmZDFlNTJkODdiOTk0ZWRjYiIsInQiOjE3MTk4NzQ0MzEsInN0ZnAiOm51bGwsInN0aXAiOiIxNzEuNjQuODMuMjQwIn0.PYc5yDIHzFQhlYBPatO5qToyO_zXlo-OdQqLn4nnddU/content.plasmoid</payload>
-  <tags>extension,transparency,unix,kde,gplv2-later,linux,original-product,plasma,plasma6,plasmoid</tags>
+  <tags>widget,linux,original-product,transparency,plasma,plasma##majorversion=6,plasma6,plasmoid,unix,kde,gplv2-later,extension</tags>
   <status>installed</status>
  </stuff>
  <stuff category="706">
-  <name>Ginti</name>
+  <name>Ginti - Gnome Style Desktop Indicator</name>
   <providerid>api.kde-look.org</providerid>
   <author>dhruv8sh</author>
   <homepage>https://store.kde.org/p/2146553</homepage>
   <licence></licence>
-  <version>v0.4</version>
-  <rating>50</rating>
-  <downloads>708</downloads>
+  <version>v0.6</version>
+  <rating>61</rating>
+  <downloads>4380</downloads>
   <installedfile>/var/home/lietk12/.local/share/plasma/plasmoids/org.kde.plasma.ginti/</installedfile>
   <id>2146553</id>
-  <releasedate>2024-04-20</releasedate>
-  <summary>Desktop Indicator applet that uses Gnome Workspace switcher as an inspiration.</summary>
+  <releasedate>2024-07-06</releasedate>
+  <summary>&lt;p>Desktop Indicator applet that uses Gnome Workspace switcher as an inspiration.&lt;/p>
+</summary>
   <changelog></changelog>
-  <preview>https://images.pling.com/cache/100x100-0/img/00/00/62/52/79/2146553/screenshot-20240414-020220.png</preview>
-  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/62/52/79/2146553/screenshot-20240414-020220.png</previewBig>
-  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE3MTM2MDMyMDIiLCJvIjoiMSIsInMiOiJiNWU3NDA1NDk5Y2YzNzRlMzg5Y2ZiZTVmYzdlNWI1YjgwZTM2ZjBiMzRjM2M4MzY5NzZkMzZmMjQxNzQ2YTQ3M2JhMGU3OWVlNGRiNGE5YjNkNWM1NjIwMzNhZjI5ZjA1NDQ4MGZmYzkxMGMzMWZjZWQ1NDNiMzdlMjk4N2JmZCIsInQiOjE3MTk4NzUzMjIsInN0ZnAiOm51bGwsInN0aXAiOiIxNzEuNjQuODMuMjQwIn0.k0aw8vS5M-CxEyan69D4xdcb6hTV_tDdycxdH_xIhCQ/v0.5.tar.gz</payload>
-  <tags>unix,virtual-desktop,plasma,original-product,pager,workspace,workspaces,linux,gplv3,kde,desktop,extension</tags>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/62/52/79/2146553/screenshot-20240707-045916.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/62/52/79/2146553/screenshot-20240707-045916.png</previewBig>
+  <payload>https://files06.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTcxMzQ0OTIwMiwibyI6IjEiLCJzIjoiNDUyY2Y1ODk3ODQ1ODY3MGMyMTZhM2JlYjYwNmNkMDBiZTRiNDViY2EwZWRlODRiM2VkOTY4Y2Y5NGRkYTIyZTBlODBiYWU3YTFiOWEyMDhkN2EyYjAyOTY3MWU1Yzk1ZTRiNGM2ZDcyMDFlMDU5NDcyNzMyZTAzZWIzY2NhZTEiLCJ0IjoxNzQzNDM4MjgwLCJzdGZwIjpudWxsLCJzdGlwIjoiMTI4LjEyLjEyMi41OCJ9.hRpQABQDfGUY8Qu1rY-pFYZXUMWCpRNnknm8abu5oBw/v0.4.tar.gz</payload>
+  <tags>kde,desktop,extension,gplv3,linux,widget,workspace,workspaces,plasma##majorversion=6,plasma,original-product,pager,unix,virtual-desktop</tags>
   <status>installed</status>
  </stuff>
 </hotnewstuffregistry>
