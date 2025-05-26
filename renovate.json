@@ -6,6 +6,8 @@
   ],
   "packageRules": [
     {
+      "groupName": "all aqua dependencies",
+      "groupSlug": "all-aqua",
       "matchPackageNames": ["aquaproj/aqua-registry"],
       "extends": ["schedule:earlyMondays"],
       "automerge": true
