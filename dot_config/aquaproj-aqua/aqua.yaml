@@ -78,7 +78,7 @@ packages: # comments are added for the first package in each section
   #- name: jpbruinsslot/slack-term@v0.5.0
   - name: casey/just@1.40.0 # Command-running
   - name: watchexec/watchexec@v2.3.2
-  #- name: stateful/runme@v3.4.0
+  #- name: stateful/runme@v3.14.0
   - name: elkowar/pipr@v0.0.16
   - name: topgrade-rs/topgrade@v16.0.3 # Package management
   - name: pemistahl/grex@v1.4.5 # Help
