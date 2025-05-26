@@ -66,7 +66,7 @@ packages: # comments are added for the first package in each section
   #- name: ogham/dog@v0.1.0
   #- name: sachaos/tcpterm@v0.0.2
   #- name: gcla/termshark@v2.4.0
-  #- name: orf/gping@gping-v1.16.1
+  #- name: orf/gping@gping-v1.19.0
   #- name: fujiapple852/trippy@0.13.0
   #- name: imsnif/bandwhich@v0.22.2
   - name: rclone/rclone@v1.69.3 # File transfer
