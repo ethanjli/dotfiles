@@ -5,7 +5,7 @@ registries:
     type: github_content
     repo_owner: ethanjli
     repo_name: dotfiles
-    ref: master
+    ref: debf54198ffa051edf8ebf6936a1145892b211ae
     path: aqua-registry.yaml
 packages: # comments are added for the first package in each section
   - name: twpayne/chezmoi@v2.62.5
