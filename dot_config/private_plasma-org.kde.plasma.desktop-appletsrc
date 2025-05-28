@@ -647,7 +647,7 @@ immutability=1
 plugin=org.kde.plasma.brightness
 
 [Containments][378][Applets][426][Configuration]
-PreloadWeight=1
+PreloadWeight=5
 
 [Containments][378][Applets][478]
 immutability=1
@@ -685,7 +685,6 @@ positions={"2256x1504":[]}
 
 [Containments][446][Wallpaper][org.kde.image][General]
 Image=/home/lietk12/.local/share/wallpapers/World Trade Center station dark bluer.jpg
-PreviewImage=/home/lietk12/.local/share/wallpapers/World Trade Center station dark bluer.jpg
 SlidePaths=/home/lietk12/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][447]
@@ -887,7 +886,7 @@ immutability=1
 plugin=org.kde.plasma.brightness
 
 [Containments][457][Applets][470][Configuration]
-PreloadWeight=100
+PreloadWeight=97
 
 [Containments][457][Applets][471]
 immutability=1
