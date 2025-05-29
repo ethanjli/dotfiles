@@ -28,7 +28,7 @@ packages: # comments are added for the first package in each section
     registry: ethanjli/dotfiles
   - name: acheronfail/repgrep@0.16.1
   - name: jesseduffield/lazygit@v0.51.1 # Git
-  - name: cli/cli@v2.73.0
+  - name: cli/cli@v2.74.0
   - name: git-ecosystem/git-credential-manager@v2.6.1
     registry: ethanjli/dotfiles
   #- name: o2sh/onefetch@2.24.0
