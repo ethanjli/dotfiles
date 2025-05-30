@@ -416,7 +416,6 @@ plugin=org.kde.plasma.volume
 PreloadWeight=100
 
 [Containments][242][Applets][253][Configuration][General]
-currentTab=streams
 migrated=true
 
 [Containments][242][Applets][254]
@@ -647,7 +646,7 @@ immutability=1
 plugin=org.kde.plasma.brightness
 
 [Containments][378][Applets][426][Configuration]
-PreloadWeight=5
+PreloadWeight=15
 
 [Containments][378][Applets][478]
 immutability=1
@@ -886,7 +885,7 @@ immutability=1
 plugin=org.kde.plasma.brightness
 
 [Containments][457][Applets][470][Configuration]
-PreloadWeight=97
+PreloadWeight=100
 
 [Containments][457][Applets][471]
 immutability=1

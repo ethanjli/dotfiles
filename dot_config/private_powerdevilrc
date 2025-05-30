@@ -2,7 +2,6 @@
 TurnOffDisplayIdleTimeoutSec=1800
 
 [AC][SuspendAndShutdown]
-AutoSuspendAction=0
 AutoSuspendIdleTimeoutSec=3600
 PowerButtonAction=1
 SleepMode=3
