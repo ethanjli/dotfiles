@@ -34,7 +34,7 @@ packages: # comments are added for the first package in each section
   #- name: o2sh/onefetch@2.24.0
   - name: FiloSottile/age@v1.2.1 # Secrets
   - name: sharkdp/bat@v0.25.0 # Viewers
-  - name: charmbracelet/glow@v2.1.0
+  - name: charmbracelet/glow@v2.1.1
   - name: hpjansson/chafa@1.16.1
     registry: ethanjli/dotfiles
   #- name: maaslalani/slides@v0.9.0
