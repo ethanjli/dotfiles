@@ -10,7 +10,7 @@ registries:
 packages: # comments are added for the first package in each section
   - name: twpayne/chezmoi@v2.62.5
   - name: zellij-org/zellij@v0.42.2 # Shell
-  - name: JanDeDobbeleer/oh-my-posh@v25.23.3
+  - name: JanDeDobbeleer/oh-my-posh@v26.0.4
   - name: starship/starship@v1.23.0
   - name: atuinsh/atuin@v18.6.1
   - name: direnv/direnv@v2.36.0
