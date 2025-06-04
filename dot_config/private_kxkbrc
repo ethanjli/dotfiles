@@ -4,3 +4,8 @@ update_info=kxkb.upd:remove-empty-lists,kxkb.upd:add-back-resetoptions,kxkb_vari
 [Layout]
 Options=caps:escape_shifted_capslock
 ResetOldOptions=true
+LayoutList=us
+VariantList=
+DisplayNames=
+Use=true
+

@@ -76,7 +76,9 @@
   <Include>
    <Filename>com.google.Chrome.flextop.chrome-llkfimhffndenhoakoiokkecgkcdcljn-Default.desktop</Filename>
   </Include>
-  <Exclude/>
+  <Exclude>
+   <Filename>com.usebottles.bottles.desktop</Filename>
+  </Exclude>
   <Layout>
    <Merge type="files"/>
    <Filename>com.google.Chrome.flextop.chrome-llkfimhffndenhoakoiokkecgkcdcljn-Default.desktop</Filename>
@@ -86,7 +88,6 @@
    <Filename>org.libreoffice.LibreOffice.draw.desktop</Filename>
    <Filename>org.kde.okular.desktop</Filename>
    <Filename>com.github.flxzt.rnote.desktop</Filename>
-   <Filename>org.kde.skanpage.desktop</Filename>
    <Separator/>
    <Merge type="menus"/>
    <Menuname>More</Menuname>
@@ -234,10 +235,21 @@
   <Include>
    <Filename>org.kde.khelpcenter.desktop</Filename>
   </Include>
+  <Exclude>
+   <Filename>com.github.marktext.marktext.desktop</Filename>
+   <Filename>code.desktop</Filename>
+  </Exclude>
   <Layout>
    <Merge type="files"/>
+   <Filename>com.usebottles.bottles.desktop</Filename>
+   <Filename>org.fcitx.Fcitx5.desktop</Filename>
+   <Filename>fedora.desktop</Filename>
+   <Filename>kbd-layout-viewer5.desktop</Filename>
+   <Filename>planktoscope.desktop</Filename>
+   <Filename>org.gnome.Sysprof.desktop</Filename>
+   <Filename>tenearth.desktop</Filename>
+   <Filename>ubuntu.desktop</Filename>
    <Filename>org.kde.ark.desktop</Filename>
-   <Filename>org.gnome.DejaDup.desktop</Filename>
    <Filename>io.github.dvlv.boxbuddyrs.desktop</Filename>
    <Filename>org.kde.kclock.desktop</Filename>
    <Filename>Discourse.desktop</Filename>
@@ -248,17 +260,12 @@
    <Filename>org.raspberrypi.rpi-imager.desktop</Filename>
    <Filename>org.kde.kate.desktop</Filename>
    <Filename>org.kde.kcalc.desktop</Filename>
-   <Filename>org.kde.kcharselect.desktop</Filename>
    <Filename>org.kde.kfind.desktop</Filename>
    <Filename>org.kde.akonadiimportwizard.desktop</Filename>
    <Filename>io.github.seadve.Kooha.desktop</Filename>
    <Filename>org.kde.kwrite.desktop</Filename>
-   <Filename>org.localsend.localsend_app.desktop</Filename>
-   <Filename>com.github.marktext.marktext.desktop</Filename>
    <Filename>org.gnome.World.PikaBackup.desktop</Filename>
-   <Filename>solaar.desktop</Filename>
    <Filename>org.kde.spectacle.desktop</Filename>
-   <Filename>code.desktop</Filename>
    <Filename>io.github.flattool.Warehouse.desktop</Filename>
    <Filename>org.kde.kweather.desktop</Filename>
    <Filename>org.wezfurlong.wezterm.desktop</Filename>
@@ -278,6 +285,9 @@
   <Include>
    <Filename>org.libreoffice.LibreOffice.math.desktop</Filename>
    <Filename>org.kde.kate.desktop</Filename>
+   <Filename>com.usebottles.bottles.desktop</Filename>
+   <Filename>com.github.marktext.marktext.desktop</Filename>
+   <Filename>code.desktop</Filename>
   </Include>
  </Menu>
  <Menu>

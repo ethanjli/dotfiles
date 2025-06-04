@@ -8,8 +8,8 @@ return {
 		end,
 	},
 	"williamboman/mason.nvim",
-	"williamboman/mason-lspconfig.nvim",
 	"neovim/nvim-lspconfig",
+	"williamboman/mason-lspconfig.nvim",
 	{
 		"stevearc/conform.nvim",
 		event = { "BufWritePre" },

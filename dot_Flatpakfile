@@ -43,9 +43,9 @@ org.kde.kweather
 org.kde.okular
 org.kicad.KiCad
 org.libreoffice.LibreOffice
-org.mozilla.Thunderbird
 org.mozilla.firefox
 org.raspberrypi.rpi-imager
 org.videolan.VLC
 org.wezfurlong.wezterm
+org.zotero.Zotero
 us.zoom.Zoom

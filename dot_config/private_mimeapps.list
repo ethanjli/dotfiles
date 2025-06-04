@@ -1,6 +1,7 @@
 [Added Associations]
 application/json=Neovim.desktop;
 application/pdf=org.kde.okular.desktop;
+application/rtf=org.libreoffice.LibreOffice.writer.desktop;
 application/x-docbook+xml=Neovim.desktop;
 application/x-yaml=Neovim.desktop;
 application/xml=Neovim-3.desktop;Neovim-2.desktop;
@@ -29,6 +30,7 @@ x-scheme-handler/mailto=org.mozilla.Thunderbird.desktop;
 [Default Applications]
 application/json=Neovim.desktop;
 application/pdf=org.kde.okular.desktop;
+application/rtf=org.libreoffice.LibreOffice.writer.desktop;
 application/x-docbook+xml=Neovim.desktop;
 application/x-yaml=Neovim.desktop;
 application/xml=Neovim-3.desktop;
