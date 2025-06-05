@@ -62,7 +62,7 @@ packages: # comments are added for the first package in each section
   - name: ekzhang/bore@v0.5.3 # Network
   #- name: yudai/gotty@v1.0.1
   #- name: svenstaro/miniserve@v0.29.0
-  - name: EdJoPaTo/mqttui@v0.22.1
+  #- name: EdJoPaTo/mqttui@v0.22.1
   #- name: ogham/dog@v0.1.0
   #- name: sachaos/tcpterm@v0.0.2
   #- name: gcla/termshark@v2.4.0

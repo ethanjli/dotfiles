@@ -430,7 +430,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][242][Applets][255][Configuration]
-PreloadWeight=76
+PreloadWeight=81
 
 [Containments][242][Applets][256]
 immutability=1
@@ -482,7 +482,7 @@ immutability=1
 plugin=org.kde.plasma.brightness
 
 [Containments][242][Applets][429][Configuration]
-PreloadWeight=76
+PreloadWeight=86
 
 [Containments][242][Applets][429][Configuration][ConfigDialog]
 DialogHeight=540
