@@ -13,6 +13,7 @@ ignore = Path {lietk12/.local/share/ubuntu-toolbox/.cache}
 ignore = Path {lietk12/.local/share/nvim/mason/packages}
 ignore = Path {lietk12/.local/share/forklift/pallet}
 ignore = Path {lietk12/.local/share/forklift/stages}
+ignore = Path {lietk12/.local/share/Trash}
 ignore = Path {lietk12/.var/app/com.google.Chrome/cache/google-chrome/Default/Cache/Cache_Data}
 ignore = Path {lietk12/.var/app/com.google.Chrome/cache/google-chrome/Default/Code Cache}
 ignore = Path {lietk12/.var/app/com.google.Chrome/cache/google-chrome/Default/image_cache}
