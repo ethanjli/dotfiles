@@ -14,6 +14,7 @@ com.usebottles.bottles
 com.valvesoftware.Steam
 com.zettlr.Zettlr
 dev.vencord.Vesktop
+io.github.bcpierce00.unison
 io.github.dvlv.boxbuddyrs
 io.github.flattool.Warehouse
 io.github.seadve.Kooha
@@ -45,6 +46,7 @@ org.kicad.KiCad
 org.libreoffice.LibreOffice
 org.mozilla.firefox
 org.raspberrypi.rpi-imager
+org.sqlitebrowser.sqlitebrowser
 org.videolan.VLC
 org.wezfurlong.wezterm
 org.zotero.Zotero

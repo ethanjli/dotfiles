@@ -65,7 +65,7 @@ plugin=org.kde.plasma.kickoff
 [Containments][134][Applets][137][Configuration]
 PreloadWeight=100
 popupHeight=526
-popupWidth=752
+popupWidth=784
 
 [Containments][134][Applets][137][Configuration][ConfigDialog]
 DialogHeight=540
@@ -127,7 +127,7 @@ fontFamily=Atkinson Hyperlegible
 fontSize=5
 fontStyleName=Bold
 fontWeight=700
-selectedTimeZones=America/Los_Angeles,Local,UTC,Europe/Paris,Asia/Taipei,Asia/Seoul,Asia/Tokyo
+selectedTimeZones=Asia/Seoul,Asia/Taipei,Asia/Tokyo,Europe/Paris,Local,America/Los_Angeles,UTC
 showWeekNumbers=true
 use24hFormat=2
 
@@ -430,7 +430,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][242][Applets][255][Configuration]
-PreloadWeight=81
+PreloadWeight=69
 
 [Containments][242][Applets][256]
 immutability=1
@@ -482,7 +482,7 @@ immutability=1
 plugin=org.kde.plasma.brightness
 
 [Containments][242][Applets][429][Configuration]
-PreloadWeight=86
+PreloadWeight=76
 
 [Containments][242][Applets][429][Configuration][ConfigDialog]
 DialogHeight=540
@@ -751,7 +751,7 @@ plugin=org.kde.plasma.kickoff
 [Containments][451][Applets][452][Configuration]
 PreloadWeight=100
 popupHeight=522
-popupWidth=752
+popupWidth=782
 
 [Containments][451][Applets][452][Configuration][ConfigDialog]
 DialogHeight=540
@@ -886,7 +886,7 @@ immutability=1
 plugin=org.kde.plasma.brightness
 
 [Containments][457][Applets][470][Configuration]
-PreloadWeight=76
+PreloadWeight=49
 
 [Containments][457][Applets][471]
 immutability=1
