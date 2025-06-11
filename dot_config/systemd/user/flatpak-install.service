@@ -2,4 +2,4 @@
 Description=Install Flatpak applications from Flatpakfile
 
 [Service]
-ExecStart=sh -c "xargs flatpak install < ~/.Flatpakfile"
+ExecStart=sh -c "xargs flatpak install -y < ~/.Flatpakfile"
