@@ -25,6 +25,6 @@ ignore = Path {lietk12/.var/app/us.zoom.Zoom}
 ignore = Path {lietk12/.cargo}
 ignore = Path {lietk12/.npm}
 ignore = Path {lietk12/go/pkg/mod}
-ignore = Path {linuxbrew/.linuxbrew/Cellar}
+ignore = Path {linuxbrew}
 ignore = Path {pi}
 ignore = Path {lietk12/.unison}
