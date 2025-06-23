@@ -54,6 +54,7 @@ packages: # comments are added for the first package in each section
   #- name: tomnomnom/gron@v0.7.1
   #- name: ericchiang/pup@v0.4.0
   - name: aristocratos/btop@v1.4.3 # System Info & Dashboards
+  - name: Lifailon/lazyjournal@0.7.9
   #- name: Byron/dua-cli@v2.30.1
   #- name: wtfutil/wtf@v0.44.0
   - name: fastfetch-cli/fastfetch@2.46.0
