@@ -1,2 +1,2 @@
 [Context]
-filesystems=~/.local/share/icons;~/.local/share/applications;home
+filesystems=home
