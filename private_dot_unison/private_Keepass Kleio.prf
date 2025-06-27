@@ -1,0 +1,6 @@
+# Unison preferences
+fat = true
+ignore = Path {.stfolder}
+label = Back up Keepass databases to Kleio secrets
+root = /home/lietk12/.local/share/keepass
+root = /run/media/lietk12/Kleio/Backup/Secrets/Keepass
