@@ -1,6 +1,6 @@
 registries:
   - type: standard
-    ref: v4.381.0 # renovate: depName=aquaproj/aqua-registry
+    ref: v4.383.0 # renovate: depName=aquaproj/aqua-registry
   - name: ethanjli/dotfiles
     type: github_content
     repo_owner: ethanjli
@@ -10,14 +10,14 @@ registries:
 packages: # comments are added for the first package in each section
   - name: twpayne/chezmoi@v2.62.7
   - name: zellij-org/zellij@v0.42.2 # Shell
-  - name: JanDeDobbeleer/oh-my-posh@v26.12.0
+  - name: JanDeDobbeleer/oh-my-posh@v26.14.3
   - name: starship/starship@v1.23.0
   - name: atuinsh/atuin@v18.6.1
-  - name: direnv/direnv@v2.36.0
+  - name: direnv/direnv@v2.37.0
   - name: charmbracelet/gum@v0.16.2
   - name: gokcehan/lf@r35 # Navigation
   - name: ajeetdsouza/zoxide@v0.9.8
-  - name: junegunn/fzf@v0.63.0
+  - name: junegunn/fzf@v0.64.0
   - name: lsd-rs/lsd@v1.1.5
   - name: sharkdp/fd@v10.2.0
   - name: BurntSushi/ripgrep@14.1.1
@@ -27,15 +27,15 @@ packages: # comments are added for the first package in each section
   - name: neovim/neovim@v0.11.2 # Editing
     registry: ethanjli/dotfiles
   - name: acheronfail/repgrep@0.16.1
-  - name: jesseduffield/lazygit@v0.52.0 # Git
+  - name: jesseduffield/lazygit@v0.53.0 # Git
   - name: cli/cli@v2.74.2
   - name: git-ecosystem/git-credential-manager@v2.6.1
     registry: ethanjli/dotfiles
-  #- name: o2sh/onefetch@2.24.0
+  #- name: o2sh/onefetch@2.25.0
   - name: FiloSottile/age@v1.2.1 # Secrets
   - name: sharkdp/bat@v0.25.0 # Viewers
   - name: charmbracelet/glow@v2.1.1
-  - name: hpjansson/chafa@1.16.1
+  - name: hpjansson/chafa@1.16.2
     registry: ethanjli/dotfiles
   #- name: maaslalani/slides@v0.9.0
   - name: dandavison/delta@0.18.2
@@ -47,17 +47,17 @@ packages: # comments are added for the first package in each section
   - name: wagoodman/dive@v0.13.1
   - name: google/go-containerregistry@v0.20.6
   #- name: bcicen/ctop@v0.7.7
-  - name: jqlang/jq@jq-1.8.0 # Parsing
+  - name: jqlang/jq@jq-1.8.1 # Parsing
   - name: mikefarah/yq@v4.45.4
   #- name: wader/fq@v0.15.0
-  #- name: johnkerl/miller@v6.13.0
+  #- name: johnkerl/miller@v6.14.0
   #- name: tomnomnom/gron@v0.7.1
   #- name: ericchiang/pup@v0.4.0
-  - name: aristocratos/btop@v1.4.3 # System Info & Dashboards
+  - name: aristocratos/btop@v1.4.4 # System Info & Dashboards
   - name: Lifailon/lazyjournal@0.7.9
   #- name: Byron/dua-cli@v2.30.1
   #- name: wtfutil/wtf@v0.44.1
-  - name: fastfetch-cli/fastfetch@2.46.0
+  - name: fastfetch-cli/fastfetch@2.47.0
   #- name: rs/curlie@v1.8.2 # HTTP
   - name: asciimoo/wuzz@v0.5.0
   - name: ekzhang/bore@v0.6.0 # Network
@@ -77,7 +77,7 @@ packages: # comments are added for the first package in each section
   #- name: Builditluc/wiki-tui@v0.9.1
   #- name: Rigellute/spotify-tui@v0.25.0
   #- name: jpbruinsslot/slack-term@v0.5.0
-  - name: casey/just@1.40.0 # Command-running
+  - name: casey/just@1.41.0 # Command-running
   - name: watchexec/watchexec@v2.3.2
   #- name: stateful/runme@v3.14.2
   - name: elkowar/pipr@v0.0.16
