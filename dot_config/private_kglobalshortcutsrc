@@ -4,6 +4,11 @@ switch-to-activity-20702779-8c04-4fc1-b7b7-dbcfe8d9f80d=none,none,Switch to acti
 switch-to-activity-211327b6-e365-4f10-ac54-c66f4b1c5365=none,none,Switch to activity "Default"
 
 [KDE Keyboard Layout Switcher]
+Switch keyboard layout to English (US)=none,none,Switch keyboard layout to English (US)
+Switch keyboard layout to English (US, alt. intl.)=none,none,Switch keyboard layout to English (US\\, alt. intl.)
+Switch keyboard layout to English (intl., with AltGr dead keys)=none,none,Switch keyboard layout to English (intl.\\, with AltGr dead keys)
+Switch keyboard layout to EurKEY (US)=none,none,Switch keyboard layout to EurKEY (US)
+Switch keyboard layout to German, Swedish and Finnish (US)=none,none,Switch keyboard layout to German\\, Swedish and Finnish (US)
 Switch to Last-Used Keyboard Layout=Meta+Alt+L,Meta+Alt+L,Switch to Last-Used Keyboard Layout
 Switch to Next Keyboard Layout=none,Meta+Alt+K,Switch to Next Keyboard Layout
 _k_friendly_name=Keyboard Layout Switcher
@@ -11,12 +16,6 @@ _k_friendly_name=Keyboard Layout Switcher
 [kaccess]
 Toggle Screen Reader On and Off=none,Meta+Alt+S,Toggle Screen Reader On and Off
 _k_friendly_name=Accessibility
-
-[kcm_touchpad]
-Disable Touchpad=Touchpad Off,Touchpad Off,Disable Touchpad
-Enable Touchpad=Touchpad On,Touchpad On,Enable Touchpad
-Toggle Touchpad=Touchpad Toggle\tMeta+Ctrl+Zenkaku Hankaku,Touchpad Toggle\tTouchpad Toggle\tMeta+Ctrl+Touchpad Toggle\tMeta+Ctrl+Zenkaku Hankaku,Toggle Touchpad
-_k_friendly_name=Touchpad
 
 [khotkeys]
 _k_friendly_name=Custom Shortcuts Service
@@ -119,14 +118,14 @@ Switch to Screen to the Right=none,,Switch to Screen to the Right
 Toggle Night Color=none,none,Suspend/Resume Night Light
 Toggle Window Raise/Lower=Meta+Alt+S,,Toggle Window Raise/Lower
 ToggleCurrentThumbnail=Meta+F,Meta+Ctrl+T,Toggle Thumbnail for Current Window
-Walk Through Windows=Alt+Tab,Alt+Tab,Walk Through Windows
-Walk Through Windows (Reverse)=Alt+Shift+Backtab,Alt+Shift+Tab,Walk Through Windows (Reverse)
-Walk Through Windows Alternative=Meta+Tab,,Walk Through Windows Alternative
-Walk Through Windows Alternative (Reverse)=Meta+Shift+Backtab,,Walk Through Windows Alternative (Reverse)
-Walk Through Windows of Current Application=Alt+`,Alt+`,Walk Through Windows of Current Application
-Walk Through Windows of Current Application (Reverse)=Alt+~,Alt+~,Walk Through Windows of Current Application (Reverse)
-Walk Through Windows of Current Application Alternative=Meta+`,,Walk Through Windows of Current Application Alternative
-Walk Through Windows of Current Application Alternative (Reverse)=Meta+~,,Walk Through Windows of Current Application Alternative (Reverse)
+Walk Through Windows=Alt+Tab,Meta+Tab\tAlt+Tab,Walk Through Windows
+Walk Through Windows (Reverse)=Alt+Shift+Backtab,Meta+Shift+Tab\tAlt+Shift+Tab,Walk Through Windows (Reverse)
+Walk Through Windows Alternative=Meta+Tab,none,Walk Through Windows Alternative
+Walk Through Windows Alternative (Reverse)=Meta+Shift+Backtab,none,Walk Through Windows Alternative (Reverse)
+Walk Through Windows of Current Application=Alt+`,Meta+`\tAlt+`,Walk Through Windows of Current Application
+Walk Through Windows of Current Application (Reverse)=Alt+~,Meta+~\tAlt+~,Walk Through Windows of Current Application (Reverse)
+Walk Through Windows of Current Application Alternative=Meta+`,none,Walk Through Windows of Current Application Alternative
+Walk Through Windows of Current Application Alternative (Reverse)=Meta+~,none,Walk Through Windows of Current Application Alternative (Reverse)
 Window Above Other Windows=none,,Keep Window Above Others
 Window Below Other Windows=none,,Keep Window Below Others
 Window Close=Meta+Alt+Esc\tAlt+F4,Alt+F4,Close Window
@@ -260,6 +259,7 @@ activate widget 139=none,none,Activate System Tray Widget
 activate widget 201=none,none,Activate Application Launcher Widget
 activate widget 228=none,none,Activate Panel Transparency Button Widget
 activate widget 229=none,none,Activate Panel Transparency Button Widget
+activate widget 241=none,none,Activate System Tray Widget
 activate widget 242=Meta+Space,none,Activate System Tray Widget
 activate widget 28=none,none,Activate Application Launcher Widget
 activate widget 3=none,none,Activate Application Launcher Widget
@@ -268,6 +268,7 @@ activate widget 335=none,none,Activate Icons-only Task Manager Widget
 activate widget 337=none,none,Activate Icons-Only Task Manager Widget
 activate widget 343=Meta+Ctrl+Space,none,Activate Digital Clock Widget
 activate widget 439=none,none,Activate Ginti Widget
+activate widget 444=none,none,Activate Global Menu Widget
 activate widget 448=none,none,Activate Icons-Only Task Manager Widget
 activate widget 475=none,none,Activate Weather Report Widget
 activate widget 98=none,none,Activate Task Manager Widget
@@ -276,7 +277,7 @@ clipboard_action=none,Meta+Ctrl+X,Automatic Action Popup Menu
 cycle-panels=none,Meta+Alt+P,Move keyboard focus between panels
 cycleNextAction=none,,Next History Item
 cyclePrevAction=none,,Previous History Item
-edit_clipboard=none,none,Edit Contents…
+edit_clipboard=none,,Edit Contents…
 manage activities=none,Meta+Q,Show Activity Switcher
 next activity=none,Meta+Tab,Walk through activities
 previous activity=none,Meta+Shift+Tab,Walk through activities (Reverse)
@@ -332,6 +333,9 @@ _launch=Meta+.
 
 [services][org.kde.spectacle.desktop]
 _launch=Print
+
+[services][org.kde.touchpadshortcuts.desktop]
+ToggleTouchpad=Touchpad Toggle\tMeta+Ctrl+Zenkaku Hankaku
 
 [services][org.wezfurlong.wezterm.desktop]
 _launch=Meta+F5

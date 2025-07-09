@@ -12,6 +12,8 @@ com.slack.Slack
 com.spotify.Client
 com.usebottles.bottles
 com.valvesoftware.Steam
+com.yubico.yubioath
+com.yubico.yubioath
 com.zettlr.Zettlr
 dev.vencord.Vesktop
 io.github.bcpierce00.unison
@@ -42,6 +44,7 @@ org.kde.kdenlive
 org.kde.kolourpaint
 org.kde.kweather
 org.kde.okular
+org.keepassxc.KeePassXC
 org.kicad.KiCad
 org.libreoffice.LibreOffice
 org.mozilla.firefox
@@ -50,4 +53,5 @@ org.sqlitebrowser.sqlitebrowser
 org.videolan.VLC
 org.wezfurlong.wezterm
 org.zotero.Zotero
+rocks.koreader.KOReader
 us.zoom.Zoom

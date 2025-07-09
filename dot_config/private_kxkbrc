@@ -2,10 +2,9 @@
 update_info=kxkb.upd:remove-empty-lists,kxkb.upd:add-back-resetoptions,kxkb_variants.upd:split-variants
 
 [Layout]
-Options=caps:escape_shifted_capslock
+DisplayNames=,
+LayoutList=us,eu
+Options=caps:escape_shifted_compose,grp_led:caps,grp:shifts_toggle
 ResetOldOptions=true
-LayoutList=us
-VariantList=
-DisplayNames=
 Use=true
-
+VariantList=,
