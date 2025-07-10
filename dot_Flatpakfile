@@ -1,5 +1,6 @@
 cc.arduino.IDE2
 com.axosoft.GitKraken
+com.borgbase.Vorta
 com.calibre_ebook.calibre
 com.github.flxzt.rnote
 com.github.marktext.marktext
@@ -30,7 +31,6 @@ org.fedoraproject.MediaWriter
 org.fkoehler.KTailctl
 org.freedesktop.Bustle
 org.gnome.Boxes
-org.gnome.World.PikaBackup
 org.gnome.dspy
 org.inkscape.Inkscape
 org.jupyter.JupyterLab

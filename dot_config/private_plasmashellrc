@@ -48,7 +48,7 @@ Number of Actions=0
 klipperClearHistoryAskAgain=false
 
 [PIMEventsPlugin]
-calendars=8
+calendars=8,32,33
 
 [PlasmaViews][Panel 121]
 alignment=132

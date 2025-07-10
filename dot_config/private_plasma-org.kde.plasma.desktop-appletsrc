@@ -65,7 +65,7 @@ plugin=org.kde.plasma.kickoff
 [Containments][134][Applets][137][Configuration]
 PreloadWeight=100
 popupHeight=526
-popupWidth=752
+popupWidth=802
 
 [Containments][134][Applets][137][Configuration][ConfigDialog]
 DialogHeight=540
@@ -320,9 +320,10 @@ fontFamily=Atkinson Hyperlegible
 fontSize=5
 fontStyleName=Bold
 fontWeight=700
-selectedTimeZones=America/Los_Angeles,Local,UTC,Europe/Paris,Asia/Taipei,Asia/Seoul,Asia/Tokyo
+selectedTimeZones=America/Los_Angeles,Local,UTC,Europe/Berlin,Asia/Taipei,Asia/Tokyo
 showWeekNumbers=true
 use24hFormat=2
+wheelChangesTimezone=true
 
 [Containments][134][Applets][343][Configuration][ConfigDialog]
 DialogHeight=540
@@ -745,7 +746,7 @@ plugin=org.kde.plasma.kickoff
 [Containments][451][Applets][452][Configuration]
 PreloadWeight=100
 popupHeight=522
-popupWidth=752
+popupWidth=809
 
 [Containments][451][Applets][452][Configuration][ConfigDialog]
 DialogHeight=540
