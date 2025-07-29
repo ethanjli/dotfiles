@@ -1,6 +1,6 @@
 registries:
   - type: standard
-    ref: v4.390.0 # renovate: depName=aquaproj/aqua-registry
+    ref: v4.395.0 # renovate: depName=aquaproj/aqua-registry
   - name: ethanjli/dotfiles
     type: github_content
     repo_owner: ethanjli
@@ -8,16 +8,16 @@ registries:
     ref: debf54198ffa051edf8ebf6936a1145892b211ae
     path: aqua-registry.yaml
 packages: # comments are added for the first package in each section
-  - name: twpayne/chezmoi@v2.63.0
+  - name: twpayne/chezmoi@v2.63.1
   - name: zellij-org/zellij@v0.42.2 # Shell
-  - name: JanDeDobbeleer/oh-my-posh@v26.17.0
+  - name: JanDeDobbeleer/oh-my-posh@v26.17.2
   - name: starship/starship@v1.23.0
   - name: atuinsh/atuin@v18.7.1
   - name: direnv/direnv@v2.37.1
   - name: charmbracelet/gum@v0.16.2
   - name: gokcehan/lf@r35 # Navigation
   - name: ajeetdsouza/zoxide@v0.9.8
-  - name: junegunn/fzf@v0.64.0
+  - name: junegunn/fzf@v0.65.0
   - name: lsd-rs/lsd@v1.1.5
   - name: sharkdp/fd@v10.2.0
   - name: BurntSushi/ripgrep@14.1.1
@@ -28,7 +28,7 @@ packages: # comments are added for the first package in each section
     registry: ethanjli/dotfiles
   - name: acheronfail/repgrep@0.16.1
   - name: jesseduffield/lazygit@v0.53.0 # Git
-  - name: cli/cli@v2.76.0
+  - name: cli/cli@v2.76.1
   - name: git-ecosystem/git-credential-manager@v2.6.1
     registry: ethanjli/dotfiles
   #- name: o2sh/onefetch@2.25.0
@@ -48,7 +48,7 @@ packages: # comments are added for the first package in each section
   - name: google/go-containerregistry@v0.20.6
   #- name: bcicen/ctop@v0.7.7
   - name: jqlang/jq@jq-1.8.1 # Parsing
-  - name: mikefarah/yq@v4.46.1
+  - name: mikefarah/yq@v4.47.1
   #- name: wader/fq@v0.15.1
   #- name: johnkerl/miller@v6.14.0
   #- name: tomnomnom/gron@v0.7.1
@@ -77,7 +77,7 @@ packages: # comments are added for the first package in each section
   #- name: Builditluc/wiki-tui@v0.9.1
   #- name: Rigellute/spotify-tui@v0.25.0
   #- name: jpbruinsslot/slack-term@v0.5.0
-  - name: casey/just@1.42.3 # Command-running
+  - name: casey/just@1.42.4 # Command-running
   - name: watchexec/watchexec@v2.3.2
   #- name: stateful/runme@v3.15.0
   - name: elkowar/pipr@v0.0.16
