@@ -1,6 +1,6 @@
 registries:
   - type: standard
-    ref: v4.403.0 # renovate: depName=aquaproj/aqua-registry
+    ref: v4.404.0 # renovate: depName=aquaproj/aqua-registry
   - name: ethanjli/dotfiles
     type: github_content
     repo_owner: ethanjli
@@ -28,7 +28,7 @@ packages: # comments are added for the first package in each section
     registry: ethanjli/dotfiles
   - name: acheronfail/repgrep@0.16.1
   - name: jesseduffield/lazygit@v0.54.2 # Git
-  - name: cli/cli@v2.76.2
+  - name: cli/cli@v2.78.0
   - name: git-ecosystem/git-credential-manager@v2.6.1
     registry: ethanjli/dotfiles
   #- name: o2sh/onefetch@2.25.0
@@ -40,7 +40,7 @@ packages: # comments are added for the first package in each section
   #- name: maaslalani/slides@v0.9.0
   - name: dandavison/delta@0.18.2
   - name: Wilfred/difftastic@0.64.0
-  - name: antonmedv/fx@39.0.1
+  - name: antonmedv/fx@39.0.2
   - name: simeji/jid@v0.7.6
   #- name: sharkdp/hexyl@v0.16.0
   - name: jesseduffield/lazydocker@v0.24.1 # Containers
@@ -70,10 +70,10 @@ packages: # comments are added for the first package in each section
   #- name: orf/gping@gping-v1.20.1
   #- name: fujiapple852/trippy@0.13.0
   #- name: imsnif/bandwhich@v0.23.1
-  - name: rclone/rclone@v1.70.3 # File transfer
+  - name: rclone/rclone@v1.71.0 # File transfer
   - name: schollz/croc@v10.2.4
   - name: veeso/termscp@v0.18.0
-  #- name: zquestz/s@v0.7.3 # Web-ish
+  #- name: zquestz/s@v0.7.4 # Web-ish
   #- name: Builditluc/wiki-tui@v0.9.1
   #- name: Rigellute/spotify-tui@v0.25.0
   #- name: jpbruinsslot/slack-term@v0.5.0
