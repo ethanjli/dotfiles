@@ -17,6 +17,7 @@ com.yubico.yubioath
 com.yubico.yubioath
 com.zettlr.Zettlr
 dev.vencord.Vesktop
+fr.handbrake.ghb
 io.github.bcpierce00.unison
 io.github.dvlv.boxbuddyrs
 io.github.flattool.Warehouse
@@ -25,6 +26,7 @@ io.missioncenter.MissionCenter
 io.podman_desktop.PodmanDesktop
 md.obsidian.Obsidian
 me.iepure.devtoolbox
+no.mifi.losslesscut
 org.chromium.Chromium
 org.cockpit_project.CockpitClient
 org.fedoraproject.MediaWriter

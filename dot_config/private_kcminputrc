@@ -36,6 +36,9 @@ PointerAcceleration=-0.200
 ScrollFactor=1.5
 ScrollMethod=4
 
+[Libinput][9580][109][Tablet Monitor Stylus]
+OutputName=DP-3
+
 [Mouse]
 X11LibInputXAccelProfileFlat=true
 cursorTheme=PearDarkCursors

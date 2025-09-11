@@ -8,6 +8,7 @@ DefaultProfile=Host.profile
 [DetailsMode]
 HighlightEntireRow=false
 IconSize=32
+PreviewSize=32
 SidePadding=0
 
 [General]
@@ -21,7 +22,7 @@ ViewPropsTimestamp=2024,11,30,21,57,5.777
 
 [IconsMode]
 IconSize=22
-PreviewSize=32
+PreviewSize=192
 
 [KFileDialog Settings]
 Places Icons Auto-resize=false
