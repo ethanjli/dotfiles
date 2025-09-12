@@ -9,6 +9,7 @@ CharacterRunnerEnabled=false
 DictionaryEnabled=false
 appstreamEnabled=false
 baloosearchEnabled=true
+bazaarrunnerEnabled=false
 bookmarksEnabled=true
 browserhistoryEnabled=false
 browsertabsEnabled=false

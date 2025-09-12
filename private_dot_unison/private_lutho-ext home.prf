@@ -1,12 +1,13 @@
 # Unison preferences
+label = Back up lutho to lutho-ext
 root = /home
 root = /run/media/lietk12/aurora_lutho/home00
-
 ignore = Path {lietk12/.cache}
 ignore = Path {lietk12/.local/share/containers/storage/volumes}
 ignore = Path {lietk12/.local/share/containers/storage/overlay}
 ignore = Path {lietk12/.local/share/containers/storage/overlay-containers}
 ignore = Path {lietk12/.local/share/fedora-toolbox/.cache}
+ignore = Path {lietk12/.local/share/planktoscope/data}
 ignore = Path {lietk12/.local/share/planktoscope-toolbox/.cache}
 ignore = Path {lietk12/.local/share/tenearth-toolbox/.cache}
 ignore = Path {lietk12/.local/share/ubuntu-toolbox/.cache}
@@ -26,5 +27,6 @@ ignore = Path {lietk12/.cargo}
 ignore = Path {lietk12/.npm}
 ignore = Path {lietk12/go/pkg/mod}
 ignore = Path {linuxbrew}
+ignore = Path {kleio}
 ignore = Path {pi}
 ignore = Path {lietk12/.unison}
