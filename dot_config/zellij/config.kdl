@@ -1,170 +1,335 @@
 keybinds clear-defaults=true {
-  locked {
-    bind "Alt i" { SwitchToMode "Normal"; }
-  }
-  shared_except "locked" {
-    bind "Alt i" { SwitchToMode "locked"; }
-
-    bind "Alt =" { Resize "Increase"; }
-    bind "Alt -" { Resize "Decrease"; }
-
-    bind "Alt y" { ToggleFloatingPanes; }
-    bind "Alt Y" { TogglePaneEmbedOrFloating; }
-    bind "Alt p" { ToggleFocusFullscreen; }
-    bind "Alt P" { TogglePaneFrames; }
-
-    bind "Alt [" { PreviousSwapLayout; }
-    bind "Alt ]" { NextSwapLayout; }
-
-    bind "Alt 1" { GoToTab 1; }
-    bind "Alt 2" { GoToTab 2; }
-    bind "Alt 3" { GoToTab 3; }
-    bind "Alt 4" { GoToTab 4; }
-    bind "Alt 5" { GoToTab 5; }
-    bind "Alt 6" { GoToTab 6; }
-    bind "Alt 7" { GoToTab 7; }
-    bind "Alt 8" { GoToTab 8; }
-    bind "Alt 9" { GoToTab 9; }
-
-    bind "Down" "Ctrl e" { ScrollDown; }
-    bind "Up" "Ctrl y" { ScrollUp; }
-    bind "Ctrl d" { HalfPageScrollDown; }
-    bind "Ctrl u" { HalfPageScrollUp; }
-    bind "Ctrl f" "PageDown" { PageScrollDown; }
-    bind "Ctrl b" "PageUp" { PageScrollUp; }
-    bind "Home" { ScrollToTop; }
-    bind "End" { ScrollToBottom; }
-
-    bind "Alt q" { Detach; }
-    bind "Alt Z" {
-      SwitchToMode "locked";
-      LaunchOrFocusPlugin "zj-quit" {
-        floating true
-        move_to_focused_tab true
-      };
+    locked {
+        bind "Alt i" {
+            SwitchToMode "Normal"
+        }
     }
-
-    bind "Alt ?" {
-      SwitchToMode "locked";
-      LaunchOrFocusPlugin "zellij-forgot" {
-        floating true
-        move_to_focused_tab true
-      }
+    shared_except "locked" {
+        bind "Alt i" {
+            SwitchToMode "locked"
+        }
+        bind "Alt =" {
+            Resize "Increase"
+        }
+        bind "Alt -" {
+            Resize "Decrease"
+        }
+        bind "Alt y" {
+            ToggleFloatingPanes
+        }
+        bind "Alt Y" {
+            TogglePaneEmbedOrFloating
+        }
+        bind "Alt p" {
+            ToggleFocusFullscreen
+        }
+        bind "Alt P" {
+            TogglePaneFrames
+        }
+        bind "Alt [" {
+            PreviousSwapLayout
+        }
+        bind "Alt ]" {
+            NextSwapLayout
+        }
+        bind "Alt 1" {
+            GoToTab 1
+        }
+        bind "Alt 2" {
+            GoToTab 2
+        }
+        bind "Alt 3" {
+            GoToTab 3
+        }
+        bind "Alt 4" {
+            GoToTab 4
+        }
+        bind "Alt 5" {
+            GoToTab 5
+        }
+        bind "Alt 6" {
+            GoToTab 6
+        }
+        bind "Alt 7" {
+            GoToTab 7
+        }
+        bind "Alt 8" {
+            GoToTab 8
+        }
+        bind "Alt 9" {
+            GoToTab 9
+        }
+        bind "Down" "Ctrl e" {
+            ScrollDown
+        }
+        bind "Up" "Ctrl y" {
+            ScrollUp
+        }
+        bind "Ctrl d" {
+            HalfPageScrollDown
+        }
+        bind "Ctrl u" {
+            HalfPageScrollUp
+        }
+        bind "Ctrl f" "PageDown" {
+            PageScrollDown
+        }
+        bind "Ctrl b" "PageUp" {
+            PageScrollUp
+        }
+        bind "Home" {
+            ScrollToTop
+        }
+        bind "End" {
+            ScrollToBottom
+        }
+        bind "Alt q" {
+            Detach
+        }
+        bind "Alt Z" {
+            SwitchToMode "locked"
+            LaunchOrFocusPlugin "zj-quit" {
+                floating true
+                move_to_focused_tab true
+            }
+        }
+        bind "Alt ?" {
+            SwitchToMode "locked"
+            LaunchOrFocusPlugin "zellij-forgot" {
+                floating true
+                move_to_focused_tab true
+            }
+        }
     }
-  }
-  shared_except "locked" "pane" "tab" {
-    bind "Alt L" "Alt J" { GoToNextTab; }
-    bind "Alt H" "Alt K" { GoToPreviousTab; }
-  }
-  shared_except "locked" "resize" "tab" {
-    bind "Alt j" { MoveFocus "Down"; }
-    bind "Alt k" { MoveFocus "Up"; }
-    bind "Alt h" { MoveFocus "Left"; }
-    bind "Alt l" { MoveFocus "Right"; }
-  }
-  shared_except "locked" "renamepane" "renametab" "entersearch" {
-    bind "Esc" { SwitchToMode "locked"; }
-
-    bind "Alt O" {
-      SwitchToMode "locked";
-      LaunchOrFocusPlugin "zellij:session-manager" {
-        floating true
-        move_to_focused_tab true
-      };
+    shared_except "locked" "pane" "tab" {
+        bind "Alt L" "Alt J" {
+            GoToNextTab
+        }
+        bind "Alt H" "Alt K" {
+            GoToPreviousTab
+        }
     }
-    bind "Alt e" { SwitchToMode "locked"; EditScrollback;  }
-    bind "Alt ." { SwitchToMode "Scroll"; }
-    bind "Alt /" { SwitchToMode "EnterSearch"; SearchInput 0; }
-  }
-  shared_except "pane" "locked" "renamepane" "renametab" "entersearch" {
-    bind "Alt u" { SwitchToMode "Pane"; }
-  }
-  shared_except "tab" "locked" "renamepane" "renametab" "entersearch" {
-    bind "Alt o" { SwitchToMode "Tab"; }
-  }
-
-  pane {
-    bind "Alt u" { NewPane; }
-    bind "Alt d" { CloseFocus; }
-
-    bind "Alt r" { TogglePaneFrames; SwitchToMode "RenamePane"; PaneNameInput 0; }
-    bind "Alt R" { SwitchToMode "Resize"; }
-
-    bind "Alt J" { MovePane "Down"; }
-    bind "Alt K" { MovePane "Up"; }
-    bind "Alt H" { MovePane "Left"; }
-    bind "Alt L" { MovePane "Right"; }
-  }
-  renamepane {
-    bind "Enter" "Ctrl d" { SwitchToMode "Pane"; TogglePaneFrames; }
-    bind "Esc" "Ctrl c" { UndoRenamePane; SwitchToMode "Locked"; TogglePaneFrames; }
-  }
-
-  resize {
-    bind "Alt j" { Resize "Increase Down"; }
-    bind "Alt J" { Resize "Decrease Down"; }
-    bind "Alt k" { Resize "Increase Up"; }
-    bind "Alt K" { Resize "Decrease Up"; }
-    bind "Alt h" { Resize "Increase Left"; }
-    bind "Alt H" { Resize "Decrease Left"; }
-    bind "Alt l" { Resize "Increase Right"; }
-    bind "Alt L" { Resize "Decrease Right"; }
-  }
-
-  tab {
-    bind "Alt r" { SwitchToMode "RenameTab"; TabNameInput 0; }
-    bind "Alt o" { NewTab; SwitchToMode "Tab"; }
-    bind "Alt d" { CloseTab; }
-
-    bind "Alt l" "Alt j" { GoToNextTab; }
-    bind "Alt h" "Alt k" { GoToPreviousTab; }
-    bind "Alt H" { MoveTab "Left"; }
-    bind "Alt L" { MoveTab "Right"; }
-    bind "Alt J" { BreakPaneLeft; }
-    bind "Alt K" { BreakPaneRight; }
-  }
-  renametab {
-    bind "Enter" "Ctrl d" { SwitchToMode "Tab"; }
-    bind "Esc" "Ctrl c" { UndoRenameTab; SwitchToMode "Locked"; }
-  }
-
-  shared_among "scroll" "search" {
-    bind "Ctrl c" { ScrollToBottom; SwitchToMode "Normal"; }
-
-    bind "j" { ScrollDown; }
-    bind "k" { ScrollUp; }
-    bind "g" { ScrollToTop; }
-    bind "G" { ScrollToBottom; }
-
-    bind "n" { Search "down"; }
-    bind "N" { Search "up"; }
-    bind "c" { SearchToggleOption "CaseSensitivity"; }
-    bind "w" { SearchToggleOption "Wrap"; }
-    bind "W" { SearchToggleOption "WholeWord"; }
-  }
-  entersearch {
-    bind "Enter" "Ctrl d" { SwitchToMode "Search"; }
-    bind "Ctrl c" { SwitchToMode "Normal"; }
-  }
+    shared_except "locked" "resize" "tab" {
+        bind "Alt j" {
+            MoveFocus "Down"
+        }
+        bind "Alt k" {
+            MoveFocus "Up"
+        }
+        bind "Alt h" {
+            MoveFocus "Left"
+        }
+        bind "Alt l" {
+            MoveFocus "Right"
+        }
+    }
+    shared_except "locked" "renamepane" "renametab" "entersearch" {
+        bind "Esc" {
+            SwitchToMode "locked"
+        }
+        bind "Alt O" {
+            SwitchToMode "locked"
+            LaunchOrFocusPlugin "zellij:session-manager" {
+                floating true
+                move_to_focused_tab true
+            }
+        }
+        bind "Alt I" {
+            SwitchToMode "locked"
+            LaunchOrFocusPlugin "zellij:share" {
+                floating true
+                move_to_focused_tab true
+            }
+        }
+        bind "Alt e" {
+            SwitchToMode "locked"
+            EditScrollback
+        }
+        bind "Alt ." {
+            SwitchToMode "Scroll"
+        }
+        bind "Alt /" {
+            SwitchToMode "EnterSearch"
+            SearchInput 0
+        }
+    }
+    shared_except "pane" "locked" "renamepane" "renametab" "entersearch" {
+        bind "Alt u" {
+            SwitchToMode "Pane"
+        }
+    }
+    shared_except "tab" "locked" "renamepane" "renametab" "entersearch" {
+        bind "Alt o" {
+            SwitchToMode "Tab"
+        }
+    }
+    pane {
+        bind "Alt u" {
+            NewPane
+        }
+        bind "Alt U" {
+            NewPane "stacked"
+        }
+        bind "Alt d" {
+            CloseFocus
+        }
+        bind "Alt r" {
+            TogglePaneFrames
+            SwitchToMode "RenamePane"
+            PaneNameInput 0
+        }
+        bind "Alt R" {
+            SwitchToMode "Resize"
+        }
+        bind "Alt J" {
+            MovePane "Down"
+        }
+        bind "Alt K" {
+            MovePane "Up"
+        }
+        bind "Alt H" {
+            MovePane "Left"
+        }
+        bind "Alt L" {
+            MovePane "Right"
+        }
+    }
+    renamepane {
+        bind "Enter" "Ctrl d" {
+            SwitchToMode "Pane"
+            TogglePaneFrames
+        }
+        bind "Esc" "Ctrl c" {
+            UndoRenamePane
+            SwitchToMode "Locked"
+            TogglePaneFrames
+        }
+    }
+    resize {
+        bind "Alt j" {
+            Resize "Increase Down"
+        }
+        bind "Alt J" {
+            Resize "Decrease Down"
+        }
+        bind "Alt k" {
+            Resize "Increase Up"
+        }
+        bind "Alt K" {
+            Resize "Decrease Up"
+        }
+        bind "Alt h" {
+            Resize "Increase Left"
+        }
+        bind "Alt H" {
+            Resize "Decrease Left"
+        }
+        bind "Alt l" {
+            Resize "Increase Right"
+        }
+        bind "Alt L" {
+            Resize "Decrease Right"
+        }
+    }
+    tab {
+        bind "Alt r" {
+            SwitchToMode "RenameTab"
+            TabNameInput 0
+        }
+        bind "Alt o" {
+            NewTab
+            SwitchToMode "Tab"
+        }
+        bind "Alt d" {
+            CloseTab
+        }
+        bind "Alt l" "Alt j" {
+            GoToNextTab
+        }
+        bind "Alt h" "Alt k" {
+            GoToPreviousTab
+        }
+        bind "Alt H" {
+            MoveTab "Left"
+        }
+        bind "Alt L" {
+            MoveTab "Right"
+        }
+        bind "Alt J" {
+            BreakPaneLeft
+        }
+        bind "Alt K" {
+            BreakPaneRight
+        }
+    }
+    renametab {
+        bind "Enter" "Ctrl d" {
+            SwitchToMode "Tab"
+        }
+        bind "Esc" "Ctrl c" {
+            UndoRenameTab
+            SwitchToMode "Locked"
+        }
+    }
+    shared_among "scroll" "search" {
+        bind "Ctrl c" {
+            ScrollToBottom
+            SwitchToMode "Normal"
+        }
+        bind "j" {
+            ScrollDown
+        }
+        bind "k" {
+            ScrollUp
+        }
+        bind "g" {
+            ScrollToTop
+        }
+        bind "G" {
+            ScrollToBottom
+        }
+        bind "n" {
+            Search "down"
+        }
+        bind "N" {
+            Search "up"
+        }
+        bind "c" {
+            SearchToggleOption "CaseSensitivity"
+        }
+        bind "w" {
+            SearchToggleOption "Wrap"
+        }
+        bind "W" {
+            SearchToggleOption "WholeWord"
+        }
+    }
+    entersearch {
+        bind "Enter" "Ctrl d" {
+            SwitchToMode "Search"
+        }
+        bind "Ctrl c" {
+            SwitchToMode "Normal"
+        }
+    }
 }
-
 plugins {
-  tab-bar location="zellij:tab-bar"
-  status-bar location="zellij:status-bar"
-  strider location="zellij:strider"
-  compact-bar location="zellij:compact-bar"
-  session-manager location="zellij:session-manager"
-  welcome-screen location="zellij:session-manager" {
-    welcome_screen true
-  }
-  filepicker location="zellij:strider" {
-    cwd "/"
-  }
-  zj-quit location="file:~/.local/share/zellij/plugins/zj-quit.wasm"
-  zellij-forgot location="file:~/.local/share/zellij/plugins/zellij-forgot.wasm"
-  zjstatus location="file:~/.local/share/zellij/plugins/zjstatus.wasm"
+    tab-bar location="zellij:tab-bar"
+    status-bar location="zellij:status-bar"
+    strider location="zellij:strider"
+    compact-bar location="zellij:compact-bar"
+    share location="zellij:share"
+    session-manager location="zellij:session-manager"
+    welcome-screen location="zellij:session-manager" {
+        welcome_screen true
+    }
+    filepicker location="zellij:strider" {
+        cwd "/"
+    }
+    zj-quit location="file:~/.local/share/zellij/plugins/zj-quit.wasm"
+    zellij-forgot location="file:~/.local/share/zellij/plugins/zellij-forgot.wasm"
+    zjstatus location="file:~/.local/share/zellij/plugins/zjstatus.wasm"
 }
-
 // Choose what to do when zellij receives SIGTERM, SIGINT, SIGQUIT or SIGHUP
 // eg. when terminal window with an active zellij session is closed
 // Options:
@@ -172,92 +337,82 @@ plugins {
 //   - quit
 //
 // on_force_close "quit"
-
 //  Send a request for a simplified ui (without arrow fonts) to plugins
 //  Options:
 //    - true
 //    - false (Default)
 //
 // simplified_ui true
-
 // Choose the path to the default shell that zellij will use for opening new panes
 // Default: $SHELL
 //
 // default_shell "fish"
-
 // Choose the path to override cwd that zellij will use for opening new panes
 //
 // default_cwd ""
-
 // Toggle between having pane frames around the panes
 // Options:
 //   - true (default)
 //   - false
 //
 pane_frames false
-
 // Toggle between having Zellij lay out panes according to a predefined set of layouts whenever possible
 // Options:
 //   - true (default)
 //   - false
 //
 // auto_layout true
-
 // Whether sessions should be serialized to the cache folder (including their tabs/panes, cwds and running commands) so that they can later be resurrected
 // Options:
 //   - true (default)
 //   - false
 //
 // session_serialization false
-
 // Whether pane viewports are serialized along with the session, default is false
 // Options:
 //   - true
 //   - false (default)
 serialize_pane_viewport true
-
 // Scrollback lines to serialize along with the pane viewport when serializing sessions, 0
 // defaults to the scrollback size. If this number is higher than the scrollback size, it will
 // also default to the scrollback size. This does nothing if `serialize_pane_viewport` is not true.
 //
 // scrollback_lines_to_serialize 10000
-
 // Define color themes for Zellij
 // For more examples, see: https://github.com/zellij-org/zellij/tree/main/example/themes
 // Once these themes are defined, one of them should to be selected in the "theme" section of this file
 //
 themes {
-  one-dark-nuanced {
-    fg "#abb2bf"
-    bg "#323842"
-    // black "#1e2227" // from the official One Dark colorscheme
-    black "#1e222a" // integrate with KDE Plasma's One Dark colorscheme
-    red "#e06c75"
-    green "#98c379"
-    yellow "#e5c07b"
-    blue "#61afef"
-    magenta "#c678dd"
-    cyan "#56b6c2"
-    white "#d4d8df"
-    orange "#d19a66" // from https://github.com/monsonjeremy/onedark.nvim/blob/master/lua/onedark/colors.lua
-  }
+    one-dark-nuanced {
+        fg "#abb2bf"
+        bg "#323842"
+        // from the official One Dark colorscheme:
+        // black "#1e2227"
+        // integrate with KDE Plasma's One Dark colorscheme:
+        black "#1e222a"
+        red "#e06c75"
+        green "#98c379"
+        yellow "#e5c07b"
+        blue "#61afef"
+        magenta "#c678dd"
+        cyan "#56b6c2"
+        white "#d4d8df"
+        // from https://github.com/monsonjeremy/onedark.nvim/blob/master/lua/onedark/colors.lua:
+        orange "#d19a66"
+    }
 }
-
 // Choose the theme that is specified in the themes section.
 // Default: default
 //
 theme "one-dark-nuanced"
-
 // The name of the default layout to load on startup
 // Default: "default"
 //
 default_layout "basic"
-
 // Choose the mode that zellij uses when starting up.
 // Default: normal
 //
 default_mode "locked"
-
 // Toggle enabling the mouse mode.
 // On certain configurations, or terminals this could
 // potentially interfere with copying text.
@@ -266,8 +421,7 @@ default_mode "locked"
 //   - false
 //
 mouse_mode true
-
-// Configure the scroll back buffer size
+ // Configure the scroll back buffer size
 // This is the number of lines zellij stores for each pane in the scroll back
 // buffer. Excess number of lines are discarded in a FIFO fashion.
 // Valid values: positive integers
@@ -324,3 +478,4 @@ mouse_mode true
 // Default: true
 //
 // styled_underlines false
+
