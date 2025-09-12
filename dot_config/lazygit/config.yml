@@ -17,3 +17,4 @@ git:
     - git log --graph --all --color=always --abbrev-commit --decorate --date=relative  --pretty='format:%h%d%n%s%n'
 os:
   editPreset: nvim
+  shellFunctionsFile: ~/.config/bash/integrations.basic.bash
