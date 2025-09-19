@@ -6,6 +6,7 @@ Icon=/var/home/lietk12/.local/share/icons/applications/zellij.png
 Name=Zellij
 NoDisplay=false
 Path=
+PrefersNonDefaultGPU=false
 StartupNotify=true
 Terminal=true
 TerminalOptions=

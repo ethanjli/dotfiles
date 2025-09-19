@@ -2,7 +2,7 @@
 update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-effect-to-js,kwin.upd:port-scale-effect-to-js,kwin.upd:port-dimscreen-effect-to-js,kwin.upd:auto-bordersize,kwin.upd:animation-speed,kwin.upd:desktop-grid-click-behavior,kwin.upd:no-swap-encourage,kwin.upd:make-translucency-effect-disabled-by-default,kwin.upd:remove-flip-switch-effect,kwin.upd:remove-cover-switch-effect,kwin.upd:remove-cubeslide-effect,kwin.upd:remove-xrender-backend,kwin.upd:enable-scale-effect-by-default,kwin.upd:overview-group-plugin-id,kwin.upd:animation-speed-cleanup,kwin.upd:replace-cascaded-zerocornered
 
 [Activities][LastVirtualDesktop]
-211327b6-e365-4f10-ac54-c66f4b1c5365=0ead2dec-4d9d-4a66-9469-90285d8229aa
+211327b6-e365-4f10-ac54-c66f4b1c5365=de5b4f4b-b47b-4a10-b44f-d66914196398
 
 [Compositing]
 LatencyPolicy=Medium
@@ -54,6 +54,8 @@ EnableTextCaretTracking=true
 
 [NightColor]
 Active=true
+LatitudeAuto=50.11
+LongitudeAuto=8.68
 Mode=Times
 NightTemperature=3000
 
