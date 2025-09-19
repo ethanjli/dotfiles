@@ -49,6 +49,7 @@ org.kde.okular
 org.keepassxc.KeePassXC
 org.kicad.KiCad
 org.libreoffice.LibreOffice
+org.localsend.localsend_app
 org.mozilla.firefox
 org.raspberrypi.rpi-imager
 org.sqlitebrowser.sqlitebrowser
