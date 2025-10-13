@@ -1,6 +1,6 @@
 registries:
   - type: standard
-    ref: v4.421.0 # renovate: depName=aquaproj/aqua-registry
+    ref: v4.427.0 # renovate: depName=aquaproj/aqua-registry
   - name: ethanjli/dotfiles
     type: github_content
     repo_owner: ethanjli
@@ -8,17 +8,17 @@ registries:
     ref: debf54198ffa051edf8ebf6936a1145892b211ae
     path: aqua-registry.yaml
 packages: # comments are added for the first package in each section
-  - name: twpayne/chezmoi@v2.65.2
+  - name: twpayne/chezmoi@v2.66.0
   - name: zellij-org/zellij@v0.43.1 # Shell
-  - name: JanDeDobbeleer/oh-my-posh@v27.1.0
+  - name: JanDeDobbeleer/oh-my-posh@v27.2.0
   - name: starship/starship@v1.23.0
   - name: atuinsh/atuin@v18.8.0
   - name: direnv/direnv@v2.37.1
   - name: charmbracelet/gum@v0.17.0
   - name: gokcehan/lf@r35 # Navigation
   - name: ajeetdsouza/zoxide@v0.9.8
-  - name: junegunn/fzf@v0.65.2
-  - name: lsd-rs/lsd@v1.1.5
+  - name: junegunn/fzf@v0.66.0
+  - name: lsd-rs/lsd@v1.2.0
   - name: sharkdp/fd@v10.3.0
   - name: BurntSushi/ripgrep@14.1.1
   - name: phiresky/ripgrep-all@v0.10.9
@@ -48,7 +48,7 @@ packages: # comments are added for the first package in each section
   - name: google/go-containerregistry@v0.20.6
   #- name: bcicen/ctop@v0.7.7
   - name: jqlang/jq@jq-1.8.1 # Parsing
-  - name: mikefarah/yq@v4.47.2
+  - name: mikefarah/yq@v4.48.1
   #- name: wader/fq@v0.15.1
   #- name: johnkerl/miller@v6.15.0
   #- name: tomnomnom/gron@v0.7.1
@@ -79,7 +79,7 @@ packages: # comments are added for the first package in each section
   #- name: jpbruinsslot/slack-term@v0.5.0
   - name: casey/just@1.43.0 # Command-running
   - name: watchexec/watchexec@v2.3.2
-  #- name: stateful/runme@v3.15.3
+  #- name: stateful/runme@v3.15.4
   - name: elkowar/pipr@v0.0.16
   - name: topgrade-rs/topgrade@v16.0.4 # Package management
   - name: pemistahl/grex@v1.4.5 # Help
