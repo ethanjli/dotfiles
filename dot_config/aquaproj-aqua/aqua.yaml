@@ -20,7 +20,7 @@ packages: # comments are added for the first package in each section
   - name: junegunn/fzf@v0.66.0
   - name: lsd-rs/lsd@v1.2.0
   - name: sharkdp/fd@v10.3.0
-  - name: BurntSushi/ripgrep@14.1.1
+  - name: BurntSushi/ripgrep@15.0.0
   - name: phiresky/ripgrep-all@v0.10.9
   - name: konradsz/igrep@v1.3.0
   - name: sharkdp/vivid@v0.10.1
