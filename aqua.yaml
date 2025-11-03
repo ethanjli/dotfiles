@@ -8,15 +8,15 @@
 #   - all
 registries:
   - type: standard
-    ref: v4.430.0 # renovate: depName=aquaproj/aqua-registry
+    ref: v4.432.0 # renovate: depName=aquaproj/aqua-registry
   - name: local
     type: local
     path: aqua-registry.yaml
 packages:
-  - name: twpayne/chezmoi@v2.66.1
+  - name: twpayne/chezmoi@v2.67.0
   - name: hpjansson/chafa@1.16.2
     registry: local
   - name: git-ecosystem/git-credential-manager@v2.6.1
     registry: local
-  - name: neovim/neovim@v0.11.4
+  - name: neovim/neovim@v0.11.5
     registry: local
