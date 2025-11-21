@@ -4,7 +4,7 @@ update_info=kxkb.upd:remove-empty-lists,kxkb.upd:add-back-resetoptions,kxkb_vari
 [Layout]
 DisplayNames=,
 LayoutList=eu,us
-Options=grp_led:caps,grp:alts_toggle,lv3:ralt_switch,shift:breaks_caps,caps:escape_shifted_compose
+Options=grp_led:caps,grp:alts_toggle,shift:breaks_caps,caps:escape_shifted_compose,lv3:switch,lv3:menu_switch
 ResetOldOptions=true
 Use=true
 VariantList=,

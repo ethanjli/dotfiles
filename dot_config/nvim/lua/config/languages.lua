@@ -128,8 +128,9 @@ lspconfig.golangci_lint_ls.setup({
 		command = {
 			"golangci-lint",
 			"run",
-			"--out-format",
-			"json",
+			"--output.json.path",
+			"stdout",
+			"--show-stats=false",
 			"--issues-exit-code=1",
 		},
 	},
@@ -219,6 +220,15 @@ lspconfig.autotools_ls.setup({})
 -- JSON/YAML/TOML/etc.
 lspconfig.yamlls.setup({})
 lspconfig.taplo.setup({})
+
+-- Linters
+
+local mti = require("mason-tool-installer")
+mti.setup({
+	ensure_installed = {
+		"djlint",
+	},
+})
 
 -- Formatters
 

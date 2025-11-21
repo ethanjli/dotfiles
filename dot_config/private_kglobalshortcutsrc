@@ -11,18 +11,18 @@ Switch keyboard layout to English (intl., with AltGr dead keys)=none,none,Switch
 Switch keyboard layout to EurKEY (US)=none,none,Switch keyboard layout to EurKEY (US)
 Switch keyboard layout to German, Swedish and Finnish (US)=none,none,Switch keyboard layout to German\\, Swedish and Finnish (US)
 Switch to Last-Used Keyboard Layout=Meta+Alt+L,Meta+Alt+L,Switch to Last-Used Keyboard Layout
-Switch to Next Keyboard Layout=,Meta+Alt+K,Switch to Next Keyboard Layout
+Switch to Next Keyboard Layout=none,Meta+Alt+K,Switch to Next Keyboard Layout
 _k_friendly_name=Keyboard Layout Switcher
 
 [com.google.Chrome]
-B2622989C5D4EA0A8DE52062745FAA28-open-dashboard=,none,Open dashboard
-B2622989C5D4EA0A8DE52062745FAA28-open-dashboard-with-running-scripts=,none,Open dashboard with the current tab's URL used as filter
-B2622989C5D4EA0A8DE52062745FAA28-open-new-script=,none,Open new script tab
-B2622989C5D4EA0A8DE52062745FAA28-toggle-enable=,none,Toggle enable state
-BC4B52C4F29F5E35A293E1D646D5A708-clear-item-selections=,none,Clear selection
-BC4B52C4F29F5E35A293E1D646D5A708-save-session=,none,Save tabs
-F47A9781FE0D251F16A56E7DE1E07E91-enter-picker-mode=,none,Create a custom filter
-F47A9781FE0D251F16A56E7DE1E07E91-enter-zapper-mode=,none,Remove an element
+B2622989C5D4EA0A8DE52062745FAA28-open-dashboard=none,none,Open dashboard
+B2622989C5D4EA0A8DE52062745FAA28-open-dashboard-with-running-scripts=none,none,Open dashboard with the current tab's URL used as filter
+B2622989C5D4EA0A8DE52062745FAA28-open-new-script=none,none,Open new script tab
+B2622989C5D4EA0A8DE52062745FAA28-toggle-enable=none,none,Toggle enable state
+BC4B52C4F29F5E35A293E1D646D5A708-clear-item-selections=none,none,Clear selection
+BC4B52C4F29F5E35A293E1D646D5A708-save-session=none,none,Save tabs
+F47A9781FE0D251F16A56E7DE1E07E91-enter-picker-mode=none,none,Create a custom filter
+F47A9781FE0D251F16A56E7DE1E07E91-enter-zapper-mode=none,none,Remove an element
 _k_friendly_name=Google Chrome
 
 [kaccess]
@@ -165,7 +165,7 @@ Window One Screen Down=none,,Move Window One Screen Down
 Window One Screen Up=none,,Move Window One Screen Up
 Window One Screen to the Left=none,,Move Window One Screen to the Left
 Window One Screen to the Right=none,,Move Window One Screen to the Right
-Window Operations Menu=Alt+F3,Alt+F3,Window Operations Menu
+Window Operations Menu=Alt+F3,Alt+F3,Window Menu
 Window Pack Down=none,,Move Window Down
 Window Pack Left=none,,Move Window Left
 Window Pack Right=none,,Move Window Right
@@ -180,7 +180,7 @@ Window Quick Tile Top Left=Meta+Shift+Q,,Quick Tile Window to the Top Left
 Window Quick Tile Top Right=Meta+Shift+E,,Quick Tile Window to the Top Right
 Window Raise=none,,Raise Window
 Window Resize=Meta+Ctrl+/,,Resize Window
-Window Shade=none,,Shade Window
+Window Shade=none,none,Shade Window
 Window Shrink Horizontal=none,,Shrink Window Horizontally
 Window Shrink Vertical=none,,Shrink Window Vertically
 Window to Desktop 1=Meta+Alt+!,,Window to Desktop 1
@@ -249,6 +249,7 @@ _k_friendly_name=Power Management
 powerProfile=Battery\tMeta+B,Battery\tMeta+B,Switch Power Profile
 
 [plasmashell]
+Slideshow Wallpaper Next Image=none,,Next Wallpaper Image
 _k_friendly_name=plasmashell
 activate application launcher=Meta\tAlt+F1,Meta\tAlt+F1,Activate Application Launcher
 activate task manager entry 1=Meta+1,Meta+1,Activate Task Manager Entry 1
@@ -312,6 +313,9 @@ _launch=Meta+F4
 
 [services][com.google.Chrome.desktop]
 new-window=Meta+F1
+
+[services][dev.getaurora.aurora-docs.desktop]
+_launch=none
 
 [services][io.crow_translate.CrowTranslate.desktop]
 Open=none

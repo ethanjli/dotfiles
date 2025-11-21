@@ -147,6 +147,9 @@ PreloadWeight=100
 immutability=1
 plugin=org.kde.plasma.printmanager
 
+[Containments][134][Applets][241][Applets][251][Configuration]
+PreloadWeight=55
+
 [Containments][134][Applets][241][Applets][252]
 immutability=1
 plugin=org.kde.plasma.vault
@@ -177,14 +180,14 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][134][Applets][241][Applets][255][Configuration]
-PreloadWeight=83
+PreloadWeight=100
 
 [Containments][134][Applets][241][Applets][256]
 immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][134][Applets][241][Applets][256][Configuration]
-PreloadWeight=5
+PreloadWeight=0
 
 [Containments][134][Applets][241][Applets][257]
 immutability=1
@@ -226,7 +229,7 @@ immutability=1
 plugin=org.kde.plasma.brightness
 
 [Containments][134][Applets][241][Applets][429][Configuration]
-PreloadWeight=74
+PreloadWeight=76
 
 [Containments][134][Applets][241][Applets][429][Configuration][ConfigDialog]
 DialogHeight=540
@@ -254,7 +257,9 @@ temperatureUnit=6002
 visibilityUnit=2024
 
 [Containments][134][Applets][241][Applets][475][Configuration][WeatherStation]
-source=wettercom|weather|Stanford, California, US|US0CA1069;Stanford
+placeDisplayName=Stanford, California, US
+placeInfo=place|Stanford, California, US|extra|US0CA1069;Stanford
+provider=wettercom
 
 [Containments][134][Applets][241][Applets][477]
 immutability=1
@@ -271,8 +276,8 @@ DialogWidth=720
 PreloadWeight=100
 
 [Containments][134][Applets][241][General]
-extraItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.vault,org.kde.plasma.volume,org.kde.plasma.printmanager,org.kde.plasma.battery,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.weather,org.kde.merkuro.contact.applet
-hiddenItems=SyncThingy,Discover Notifier_org.kde.DiscoverNotifier,crow-translate,org.kde.plasma.nightcolorcontrol,zoom,org.kde.plasma.clipboard,org.kde.plasma.bluetooth,Xwayland Video Bridge_pipewireToXProxy,Barrier,org.kde.kscreen,Portal,Plasma_microphone,1,Trayscale,org.kde.plasma.weather,org.kde.plasma.mediacontroller,org.kde.plasma.devicenotifier,steam,KTailctl,org.kde.merkuro.contact.applet,Vorta
+extraItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.vault,org.kde.plasma.volume,org.kde.plasma.printmanager,org.kde.plasma.battery,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.weather,org.kde.merkuro.contact.applet,org.kde.plasma.keyboardlayout
+hiddenItems=SyncThingy,Discover Notifier_org.kde.DiscoverNotifier,crow-translate,org.kde.plasma.nightcolorcontrol,zoom,org.kde.plasma.clipboard,org.kde.plasma.bluetooth,Xwayland Video Bridge_pipewireToXProxy,Barrier,org.kde.kscreen,Portal,Plasma_microphone,1,Trayscale,org.kde.plasma.weather,org.kde.plasma.mediacontroller,org.kde.plasma.devicenotifier,steam,KTailctl,org.kde.merkuro.contact.applet,Vorta,org.kde.plasma.keyboardlayout
 iconSpacing=6
 knownItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.vault,org.kde.plasma.volume,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.merkuro.contact.applet,org.kde.plasma.weather
 shownItems=org.kde.plasma.battery
@@ -306,7 +311,7 @@ plugin=org.kde.plasma.digitalclock
 
 [Containments][134][Applets][343][Configuration]
 PreloadWeight=100
-popupHeight=450
+popupHeight=451
 popupWidth=810
 
 [Containments][134][Applets][343][Configuration][Appearance]
@@ -321,7 +326,7 @@ fontFamily=Atkinson Hyperlegible
 fontSize=5
 fontStyleName=Bold
 fontWeight=700
-selectedTimeZones=Asia/Taipei,Asia/Tokyo,Europe/Berlin,UTC,America/Los_Angeles,Local
+selectedTimeZones=Asia/Taipei,Europe/Berlin,Asia/Tokyo,UTC,America/New_York,America/Los_Angeles,Local
 showWeekNumbers=true
 use24hFormat=2
 wheelChangesTimezone=true
@@ -560,6 +565,9 @@ PreloadWeight=0
 immutability=1
 plugin=org.kde.plasma.networkmanagement
 
+[Containments][200][Applets][377][Applets][391][Configuration]
+PreloadWeight=42
+
 [Containments][200][Applets][377][Applets][392]
 immutability=1
 plugin=org.kde.plasma.nightcolorcontrol
@@ -590,7 +598,7 @@ immutability=1
 plugin=org.kde.plasma.brightness
 
 [Containments][200][Applets][377][Applets][426][Configuration]
-PreloadWeight=5
+PreloadWeight=0
 
 [Containments][200][Applets][377][Applets][478]
 immutability=1
@@ -845,7 +853,7 @@ immutability=1
 plugin=org.kde.plasma.brightness
 
 [Containments][451][Applets][456][Applets][470][Configuration]
-PreloadWeight=70
+PreloadWeight=14
 
 [Containments][451][Applets][456][Applets][471]
 immutability=1
@@ -871,6 +879,9 @@ PreloadWeight=0
 [Containments][451][Applets][456][Applets][474]
 immutability=1
 plugin=org.kde.plasma.networkmanagement
+
+[Containments][451][Applets][456][Applets][474][Configuration]
+PreloadWeight=42
 
 [Containments][451][Applets][456][Applets][479]
 immutability=1

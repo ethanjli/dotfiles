@@ -10,6 +10,7 @@ return {
 	"williamboman/mason.nvim",
 	"neovim/nvim-lspconfig",
 	"williamboman/mason-lspconfig.nvim",
+	"WhoIsSethDaniel/mason-tool-installer.nvim",
 	{
 		"stevearc/conform.nvim",
 		event = { "BufWritePre" },

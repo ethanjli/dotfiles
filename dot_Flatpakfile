@@ -1,7 +1,9 @@
+au.stevetech.yafi
 cc.arduino.IDE2
 com.axosoft.GitKraken
 com.borgbase.Vorta
 com.calibre_ebook.calibre
+com.github.PintaProject.Pinta
 com.github.flxzt.rnote
 com.github.marktext.marktext
 com.github.tchx84.Flatseal
@@ -21,12 +23,14 @@ fr.handbrake.ghb
 io.github.bcpierce00.unison
 io.github.dvlv.boxbuddyrs
 io.github.flattool.Warehouse
+io.github.kolunmi.Bazaar
 io.github.seadve.Kooha
 io.missioncenter.MissionCenter
 io.podman_desktop.PodmanDesktop
 md.obsidian.Obsidian
 me.iepure.devtoolbox
 no.mifi.losslesscut
+org.angryip.ipscan
 org.chromium.Chromium
 org.cockpit_project.CockpitClient
 org.fedoraproject.MediaWriter
@@ -55,6 +59,7 @@ org.raspberrypi.rpi-imager
 org.sqlitebrowser.sqlitebrowser
 org.videolan.VLC
 org.wezfurlong.wezterm
+org.wireshark.Wireshark
 org.zotero.Zotero
 rocks.koreader.KOReader
 us.zoom.Zoom
