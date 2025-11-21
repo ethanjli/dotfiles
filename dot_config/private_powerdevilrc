@@ -14,9 +14,9 @@ PowerButtonAction=1
 SleepMode=3
 
 [BatteryManagement]
-BatteryCriticalAction=1
-BatteryCriticalLevel=20
-BatteryLowLevel=30
+BatteryCriticalAction=8
+BatteryCriticalLevel=30
+BatteryLowLevel=40
 
 [LowBattery][Display]
 DisplayBrightness=0
