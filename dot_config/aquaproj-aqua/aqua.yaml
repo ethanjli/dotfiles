@@ -1,6 +1,6 @@
 registries:
   - type: standard
-    ref: v4.436.0 # renovate: depName=aquaproj/aqua-registry
+    ref: v4.439.0 # renovate: depName=aquaproj/aqua-registry
   - name: ethanjli/dotfiles
     type: github_content
     repo_owner: ethanjli
@@ -48,7 +48,7 @@ packages: # comments are added for the first package in each section
   - name: google/go-containerregistry@v0.20.6
   #- name: bcicen/ctop@v0.7.7
   - name: jqlang/jq@jq-1.8.1 # Parsing
-  - name: mikefarah/yq@v4.48.2
+  - name: mikefarah/yq@v4.49.1
   #- name: wader/fq@v0.15.1
   #- name: johnkerl/miller@v6.15.0
   #- name: tomnomnom/gron@v0.7.1
@@ -70,8 +70,8 @@ packages: # comments are added for the first package in each section
   #- name: orf/gping@gping-v1.20.1
   #- name: fujiapple852/trippy@0.13.0
   #- name: imsnif/bandwhich@v0.23.1
-  - name: rclone/rclone@v1.71.2 # File transfer
-  - name: schollz/croc@v10.2.7
+  - name: rclone/rclone@v1.72.0 # File transfer
+  - name: schollz/croc@v10.3.1
   - name: veeso/termscp@v0.19.0
   #- name: zquestz/s@v0.7.4 # Web-ish
   #- name: Builditluc/wiki-tui@v0.9.1
@@ -79,13 +79,13 @@ packages: # comments are added for the first package in each section
   #- name: jpbruinsslot/slack-term@v0.5.0
   - name: casey/just@1.43.1 # Command-running
   - name: watchexec/watchexec@v2.3.2
-  #- name: stateful/runme@v3.15.4
+  #- name: stateful/runme@v3.16.1
   - name: elkowar/pipr@v0.0.16
-  - name: topgrade-rs/topgrade@v16.2.1 # Package management
+  - name: topgrade-rs/topgrade@v16.4.2 # Package management
   - name: pemistahl/grex@v1.4.6 # Help
   - name: dbrgn/tealdeer@v1.8.1
   #- name: printfn/fend@v1.5.7 # Miscellaneous
   #- name: sharkdp/pastel@v0.11.0
-  - name: sharkdp/hyperfine@v1.19.0
+  - name: sharkdp/hyperfine@v1.20.0
   #- name: ouch-org/ouch@0.6.1
   #- name: TaKO8Ki/gobang@v0.1.0-alpha.5
