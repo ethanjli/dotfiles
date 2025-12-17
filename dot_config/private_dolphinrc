@@ -11,6 +11,10 @@ IconSize=32
 PreviewSize=32
 SidePadding=0
 
+[FileDialogSize]
+2 screens: Height=587
+2 screens: Width=994
+
 [General]
 ConfirmClosingMultipleTabs=false
 DoubleClickViewAction=CUSTOM_COMMAND

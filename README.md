@@ -93,9 +93,7 @@ All general-purpose CLI tools are installed and version-managed with
 [prerequisites](#prerequisites) section which can be installed via Homebrew as part of the setup
 process described below.
 
-This repository also keeps track of the Flatpak apps installed on the system via a Brewfile-like
-"Flatpakfile" (in `~/.Flatpakfile`). `~/.Brewfile` and `~/.Flatpakfile` are both automatically
-updated according to the system's actual configuration upon every user login.
+This repository also keeps track of the Flatpak apps installed on the system in the Brewfile (in `~/.Brewfile`).
 
 
 ## Setup

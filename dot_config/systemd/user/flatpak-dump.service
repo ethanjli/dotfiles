@@ -1,8 +1,0 @@
-[Unit]
-Description=Dump Flatpak configuration to Flatpakfile
-
-[Service]
-ExecStart=sh -c "flatpak list --app --columns=application > ~/.Flatpakfile"
-
-[Install]
-WantedBy=default.target
