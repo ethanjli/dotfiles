@@ -229,7 +229,7 @@ immutability=1
 plugin=org.kde.plasma.brightness
 
 [Containments][134][Applets][241][Applets][429][Configuration]
-PreloadWeight=76
+PreloadWeight=100
 
 [Containments][134][Applets][241][Applets][429][Configuration][ConfigDialog]
 DialogHeight=540
@@ -326,14 +326,14 @@ fontFamily=Atkinson Hyperlegible
 fontSize=5
 fontStyleName=Bold
 fontWeight=700
-selectedTimeZones=Asia/Taipei,Europe/Berlin,Asia/Tokyo,UTC,America/New_York,America/Los_Angeles,Local
+selectedTimeZones=America/Los_Angeles,America/New_York,Local,UTC,Europe/Berlin,Asia/Taipei,Asia/Tokyo
 showWeekNumbers=true
 use24hFormat=2
 wheelChangesTimezone=true
 
 [Containments][134][Applets][343][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
+DialogHeight=1459
+DialogWidth=1118
 
 [Containments][134][Applets][343][Shortcuts]
 global=Meta+Ctrl+Space
@@ -677,6 +677,7 @@ SlidePaths=/home/lietk12/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][447]
 ItemGeometries-1097x617=
+ItemGeometries-1280x720=
 ItemGeometries-1280x800=
 ItemGeometries-1422x800=
 ItemGeometries-1920x1080=
@@ -730,7 +731,7 @@ activityId=
 formfactor=3
 immutability=1
 lastScreen=1
-location=6
+location=5
 plugin=org.kde.panel
 wallpaperplugin=org.kde.image
 
@@ -853,7 +854,7 @@ immutability=1
 plugin=org.kde.plasma.brightness
 
 [Containments][451][Applets][456][Applets][470][Configuration]
-PreloadWeight=14
+PreloadWeight=34
 
 [Containments][451][Applets][456][Applets][471]
 immutability=1
