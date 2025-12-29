@@ -1,6 +1,6 @@
 registries:
   - type: standard
-    ref: v4.446.0 # renovate: depName=aquaproj/aqua-registry
+    ref: v4.449.0 # renovate: depName=aquaproj/aqua-registry
   - name: ethanjli/dotfiles
     type: github_content
     repo_owner: ethanjli
@@ -10,7 +10,7 @@ registries:
 packages: # comments are added for the first package in each section
   - name: twpayne/chezmoi@v2.68.1
   - name: zellij-org/zellij@v0.43.1 # Shell
-  - name: JanDeDobbeleer/oh-my-posh@v28.5.0
+  - name: JanDeDobbeleer/oh-my-posh@v28.7.0
   - name: starship/starship@v1.24.1
   - name: atuinsh/atuin@v18.10.0
   - name: direnv/direnv@v2.37.1
@@ -32,7 +32,7 @@ packages: # comments are added for the first package in each section
   - name: git-ecosystem/git-credential-manager@v2.6.1
     registry: ethanjli/dotfiles
   #- name: o2sh/onefetch@2.26.1
-  - name: FiloSottile/age@v1.2.1 # Secrets
+  - name: FiloSottile/age@v1.3.1 # Secrets
   - name: sharkdp/bat@v0.26.1 # Viewers
   - name: charmbracelet/glow@v2.1.1
   - name: hpjansson/chafa@1.18.0
@@ -53,8 +53,8 @@ packages: # comments are added for the first package in each section
   #- name: johnkerl/miller@v6.15.0
   #- name: tomnomnom/gron@v0.7.1
   #- name: ericchiang/pup@v0.4.0
-  - name: aristocratos/btop@v1.4.5 # System Info & Dashboards
-  - name: Lifailon/lazyjournal@0.8.2
+  - name: aristocratos/btop@v1.4.6 # System Info & Dashboards
+  - name: Lifailon/lazyjournal@0.8.3
   #- name: Byron/dua-cli@v2.32.2
   #- name: wtfutil/wtf@v0.48.0
   - name: fastfetch-cli/fastfetch@2.56.1
