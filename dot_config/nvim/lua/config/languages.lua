@@ -28,6 +28,7 @@ require("mason-lspconfig").setup({
 		"golangci_lint_ls",
 		"rust_analyzer",
 		"ruff",
+		"basedpyright",
 		"sqlls",
 		"regols",
 		"ts_ls",
@@ -75,8 +76,6 @@ local on_attach = function(_, bufnr)
 	map("<leader>rn", vim.lsp.buf.rename, "Rename symbol")
 	map("<leader>ca", vim.lsp.buf.rename, "Execute code action on symbol")
 	map("<leader>e", vim.diagnostic.open_float, "Show diagnostic message")
-	map("[d", vim.diagnostic.goto_prev, "Previous diagnostic message")
-	map("]d", vim.diagnostic.goto_next, "Next diagnostic message")
 	map("<leader>q", vim.diagnostic.setloclist, "Show all diagnostics")
 end
 local lsp_cmds = vim.api.nvim_create_augroup("lsp_cmds", { clear = true })
@@ -145,6 +144,23 @@ vim.lsp.enable("rust_analyzer")
 
 -- Python
 vim.lsp.enable("ruff")
+vim.lsp.config("basedpyright", {
+	init_options = {
+		settings = {
+			basedpyright = {
+				-- we use Ruff's import organizer instead:
+				disableOrganizeImports = true,
+			},
+			python = {
+				analysis = {
+					-- we ignore all files for analysis in order to exclusively use Ruff for linting:
+					ignore = { "*" },
+				},
+			},
+		},
+	},
+})
+vim.lsp.enable("basedpyright")
 
 -- SQL
 vim.lsp.enable("sqlls")
@@ -184,38 +200,52 @@ vim.lsp.enable("bashls")
 
 -- Lua
 vim.lsp.config("lua_ls", {
-	settings = {
-		Lua = {},
-	},
 	on_init = function(client)
-		if client.workspace_folders == nil then
-			return
-		end
-		local path = client.workspace_folders[1].name
-		if vim.loop.fs_stat(path .. "/.luarc.json") or vim.loop.fs_stat(path .. "/.luarc.jsonc") then
-			return
+		if client.workspace_folders then
+			local path = client.workspace_folders[1].name
+			if
+				path ~= vim.fn.stdpath("config")
+				and (vim.uv.fs_stat(path .. "/.luarc.json") or vim.uv.fs_stat(path .. "/.luarc.jsonc"))
+			then
+				return
+			end
 		end
 
 		client.config.settings.Lua = vim.tbl_deep_extend("force", client.config.settings.Lua, {
 			runtime = {
-				-- Tell the language server which version of Lua you're using
-				-- (most likely LuaJIT in the case of Neovim)
+				-- Tell the language server which version of Lua you're using (most
+				-- likely LuaJIT in the case of Neovim)
 				version = "LuaJIT",
+				-- Tell the language server how to find Lua modules same way as Neovim
+				-- (see `:h lua-module-load`)
+				path = {
+					"lua/?.lua",
+					"lua/?/init.lua",
+				},
 			},
 			-- Make the server aware of Neovim runtime files
 			workspace = {
 				checkThirdParty = false,
 				library = {
 					vim.env.VIMRUNTIME,
-					-- Depending on the usage, you might want to add additional paths here.
-					"${3rd}/luv/library", -- see https://github.com/folke/lazy.nvim/discussions/1349
-					-- "${3rd}/busted/library",
+					-- Depending on the usage, you might want to add additional paths
+					-- here.
+					"${3rd}/luv/library",
+					-- '${3rd}/busted/library'
 				},
-				-- or pull in all of 'runtimepath'. NOTE: this is a lot slower
-				-- library = vim.api.nvim_get_runtime_file("", true)
+				-- Or pull in all of 'runtimepath'.
+				-- NOTE: this is a lot slower and will cause issues when working on
+				-- your own configuration.
+				-- See https://github.com/neovim/nvim-lspconfig/issues/3189
+				-- library = {
+				--   vim.api.nvim_get_runtime_file('', true),
+				-- }
 			},
 		})
 	end,
+	settings = {
+		Lua = {},
+	},
 })
 vim.lsp.enable("lua_ls")
 
