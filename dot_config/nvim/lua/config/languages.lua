@@ -92,13 +92,13 @@ vim.api.nvim_create_autocmd("LspAttach", {
 })
 
 -- prose
-lspconfig.typos_lsp.setup({})
+vim.lsp.enable("typos_lsp")
 
 -- Markdown
-lspconfig.marksman.setup({})
+vim.lsp.enable("marksman")
 
 -- LaTeX
-lspconfig.texlab.setup({
+vim.lsp.config("texlab", {
 	settings = {
 		build = {
 			executable = "tectonic",
@@ -113,16 +113,18 @@ lspconfig.texlab.setup({
 		},
 	},
 })
+vim.lsp.enable("texlab")
 
 -- Go
-lspconfig.gopls.setup({
+vim.lsp.config("gopls", {
 	settings = {
 		gopls = {
 			gofumpt = true,
 		},
 	},
 })
-lspconfig.golangci_lint_ls.setup({
+vim.lsp.enable("gopls")
+vim.lsp.config("golangci_lint_ls", {
 	root_dir = lspconfig.util.root_pattern(".git", "go.mod"),
 	init_options = {
 		command = {
@@ -136,50 +138,52 @@ lspconfig.golangci_lint_ls.setup({
 	},
 	filetypes = { "go", "gomod" },
 })
+vim.lsp.enable("golangci_lint_ls")
 
 -- Rust
-lspconfig.rust_analyzer.setup({})
+vim.lsp.enable("rust_analyzer")
 
 -- Python
-lspconfig.ruff.setup({})
+vim.lsp.enable("ruff")
 
 -- SQL
-lspconfig.sqlls.setup({})
+vim.lsp.enable("sqlls")
 
 -- Rego
-lspconfig.regols.setup({})
+vim.lsp.enable("regols")
 
 -- JavaScript/TypeScript
-lspconfig.ts_ls.setup({})
-lspconfig.biome.setup({
+vim.lsp.enable("ts_ls")
+vim.lsp.config("biome", {
 	single_file_support = true,
 })
-lspconfig.stimulus_ls.setup({})
-lspconfig.svelte.setup({})
+vim.lsp.enable("biome")
+vim.lsp.enable("stimulus_ls")
+vim.lsp.enable("svelte")
 
 -- HTML
-lspconfig.html.setup({})
-lspconfig.htmx.setup({})
+vim.lsp.enable("html")
+vim.lsp.enable("htmx")
 
 -- CSS
-lspconfig.cssls.setup({})
-lspconfig.stylelint_lsp.setup({})
-lspconfig.somesass_ls.setup({})
-lspconfig.tailwindcss.setup({})
+vim.lsp.enable("cssls")
+vim.lsp.enable("stylelint_lsp")
+vim.lsp.enable("somesass_ls")
+vim.lsp.enable("tailwindcss")
 
 -- Docker
-lspconfig.dockerls.setup({})
-lspconfig.docker_compose_language_service.setup({})
+vim.lsp.enable("dockerls")
+vim.lsp.enable("docker_compose_language_service")
 
 -- Terraform
-lspconfig.terraformls.setup({})
-lspconfig.tflint.setup({})
+vim.lsp.enable("terraformls")
+vim.lsp.enable("tflint")
 
 -- bash
-lspconfig.bashls.setup({})
+vim.lsp.enable("bashls")
 
 -- Lua
-lspconfig.lua_ls.setup({
+vim.lsp.config("lua_ls", {
 	settings = {
 		Lua = {},
 	},
@@ -213,13 +217,14 @@ lspconfig.lua_ls.setup({
 		})
 	end,
 })
+vim.lsp.enable("lua_ls")
 
 -- Make/etc.
-lspconfig.autotools_ls.setup({})
+vim.lsp.enable("autotools_ls")
 
 -- JSON/YAML/TOML/etc.
-lspconfig.yamlls.setup({})
-lspconfig.taplo.setup({})
+vim.lsp.enable("yamlls")
+vim.lsp.enable("taplo")
 
 -- Linters
 

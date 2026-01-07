@@ -7,9 +7,16 @@ return {
 			})()
 		end,
 	},
-	"williamboman/mason.nvim",
+	"mason-org/mason.nvim",
 	"neovim/nvim-lspconfig",
-	"williamboman/mason-lspconfig.nvim",
+	{
+		"mason-org/mason-lspconfig.nvim",
+		opts = {},
+		dependencies = {
+			{ "mason-org/mason.nvim", opts = {} },
+			"neovim/nvim-lspconfig",
+		},
+	},
 	"WhoIsSethDaniel/mason-tool-installer.nvim",
 	{
 		"stevearc/conform.nvim",
@@ -28,4 +35,8 @@ return {
 	},
 	"zapling/mason-conform.nvim",
 	"tpope/vim-sleuth",
+	{
+		"folke/lazydev.nvim",
+		ft = "lua",
+	},
 }
