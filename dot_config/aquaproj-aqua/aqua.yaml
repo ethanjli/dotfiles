@@ -16,7 +16,7 @@ packages: # comments are added for the first package in each section
   - name: direnv/direnv@v2.37.1
   - name: charmbracelet/gum@v0.17.0
   - name: gokcehan/lf@r35 # Navigation
-  - name: ajeetdsouza/zoxide@v0.9.8
+  - name: ajeetdsouza/zoxide@v0.9.9
   - name: junegunn/fzf@v0.67.0
   - name: lsd-rs/lsd@v1.2.0
   - name: sharkdp/fd@v10.3.0
@@ -24,12 +24,12 @@ packages: # comments are added for the first package in each section
   - name: phiresky/ripgrep-all@v0.10.10
   - name: konradsz/igrep@v1.3.0
   - name: sharkdp/vivid@v0.10.1
-  - name: neovim/neovim@v0.11.5 # Editing
+  - name: neovim/neovim@v0.11.6 # Editing
     registry: ethanjli/dotfiles
   - name: acheronfail/repgrep@0.16.1
   - name: jesseduffield/lazygit@v0.58.1 # Git
   - name: cli/cli@v2.86.0
-  - name: git-ecosystem/git-credential-manager@v2.6.1
+  - name: git-ecosystem/git-credential-manager@v2.7.0
     registry: ethanjli/dotfiles
   #- name: o2sh/onefetch@2.26.1
   - name: FiloSottile/age@v1.3.1 # Secrets
@@ -48,7 +48,7 @@ packages: # comments are added for the first package in each section
   - name: google/go-containerregistry@v0.20.7
   #- name: bcicen/ctop@v0.7.7
   - name: jqlang/jq@jq-1.8.1 # Parsing
-  - name: mikefarah/yq@v4.50.1
+  - name: mikefarah/yq@v4.52.2
   #- name: wader/fq@v0.16.0
   #- name: johnkerl/miller@v6.16.0
   #- name: tomnomnom/gron@v0.7.1
@@ -70,7 +70,7 @@ packages: # comments are added for the first package in each section
   #- name: orf/gping@gping-v1.20.1
   #- name: fujiapple852/trippy@0.13.0
   #- name: imsnif/bandwhich@v0.23.1
-  - name: rclone/rclone@v1.72.1 # File transfer
+  - name: rclone/rclone@v1.73.0 # File transfer
   - name: schollz/croc@v10.3.1
   - name: veeso/termscp@v0.19.1
   #- name: zquestz/s@v0.7.5 # Web-ish
@@ -79,7 +79,7 @@ packages: # comments are added for the first package in each section
   #- name: jpbruinsslot/slack-term@v0.5.0
   - name: casey/just@1.46.0 # Command-running
   - name: watchexec/watchexec@v2.3.3
-  #- name: stateful/runme@v3.16.4
+  #- name: stateful/runme@v3.16.5
   - name: elkowar/pipr@v0.0.16
   - name: topgrade-rs/topgrade@v16.8.0 # Package management
   - name: pemistahl/grex@v1.4.6 # Help
