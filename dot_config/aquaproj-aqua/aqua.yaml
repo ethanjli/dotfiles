@@ -1,6 +1,6 @@
 registries:
   - type: standard
-    ref: v4.464.0 # renovate: depName=aquaproj/aqua-registry
+    ref: v4.467.0 # renovate: depName=aquaproj/aqua-registry
   - name: ethanjli/dotfiles
     type: github_content
     repo_owner: ethanjli
@@ -10,9 +10,9 @@ registries:
 packages: # comments are added for the first package in each section
   - name: twpayne/chezmoi@v2.69.3
   - name: zellij-org/zellij@v0.43.1 # Shell
-  - name: JanDeDobbeleer/oh-my-posh@v29.1.0
+  - name: JanDeDobbeleer/oh-my-posh@v29.2.2
   - name: starship/starship@v1.24.2
-  - name: atuinsh/atuin@v18.11.0
+  - name: atuinsh/atuin@v18.12.0
   - name: direnv/direnv@v2.37.1
   - name: charmbracelet/gum@v0.17.0
   - name: gokcehan/lf@r35 # Navigation
@@ -27,7 +27,7 @@ packages: # comments are added for the first package in each section
   - name: neovim/neovim@v0.11.6 # Editing
     registry: ethanjli/dotfiles
   - name: acheronfail/repgrep@0.16.1
-  - name: jesseduffield/lazygit@v0.58.1 # Git
+  - name: jesseduffield/lazygit@v0.59.0 # Git
   - name: cli/cli@v2.86.0
   - name: git-ecosystem/git-credential-manager@v2.7.0
     registry: ethanjli/dotfiles
@@ -35,7 +35,7 @@ packages: # comments are added for the first package in each section
   - name: FiloSottile/age@v1.3.1 # Secrets
   - name: sharkdp/bat@v0.26.1 # Viewers
   - name: charmbracelet/glow@v2.1.1
-  - name: hpjansson/chafa@1.18.0
+  - name: hpjansson/chafa@1.18.1
     registry: ethanjli/dotfiles
   #- name: maaslalani/slides@v0.9.0
   - name: dandavison/delta@0.18.2
@@ -54,7 +54,7 @@ packages: # comments are added for the first package in each section
   #- name: tomnomnom/gron@v0.7.1
   #- name: ericchiang/pup@v0.4.0
   - name: aristocratos/btop@v1.4.6 # System Info & Dashboards
-  - name: Lifailon/lazyjournal@0.8.4
+  - name: Lifailon/lazyjournal@0.8.5
   #- name: Byron/dua-cli@v2.33.0
   #- name: wtfutil/wtf@v0.48.0
   - name: fastfetch-cli/fastfetch@2.58.0
@@ -81,7 +81,7 @@ packages: # comments are added for the first package in each section
   - name: watchexec/watchexec@v2.3.3
   #- name: stateful/runme@v3.16.5
   - name: elkowar/pipr@v0.0.16
-  - name: topgrade-rs/topgrade@v16.8.0 # Package management
+  - name: topgrade-rs/topgrade@v16.9.0 # Package management
   - name: pemistahl/grex@v1.4.6 # Help
   - name: dbrgn/tealdeer@v1.8.1
   #- name: printfn/fend@v1.5.8 # Miscellaneous
