@@ -50,6 +50,7 @@ require("mason-lspconfig").setup({
 		"autotools_ls",
 		"yamlls",
 		"taplo",
+		"systemd_lsp",
 	},
 	automatic_installation = true,
 })
@@ -255,6 +256,9 @@ vim.lsp.enable("autotools_ls")
 -- JSON/YAML/TOML/etc.
 vim.lsp.enable("yamlls")
 vim.lsp.enable("taplo")
+
+-- systemd
+vim.lsp.enable("systemd_lsp")
 
 -- Linters
 

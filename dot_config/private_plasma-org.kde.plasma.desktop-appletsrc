@@ -108,7 +108,7 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][134][Applets][241][Applets][245][Configuration]
-PreloadWeight=85
+PreloadWeight=90
 
 [Containments][134][Applets][241][Applets][246]
 immutability=1
@@ -277,7 +277,7 @@ PreloadWeight=100
 
 [Containments][134][Applets][241][General]
 extraItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.vault,org.kde.plasma.volume,org.kde.plasma.printmanager,org.kde.plasma.battery,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.weather,org.kde.merkuro.contact.applet,org.kde.plasma.keyboardlayout
-hiddenItems=SyncThingy,Discover Notifier_org.kde.DiscoverNotifier,crow-translate,org.kde.plasma.nightcolorcontrol,zoom,org.kde.plasma.clipboard,org.kde.plasma.bluetooth,Xwayland Video Bridge_pipewireToXProxy,Barrier,org.kde.kscreen,Portal,Plasma_microphone,1,Trayscale,org.kde.plasma.weather,org.kde.plasma.mediacontroller,org.kde.plasma.devicenotifier,steam,KTailctl,org.kde.merkuro.contact.applet,Vorta,org.kde.plasma.keyboardlayout
+hiddenItems=SyncThingy,Discover Notifier_org.kde.DiscoverNotifier,crow-translate,org.kde.plasma.nightcolorcontrol,zoom,org.kde.plasma.clipboard,org.kde.plasma.bluetooth,Xwayland Video Bridge_pipewireToXProxy,Barrier,org.kde.kscreen,Portal,Plasma_microphone,1,Trayscale,org.kde.plasma.weather,org.kde.plasma.mediacontroller,org.kde.plasma.devicenotifier,steam,KTailctl,org.kde.merkuro.contact.applet,Vorta,org.kde.plasma.keyboardlayout,AusweisApp
 iconSpacing=6
 knownItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.vault,org.kde.plasma.volume,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.merkuro.contact.applet,org.kde.plasma.weather
 shownItems=org.kde.plasma.battery
@@ -854,7 +854,7 @@ immutability=1
 plugin=org.kde.plasma.brightness
 
 [Containments][451][Applets][456][Applets][470][Configuration]
-PreloadWeight=34
+PreloadWeight=41
 
 [Containments][451][Applets][456][Applets][471]
 immutability=1
@@ -901,7 +901,7 @@ PreloadWeight=100
 
 [Containments][451][Applets][456][General]
 extraItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.vault,org.kde.plasma.volume,org.kde.merkuro.contact.applet,org.kde.plasma.weather
-hiddenItems=SyncThingy,Xwayland Video Bridge_pipewireToXProxy,org.kde.plasma.bluetooth,org.kde.plasma.devicenotifier,org.kde.kdeconnect,org.kde.plasma.keyboardlayout,org.kde.plasma.networkmanagement,org.kde.plasma.battery,org.kde.plasma.printmanager,org.kde.plasma.clipboard,org.kde.plasma.vault,chrome_status_icon_1,steam,KTailctl,org.kde.merkuro.contact.applet,Vorta
+hiddenItems=SyncThingy,Xwayland Video Bridge_pipewireToXProxy,org.kde.plasma.bluetooth,org.kde.plasma.devicenotifier,org.kde.kdeconnect,org.kde.plasma.keyboardlayout,org.kde.plasma.networkmanagement,org.kde.plasma.battery,org.kde.plasma.printmanager,org.kde.plasma.clipboard,org.kde.plasma.vault,chrome_status_icon_1,steam,KTailctl,org.kde.merkuro.contact.applet,Vorta,AusweisApp,zoom
 iconSpacing=6
 knownItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.vault,org.kde.plasma.volume,org.kde.merkuro.contact.applet,org.kde.plasma.weather
 shownItems=org.kde.kscreen
