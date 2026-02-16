@@ -8,12 +8,12 @@
 #   - all
 registries:
   - type: standard
-    ref: v4.467.0 # renovate: depName=aquaproj/aqua-registry
+    ref: v4.471.0 # renovate: depName=aquaproj/aqua-registry
   - name: local
     type: local
     path: aqua-registry.yaml
 packages:
-  - name: twpayne/chezmoi@v2.69.3
+  - name: twpayne/chezmoi@v2.69.4
   - name: hpjansson/chafa@1.18.1
     registry: local
   - name: git-ecosystem/git-credential-manager@v2.7.0
