@@ -26,7 +26,7 @@
 [credential "https://dev.azure.com"]
 	useHttpPath = true
 [push]
-	default = current
+	default = upstream
 	autoSetupRemote = true
 [init]
 	defaultBranch = main

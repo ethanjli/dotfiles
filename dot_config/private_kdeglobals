@@ -152,7 +152,7 @@ ShowDeleteCommand=false
 [KFileDialog Settings]
 Allow Expansion=false
 Automatically select filename extension=true
-Breadcrumb Navigation=false
+Breadcrumb Navigation=true
 Decoration position=2
 Show Full Path=false
 Show Inline Previews=true
