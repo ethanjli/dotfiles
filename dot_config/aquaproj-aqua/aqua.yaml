@@ -81,7 +81,7 @@ packages: # comments are added for the first package in each section
   - name: watchexec/watchexec@v2.5.0
   #- name: stateful/runme@v3.16.5
   - name: elkowar/pipr@v0.0.16
-  - name: topgrade-rs/topgrade@v16.9.0 # Package management
+  - name: topgrade-rs/topgrade@v17.0.0 # Package management
   - name: pemistahl/grex@v1.4.6 # Help
   - name: dbrgn/tealdeer@v1.8.1
   #- name: printfn/fend@v1.5.8 # Miscellaneous
