@@ -9,10 +9,10 @@ Id_1=de5b4f4b-b47b-4a10-b44f-d66914196398
 Id_2=a906ca30-22a0-4378-a1c7-fbf1491b3ae9
 Id_3=0ead2dec-4d9d-4a66-9469-90285d8229aa
 Id_4=72c48072-d5c7-44a1-b7da-0293f5c9210f
-Name_1=tenearth/tots
-Name_2=pkscope/forklift
+Name_1=openuc2
+Name_2=admin
 Name_3=etc
-Name_4=spare
+Name_4=buddhism
 Number=4
 Rows=1
 
@@ -127,9 +127,6 @@ LayoutName=thumbnail_grid
 MinimizedMode=2
 MultiScreenMode=1
 
-[Tiling]
-padding=4
-
 [Tiling][01956635-28d0-5ab8-94ab-4b0572564dfb]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
@@ -137,6 +134,7 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][0ead2dec-4d9d-4a66-9469-90285d8229aa][0797c19a-fe77-420e-8b1c-ea9853b1f9ea]
+padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][0ead2dec-4d9d-4a66-9469-90285d8229aa][2e16958e-9ed3-40f2-bc90-68302b49bc55]
@@ -152,6 +150,7 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][0ead2dec-4d9d-4a66-9469-90285d8229aa][6c61bede-421c-42e7-8e66-8711a9abdb4e]
+padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][0ead2dec-4d9d-4a66-9469-90285d8229aa][e4e5558c-4f6e-4539-b16e-014d41510ae9]
@@ -194,6 +193,7 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][72c48072-d5c7-44a1-b7da-0293f5c9210f][0797c19a-fe77-420e-8b1c-ea9853b1f9ea]
+padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][72c48072-d5c7-44a1-b7da-0293f5c9210f][2e16958e-9ed3-40f2-bc90-68302b49bc55]
@@ -209,6 +209,7 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][72c48072-d5c7-44a1-b7da-0293f5c9210f][6c61bede-421c-42e7-8e66-8711a9abdb4e]
+padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][72c48072-d5c7-44a1-b7da-0293f5c9210f][e4e5558c-4f6e-4539-b16e-014d41510ae9]
@@ -242,6 +243,7 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][a906ca30-22a0-4378-a1c7-fbf1491b3ae9][0797c19a-fe77-420e-8b1c-ea9853b1f9ea]
+padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][a906ca30-22a0-4378-a1c7-fbf1491b3ae9][2e16958e-9ed3-40f2-bc90-68302b49bc55]
@@ -257,6 +259,7 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][a906ca30-22a0-4378-a1c7-fbf1491b3ae9][6c61bede-421c-42e7-8e66-8711a9abdb4e]
+padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][a906ca30-22a0-4378-a1c7-fbf1491b3ae9][e4e5558c-4f6e-4539-b16e-014d41510ae9]
@@ -290,6 +293,7 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][de5b4f4b-b47b-4a10-b44f-d66914196398][0797c19a-fe77-420e-8b1c-ea9853b1f9ea]
+padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][de5b4f4b-b47b-4a10-b44f-d66914196398][2e16958e-9ed3-40f2-bc90-68302b49bc55]
@@ -305,6 +309,7 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][de5b4f4b-b47b-4a10-b44f-d66914196398][6c61bede-421c-42e7-8e66-8711a9abdb4e]
+padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][de5b4f4b-b47b-4a10-b44f-d66914196398][e4e5558c-4f6e-4539-b16e-014d41510ae9]
@@ -361,5 +366,5 @@ Scale=1
 [org.kde.kdecoration2]
 ButtonsOnLeft=MN
 ButtonsOnRight=X
-library=org.kde.kwin.aurorae
+library=org.kde.kwin.aurorae.v2
 theme=__aurorae__svg__ActiveAccentFrame

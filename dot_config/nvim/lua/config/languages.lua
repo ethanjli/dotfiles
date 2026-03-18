@@ -36,7 +36,7 @@ require("mason-lspconfig").setup({
 		"stimulus_ls",
 		"svelte",
 		"html",
-		"htmx",
+		-- "htmx",
 		"cssls",
 		"stylelint_lsp",
 		"somesass_ls",
@@ -180,7 +180,7 @@ vim.lsp.enable("svelte")
 
 -- HTML
 vim.lsp.enable("html")
-vim.lsp.enable("htmx")
+-- vim.lsp.enable("htmx")
 
 -- CSS
 vim.lsp.enable("cssls")
