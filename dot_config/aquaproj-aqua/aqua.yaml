@@ -8,9 +8,9 @@ registries:
     ref: debf54198ffa051edf8ebf6936a1145892b211ae
     path: aqua-registry.yaml
 packages: # comments are added for the first package in each section
-  - name: twpayne/chezmoi@v2.70.0
+  - name: twpayne/chezmoi@v2.70.1
   - name: zellij-org/zellij@v0.44.1 # Shell
-  - name: JanDeDobbeleer/oh-my-posh@v29.9.2
+  - name: JanDeDobbeleer/oh-my-posh@v29.10.0
   - name: starship/starship@v1.24.2
   - name: atuinsh/atuin@v18.13.6
   - name: direnv/direnv@v2.37.1
@@ -23,29 +23,29 @@ packages: # comments are added for the first package in each section
   - name: BurntSushi/ripgrep@15.1.0
   - name: phiresky/ripgrep-all@v0.10.10
   - name: konradsz/igrep@v1.3.0
-  - name: sharkdp/vivid@v0.10.1
+  - name: sharkdp/vivid@v0.11.1
   - name: neovim/neovim@v0.12.1 # Editing
     registry: ethanjli/dotfiles
   - name: acheronfail/repgrep@0.16.1
-  - name: jesseduffield/lazygit@v0.61.0 # Git
+  - name: jesseduffield/lazygit@v0.61.1 # Git
   - name: cli/cli@v2.89.0
   - name: git-ecosystem/git-credential-manager@v2.7.3
     registry: ethanjli/dotfiles
   #- name: o2sh/onefetch@2.27.1
   - name: FiloSottile/age@v1.3.1 # Secrets
   - name: sharkdp/bat@v0.26.1 # Viewers
-  - name: charmbracelet/glow@v2.1.1
+  - name: charmbracelet/glow@v2.1.2
   - name: hpjansson/chafa@1.18.1
     registry: ethanjli/dotfiles
   #- name: maaslalani/slides@v0.9.0
   - name: dandavison/delta@0.19.2
   - name: Wilfred/difftastic@0.68.0
   - name: antonmedv/fx@39.2.0
-  - name: simeji/jid@v1.1.1
+  - name: simeji/jid@v1.1.2
   #- name: sharkdp/hexyl@v0.17.0
   - name: jesseduffield/lazydocker@v0.25.0 # Containers
   - name: wagoodman/dive@v0.13.1
-  - name: google/go-containerregistry@v0.21.4
+  - name: google/go-containerregistry@v0.21.5
   #- name: bcicen/ctop@v0.7.7
   - name: jqlang/jq@jq-1.8.1 # Parsing
   - name: mikefarah/yq@v4.52.5
@@ -62,7 +62,7 @@ packages: # comments are added for the first package in each section
   - name: asciimoo/wuzz@v0.5.0
   - name: ekzhang/bore@v0.6.0 # Network
   #- name: yudai/gotty@v1.0.1
-  #- name: svenstaro/miniserve@v0.33.0
+  #- name: svenstaro/miniserve@v0.35.0
   #- name: EdJoPaTo/mqttui@v0.22.1
   #- name: ogham/dog@v0.1.0
   #- name: sachaos/tcpterm@v0.0.2
@@ -70,7 +70,7 @@ packages: # comments are added for the first package in each section
   #- name: orf/gping@gping-v1.20.1
   #- name: fujiapple852/trippy@0.13.0
   #- name: imsnif/bandwhich@v0.23.1
-  - name: rclone/rclone@v1.73.3 # File transfer
+  - name: rclone/rclone@v1.73.4 # File transfer
   - name: schollz/croc@v10.4.2
   - name: veeso/termscp@v0.19.1
   #- name: zquestz/s@v0.7.5 # Web-ish
@@ -81,7 +81,7 @@ packages: # comments are added for the first package in each section
   - name: watchexec/watchexec@v2.5.1
   #- name: stateful/runme@v3.16.10
   - name: elkowar/pipr@v0.0.16
-  - name: topgrade-rs/topgrade@v17.2.1 # Package management
+  - name: topgrade-rs/topgrade@v17.3.0 # Package management
   - name: pemistahl/grex@v1.4.6 # Help
   - name: dbrgn/tealdeer@v1.8.1
   #- name: printfn/fend@v1.5.8 # Miscellaneous
