@@ -72,7 +72,7 @@ packages: # comments are added for the first package in each section
   #- name: imsnif/bandwhich@v0.23.1
   - name: rclone/rclone@v1.73.5 # File transfer
   - name: schollz/croc@v10.4.2
-  - name: veeso/termscp@v0.19.1
+  - name: veeso/termscp@v1.0.0
   #- name: zquestz/s@v0.7.5 # Web-ish
   #- name: Builditluc/wiki-tui@v0.9.2
   #- name: Rigellute/spotify-tui@v0.25.0
