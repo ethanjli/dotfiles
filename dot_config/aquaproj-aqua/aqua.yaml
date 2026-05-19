@@ -1,6 +1,6 @@
 registries:
   - type: standard
-    ref: v4.510.0 # renovate: depName=aquaproj/aqua-registry
+    ref: v4.513.0 # renovate: depName=aquaproj/aqua-registry
   - name: ethanjli/dotfiles
     type: github_content
     repo_owner: ethanjli
@@ -9,10 +9,10 @@ registries:
     path: aqua-registry.yaml
 packages: # comments are added for the first package in each section
   - name: twpayne/chezmoi@v2.70.3
-  - name: zellij-org/zellij@v0.44.2 # Shell
-  - name: JanDeDobbeleer/oh-my-posh@v29.13.1
+  - name: zellij-org/zellij@v0.44.3 # Shell
+  - name: JanDeDobbeleer/oh-my-posh@v29.14.0
   - name: starship/starship@v1.25.1
-  - name: atuinsh/atuin@v18.16.0
+  - name: atuinsh/atuin@v18.16.1
   - name: direnv/direnv@v2.37.1
   - name: charmbracelet/gum@v0.17.0
   - name: gokcehan/lf@r35 # Navigation
@@ -57,13 +57,13 @@ packages: # comments are added for the first package in each section
   - name: Lifailon/lazyjournal@0.8.6
   #- name: Byron/dua-cli@v2.34.0
   #- name: wtfutil/wtf@v0.49.1
-  - name: fastfetch-cli/fastfetch@2.62.1
+  - name: fastfetch-cli/fastfetch@2.63.1
   #- name: rs/curlie@v1.8.2 # HTTP
   - name: asciimoo/wuzz@v0.5.0
   - name: ekzhang/bore@v0.6.0 # Network
   #- name: yudai/gotty@v1.0.1
   #- name: svenstaro/miniserve@v0.35.0
-  #- name: EdJoPaTo/mqttui@v0.22.1
+  #- name: EdJoPaTo/mqttui@v0.23.0
   #- name: ogham/dog@v0.1.0
   #- name: sachaos/tcpterm@v0.0.2
   #- name: gcla/termshark@v2.4.0
@@ -81,7 +81,7 @@ packages: # comments are added for the first package in each section
   - name: watchexec/watchexec@v2.5.1
   #- name: stateful/runme@v3.16.11
   - name: elkowar/pipr@v0.0.16
-  - name: topgrade-rs/topgrade@v17.4.0 # Package management
+  - name: topgrade-rs/topgrade@v17.5.0 # Package management
   - name: pemistahl/grex@v1.4.6 # Help
   - name: dbrgn/tealdeer@v1.8.1
   #- name: printfn/fend@v1.5.8 # Miscellaneous
