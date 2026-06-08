@@ -1,6 +1,6 @@
 registries:
   - type: standard
-    ref: v4.516.0 # renovate: depName=aquaproj/aqua-registry
+    ref: v4.522.0 # renovate: depName=aquaproj/aqua-registry
   - name: ethanjli/dotfiles
     type: github_content
     repo_owner: ethanjli
@@ -8,7 +8,7 @@ registries:
     ref: debf54198ffa051edf8ebf6936a1145892b211ae
     path: aqua-registry.yaml
 packages: # comments are added for the first package in each section
-  - name: twpayne/chezmoi@v2.70.4
+  - name: twpayne/chezmoi@v2.70.5
   - name: zellij-org/zellij@v0.44.3 # Shell
   - name: JanDeDobbeleer/oh-my-posh@v29.14.0
   - name: starship/starship@v1.25.1
@@ -17,7 +17,7 @@ packages: # comments are added for the first package in each section
   - name: charmbracelet/gum@v0.17.0
   - name: gokcehan/lf@r35 # Navigation
   - name: ajeetdsouza/zoxide@v0.9.9
-  - name: junegunn/fzf@v0.73.0
+  - name: junegunn/fzf@v0.73.1
   - name: lsd-rs/lsd@v1.2.0
   - name: sharkdp/fd@v10.4.2
   - name: BurntSushi/ripgrep@15.1.0
@@ -27,8 +27,8 @@ packages: # comments are added for the first package in each section
   - name: neovim/neovim@v0.12.2 # Editing
     registry: ethanjli/dotfiles
   - name: acheronfail/repgrep@0.16.1
-  - name: jesseduffield/lazygit@v0.61.1 # Git
-  - name: cli/cli@v2.92.0
+  - name: jesseduffield/lazygit@v0.62.2 # Git
+  - name: cli/cli@v2.93.0
   - name: git-ecosystem/git-credential-manager@v2.8.0
     registry: ethanjli/dotfiles
   #- name: o2sh/onefetch@2.27.1
@@ -48,7 +48,7 @@ packages: # comments are added for the first package in each section
   - name: google/go-containerregistry@v0.21.6
   #- name: bcicen/ctop@v0.7.7
   - name: jqlang/jq@jq-1.8.1 # Parsing
-  - name: mikefarah/yq@v4.53.2
+  - name: mikefarah/yq@v4.53.3
   #- name: wader/fq@v0.17.0
   #- name: johnkerl/miller@v6.18.1
   #- name: tomnomnom/gron@v0.7.1
@@ -57,7 +57,7 @@ packages: # comments are added for the first package in each section
   - name: Lifailon/lazyjournal@0.8.6
   #- name: Byron/dua-cli@v2.34.0
   #- name: wtfutil/wtf@v0.49.1
-  - name: fastfetch-cli/fastfetch@2.63.1
+  - name: fastfetch-cli/fastfetch@2.64.2
   #- name: rs/curlie@v1.8.2 # HTTP
   - name: asciimoo/wuzz@v0.5.0
   - name: ekzhang/bore@v0.6.0 # Network
@@ -70,7 +70,7 @@ packages: # comments are added for the first package in each section
   #- name: orf/gping@gping-v1.20.1
   #- name: fujiapple852/trippy@0.13.0
   #- name: imsnif/bandwhich@v0.23.1
-  - name: rclone/rclone@v1.74.2 # File transfer
+  - name: rclone/rclone@v1.74.3 # File transfer
   - name: schollz/croc@v10.4.4
   - name: veeso/termscp@v1.0.0
   #- name: zquestz/s@v0.7.5 # Web-ish
@@ -87,5 +87,5 @@ packages: # comments are added for the first package in each section
   #- name: printfn/fend@v1.5.8 # Miscellaneous
   #- name: sharkdp/pastel@v0.12.0
   - name: sharkdp/hyperfine@v1.20.0
-  #- name: ouch-org/ouch@0.7.1
+  #- name: ouch-org/ouch@0.8.0
   #- name: TaKO8Ki/gobang@v0.1.0-alpha.5
