@@ -1,6 +1,6 @@
 registries:
   - type: standard
-    ref: v4.522.0 # renovate: depName=aquaproj/aqua-registry
+    ref: v4.525.0 # renovate: depName=aquaproj/aqua-registry
   - name: ethanjli/dotfiles
     type: github_content
     repo_owner: ethanjli
@@ -10,7 +10,7 @@ registries:
 packages: # comments are added for the first package in each section
   - name: twpayne/chezmoi@v2.70.5
   - name: zellij-org/zellij@v0.44.3 # Shell
-  - name: JanDeDobbeleer/oh-my-posh@v29.14.0
+  - name: JanDeDobbeleer/oh-my-posh@v29.15.1
   - name: starship/starship@v1.25.1
   - name: atuinsh/atuin@v18.16.1
   - name: direnv/direnv@v2.37.1
@@ -24,11 +24,11 @@ packages: # comments are added for the first package in each section
   - name: phiresky/ripgrep-all@v0.10.10
   - name: konradsz/igrep@v1.3.0
   - name: sharkdp/vivid@v0.11.1
-  - name: neovim/neovim@v0.12.2 # Editing
+  - name: neovim/neovim@v0.12.3 # Editing
     registry: ethanjli/dotfiles
   - name: acheronfail/repgrep@0.16.1
   - name: jesseduffield/lazygit@v0.62.2 # Git
-  - name: cli/cli@v2.93.0
+  - name: cli/cli@v2.94.0
   - name: git-ecosystem/git-credential-manager@v2.8.0
     registry: ethanjli/dotfiles
   #- name: o2sh/onefetch@2.27.1
@@ -67,21 +67,21 @@ packages: # comments are added for the first package in each section
   #- name: ogham/dog@v0.1.0
   #- name: sachaos/tcpterm@v0.0.2
   #- name: gcla/termshark@v2.4.0
-  #- name: orf/gping@gping-v1.20.1
+  #- name: orf/gping@gping-v1.20.2
   #- name: fujiapple852/trippy@0.13.0
   #- name: imsnif/bandwhich@v0.23.1
   - name: rclone/rclone@v1.74.3 # File transfer
   - name: schollz/croc@v10.4.4
-  - name: veeso/termscp@v1.0.0
+  - name: veeso/termscp@v1.1.1
   #- name: zquestz/s@v0.7.5 # Web-ish
   #- name: Builditluc/wiki-tui@v0.9.2
   #- name: Rigellute/spotify-tui@v0.25.0
   #- name: jpbruinsslot/slack-term@v0.5.0
-  - name: casey/just@1.51.0 # Command-running
+  - name: casey/just@1.52.0 # Command-running
   - name: watchexec/watchexec@v2.5.1
   #- name: stateful/runme@v3.16.11
   - name: elkowar/pipr@v0.0.16
-  - name: topgrade-rs/topgrade@v17.5.1 # Package management
+  - name: topgrade-rs/topgrade@v17.6.1 # Package management
   - name: pemistahl/grex@v1.4.6 # Help
   - name: dbrgn/tealdeer@v1.8.1
   #- name: printfn/fend@v1.5.8 # Miscellaneous
