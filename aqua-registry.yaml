@@ -56,12 +56,14 @@ packages:
       - name: git-credential-manager
         src: git-credential-manager
     supported_envs:
-      - linux/amd64
+      - linux
       - darwin
       - windows
     overrides:
       - goos: linux
         asset: gcm-{{.OS}}-{{.Arch}}-{{trimV .Version}}.{{.Format}}
+        replacements:
+          amd64: x64
       - goos: darwin
         replacements:
           darwin: osx
@@ -70,9 +72,7 @@ packages:
         replacements:
           windows: win
           amd64: x86
-    version_constraint: semver(">= 2.0.779")
-    # Note(ethanjli): versions below 2.0.779 instead provide a tool called
-    # "git-credential-manager-core", and I don't know if that's the same thing
+    version_constraint: semver(">= 2.8.0")
   # TODO: make a PR to take this upstream
   - type: http
     repo_owner: hpjansson
