@@ -1,16 +1,30 @@
+# Interpreted, interactive, object-oriented programming language
 brew "python@3.13"
+# Open-source, cross-platform JavaScript runtime environment
 brew "node"
+# Package acting as bridge between Node projects and their package managers
 brew "corepack"
+# Play, record, convert, and stream select audio and video codecs
 brew "ffmpeg"
+# Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Tools and libraries to manipulate images in select formats
 brew "imagemagick"
+# Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Your Gateway to Embedded Software Development Excellence
 brew "platformio"
+# PDF rendering library (based on the xpdf-3.0 code base)
 brew "poppler"
+# Easily download, build, install, upgrade, and uninstall Python packages
 brew "python-setuptools"
+# Safe, concurrent, practical language
 brew "rust"
+# Simple TTY terminal I/O application
 brew "tio"
+# Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
+# Tool for creating isolated virtual python environments
 brew "virtualenv"
 cask "font-blex-mono-nerd-font"
 cask "font-cascadia-code-nf"

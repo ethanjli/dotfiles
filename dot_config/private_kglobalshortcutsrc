@@ -11,7 +11,7 @@ Switch keyboard layout to English (intl., with AltGr dead keys)=none,none,Switch
 Switch keyboard layout to EurKEY (US)=none,none,Switch keyboard layout to EurKEY (US)
 Switch keyboard layout to German, Swedish and Finnish (US)=none,none,Switch keyboard layout to German\\, Swedish and Finnish (US)
 Switch to Last-Used Keyboard Layout=Meta+Alt+L,Meta+Alt+L,Switch to Last-Used Keyboard Layout
-Switch to Next Keyboard Layout=none,Meta+Alt+K,Switch to Next Keyboard Layout
+Switch to Next Keyboard Layout=,Meta+Alt+K,Switch to Next Keyboard Layout
 _k_friendly_name=Keyboard Layout Switcher
 
 [com.google.Chrome]
@@ -299,7 +299,6 @@ activate widget 337=none,none,Activate Icons-Only Task Manager Widget
 activate widget 343=Meta+Ctrl+Space,none,Activate Digital Clock Widget
 activate widget 448=none,none,Activate Icons-Only Task Manager Widget
 activate widget 475=none,none,Activate Weather Report Widget
-activate widget 483=,none,Activate Pager Widget
 activate widget 98=none,none,Activate Task Manager Widget
 clear-history=none,,Clear Clipboard History
 clipboard_action=none,Meta+Ctrl+X,Automatic Action Popup Menu
