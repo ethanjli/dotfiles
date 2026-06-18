@@ -2,7 +2,8 @@ return {
 	{
 		"nvim-treesitter/nvim-treesitter",
 		lazy = false,
-		build = ':TSUpdate',
+		branch = "main",
+		build = ":TSUpdate",
 	},
 	"mason-org/mason.nvim",
 	"neovim/nvim-lspconfig",
