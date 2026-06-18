@@ -157,7 +157,7 @@ systemctl --user start homebrew-install.service
 On a machine without aqua, you can install aqua as follows:
 
 ```
-curl -sSfL https://raw.githubusercontent.com/aquaproj/aqua-installer/v3.0.1/aqua-installer | bash
+curl -sSfL https://raw.githubusercontent.com/aquaproj/aqua-installer/v4.0.2/aqua-installer | bash
 ```
 
 (this is only needed when this repository has packages which I have not yet contributed upstream
@@ -173,14 +173,6 @@ aqua i -a
 
 Run `atuin login`.
 
-### (Optional) Set up Flatpak-managed GUI tools
-
-You can install the full list of Flatpaks specifie by this repo by running:
-
-```
-systemctl --user start flatpak-install.service
-```
-
 ## Operations
 
 TODO: add a keybindings cheatsheet
@@ -194,11 +186,6 @@ to install, just run `aqua i -a`.
 
 To install new packages when this repo adds packages to the Brewfile, run
 `systemctl --user start homebrew-install.service`.
-
-### Install any new Flatpak apps
-
-To install new packages when this repo adds packages to the Flatpakfile, run
-`systemctl --user start flatpak-install.service`.
 
 ### Upgrade zsh & bash plugins
 
