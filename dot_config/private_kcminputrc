@@ -20,6 +20,9 @@ PointerAcceleration=1.000
 NaturalScroll=false
 ScrollFactor=2
 
+[Libinput][2][7][SynPS/2 Synaptics TouchPad]
+NaturalScroll=true
+
 [Libinput][2362][628][PIXA3854:00 093A:0274 Touchpad]
 LmrTapButtonMap=false
 NaturalScroll=true

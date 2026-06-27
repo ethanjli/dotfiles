@@ -255,7 +255,6 @@ iconSpacing=3
 indicateAudioStreams=false
 interactiveMute=false
 launchers=
-showOnlyCurrentScreen=true
 showToolTips=false
 wheelSkipMinimized=false
 
@@ -544,6 +543,8 @@ AppletOrder=201;448;449;377
 
 [Containments][446]
 ItemGeometries-1504x1003=
+ItemGeometries-1920x1080=
+ItemGeometries-1920x1200=
 ItemGeometries-2256x1504=
 ItemGeometriesHorizontal=
 activityId=211327b6-e365-4f10-ac54-c66f4b1c5365
