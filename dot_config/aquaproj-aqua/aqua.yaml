@@ -1,6 +1,6 @@
 registries:
   - type: standard
-    ref: v4.549.0 # renovate: depName=aquaproj/aqua-registry
+    ref: v4.550.0 # renovate: depName=aquaproj/aqua-registry
   - name: ethanjli/dotfiles
     type: github_content
     repo_owner: ethanjli
@@ -10,7 +10,7 @@ registries:
 packages: # comments are added for the first package in each section
   - name: twpayne/chezmoi@v2.72.0
   - name: zellij-org/zellij@v0.44.3 # Shell
-  - name: JanDeDobbeleer/oh-my-posh@v30.6.2
+  - name: JanDeDobbeleer/oh-my-posh@v30.6.4
   - name: starship/starship@v1.26.0
   - name: atuinsh/atuin@v18.19.0
   - name: direnv/direnv@v2.37.1
@@ -32,7 +32,7 @@ packages: # comments are added for the first package in each section
   - name: git-ecosystem/git-credential-manager@v2.9.1
     registry: ethanjli/dotfiles
   #- name: o2sh/onefetch@2.27.1
-  - name: tree-sitter/tree-sitter@v0.26.11 # Neovim
+  - name: tree-sitter/tree-sitter@v0.26.12 # Neovim
   - name: FiloSottile/age@v1.3.1 # Secrets
   - name: sharkdp/bat@v0.26.1 # Viewers
   - name: charmbracelet/glow@v2.1.2
@@ -40,7 +40,7 @@ packages: # comments are added for the first package in each section
     registry: ethanjli/dotfiles
   #- name: maaslalani/slides@v0.9.0
   - name: dandavison/delta@0.19.2
-  - name: Wilfred/difftastic@0.69.0
+  - name: Wilfred/difftastic@0.70.0
   - name: antonmedv/fx@39.2.0
   - name: simeji/jid@v1.1.3
   #- name: sharkdp/hexyl@v0.17.0
@@ -64,7 +64,7 @@ packages: # comments are added for the first package in each section
   - name: ekzhang/bore@v0.6.0 # Network
   #- name: yudai/gotty@v1.0.1
   #- name: svenstaro/miniserve@v0.35.0
-  #- name: EdJoPaTo/mqttui@v0.23.0
+  #- name: EdJoPaTo/mqttui@v0.24.0
   #- name: ogham/dog@v0.1.0
   #- name: sachaos/tcpterm@v0.0.2
   #- name: gcla/termshark@v2.4.0
@@ -72,7 +72,7 @@ packages: # comments are added for the first package in each section
   #- name: fujiapple852/trippy@0.13.0
   #- name: imsnif/bandwhich@v0.23.1
   - name: rclone/rclone@v1.75.0 # File transfer
-  - name: schollz/croc@v11.0.1
+  - name: schollz/croc@v11.0.3
   - name: veeso/termscp@v1.1.1
   #- name: zquestz/s@v0.8.1 # Web-ish
   #- name: Builditluc/wiki-tui@v0.9.2
