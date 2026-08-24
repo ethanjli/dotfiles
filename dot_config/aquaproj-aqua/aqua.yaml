@@ -14,7 +14,7 @@ packages: # comments are added for the first package in each section
   - name: starship/starship@v1.26.0
   - name: atuinsh/atuin@v18.19.0
   - name: direnv/direnv@v2.37.1
-  - name: charmbracelet/gum@v0.17.0
+  - name: charmbracelet/gum@v2.0.0
   - name: gokcehan/lf@r35 # Navigation
   - name: ajeetdsouza/zoxide@v0.10.0
   - name: junegunn/fzf@v0.74.3
