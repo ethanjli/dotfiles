@@ -135,8 +135,8 @@ ForegroundVisited=199,120,221
 [General]
 ColorScheme=One-Dark-Blue
 ColorSchemeHash=babca25f3a5cf7ece26a85de212ab43d0a141257
-TerminalApplication=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=wezterm org.wezfurlong.wezterm start --cwd .
-TerminalService=org.wezfurlong.wezterm.desktop
+TerminalApplication=konsole
+TerminalService=org.kde.konsole.desktop
 XftAntialias=true
 XftHintStyle=hintslight
 XftSubPixel=rgb
@@ -158,13 +158,17 @@ Show Full Path=false
 Show Inline Previews=true
 Show Preview=false
 Show Speedbar=true
-Show hidden files=true
+Show hidden files=false
 Sort by=Name
 Sort directories first=true
 Sort hidden files last=false
 Sort reversed=false
 Speedbar Width=140
-View Style=Detail
+View Style=DetailTree
+
+[KScreen]
+ScreenScaleFactors=DP-3=1;eDP-1=1;
+XwaylandClientsScale=false
 
 [PreviewSettings]
 EnableRemoteFolderThumbnail=false

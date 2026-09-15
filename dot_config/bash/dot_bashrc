@@ -13,9 +13,10 @@ _bash_plugins() {
     source "$file"
   done
 
-  "$reset_nullglob"
+  $reset_nullglob
 }
 _bash_plugins
 
 # Set up integrations
-source "integrations.bash"
+script_dir=$(dirname "$(realpath "$BASH_SOURCE")")
+source "$script_dir/integrations.bash"

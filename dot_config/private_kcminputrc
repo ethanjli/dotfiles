@@ -39,12 +39,19 @@ PointerAcceleration=-0.200
 ScrollFactor=1.5
 ScrollMethod=4
 
+[Libinput][9580][109][Tablet Monitor Pen]
+OutputUuid=553dabfa-a2c0-43db-9c0e-53cd31355416
+
 [Libinput][9580][109][Tablet Monitor Stylus]
 OutputName=DP-3
+OutputUuid=553dabfa-a2c0-43db-9c0e-53cd31355416
 
 [Mouse]
 X11LibInputXAccelProfileFlat=true
 cursorTheme=PearDarkCursors
+
+[Tablet]
+SyncWithMouse=false
 
 [Tmp]
 update_info=delete_cursor_old_default_size.upd:DeleteCursorOldDefaultSize

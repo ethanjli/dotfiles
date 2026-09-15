@@ -2,7 +2,9 @@
 update_info=kxkb.upd:remove-empty-lists,kxkb.upd:add-back-resetoptions,kxkb_variants.upd:split-variants
 
 [Layout]
-LayoutList=eu
+DisplayNames=,
+LayoutList=us,eu
 Options=grp_led:caps,shift:breaks_caps,caps:escape_shifted_compose,lv3:switch,grp:alts_toggle
 ResetOldOptions=true
 Use=true
+VariantList=,
