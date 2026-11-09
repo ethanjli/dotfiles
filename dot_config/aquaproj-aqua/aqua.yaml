@@ -10,7 +10,7 @@ registries:
 packages: # comments are added for the first package in each section
   - name: twpayne/chezmoi@v2.74.0
   - name: zellij-org/zellij@v0.45.1 # Shell
-  - name: JanDeDobbeleer/oh-my-posh@v31.9.1
+  - name: JanDeDobbeleer/oh-my-posh@v32.0.0
   - name: starship/starship@v1.27.0
   - name: atuinsh/atuin@v18.24.5
   - name: direnv/direnv@v2.38.2
@@ -56,7 +56,7 @@ packages: # comments are added for the first package in each section
   #- name: ericchiang/pup@v0.4.0
   - name: aristocratos/btop@v1.4.8 # System Info & Dashboards
   - name: Lifailon/lazyjournal@0.8.7
-  #- name: Byron/dua-cli@v2.46.0
+  #- name: Byron/dua-cli@v3.0.0
   #- name: wtfutil/wtf@v0.51.0
   - name: fastfetch-cli/fastfetch@2.71.0
   #- name: rs/curlie@v1.8.2 # HTTP
