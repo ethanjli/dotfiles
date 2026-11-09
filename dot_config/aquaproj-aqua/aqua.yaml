@@ -1,6 +1,6 @@
 registries:
   - type: standard
-    ref: v4.581.0 # renovate: depName=aquaproj/aqua-registry
+    ref: v4.583.0 # renovate: depName=aquaproj/aqua-registry
   - name: ethanjli/dotfiles
     type: github_content
     repo_owner: ethanjli
@@ -12,14 +12,14 @@ packages: # comments are added for the first package in each section
   - name: zellij-org/zellij@v0.45.1 # Shell
   - name: JanDeDobbeleer/oh-my-posh@v31.9.1
   - name: starship/starship@v1.27.0
-  - name: atuinsh/atuin@v18.24.4
+  - name: atuinsh/atuin@v18.24.5
   - name: direnv/direnv@v2.38.2
   - name: charmbracelet/gum@v2.0.2
   - name: gokcehan/lf@r35 # Navigation
   - name: ajeetdsouza/zoxide@v0.10.0
-  - name: junegunn/fzf@v0.74.5
+  - name: junegunn/fzf@v0.75.0
   - name: lsd-rs/lsd@v1.2.0
-  - name: sharkdp/fd@v10.5.0
+  - name: sharkdp/fd@v10.5.2
   - name: BurntSushi/ripgrep@15.2.0
   - name: phiresky/ripgrep-all@v0.10.10
   - name: konradsz/igrep@v1.3.0
@@ -27,12 +27,12 @@ packages: # comments are added for the first package in each section
   - name: neovim/neovim@v0.12.6 # Editing
     registry: ethanjli/dotfiles
   - name: acheronfail/repgrep@0.17.1
-  - name: jesseduffield/lazygit@v0.66.2 # Git
+  - name: jesseduffield/lazygit@v0.66.3 # Git
   - name: cli/cli@v2.103.3
   - name: git-ecosystem/git-credential-manager@v3.0.2
     registry: ethanjli/dotfiles
   #- name: o2sh/onefetch@3.2.0
-  - name: tree-sitter/tree-sitter@v0.27.1 # Neovim
+  - name: tree-sitter/tree-sitter@v0.27.2 # Neovim
   - name: FiloSottile/age@v1.3.2 # Secrets
   - name: sharkdp/bat@v0.26.1 # Viewers
   - name: charmbracelet/glow@v3.0.0
@@ -49,16 +49,16 @@ packages: # comments are added for the first package in each section
   - name: google/go-containerregistry@v0.22.1
   #- name: bcicen/ctop@v0.7.7
   - name: jqlang/jq@jq-1.8.2 # Parsing
-  - name: mikefarah/yq@v4.54.1
+  - name: mikefarah/yq@v4.54.3
   #- name: wader/fq@v0.18.0
   #- name: johnkerl/miller@v6.22.0
   #- name: tomnomnom/gron@v0.7.1
   #- name: ericchiang/pup@v0.4.0
   - name: aristocratos/btop@v1.4.8 # System Info & Dashboards
-  - name: Lifailon/lazyjournal@0.8.6
+  - name: Lifailon/lazyjournal@0.8.7
   #- name: Byron/dua-cli@v2.46.0
   #- name: wtfutil/wtf@v0.51.0
-  - name: fastfetch-cli/fastfetch@2.70.0
+  - name: fastfetch-cli/fastfetch@2.71.0
   #- name: rs/curlie@v1.8.2 # HTTP
   - name: asciimoo/wuzz@v0.5.0
   - name: ekzhang/bore@v0.6.0 # Network
@@ -71,9 +71,9 @@ packages: # comments are added for the first package in each section
   #- name: orf/gping@gping-v1.21.0
   #- name: fujiapple852/trippy@0.13.0
   #- name: imsnif/bandwhich@v0.23.1
-  - name: rclone/rclone@v1.75.2 # File transfer
-  - name: schollz/croc@v11.6.2
-  - name: veeso/termscp@v1.2.1
+  - name: rclone/rclone@v1.76.0 # File transfer
+  - name: schollz/croc@v11.6.5
+  - name: veeso/termscp@v1.2.2
   #- name: zquestz/s@v0.8.1 # Web-ish
   #- name: Builditluc/wiki-tui@v0.9.2
   #- name: Rigellute/spotify-tui@v0.25.0
@@ -82,7 +82,7 @@ packages: # comments are added for the first package in each section
   - name: watchexec/watchexec@v2.8.0
   #- name: stateful/runme@v3.17.6
   - name: elkowar/pipr@v0.0.16
-  - name: topgrade-rs/topgrade@v17.14.1 # Package management
+  - name: topgrade-rs/topgrade@v17.15.0 # Package management
   - name: pemistahl/grex@v1.4.6 # Help
   - name: dbrgn/tealdeer@v1.9.1
   #- name: printfn/fend@v1.5.9 # Miscellaneous
