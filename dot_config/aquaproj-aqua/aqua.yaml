@@ -1,6 +1,6 @@
 registries:
   - type: standard
-    ref: v4.583.0 # renovate: depName=aquaproj/aqua-registry
+    ref: v4.587.0 # renovate: depName=aquaproj/aqua-registry
   - name: ethanjli/dotfiles
     type: github_content
     repo_owner: ethanjli
@@ -8,11 +8,11 @@ registries:
     ref: 3bba7db60b441451021f253f005085876fb2b9bb
     path: aqua-registry.yaml
 packages: # comments are added for the first package in each section
-  - name: twpayne/chezmoi@v2.74.0
-  - name: zellij-org/zellij@v0.45.1 # Shell
-  - name: JanDeDobbeleer/oh-my-posh@v32.0.0
+  - name: twpayne/chezmoi@v2.74.1
+  - name: zellij-org/zellij@v0.46.0 # Shell
+  - name: JanDeDobbeleer/oh-my-posh@v32.1.0
   - name: starship/starship@v1.27.0
-  - name: atuinsh/atuin@v18.24.5
+  - name: atuinsh/atuin@v18.24.8
   - name: direnv/direnv@v2.38.2
   - name: charmbracelet/gum@v2.0.2
   - name: gokcehan/lf@r35 # Navigation
@@ -28,7 +28,7 @@ packages: # comments are added for the first package in each section
     registry: ethanjli/dotfiles
   - name: acheronfail/repgrep@0.17.1
   - name: jesseduffield/lazygit@v0.66.3 # Git
-  - name: cli/cli@v2.103.3
+  - name: cli/cli@v2.104.0
   - name: git-ecosystem/git-credential-manager@v3.0.2
     registry: ethanjli/dotfiles
   #- name: o2sh/onefetch@3.2.0
@@ -56,7 +56,7 @@ packages: # comments are added for the first package in each section
   #- name: ericchiang/pup@v0.4.0
   - name: aristocratos/btop@v1.4.8 # System Info & Dashboards
   - name: Lifailon/lazyjournal@0.8.7
-  #- name: Byron/dua-cli@v3.0.0
+  #- name: Byron/dua-cli@v3.0.3
   #- name: wtfutil/wtf@v0.51.0
   - name: fastfetch-cli/fastfetch@2.71.0
   #- name: rs/curlie@v1.8.2 # HTTP
@@ -80,9 +80,9 @@ packages: # comments are added for the first package in each section
   #- name: jpbruinsslot/slack-term@v0.5.0
   - name: casey/just@1.59.0 # Command-running
   - name: watchexec/watchexec@v2.8.0
-  #- name: stateful/runme@v3.17.6
+  #- name: stateful/runme@v3.17.8
   - name: elkowar/pipr@v0.0.16
-  - name: topgrade-rs/topgrade@v17.15.0 # Package management
+  - name: topgrade-rs/topgrade@v17.16.0 # Package management
   - name: pemistahl/grex@v1.4.6 # Help
   - name: dbrgn/tealdeer@v1.9.1
   #- name: printfn/fend@v1.5.9 # Miscellaneous
