@@ -1,6 +1,6 @@
 # Unison preferences
 label = Back up lutho-ext to lutho
-root = /home
+root = /var/home
 root = /run/media/lietk12/aurora-dx_lutho/home
 ignore = Path {lietk12/.cache}
 ignore = Path {lietk12/.local/share/containers/storage/volumes}

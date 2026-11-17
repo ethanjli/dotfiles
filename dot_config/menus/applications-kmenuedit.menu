@@ -198,15 +198,26 @@
   <Include>
    <Filename>LF.desktop</Filename>
    <Filename>Zellij.desktop</Filename>
+   <Filename>WezTerm.desktop</Filename>
   </Include>
   <Layout>
    <Merge type="files"/>
+   <Filename>dev.getaurora.offline-docs.desktop</Filename>
+   <Filename>de.bund.ausweisapp.ausweisapp2.desktop</Filename>
+   <Filename>org.fcitx.Fcitx5.desktop</Filename>
+   <Filename>fedora.desktop</Filename>
+   <Filename>input-remapper-gtk.desktop</Filename>
+   <Filename>org.kde.konsole.desktop</Filename>
+   <Filename>org.kde.ksystemlog.desktop</Filename>
+   <Filename>planktoscope.desktop</Filename>
+   <Filename>systemsettings.desktop</Filename>
+   <Filename>dev.getaurora.system-update.desktop</Filename>
+   <Filename>tenearth.desktop</Filename>
+   <Filename>ubuntu.desktop</Filename>
    <Filename>org.gnome.Boxes.desktop</Filename>
    <Filename>org.kde.drkonqi.coredump.gui.desktop</Filename>
-   <Filename>org.kde.discover.desktop</Filename>
    <Filename>org.kde.dolphin.desktop</Filename>
    <Filename>org.fedoraproject.MediaWriter.desktop</Filename>
-   <Filename>firewall-config.desktop</Filename>
    <Filename>org.kde.kinfocenter.desktop</Filename>
    <Filename>org.kde.isoimagewriter.desktop</Filename>
    <Filename>org.kde.kjournaldbrowser.desktop</Filename>
@@ -219,12 +230,11 @@
    <Merge type="menus"/>
    <Menuname>ScreenSavers</Menuname>
    <Filename>org.kde.plasma-systemmonitor.desktop</Filename>
-   <Filename>system-update.desktop</Filename>
-   <Filename>org.gnome.Ptyxis.desktop</Filename>
    <Menuname>Terminal</Menuname>
    <Filename>virt-manager.desktop</Filename>
    <Filename>io.github.flattool.Warehouse.desktop</Filename>
    <Filename>org.wezfurlong.wezterm.desktop</Filename>
+   <Filename>WezTerm.desktop</Filename>
    <Filename>Zellij.desktop</Filename>
    <Separator/>
    <Menuname>More</Menuname>
@@ -238,22 +248,32 @@
   <Exclude>
    <Filename>com.github.marktext.marktext.desktop</Filename>
    <Filename>code.desktop</Filename>
+   <Filename>org.wezfurlong.wezterm.desktop</Filename>
+   <Filename>WezTerm.desktop</Filename>
   </Exclude>
   <Layout>
    <Merge type="files"/>
+   <Filename>org.angryip.ipscan.desktop</Filename>
+   <Filename>io.github.kolunmi.Bazaar.desktop</Filename>
+   <Filename>dev.getaurora.discussions.desktop</Filename>
+   <Filename>org.sqlitebrowser.sqlitebrowser.desktop</Filename>
+   <Filename>dev.getaurora.documentation.desktop</Filename>
+   <Filename>org.keepassxc.KeePassXC.desktop</Filename>
+   <Filename>org.localsend.localsend_app.desktop</Filename>
+   <Filename>io.github.nozwock.Packet.desktop</Filename>
+   <Filename>io.github.bcpierce00.unison.desktop</Filename>
+   <Filename>com.borgbase.Vorta.desktop</Filename>
+   <Filename>au.stevetech.yafi.desktop</Filename>
+   <Filename>com.yubico.yubioath.desktop</Filename>
    <Filename>com.usebottles.bottles.desktop</Filename>
    <Filename>org.fcitx.Fcitx5.desktop</Filename>
    <Filename>fedora.desktop</Filename>
    <Filename>kbd-layout-viewer5.desktop</Filename>
-   <Filename>planktoscope.desktop</Filename>
    <Filename>org.gnome.Sysprof.desktop</Filename>
-   <Filename>tenearth.desktop</Filename>
    <Filename>ubuntu.desktop</Filename>
    <Filename>org.kde.ark.desktop</Filename>
    <Filename>io.github.dvlv.boxbuddyrs.desktop</Filename>
    <Filename>org.kde.kclock.desktop</Filename>
-   <Filename>Discourse.desktop</Filename>
-   <Filename>documentation.desktop</Filename>
    <Filename>org.kde.plasma.emojier.desktop</Filename>
    <Filename>org.kde.filelight.desktop</Filename>
    <Filename>com.github.tchx84.Flatseal.desktop</Filename>
@@ -264,15 +284,12 @@
    <Filename>org.kde.akonadiimportwizard.desktop</Filename>
    <Filename>io.github.seadve.Kooha.desktop</Filename>
    <Filename>org.kde.kwrite.desktop</Filename>
-   <Filename>org.gnome.World.PikaBackup.desktop</Filename>
    <Filename>org.kde.spectacle.desktop</Filename>
    <Filename>io.github.flattool.Warehouse.desktop</Filename>
    <Filename>org.kde.kweather.desktop</Filename>
-   <Filename>org.wezfurlong.wezterm.desktop</Filename>
    <Merge type="menus"/>
    <Menuname>XUtilities</Menuname>
    <Separator/>
-   <Filename>org.kde.khelpcenter.desktop</Filename>
    <Menuname>More</Menuname>
   </Layout>
  </Menu>
@@ -288,6 +305,8 @@
    <Filename>com.usebottles.bottles.desktop</Filename>
    <Filename>com.github.marktext.marktext.desktop</Filename>
    <Filename>code.desktop</Filename>
+   <Filename>org.wezfurlong.wezterm.desktop</Filename>
+   <Filename>WezTerm.desktop</Filename>
   </Include>
  </Menu>
  <Menu>

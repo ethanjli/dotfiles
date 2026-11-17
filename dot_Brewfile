@@ -1,3 +1,4 @@
+tap "wezterm/wezterm-linuxbrew"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.13"
 # Open-source, cross-platform JavaScript runtime environment
@@ -12,6 +13,8 @@ brew "go"
 brew "imagemagick"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Execute binaries from Python packages in isolated environments
+brew "pipx"
 # Your Gateway to Embedded Software Development Excellence
 brew "platformio"
 # PDF rendering library (based on the xpdf-3.0 code base)
@@ -26,6 +29,8 @@ brew "tio"
 brew "uv"
 # Tool for creating isolated virtual python environments
 brew "virtualenv"
+# A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust
+brew "wezterm/wezterm-linuxbrew/wezterm", trusted: true
 cask "font-blex-mono-nerd-font"
 cask "font-cascadia-code-nf"
 cask "font-caskaydia-mono-nerd-font"
@@ -120,7 +125,6 @@ flatpak "org.mozilla.firefox"
 flatpak "org.raspberrypi.rpi-imager"
 flatpak "org.sqlitebrowser.sqlitebrowser"
 flatpak "org.videolan.VLC"
-flatpak "org.wezfurlong.wezterm"
 flatpak "org.wireshark.Wireshark"
 flatpak "org.zotero.Zotero"
 flatpak "org.zulip.Zulip"

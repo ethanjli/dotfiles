@@ -1,7 +1,4 @@
 # Unison preferences
-label = Back up lutho to lutho-ext
-root = /home
-root = /run/media/lietk12/aurora_lutho/home00
 ignore = Path {lietk12/.cache}
 ignore = Path {lietk12/.local/share/containers/storage/volumes}
 ignore = Path {lietk12/.local/share/containers/storage/overlay}
@@ -30,3 +27,6 @@ ignore = Path {linuxbrew}
 ignore = Path {kleio}
 ignore = Path {pi}
 ignore = Path {lietk12/.unison}
+label = Back up lutho to aurora_lutho
+root = /var/home
+root = /run/media/lietk12/aurora_lutho/home00

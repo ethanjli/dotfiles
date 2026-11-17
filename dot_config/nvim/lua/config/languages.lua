@@ -20,7 +20,7 @@ require("mason").setup()
 require("mason-lspconfig").setup({
 	-- note: automatic_installation doesn't seem to work, so we manually add LSPs to ensure_installed
 	ensure_installed = {
-		-- refer to https://github.com/williamboman/mason-lspconfig.nvim#available-lsp-servers
+		-- refer to https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md
 		"typos_lsp",
 		"marksman",
 		"texlab",

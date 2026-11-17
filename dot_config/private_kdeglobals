@@ -135,8 +135,8 @@ ForegroundVisited=199,120,221
 [General]
 ColorScheme=One-Dark-Blue
 ColorSchemeHash=babca25f3a5cf7ece26a85de212ab43d0a141257
-TerminalApplication=konsole
-TerminalService=org.kde.konsole.desktop
+TerminalApplication=/home/linuxbrew/.linuxbrew/bin/wezterm start --cwd .
+TerminalService=WezTerm.desktop
 XftAntialias=true
 XftHintStyle=hintslight
 XftSubPixel=rgb

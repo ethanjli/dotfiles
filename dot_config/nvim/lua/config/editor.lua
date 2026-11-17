@@ -15,6 +15,9 @@ vim.diagnostic.config({
 	-- line if the line is longer than 100 characters or if there are multiple error markers on the
 	-- same line - so we'll just disable it for now:
 	virtual_text = false,
+	float = {
+		source = "always",
+	},
 })
 
 require("ibl").setup()
