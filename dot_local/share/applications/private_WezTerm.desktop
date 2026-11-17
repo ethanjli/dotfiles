@@ -1,0 +1,17 @@
+[Desktop Entry]
+Categories=System;TerminalEmulator;Utility;
+Comment=Wez's Terminal Emulator
+Exec=/home/linuxbrew/.linuxbrew/bin/wezterm start --cwd .
+Icon=utilities-terminal
+Keywords=shell;prompt;command;commandline;cmd;
+Name=WezTerm (Terminal)
+NoDisplay=false
+Path=/var/home/lietk12/
+PrefersNonDefaultGPU=false
+StartupNotify=true
+StartupWMClass=wezterm
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=
