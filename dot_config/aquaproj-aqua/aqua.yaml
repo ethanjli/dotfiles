@@ -1,6 +1,6 @@
 registries:
   - type: standard
-    ref: v4.587.0 # renovate: depName=aquaproj/aqua-registry
+    ref: v4.588.0 # renovate: depName=aquaproj/aqua-registry
   - name: ethanjli/dotfiles
     type: github_content
     repo_owner: ethanjli
@@ -13,6 +13,7 @@ packages: # comments are added for the first package in each section
   - name: JanDeDobbeleer/oh-my-posh@v32.1.0
   - name: starship/starship@v1.27.0
   - name: atuinsh/atuin@v18.24.8
+  - name: jdx/mise@v2026.11.9
   - name: direnv/direnv@v2.38.2
   - name: charmbracelet/gum@v2.0.2
   - name: gokcehan/lf@r35 # Navigation
