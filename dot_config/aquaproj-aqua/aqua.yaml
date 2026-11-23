@@ -10,7 +10,7 @@ registries:
 packages: # comments are added for the first package in each section
   - name: twpayne/chezmoi@v2.74.1
   - name: zellij-org/zellij@v0.46.0 # Shell
-  - name: JanDeDobbeleer/oh-my-posh@v32.1.0
+  - name: JanDeDobbeleer/oh-my-posh@v33.3.0
   - name: starship/starship@v1.27.0
   - name: atuinsh/atuin@v18.24.8
   - name: jdx/mise@v2026.11.9
@@ -21,7 +21,7 @@ packages: # comments are added for the first package in each section
   - name: junegunn/fzf@v0.75.0
   - name: lsd-rs/lsd@v1.2.0
   - name: sharkdp/fd@v10.5.2
-  - name: BurntSushi/ripgrep@15.2.0
+  - name: BurntSushi/ripgrep@16.0.0
   - name: phiresky/ripgrep-all@v0.10.10
   - name: konradsz/igrep@v1.3.0
   - name: sharkdp/vivid@v0.11.1
